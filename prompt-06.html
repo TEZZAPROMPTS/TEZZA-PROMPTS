@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prompts by Tezza</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0f0f0f;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      padding: 30px 20px;
+      text-align: center;
+      border-bottom: 1px solid #222;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+    header p {
+      margin-top: 10px;
+      color: #aaa;
+      font-size: 0.95rem;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .prompt-box {
+      background: #151515;
+      border: 1px solid #262626;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 25px;
+      position: relative;
+    }
+    .prompt-title {
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+    pre {
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      background: #0d0d0d;
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid #222;
+      font-size: 0.9rem;
+      line-height: 1.4;
+      user-select: text;
+    }
+    button {
+      margin-top: 12px;
+      background: #ffffff;
+      color: #000000;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.2s ease;
+    }
+    button:hover {
+      background: #e0e0e0;
+    }
+    .hint {
+      margin-top: 10px;
+      font-size: 0.8rem;
+      color: #888;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.8rem;
+      color: #777;
+      border-top: 1px solid #222;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Prompts by Tezza</h1>
+    <p>Página oficial para copiar prompts • Uso pessoal</p>
+  </header>
+
+  <div class="container">
+
+    <div class="prompt-box">
+      <div class="prompt-title">TEZZA PROMPTS</div>
+      <pre id="prompt1">(TEZZA PROMPTS)
+marque @tezza.vu
+
+site: /dreamina.capcut.com/
+
+Ultra-realistic cinematic winter fashion portrait — Blender Cycles render.
+
+Camera & composition:
+
+Vertical medium close-up shot, chest-up framing.
+Front-facing camera angle at eye level.
+Subject centered, strong symmetrical composition.
+Shallow depth of field with background softly blurred.
+Snowflakes captured mid-air for dynamic realism.
+
+Face & identity (reference-based, do not alter):
+
+Face must strictly match the provided facial reference image.
+Preserve exact facial structure, proportions, jawline, cheekbones, lips, nose and eye shape.
+No facial redesign, no stylization.
+Intense gaze with sharp, expressive eyes visible through the mask opening.
+Natural micro-expressions preserved with high-fidelity realism.
+
+Hair (conditional, realistic):
+
+If any hair is visible, it must be blonde, following the reference hair length and density.
+Hair rendered with Blender Cycles realism, ultra-fine strands and natural volume.
+No artificial shine, physically accurate hair shader.
+Hair mostly concealed by the balaclava, only subtle strands visible if exposed.
+
+Outfit & accessories (reference-based, do not alter):
+
+Black knit balaclava covering head and lower face, tight fit.
+White embroidered logo Nike on the balaclava exactly as in the reference.
+Black triangle bikini top with thin straps, minimal design.
+Gold bracelets on wrists, realistic metallic reflections.
+No outfit redesign, no color changes.
+
+Pose & body language:
+
+Arms raised with hands holding the sides of the balaclava.
+Elbows slightly outward, shoulders engaged.
+Strong, confident posture with subtle muscle tension.
+Pose feels natural, powerful and controlled.
+
+Body & physique:
+
+Athletic ,toned female upper body.
+Defined shoulders, arms and chest with natural proportions.
+No exaggeration, realistic anatomy.
+
+Skin & realism:
+
+Cold-weather skin tone with natural warmth contrast.
+Ultra-realistic skin texture with visible pores, fine details and subtle sheen.
+Soft specular highlights from snow-reflected light.
+No plastic or over-smoothed skin.
+
+Environment:
+
+Snow-covered winter landscape.
+Wooden chalet houses in the background.
+Bare trees covered in snow.
+Light snowfall adding atmosphere and depth.
+
+Lighting:
+
+Natural overcast winter lighting.
+Soft diffused light with minimal harsh shadows.
+Cool ambient tones balanced with natural skin warmth.
+Cinematic color balance.
+
+Mood & aesthetic:
+
+Cold, powerful, fashion-forward winter energy.
+Luxury streetwear meets alpine aesthetic.
+Confident, dominant and striking presence.
+
+Style & render quality:
+
+Ultra-photorealistic 3D realism.
+Blender Cycles–style render.
+HDR, 8K resolution, sharp facial focus.
+High-quality fabric knit detail and skin shaders.
+No distortion, no blur, no artificial effects.</pre>
+      <button onclick="copyFallback('prompt1')">Copiar Prompt</button>
+      <div class="hint">Se o botão não funcionar, selecione o texto acima e copie manualmente.</div>
+    </div>
+
+  </div>
+
+  <footer>
+    © Prompts by Tezza — Conteúdo protegido. Não redistribuir.
+  </footer>
+
+  <script>
+    function copyFallback(id) {
+      const el = document.getElementById(id);
+      const range = document.createRange();
+      range.selectNodeContents(el);
+      const selection = window.getSelection();
+      selection.removeAllRanges();
+      selection.addRange(range);
+      try {
+        document.execCommand('copy');
+        alert('Prompt selecionado e copiado!');
+      } catch (err) {
+        alert('Não foi possível copiar automaticamente. Copie manualmente.');
+      }
+      selection.removeAllRanges();
+    }
+  </script>
+
+</body>
+</html>
