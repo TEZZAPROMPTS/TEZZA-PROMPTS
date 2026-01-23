@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prompts by Tezza</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0f0f0f;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      padding: 30px 20px;
+      text-align: center;
+      border-bottom: 1px solid #222;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+    header p {
+      margin-top: 10px;
+      color: #aaa;
+      font-size: 0.95rem;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .prompt-box {
+      background: #151515;
+      border: 1px solid #262626;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 25px;
+      position: relative;
+    }
+    .prompt-title {
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+    pre {
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      background: #0d0d0d;
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid #222;
+      font-size: 0.9rem;
+      line-height: 1.4;
+      user-select: text;
+    }
+    button {
+      margin-top: 12px;
+      background: #ffffff;
+      color: #000000;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.2s ease;
+    }
+    button:hover {
+      background: #e0e0e0;
+    }
+    .hint {
+      margin-top: 10px;
+      font-size: 0.8rem;
+      color: #888;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.8rem;
+      color: #777;
+      border-top: 1px solid #222;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Prompts by Tezza</h1>
+    <p>Página oficial para copiar prompts • Uso pessoal</p>
+  </header>
+
+  <div class="container">
+
+    <div class="prompt-box">
+      <div class="prompt-title">TEZZA PROMPTS</div>
+      <pre id="prompt1">(TEZZA PROMPTS)
+marque @tezza.vu
+
+site: /dreamina.capcut.com/
+
+Ultra-realistic winter fashion cinematic portrait — rendering in Blender Cycles.
+
+Camera and Composition:
+
+Vertical medium shot, framing from the chest up.
+Front camera angle at eye level.
+Centered male subject, striking symmetrical composition.
+Shallow depth of field with softly blurred background.
+Snowflakes captured in mid-air for dynamic realism.
+
+Face and Identity (based on reference, do not alter):
+
+The face must strictly match the provided male facial reference image.
+Preserve the exact facial structure, proportions, jawline, cheekbones, lips, nose, and eye shape.
+No facial redrawing, no stylization.
+Intense male gaze with expressive and penetrating eyes visible through the mask opening.
+Natural microexpressions preserved with high realism.
+
+Hair (conditional, realistic):
+
+If any hair following the length and density of the reference hair.
+Hair rendered with Blender Cycles realism, ultra-fine strands and natural volume. No artificial shine, physically accurate hair shading.
+Hair almost entirely covered by the balaclava, only a few subtle strands visible when exposed.
+
+Clothing and accessories (based on the reference, do not alter):
+
+Black knitted balaclava covering the head and lower part of the face, close-fitting.
+Nike logo embroidered in white on the balaclava, exactly as in the reference.
+Black minimalist men's sportswear or bare male torso, depending on the reference.
+Gold bracelets on the wrists with realistic metallic reflections.
+No changes to the clothing design, no color changes.
+
+Pose and body language:
+
+Arms raised with hands holding the sides of the balaclava.
+Elbows slightly out, shoulders engaged.
+Strong and confident posture with controlled muscle tension.
+The pose conveys naturalness, power, and masculinity.
+
+Body and Physique:
+
+Athletic and toned upper body.
+Defined shoulders, chest, and arms with natural proportions.
+No exaggeration, realistic male anatomy.
+Realistic male anatomy, no exaggeration.
+
+Skin and Realism:
+
+Cool male skin tone with natural warmth contrast.
+Ultra-realistic skin texture with visible pores, fine details, and subtle sheen.
+Soft specular reflections of light reflected off the snow.
+No artificial or overly smoothed skin.
+
+Setting:
+
+Snow-covered winter landscape.
+Wooden chalets in the background.
+Bare trees covered in snow. Light snow adding atmosphere and depth.
+
+Lighting:
+
+Natural, cloudy winter lighting.
+Soft, diffused light with minimal, sharp shadows.
+Cool ambient tones balanced with the natural warmth of the skin.
+Cinematic color balance. Atmosphere and Aesthetics:
+Cold, powerful, and modern winter masculinity.
+Luxury streetwear meets alpine aesthetics.
+Confident, dominant, and striking masculine presence.
+
+Style and Rendering Quality:
+
+Ultra-photorealistic 3D realism.
+Blender Cycles style rendering.
+HDR, 8K resolution, sharp facial focus.
+High-quality fabric mesh details and realistic skin shading.
+No distortion, no blur, no artificial effects.</pre>
+      <button onclick="copyFallback('prompt1')">Copiar Prompt</button>
+      <div class="hint">Se o botão não funcionar, selecione o texto acima e copie manualmente.</div>
+    </div>
+
+  </div>
+
+  <footer>
+    © Prompts by Tezza — Conteúdo protegido. Não redistribuir.
+  </footer>
+
+  <script>
+    function copyFallback(id) {
+      const el = document.getElementById(id);
+      const range = document.createRange();
+      range.selectNodeContents(el);
+      const selection = window.getSelection();
+      selection.removeAllRanges();
+      selection.addRange(range);
+      try {
+        document.execCommand('copy');
+        alert('Prompt selecionado e copiado!');
+      } catch (err) {
+        alert('Não foi possível copiar automaticamente. Copie manualmente.');
+      }
+      selection.removeAllRanges();
+    }
+  </script>
+
+</body>
+</html>
+
+
