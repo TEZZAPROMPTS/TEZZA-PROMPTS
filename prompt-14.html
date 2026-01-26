@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prompts by Tezza</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0f0f0f;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      padding: 30px 20px;
+      text-align: center;
+      border-bottom: 1px solid #222;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+    header p {
+      margin-top: 10px;
+      color: #aaa;
+      font-size: 0.95rem;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .prompt-box {
+      background: #151515;
+      border: 1px solid #262626;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 25px;
+      position: relative;
+    }
+    .prompt-title {
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+    pre {
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      background: #0d0d0d;
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid #222;
+      font-size: 0.9rem;
+      line-height: 1.4;
+      user-select: text;
+    }
+    button {
+      margin-top: 12px;
+      background: #ffffff;
+      color: #000000;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.2s ease;
+    }
+    button:hover {
+      background: #e0e0e0;
+    }
+    .hint {
+      margin-top: 10px;
+      font-size: 0.8rem;
+      color: #888;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.8rem;
+      color: #777;
+      border-top: 1px solid #222;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Prompts by Tezza</h1>
+    <p>Página oficial para copiar prompts • Uso pessoal</p>
+  </header>
+
+  <div class="container">
+
+    <div class="prompt-box">
+      <div class="prompt-title">TEZZA PROMPTS</div>
+      <pre id="prompt1">(TEZZA PROMPTS)
+marque @tezza.vu
+
+site: /dreamina.capcut.com/
+
+Ultra-realistic cinematic male portrait — Blender Cycles render
+
+Camera & composition
+Vertical close-up to medium-close shot, framed from upper chest to head. Eye-level camera position, creating a direct and intimate perspective. Subject leaning slightly forward toward the camera, shoulders relaxed, filling most of the frame. Tight editorial framing emphasizing eyes, lips, freckles and facial structure. Shallow depth of field with a clean, uniform sky background softly blurred, isolating the subject.
+
+Face & identity (reference-based, do not alter)
+Face must strictly match the provided male facial reference image. Preserve exact facial structure, proportions, jawline, cheekbones, lips, nose, eyebrows and eye shape. No facial redesign, no beautification, no stylization. Calm yet intense youthful masculine expression with slightly parted lips. Direct gaze toward the camera. Natural micro-expressions preserved. Subtle freckles and skin texture maintained exactly as reference.
+
+Hair & grooming (reference-accurate & realistic)
+Short dark hair partially visible under a black baseball cap worn forward. Slightly damp hair strands visible at the forehead, naturally clumped. Thin mustache and light goatee present, sparse and uneven, preserving natural growth pattern. Ultra-realistic Blender Cycles hair simulation with individual strand detail. Physically accurate hair shader with no artificial shine.
+
+Body & posture (realistic, masculine)
+Lean, athletic youthful masculine build. Bare shoulders and upper chest visible. Relaxed forward-leaning posture conveying confidence and casual ease. Neck and collarbones subtly defined without exaggeration.
+
+Accessories & details
+Black baseball cap with minimal logo detail. Small hoop earring in one ear. Thin silver chain necklace resting naturally against the chest. No additional accessories introduced.
+
+Skin & realism
+Natural light-to-medium skin tone with warm undertones. Ultra-realistic skin texture with visible pores, light freckles, subtle redness around nose and cheeks, and a slight natural sheen consistent with sun exposure. Physically correct subsurface scattering. No smoothing, no beauty filters, no CGI or plastic skin appearance.
+
+Lighting
+Bright natural daylight. Direct sunlight illuminating the face evenly, creating crisp highlights on nose, lips and cheekbones. Soft natural shadows under the brow ridge and chin. Balanced exposure with realistic contrast and neutral-to-warm color temperature.
+
+Environment
+Outdoor setting with a clear blue sky background. No visible distractions or objects. Minimal, clean environment emphasizing the subject’s face and expression. Background softly blurred to maintain depth and realism.
+
+Mood & aesthetic
+Fresh, youthful and confident masculine presence. Calm, direct and slightly intense mood. Clean, modern and minimal cinematic aesthetic with a natural outdoor feel.
+
+Style & render quality
+Ultra-photorealistic 3D realism. Blender Cycles–style render. HDR, 8K resolution. Ultra-sharp detail on face, skin, hair and accessories. Physically accurate lighting, skin and hair shaders. No CGI look, no stylization, no artificial effects.
+
+Negative prompt
+Facial redesign, altered identity, beauty filters, smooth or plastic skin, CGI look, stylized render, cartoon, anime, oversharpening, noise artifacts, artificial lighting, distorted anatomy, exaggerated features, extra accessories, low resolution.</pre>
+      <button onclick="copyFallback('prompt1')">Copiar Prompt</button>
+      <div class="hint">Se o botão não funcionar, selecione o texto acima e copie manualmente.</div>
+    </div>
+
+  </div>
+
+  <footer>
+    © Prompts by Tezza — Conteúdo protegido. Não redistribuir.
+  </footer>
+
+  <script>
+    function copyFallback(id) {
+      const el = document.getElementById(id);
+      const range = document.createRange();
+      range.selectNodeContents(el);
+      const selection = window.getSelection();
+      selection.removeAllRanges();
+      selection.addRange(range);
+      try {
+        document.execCommand('copy');
+        alert('Prompt selecionado e copiado!');
+      } catch (err) {
+        alert('Não foi possível copiar automaticamente. Copie manualmente.');
+      }
+      selection.removeAllRanges();
+    }
+  </script>
+
+</body>
+</html>
+
+
