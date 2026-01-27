@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prompts by Tezza</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0f0f0f;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      padding: 30px 20px;
+      text-align: center;
+      border-bottom: 1px solid #222;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+    header p {
+      margin-top: 10px;
+      color: #aaa;
+      font-size: 0.95rem;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .prompt-box {
+      background: #151515;
+      border: 1px solid #262626;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 25px;
+      position: relative;
+    }
+    .prompt-title {
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+    pre {
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      background: #0d0d0d;
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid #222;
+      font-size: 0.9rem;
+      line-height: 1.4;
+      user-select: text;
+    }
+    button {
+      margin-top: 12px;
+      background: #ffffff;
+      color: #000000;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.2s ease;
+    }
+    button:hover {
+      background: #e0e0e0;
+    }
+    .hint {
+      margin-top: 10px;
+      font-size: 0.8rem;
+      color: #888;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.8rem;
+      color: #777;
+      border-top: 1px solid #222;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Prompts by Tezza</h1>
+    <p>Página oficial para copiar prompts • Uso pessoal</p>
+  </header>
+
+  <div class="container">
+
+    <div class="prompt-box">
+      <div class="prompt-title">TEZZA PROMPTS</div>
+      <pre id="prompt1">(TEZZA PROMPTS)
+marque @tezza.vu
+
+site: /dreamina.capcut.com/
+
+Ultra-realistic cinematic female portrait — Blender Cycles render
+Camera & composition
+
+Vertical medium-close shot, framed from upper bust to head. Top-down angle as if captured in a mirror selfie while the subject is lying down. Camera positioned slightly above the face, angled downward. Intimate, natural framing. Subject centered. Shallow depth of field with background texture still visible.
+
+Face & identity (reference-based, do not alter)
+
+Face must strictly match the provided female reference image. Absolute identity preservation: same facial structure, proportions, lips, nose, eyes, eyebrows, cheek volume and jawline.
+Relaxed, soft, confident expression. Slightly parted lips. Calm gaze directed toward the camera. No facial modification or beautification.
+
+Hair (modified — loose, natural, blonde)
+
+Long hair fully loose and naturally spread across the surface beneath the subject, softly fanned out around the head and shoulders, with organic irregularity.
+Hair color: natural blonde, warm-neutral tone (not platinum, not artificial), with subtle tonal variation and slightly darker roots for realism.
+Visible individual strands, soft flyaways, gentle bends and natural gravity behavior. No symmetry. No styling. No excessive shine.
+Ultra-realistic Blender Cycles hair simulation with physically accurate shaders.
+
+Body & pose (reference-based)
+
+Natural feminine body proportions preserved. One hand gently touching near the lips with relaxed fingers. Shoulders and upper chest relaxed. Pose identical to the reference image.
+
+Outfit & accessories
+
+Simple white sleeveless top with thin straps, naturally fitted. Realistic fabric texture with subtle folds.
+Gold accessories preserved exactly as reference: layered delicate necklaces (including cross pendant), gold bracelet and gold wristwatch. Realistic metal reflections and weight.
+
+Skin realism
+
+Warm light-to-medium skin tone. Ultra-detailed realistic skin texture with visible pores, fine freckles, natural redness on cheeks and nose, subtle imperfections. Accurate subsurface scattering. Natural skin sheen, no plastic or doll effect.
+
+Lighting
+
+Soft, diffused natural indoor lighting. Balanced exposure. Gentle highlights on face, lips, collarbone and jewelry. No harsh shadows.
+
+Environment
+
+White textured bedspread filling the background. Fabric weave clearly visible, soft and realistic. Clean, minimal setting.
+
+Mood & aesthetic
+
+Intimate, effortless, natural beauty. Calm and confident feminine presence. Lifestyle realism with subtle sensuality.
+
+Style & render quality
+
+Ultra-photorealistic 3D realism. Blender Cycles render style. HDR, 8K resolution. Sharp focus on face, hair strands, skin texture, fabric and jewelry. Physically accurate materials and lighting.
+
+Negative prompt
+
+Stylized art, illustration, anime, cartoon, CGI look, artificial hair, stiff hair, perfect symmetry, plastic skin, over-smoothing, facial alteration, body exaggeration, filters, harsh lighting, blur, noise, low resolution, distorted anatomy, watermark, text, logo.</pre>
+      <button onclick="copyFallback('prompt1')">Copiar Prompt</button>
+      <div class="hint">Se o botão não funcionar, selecione o texto acima e copie manualmente.</div>
+    </div>
+
+  </div>
+
+  <footer>
+    © Prompts by Tezza — Conteúdo protegido. Não redistribuir.
+  </footer>
+
+  <script>
+    function copyFallback(id) {
+      const el = document.getElementById(id);
+      const range = document.createRange();
+      range.selectNodeContents(el);
+      const selection = window.getSelection();
+      selection.removeAllRanges();
+      selection.addRange(range);
+      try {
+        document.execCommand('copy');
+        alert('Prompt selecionado e copiado!');
+      } catch (err) {
+        alert('Não foi possível copiar automaticamente. Copie manualmente.');
+      }
+      selection.removeAllRanges();
+    }
+  </script>
+
+</body>
+</html>
+
+
