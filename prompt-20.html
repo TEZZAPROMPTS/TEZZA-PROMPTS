@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prompts by Tezza</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0f0f0f;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      padding: 30px 20px;
+      text-align: center;
+      border-bottom: 1px solid #222;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+    header p {
+      margin-top: 10px;
+      color: #aaa;
+      font-size: 0.95rem;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .prompt-box {
+      background: #151515;
+      border: 1px solid #262626;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 25px;
+      position: relative;
+    }
+    .prompt-title {
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+    pre {
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      background: #0d0d0d;
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid #222;
+      font-size: 0.9rem;
+      line-height: 1.4;
+      user-select: text;
+    }
+    button {
+      margin-top: 12px;
+      background: #ffffff;
+      color: #000000;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.2s ease;
+    }
+    button:hover {
+      background: #e0e0e0;
+    }
+    .hint {
+      margin-top: 10px;
+      font-size: 0.8rem;
+      color: #888;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.8rem;
+      color: #777;
+      border-top: 1px solid #222;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Prompts by Tezza</h1>
+    <p>Página oficial para copiar prompts • Uso pessoal</p>
+  </header>
+
+  <div class="container">
+
+    <div class="prompt-box">
+      <div class="prompt-title">TEZZA PROMPTS</div>
+      <pre id="prompt1">(TEZZA PROMPTS)
+marque @tezza.vu
+
+site: /dreamina.capcut.com/
+
+Ultra-realistic cinematic couple beach selfie — Blender Cycles render
+Camera & composition
+
+Vertical medium-close shot, framed from upper chest to head for both subjects. Casual smartphone selfie composition at eye-level, identical framing and proximity as the reference image. Both subjects positioned close together, heads gently leaning toward each other. Natural, intimate lifestyle framing. Slight handheld feel. Shallow depth of field with the sky softly blurred in the background.
+
+Face & identity (reference-based, do not alter)
+
+Faces must strictly match the provided facial reference image for both the woman and the man. Preserve exact facial structure, proportions, cheek volume, jawline, lips, nose, eyebrows, eye shape, skin tone, and natural imperfections. No facial redesign, no beautification, no stylization. Expressions must remain authentic and natural, identical to the reference. Identity lock enabled for both subjects.
+
+Woman
+
+Blonde woman with the exact same face as the reference, fully preserved. Long straight blonde hair with natural flow, identical length, parting, volume, and placement as the reference image. Sun-kissed skin with visible natural redness on cheeks and nose caused by sun exposure. Ultra-realistic skin texture with visible pores, fine imperfections, and subtle tonal variation. Minimal natural makeup. Relaxed lips with a soft, playful expression. Wearing a red bikini top with thin straps, exactly as casual beachwear. No accessories added.
+
+Man
+
+Man with the exact same face as the reference, identity fully preserved. Wearing a light-colored cap, identical placement and fit as the reference. Natural, well-groomed facial hair with realistic density and texture. Defined eyebrows, calm and relaxed expression. Natural skin texture with visible pores and realistic shading. No changes to hairstyle, beard, or facial features.
+
+Pose & interaction
+
+Subjects positioned very close together, heads gently leaning inward. Natural couple interaction, unposed and candid. Both looking directly at the camera. Intimate but casual beach lifestyle moment.
+
+Skin & realism
+
+Photorealistic skin for both subjects with physically accurate subsurface scattering. Visible pores, micro-details, and natural sun interaction. No smoothing, no beauty filters, no artificial glow.
+
+Lighting
+
+Bright natural daylight consistent with an outdoor beach environment. Soft sunlight illuminating faces evenly with gentle highlights and realistic shadows. Balanced exposure with true-to-life color temperature.
+
+Environment
+
+Open beach atmosphere following the reference image. Soft blue sky with subtle clouds. Clean, natural summer color palette. No distracting elements. Background softly blurred with realistic depth and scale.
+
+Mood & aesthetic
+
+Casual, intimate, and relaxed beach lifestyle mood. Natural summer feeling. Authentic, unposed couple energy. Cinematic realism without dramatization.
+
+Style & render quality
+
+Ultra-photorealistic realism. Blender Cycles–style render. HDR, 8K resolution. Ultra-sharp facial focus with high-detail skin, hair, and fabric rendering. Physically accurate lighting and shaders. IMVU / Second Life compatible. No CGI look.
+
+Negative prompt
+
+Stylized art, illustration, anime, cartoon, doll-like skin, plastic hair, over-beautification, facial alteration, identity change, body exaggeration, smooth skin, blur, noise, grain, harsh lighting, overexposure, underexposure, color cast, filters, makeup enhancement, accessories added, outfit changes, distorted anatomy, extra limbs, cropped faces, watermark, text, logo.</pre>
+      <button onclick="copyFallback('prompt1')">Copiar Prompt</button>
+      <div class="hint">Se o botão não funcionar, selecione o texto acima e copie manualmente.</div>
+    </div>
+
+  </div>
+
+  <footer>
+    © Prompts by Tezza — Conteúdo protegido. Não redistribuir.
+  </footer>
+
+  <script>
+    function copyFallback(id) {
+      const el = document.getElementById(id);
+      const range = document.createRange();
+      range.selectNodeContents(el);
+      const selection = window.getSelection();
+      selection.removeAllRanges();
+      selection.addRange(range);
+      try {
+        document.execCommand('copy');
+        alert('Prompt selecionado e copiado!');
+      } catch (err) {
+        alert('Não foi possível copiar automaticamente. Copie manualmente.');
+      }
+      selection.removeAllRanges();
+    }
+  </script>
+
+</body>
+</html>
+
+
