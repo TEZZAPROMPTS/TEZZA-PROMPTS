@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prompts by Tezza</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0f0f0f;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      padding: 30px 20px;
+      text-align: center;
+      border-bottom: 1px solid #222;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+    header p {
+      margin-top: 10px;
+      color: #aaa;
+      font-size: 0.95rem;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .prompt-box {
+      background: #151515;
+      border: 1px solid #262626;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 25px;
+      position: relative;
+    }
+    .prompt-title {
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+    pre {
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      background: #0d0d0d;
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid #222;
+      font-size: 0.9rem;
+      line-height: 1.4;
+      user-select: text;
+    }
+    button {
+      margin-top: 12px;
+      background: #ffffff;
+      color: #000000;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.2s ease;
+    }
+    button:hover {
+      background: #e0e0e0;
+    }
+    .hint {
+      margin-top: 10px;
+      font-size: 0.8rem;
+      color: #888;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.8rem;
+      color: #777;
+      border-top: 1px solid #222;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Prompts by Tezza</h1>
+    <p>Página oficial para copiar prompts • Uso pessoal</p>
+  </header>
+
+  <div class="container">
+
+    <div class="prompt-box">
+      <div class="prompt-title">TEZZA PROMPTS</div>
+      <pre id="prompt1">(TEZZA PROMPTS)
+marque @tezza.vu
+
+site: /dreamina.capcut.com/
+
+Ultra-realistic cinematic tropical female portrait — Blender Cycles render
+Camera & composition
+
+Vertical medium-close portrait, framed from upper chest to top of the head. Eye-level perspective with the camera positioned directly in front of the subject. Intimate editorial composition. Shallow depth of field with softly blurred tropical background.
+
+Pose & body language (reference-accurate — adjusted)
+
+Subject looking directly into the camera, head gently resting against her own shoulder, creating a soft, intimate and relaxed posture. Shoulders slightly angled. Arms relaxed and partially visible at the edges of the frame. Natural, unforced body language conveying calm sensuality.
+
+Face & identity (reference-based — do not alter)
+
+Face must strictly match the provided female facial reference image. Preserve exact facial structure, proportions, cheekbones, jaw softness, lips, nose, eyebrows and eye shape. No facial redesign, no beautification, no stylization. Soft, serene, subtly sultry expression. Direct gaze into the camera with authentic micro-expressions.
+
+Hair
+
+Long natural blonde hair, flowing freely over shoulders and down the back. Soft natural waves with realistic strand separation and subtle movement. Warm golden-blonde tone with natural highlights. One tropical flower tucked behind the ear. Physically accurate hair shader, no artificial shine.
+
+Outfit & accessories (reference-based)
+
+Solid pink bikini top, no prints, no patterns, no illustrations. Thin straps with delicate bow detail at the center. Smooth matte fabric with realistic stretch, stitching and tension.
+Thin necklace with small cross pendant resting naturally on the chest. No additional accessories.
+
+Body & skin realism
+
+Natural feminine physique with soft curves. Bronze sun-kissed skin tone. Ultra-realistic skin texture with visible pores, fine freckles, subtle sun redness on cheeks and nose. Physically accurate subsurface scattering and natural skin sheen.
+
+Makeup & details
+
+Soft summer makeup. Light blush, natural glossy lips, subtle eye definition. No heavy contouring. Skin texture fully preserved.
+
+Environment
+
+Outdoor tropical setting with tall palm trees and visible palm fruit clusters. Clear blue sky. Natural beach atmosphere with realistic depth and scale. Background softly blurred.
+
+Lighting
+
+Natural daylight with warm sunlight coming from above and slightly to the side. Gentle highlights on face, collarbones and shoulders. Soft shadows enhancing facial depth. Balanced exposure and warm tropical color temperature.
+
+Mood & aesthetic
+
+Intimate, sensual and serene feminine presence. Calm beach lifestyle mood. Natural, editorial, emotionally soft portrait.
+
+Style & render quality
+
+Ultra-photorealistic 3D realism. Blender Cycles render. HDR, 8K resolution. Ultra-sharp skin, hair, fabric and jewelry detail. Physically accurate shaders. IMVU / Second Life compatible realism. No CGI look.
+
+Negative prompt
+
+Stylized art, anime, cartoon, CGI look, plastic skin, over-smoothed textures, facial alteration, body exaggeration, patterns or prints on clothing, blur, noise, harsh lighting, artificial shine, distorted anatomy, watermark, logo, text.</pre>
+      <button onclick="copyFallback('prompt1')">Copiar Prompt</button>
+      <div class="hint">Se o botão não funcionar, selecione o texto acima e copie manualmente.</div>
+    </div>
+
+  </div>
+
+  <footer>
+    © Prompts by Tezza — Conteúdo protegido. Não redistribuir.
+  </footer>
+
+  <script>
+    function copyFallback(id) {
+      const el = document.getElementById(id);
+      const range = document.createRange();
+      range.selectNodeContents(el);
+      const selection = window.getSelection();
+      selection.removeAllRanges();
+      selection.addRange(range);
+      try {
+        document.execCommand('copy');
+        alert('Prompt selecionado e copiado!');
+      } catch (err) {
+        alert('Não foi possível copiar automaticamente. Copie manualmente.');
+      }
+      selection.removeAllRanges();
+    }
+  </script>
+
+</body>
+</html>
+
+
