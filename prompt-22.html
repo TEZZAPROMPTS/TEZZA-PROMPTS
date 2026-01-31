@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prompts by Tezza</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0f0f0f;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      padding: 30px 20px;
+      text-align: center;
+      border-bottom: 1px solid #222;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+    header p {
+      margin-top: 10px;
+      color: #aaa;
+      font-size: 0.95rem;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .prompt-box {
+      background: #151515;
+      border: 1px solid #262626;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 25px;
+      position: relative;
+    }
+    .prompt-title {
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+    pre {
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      background: #0d0d0d;
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid #222;
+      font-size: 0.9rem;
+      line-height: 1.4;
+      user-select: text;
+    }
+    button {
+      margin-top: 12px;
+      background: #ffffff;
+      color: #000000;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.2s ease;
+    }
+    button:hover {
+      background: #e0e0e0;
+    }
+    .hint {
+      margin-top: 10px;
+      font-size: 0.8rem;
+      color: #888;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.8rem;
+      color: #777;
+      border-top: 1px solid #222;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Prompts by Tezza</h1>
+    <p>Página oficial para copiar prompts • Uso pessoal</p>
+  </header>
+
+  <div class="container">
+
+    <div class="prompt-box">
+      <div class="prompt-title">TEZZA PROMPTS</div>
+      <pre id="prompt1">(TEZZA PROMPTS)
+marque @tezza.vu
+
+site: /dreamina.capcut.com/
+
+Ultra-realistic cinematic female portrait — Blender Cycles render
+Camera & composition
+
+Vertical close-up portrait. Same angle as the reference image: slightly top-down perspective, intimate selfie-style framing. Camera positioned above the subject, angled gently downward. Tight crop from upper chest to top of the head. Shallow depth of field.
+
+Pose & body position (locked)
+
+Subject lying on her side, body relaxed.
+Torso angled sideways, but face turned forward toward the camera.
+Head gently supported by the surface, slightly tilted.
+Pose must feel natural, soft and unposed. No posture exaggeration.
+
+Face & expression (reference-based)
+
+Face strictly based on the reference image.
+Playful, relaxed expression. One eye closed (wink), the other looking directly at the camera.
+Lips softly pursed with a subtle pout. Natural facial proportions.
+
+Hair
+
+Long natural blonde hair, loose and spread organically over the pillow and shoulder. Soft waves, slightly messy, realistic strand separation, natural volume and shine.
+
+Skin & realism
+
+Light skin tone with visible freckles across nose, cheeks and shoulders.
+Ultra-detailed skin texture with pores, micro-details and natural imperfections.
+Soft, realistic skin glow — no plastic or artificial smoothing.
+
+Outfit
+
+Simple white lace bra with thin straps. Delicate lace texture, realistic fabric transparency. No logos, no prints, no extra details.
+
+Environment
+
+Minimal indoor bedroom scene. White bedding and pillows. Clean, soft background, subtly blurred to maintain focus on the subject.
+
+Lighting
+
+Soft natural daylight, diffused and even. Gentle highlights on face, collarbone and hair. Natural indoor shadows.
+
+Mood & aesthetic
+
+Intimate, cozy, feminine and sensual in a natural, elegant way. Lifestyle editorial feel.
+
+Render & quality
+
+Ultra-realistic 3D render. Blender Cycles. Cinematic realism, HDR, 8K. High-fidelity skin and hair shaders. IMVU / Second Life compatible realism. No CGI look.</pre>
+      <button onclick="copyFallback('prompt1')">Copiar Prompt</button>
+      <div class="hint">Se o botão não funcionar, selecione o texto acima e copie manualmente.</div>
+    </div>
+
+  </div>
+
+  <footer>
+    © Prompts by Tezza — Conteúdo protegido. Não redistribuir.
+  </footer>
+
+  <script>
+    function copyFallback(id) {
+      const el = document.getElementById(id);
+      const range = document.createRange();
+      range.selectNodeContents(el);
+      const selection = window.getSelection();
+      selection.removeAllRanges();
+      selection.addRange(range);
+      try {
+        document.execCommand('copy');
+        alert('Prompt selecionado e copiado!');
+      } catch (err) {
+        alert('Não foi possível copiar automaticamente. Copie manualmente.');
+      }
+      selection.removeAllRanges();
+    }
+  </script>
+
+</body>
+</html>
+
+
