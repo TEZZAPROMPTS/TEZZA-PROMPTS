@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Prompts by Tezza</title>
+
   <style>
     body {
       font-family: Arial, Helvetica, sans-serif;
@@ -38,7 +39,6 @@
       border-radius: 12px;
       padding: 20px;
       margin-bottom: 25px;
-      position: relative;
     }
     .prompt-title {
       font-weight: bold;
@@ -65,7 +65,6 @@
       border-radius: 20px;
       cursor: pointer;
       font-weight: bold;
-      transition: 0.2s ease;
     }
     button:hover {
       background: #e0e0e0;
@@ -84,20 +83,21 @@
     }
   </style>
 </head>
+
 <body>
 
-  <header>
-    <h1>Prompts by Tezza</h1>
-    <p>Página oficial para copiar prompts • Uso pessoal</p>
-  </header>
+<header>
+  <h1>Prompts by Tezza</h1>
+  <p>Página oficial para copiar prompts • Uso pessoal</p>
+</header>
 
-  <div class="container">
+<div class="container">
 
-    <div class="prompt-box">
-      <div class="prompt-title">TEZZA PROMPTS</div>
-      <pre id="prompt1">(TEZZA PROMPTS)
+  <div class="prompt-box">
+    <div class="prompt-title">TEZZA PROMPTS</div>
+
+<pre id="prompt1">(TEZZA PROMPTS)
 marque @tezza.vu
-
 site: /dreamina.capcut.com/
 
 Ultra-realistic cinematic female portrait — Blender Cycles render
@@ -112,54 +112,49 @@ Gaze & expression:
 Subject looking directly at the camera with one eye gently closed in a wink. Soft smile with relaxed lips, conveying a carefree, playful, sunlit mood.
 
 Hair:
-Natural blonde hair with a warm golden tone. Medium length, layered, with soft bangs/fringe across the forehead. Hair gently lifted and flowing by a light coastal breeze, strands moving naturally sideways and slightly backward, subtle motion visible, soft flyaways catching the sunlight, realistic wind interaction without exaggeration.
+Natural blonde hair with a warm golden tone. Medium length, layered, with soft bangs/fringe across the forehead. Hair gently lifted and flowing by a light coastal breeze.
 
 Face & skin:
-Light, natural makeup with visible skin texture, freckles across the cheeks and nose, soft blush, and realistic pores. Warm sun-kissed skin tone with gentle highlights from direct daylight.
+Light, natural makeup with visible skin texture, freckles, soft blush, realistic pores, warm sun-kissed tone.
 
 Body & details:
-Bare upper back and shoulder blades visible. A subtle red kiss-mark (lip print) placed on the upper back just below the shoulder line, softly blended into the skin. Natural body proportions with realistic anatomy.
+Bare upper back visible. Subtle red kiss-mark on the upper back. Natural anatomy.
 
 Environment:
-Outdoor coastal landscape. Clear blue sky dominating the background, distant ocean horizon visible, and natural greenery in the lower background. Open-air, summer atmosphere.
+Outdoor coastal landscape. Clear blue sky, distant ocean horizon, greenery.
 
 Lighting:
-Natural daylight with soft, warm sunlight illuminating the subject from the front/side. Balanced exposure, gentle shadows, and realistic light falloff. No artificial lighting.
+Natural daylight, soft warm sunlight, balanced exposure.
 
 Style & quality:
-Ultra-realistic 3D realism, cinematic lifestyle photography look, Blender Cycles–style skin shading, high dynamic range, sharp focus, 8K detail, realistic color grading, IMVU / Second Life–compatible realism.
+Ultra-realistic 3D realism, cinematic look, Blender Cycles skin shading, HDR, sharp focus, 8K detail.
 
 Negative prompt:
-Cartoon, anime, stylized, low poly, plastic skin, over-smoothing, exaggerated wind, frozen hair motion, distorted anatomy, harsh shadows, artificial lighting, blur, noise, watermark, text, painterly style.</pre>
-      <button onclick="copyFallback('prompt1')">Copiar Prompt</button>
-      <div class="hint">Se o botão não funcionar, selecione o texto acima e copie manualmente.</div>
-    </div>
+Cartoon, anime, stylized, low poly, plastic skin, blur, watermark, text.</pre>
 
+    <button onclick="copyFallback('prompt1')">Copiar Prompt</button>
+    <div class="hint">Se o botão não funcionar, selecione o texto e copie manualmente.</div>
   </div>
 
-  <footer>
-    © Prompts by Tezza — Conteúdo protegido. Não redistribuir.
-  </footer>
+</div>
 
-  <script>
-    function copyFallback(id) {
-      const el = document.getElementById(id);
-      const range = document.createRange();
-      range.selectNodeContents(el);
-      const selection = window.getSelection();
-      selection.removeAllRanges();
-      selection.addRange(range);
-      try {
-        document.execCommand('copy');
-        alert('Prompt selecionado e copiado!');
-      } catch (err) {
-        alert('Não foi possível copiar automaticamente. Copie manualmente.');
-      }
-      selection.removeAllRanges();
-    }
-  </script>
+<footer>
+  © Prompts by Tezza — Conteúdo protegido. Não redistribuir.
+</footer>
+
+<script>
+  function copyFallback(id) {
+    const el = document.getElementById(id);
+    const range = document.createRange();
+    range.selectNodeContents(el);
+    const selection = window.getSelection();
+    selection.removeAllRanges();
+    selection.addRange(range);
+    document.execCommand('copy');
+    selection.removeAllRanges();
+    alert('Prompt copiado!');
+  }
+</script>
 
 </body>
 </html>
-
-
