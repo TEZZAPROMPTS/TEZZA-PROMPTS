@@ -1,35 +1,53 @@
-# TEZZA-PROMPTS 🧠✨
+TEZZA-PROMPTS 🧠🔒
 
-Repositório oficial de prompts de IA criados para compartilhamento, testes e distribuição em canais de prompts.
+Repositório privado de prompts de IA desenvolvido exclusivamente para uso próprio e para o canal oficial TEZZA-PROMPTS.
 
-## 🎯 Propósito
-Este espaço reúne prompts desenvolvidos para:
-- Criadores de conteúdo
-- Automação criativa
-- Geração de ideias, textos e estratégias
-- Uso prático em modelos de IA
+Este projeto não é open source e não autoriza redistribuição, repostagem ou reutilização em outros canais, públicos ou privados.
 
-Os prompts são pensados para serem **claros, reutilizáveis e adaptáveis**, facilitando o uso direto por outras pessoas.
+🎯 Finalidade
 
-## 🧩 O que você encontra aqui
-- Prompts prontos para envio em canais de IA
-- Estruturas reutilizáveis
-- Templates otimizados
-- Versões em teste e versões finais
+Este repositório existe para:
 
-## 🔄 Atualizações constantes
-Os prompts passam por ajustes frequentes para melhorar:
-- Clareza
-- Resultado gerado pela IA
-- Compatibilidade com diferentes modelos
+Criação e organização de prompts autorais
 
-Arquivos podem ser modificados ou removidos caso não entreguem o resultado esperado.
+Uso exclusivo no canal TEZZA-PROMPTS
 
-## 📢 Uso e compartilhamento
-Sinta-se à vontade para usar e adaptar os prompts.  
-Se for compartilhar, mantenha os créditos do projeto.
+Testes, ajustes e refinamento de prompts de IA
 
----
+Centralização do meu fluxo criativo
 
-🚀 **TEZZA-PROMPTS**  
-Prompts feitos para funcionar, não só para existir.
+Todos os prompts aqui presentes são de autoria própria e fazem parte de um processo contínuo de desenvolvimento.
+
+📦 Conteúdo
+
+Você encontrará neste repositório:
+
+Prompts finais utilizados no meu canal
+
+Templates e estruturas autorais
+
+Versões em teste e versões consolidadas
+
+Os arquivos podem ser alterados, removidos ou substituídos a qualquer momento, conforme a evolução do projeto.
+
+🚫 Uso não autorizado
+
+Não é permitido:
+
+Compartilhar os prompts em outros canais
+
+Redistribuir, vender ou republicar o conteúdo
+
+Utilizar os prompts como base para outros projetos
+
+Repostar parcial ou integralmente
+
+Qualquer uso fora deste repositório e do canal oficial não é autorizado.
+
+⚖️ Direitos
+
+Todo o conteúdo é protegido por direitos autorais.
+O acesso ao repositório não concede licença de uso.
+
+🔐 TEZZA-PROMPTS
+Conteúdo autoral. Uso exclusivo. Sem redistribuição.
