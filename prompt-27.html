@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prompts by Tezza</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0f0f0f;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      padding: 30px 20px;
+      text-align: center;
+      border-bottom: 1px solid #222;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+    header p {
+      margin-top: 10px;
+      color: #aaa;
+      font-size: 0.95rem;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .prompt-box {
+      background: #151515;
+      border: 1px solid #262626;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 25px;
+      position: relative;
+    }
+    .prompt-title {
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+    pre {
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      background: #0d0d0d;
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid #222;
+      font-size: 0.9rem;
+      line-height: 1.4;
+      user-select: text;
+    }
+    button {
+      margin-top: 12px;
+      background: #ffffff;
+      color: #000000;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.2s ease;
+    }
+    button:hover {
+      background: #e0e0e0;
+    }
+    .hint {
+      margin-top: 10px;
+      font-size: 0.8rem;
+      color: #888;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.8rem;
+      color: #777;
+      border-top: 1px solid #222;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Prompts by Tezza</h1>
+    <p>Página oficial para copiar prompts • Uso pessoal</p>
+  </header>
+
+  <div class="container">
+
+    <div class="prompt-box">
+      <div class="prompt-title">TEZZA PROMPTS</div>
+      <pre id="prompt1">(TEZZA PROMPTS)
+marque @tezza.vu
+
+site: /dreamina.capcut.com/
+
+Ultra-realistic cinematic female lifestyle portrait — Blender Cycles render
+
+Camera & composition
+Vertical close-up portrait, framed from mid-forearm to top of the head. Same pose, body angle, and framing as the reference image. Subject leaning forward, resting her head and cheek gently against the partner’s upper arm/shoulder area. Camera positioned slightly above chest level, angled downward, preserving identical perspective, lens compression, and proportions. Tight, intimate framing emphasizing closeness and connection.
+
+Subject & pose
+Female subject positioned close to another person, embracing the arm naturally. One hand gently resting on the partner’s arm, fingers relaxed and slightly curved. Visible engagement ring on the finger, subtly catching the light. Head tilted inward, lips softly closed, expression calm, confident, and subtly sensual. Body posture relaxed and natural.
+
+Hair
+Natural blonde hair, long and straight, smooth texture with soft volume. Hair parted slightly off-center, falling naturally over the shoulders. No rigid styling — realistic, effortless movement with clean strands and natural shine.
+
+Face & accessories
+Face partially framed by oversized black sunglasses with glossy finish. Well-defined brows, neutral makeup with softly contoured cheeks and natural lip tone. Nose straight, lips full and relaxed. Sunglasses reflect subtle environmental light without overpowering reflections.
+
+Outfit
+Minimalist black short-sleeve top with clean lines and matte fabric. No logos, prints, or patterns. Fabric drapes naturally over the body. Partner’s outfit visible only partially: black fabric sleeve and bare arm, maintaining focus on the female subject.
+
+Lighting
+Soft natural daylight coming from above and slightly behind, creating gentle highlights on hair, sunglasses, and skin. Balanced exposure with soft shadows, maintaining a modern cinematic lifestyle aesthetic. Neutral daylight color temperature.
+
+Background
+Contemporary indoor environment with glass ceiling or skylight structure visible above. Clean architectural lines, modern setting, softly blurred to keep focus on the subjects. No visual clutter.
+
+Mood & atmosphere
+Intimate, modern, elegant lifestyle moment. Subtle luxury and emotional closeness conveyed through body language and framing. Calm, confident, and sophisticated tone.
+
+Rendering style & quality
+Ultra-realistic, cinematic lighting, Blender Cycles render. Sharp focus on face, hair, and hand. Shallow depth of field. HDR, 8K resolution, high dynamic range, physically accurate lighting, realistic skin shader, IMVU / Second Life realism reference.
+
+Negative prompt
+Cartoon, anime, stylized, low resolution, blurry, harsh lighting, exaggerated features, plastic skin, unrealistic anatomy, over-sharpening, oversaturated colors, artificial hair texture.</pre>
+      <button onclick="copyFallback('prompt1')">Copiar Prompt</button>
+      <div class="hint">Se o botão não funcionar, selecione o texto acima e copie manualmente.</div>
+    </div>
+
+  </div>
+
+  <footer>
+    © Prompts by Tezza — Conteúdo protegido. Não redistribuir.
+  </footer>
+
+  <script>
+    function copyFallback(id) {
+      const el = document.getElementById(id);
+      const range = document.createRange();
+      range.selectNodeContents(el);
+      const selection = window.getSelection();
+      selection.removeAllRanges();
+      selection.addRange(range);
+      try {
+        document.execCommand('copy');
+        alert('Prompt selecionado e copiado!');
+      } catch (err) {
+        alert('Não foi possível copiar automaticamente. Copie manualmente.');
+      }
+      selection.removeAllRanges();
+    }
+  </script>
+
+</body>
+</html>
+
+
