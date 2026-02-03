@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prompts by Tezza</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0f0f0f;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      padding: 30px 20px;
+      text-align: center;
+      border-bottom: 1px solid #222;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+    header p {
+      margin-top: 10px;
+      color: #aaa;
+      font-size: 0.95rem;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .prompt-box {
+      background: #151515;
+      border: 1px solid #262626;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 25px;
+      position: relative;
+    }
+    .prompt-title {
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+    pre {
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      background: #0d0d0d;
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid #222;
+      font-size: 0.9rem;
+      line-height: 1.4;
+      user-select: text;
+    }
+    button {
+      margin-top: 12px;
+      background: #ffffff;
+      color: #000000;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.2s ease;
+    }
+    button:hover {
+      background: #e0e0e0;
+    }
+    .hint {
+      margin-top: 10px;
+      font-size: 0.8rem;
+      color: #888;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.8rem;
+      color: #777;
+      border-top: 1px solid #222;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Prompts by Tezza</h1>
+    <p>Página oficial para copiar prompts • Uso pessoal</p>
+  </header>
+
+  <div class="container">
+
+    <div class="prompt-box">
+      <div class="prompt-title">TEZZA PROMPTS</div>
+      <pre id="prompt1">(TEZZA PROMPTS)
+marque @tezza.vu
+
+site: /dreamina.capcut.com/
+
+Ultra-realistic cinematic female lifestyle portrait — Blender Cycles render
+
+Camera & composition:
+Vertical medium-full shot, framed from mid-thigh to head. Subject seated on a light-colored outdoor sofa. Camera positioned at chest-to-eye level, straight-on angle with slight depth compression. Clean, centered composition with natural perspective.
+
+Pose & posture:
+Relaxed seated pose. Legs crossed at the ankles and angled slightly to the side. Left arm resting on the sofa cushion for support. Right elbow resting on the knee, right hand gently supporting the chin. Elegant, confident posture.
+
+Face & expression:
+Calm, poised expression with softly closed lips. Neutral gaze directed slightly toward the camera. Facial proportions realistic and balanced, respecting the reference face without stylization.
+
+Hair:
+Blonde hair in a sleek low bun with a center part. Warm golden blonde tone with subtle highlights. Smooth texture with clean finish, no volume exaggeration.
+
+Eyes & makeup:
+Eyes respecting the original reference shape and spacing. Soft glam makeup: defined brows, subtle brown eyeshadow, eyeliner, long lashes. Natural contour and soft blush. Nude-pink lips with satin finish.
+
+Outfit:
+Light pink fitted sleeveless dress with thin straps and white piping details following the seams. Elegant, minimal design. Fabric appears smooth and structured, hugging the body naturally. Color is soft pastel pink, not saturated.
+
+Accessories:
+Small gold hoop earrings. Minimal gold bracelets and wristwatch. Slim rectangular sunglasses with dark lenses.
+
+Body & proportions:
+Feminine, curvy silhouette with realistic anatomy. Natural waist-to-hip ratio. No exaggeration or distortion.
+
+Skin & texture:
+Natural sun-kissed skin tone with visible skin texture. Soft glow with realistic highlights on shoulders, arms and collarbone. No plastic or overly smooth skin.
+
+Lighting:
+Natural daylight filtering through an outdoor lounge setting. Soft shadows and warm highlights. Balanced exposure, cinematic lighting, HDR feel.
+
+Environment & background:
+Upscale outdoor lounge or café setting. Beige sofas, wooden tables, flowing light curtains, lush green plants in the background. Mediterranean / resort atmosphere. Background softly blurred with natural depth of field.
+
+Render & quality:
+Ultra-realistic, photorealistic output. Blender Cycles render. Cinematic lighting, HDR, 8K resolution, sharp focus, realistic fabric, skin and hair shaders.
+
+Negative prompt:
+Cartoon, anime, doll face, over-smoothed skin, plastic texture, exaggerated curves, distorted anatomy, extra limbs, unrealistic lighting, low resolution, blur.</pre>
+      <button onclick="copyFallback('prompt1')">Copiar Prompt</button>
+      <div class="hint">Se o botão não funcionar, selecione o texto acima e copie manualmente.</div>
+    </div>
+
+  </div>
+
+  <footer>
+    © Prompts by Tezza — Conteúdo protegido. Não redistribuir.
+  </footer>
+
+  <script>
+    function copyFallback(id) {
+      const el = document.getElementById(id);
+      const range = document.createRange();
+      range.selectNodeContents(el);
+      const selection = window.getSelection();
+      selection.removeAllRanges();
+      selection.addRange(range);
+      try {
+        document.execCommand('copy');
+        alert('Prompt selecionado e copiado!');
+      } catch (err) {
+        alert('Não foi possível copiar automaticamente. Copie manualmente.');
+      }
+      selection.removeAllRanges();
+    }
+  </script>
+
+</body>
+</html>
+
+
