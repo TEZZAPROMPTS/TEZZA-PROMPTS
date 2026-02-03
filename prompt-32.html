@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prompts by Tezza</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0f0f0f;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      padding: 30px 20px;
+      text-align: center;
+      border-bottom: 1px solid #222;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+    header p {
+      margin-top: 10px;
+      color: #aaa;
+      font-size: 0.95rem;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .prompt-box {
+      background: #151515;
+      border: 1px solid #262626;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 25px;
+      position: relative;
+    }
+    .prompt-title {
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+    pre {
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      background: #0d0d0d;
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid #222;
+      font-size: 0.9rem;
+      line-height: 1.4;
+      user-select: text;
+    }
+    button {
+      margin-top: 12px;
+      background: #ffffff;
+      color: #000000;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.2s ease;
+    }
+    button:hover {
+      background: #e0e0e0;
+    }
+    .hint {
+      margin-top: 10px;
+      font-size: 0.8rem;
+      color: #888;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.8rem;
+      color: #777;
+      border-top: 1px solid #222;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Prompts by Tezza</h1>
+    <p>Página oficial para copiar prompts • Uso pessoal</p>
+  </header>
+
+  <div class="container">
+
+    <div class="prompt-box">
+      <div class="prompt-title">TEZZA PROMPTS</div>
+      <pre id="prompt1">(TEZZA PROMPTS)
+marque @tezza.vu
+
+site: /dreamina.capcut.com/
+
+Ultra-realistic cinematic female portrait — Blender Cycles render
+
+Camera & composition:
+Vertical close-up portrait, framed from shoulders to top of the head. Three-quarter profile view with the face slightly turned to the side, chin subtly raised, creating an elegant elongated neck line. Camera positioned at eye level with slight compression, maintaining identical facial proportions and perspective to the reference image. Tight framing, intimate beauty shot.
+
+Face & expression:
+Highly realistic female face with smooth yet natural skin texture, visible pores and soft specular highlights. Facial structure, nose shape, lips volume and jawline strictly matching the reference. Eyes must strictly respect the reference image — same eye shape, spacing, angle and gaze direction. Almond-shaped eyes with intense, sultry look, slightly half-lidded expression. No eye reshaping or stylization.
+
+Hair:
+Blonde hair (natural light blonde to honey blonde tones), styled in a high messy bun. Soft, loose strands falling naturally in front of the face and along the cheeks, adding realism and movement. Wispy bangs across the forehead, semi-transparent and uneven, with individual hair strands clearly visible. Hair texture highly detailed, realistic root shading, no artificial smoothness.
+
+Makeup:
+Glamorous cinematic makeup. Warm bronze and caramel eyeshadow blended smoothly, sharp black winged eyeliner, long voluminous lashes. Subtle inner-corner highlight. Sculpted brows following the natural brow bone. Skin with luminous glow, soft blush on cheeks, realistic highlight on cheekbones and nose bridge. Full glossy lips in a warm brown nude tone, high-shine finish.
+
+Lighting:
+Soft cinematic studio lighting with a warm key light illuminating the face from the front-side, creating smooth gradients and natural skin reflections. Gentle rim light separating hair from the background. Balanced shadows, no harsh contrast.
+
+Background:
+Neutral dark gray studio background, clean and minimal, softly blurred to keep full focus on the face.
+
+Render & quality:
+Ultra-realistic, photorealistic beauty portrait, Blender Cycles style, cinematic lighting, HDR, 8K resolution, sharp focus on eyes and lips, realistic skin shader, high-detail hair strands, no stylization, no cartoon look.
+
+Negative prompt:
+Cartoon, anime, doll-like skin, over-smoothing, plastic skin, distorted face, altered eye shape, cross-eye, unrealistic proportions, low resolution, blur, noise, harsh lighting, exaggerated makeup, fantasy style.</pre>
+      <button onclick="copyFallback('prompt1')">Copiar Prompt</button>
+      <div class="hint">Se o botão não funcionar, selecione o texto acima e copie manualmente.</div>
+    </div>
+
+  </div>
+
+  <footer>
+    © Prompts by Tezza — Conteúdo protegido. Não redistribuir.
+  </footer>
+
+  <script>
+    function copyFallback(id) {
+      const el = document.getElementById(id);
+      const range = document.createRange();
+      range.selectNodeContents(el);
+      const selection = window.getSelection();
+      selection.removeAllRanges();
+      selection.addRange(range);
+      try {
+        document.execCommand('copy');
+        alert('Prompt selecionado e copiado!');
+      } catch (err) {
+        alert('Não foi possível copiar automaticamente. Copie manualmente.');
+      }
+      selection.removeAllRanges();
+    }
+  </script>
+
+</body>
+</html>
+
+
