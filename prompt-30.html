@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prompts by Tezza</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0f0f0f;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      padding: 30px 20px;
+      text-align: center;
+      border-bottom: 1px solid #222;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+    header p {
+      margin-top: 10px;
+      color: #aaa;
+      font-size: 0.95rem;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .prompt-box {
+      background: #151515;
+      border: 1px solid #262626;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 25px;
+      position: relative;
+    }
+    .prompt-title {
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+    pre {
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      background: #0d0d0d;
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid #222;
+      font-size: 0.9rem;
+      line-height: 1.4;
+      user-select: text;
+    }
+    button {
+      margin-top: 12px;
+      background: #ffffff;
+      color: #000000;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.2s ease;
+    }
+    button:hover {
+      background: #e0e0e0;
+    }
+    .hint {
+      margin-top: 10px;
+      font-size: 0.8rem;
+      color: #888;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.8rem;
+      color: #777;
+      border-top: 1px solid #222;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Prompts by Tezza</h1>
+    <p>Página oficial para copiar prompts • Uso pessoal</p>
+  </header>
+
+  <div class="container">
+
+    <div class="prompt-box">
+      <div class="prompt-title">TEZZA PROMPTS</div>
+      <pre id="prompt1">(TEZZA PROMPTS)
+marque @tezza.vu
+
+site: /dreamina.capcut.com/
+
+Ultra-realistic cinematic female night portrait — Blender Cycles render
+
+Camera & composition:
+Vertical medium shot, framed from upper thighs to head. Subject seated inside a car, centered in the frame. Camera positioned at chest-to-eye level, straight-on angle. Tight composition emphasizing upper body, arms and facial expression. Interior car environment visible on the sides, preserving the same perspective and framing as the reference.
+
+Pose & gesture:
+Subject seated comfortably on the car seat. Both arms raised, elbows bent outward, hands positioned near the face making peace signs (V-sign) on each side. Shoulders relaxed but confident. Head slightly tilted forward. Lips pursed in a playful kiss expression.
+
+Face & expression:
+Playful, flirty expression with lips puckered. Eyes looking slightly to the side, not directly into the camera. Sharp eyeliner, long lashes, defined brows. Facial proportions and eye shape must remain realistic and consistent.
+
+Hair:
+Long straight blonde hair (warm golden blonde tone), smooth texture with natural shine. Hair falling evenly over both shoulders and down the chest. Clean strands with subtle volume, no frizz, realistic root shading.
+
+Outfit & accessories:
+Deep red sleeveless dress with plunging V-neckline, body-hugging fit. Red faux-fur bucket hat. Long red leather gloves extending past the wrists. Outfit fully monochromatic in red tones. No logos or text.
+
+Body & proportions:
+Slim, curvy feminine body. Defined cleavage due to dress cut. Natural arm and shoulder definition. Realistic anatomy with no exaggeration.
+
+Skin & details:
+Smooth but realistic skin texture. Soft glow from flash lighting. Natural highlights on cheekbones, shoulders and chest. Subtle makeup shine without plastic effect.
+
+Lighting:
+Nighttime flash photography look. Strong frontal flash illuminating the subject clearly. Background darker with soft bokeh city lights visible through car windows. High contrast between subject and background, realistic light falloff.
+
+Background:
+Car interior at night. Dark upholstery seats, door panel visible. Outside city lights blurred, creating a nightlife atmosphere.
+
+Render & quality:
+Ultra-realistic, photorealistic look. Blender Cycles render style, cinematic clarity, HDR, 8K resolution, sharp focus on face and outfit, realistic fabric and skin shaders.
+
+Negative prompt:
+Cartoon, anime, doll-like face, over-smoothing, plastic skin, exaggerated anatomy, distorted hands, extra fingers, low resolution, blur, fantasy lighting.</pre>
+      <button onclick="copyFallback('prompt1')">Copiar Prompt</button>
+      <div class="hint">Se o botão não funcionar, selecione o texto acima e copie manualmente.</div>
+    </div>
+
+  </div>
+
+  <footer>
+    © Prompts by Tezza — Conteúdo protegido. Não redistribuir.
+  </footer>
+
+  <script>
+    function copyFallback(id) {
+      const el = document.getElementById(id);
+      const range = document.createRange();
+      range.selectNodeContents(el);
+      const selection = window.getSelection();
+      selection.removeAllRanges();
+      selection.addRange(range);
+      try {
+        document.execCommand('copy');
+        alert('Prompt selecionado e copiado!');
+      } catch (err) {
+        alert('Não foi possível copiar automaticamente. Copie manualmente.');
+      }
+      selection.removeAllRanges();
+    }
+  </script>
+
+</body>
+</html>
+
+
