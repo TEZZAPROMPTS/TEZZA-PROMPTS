@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prompts by Tezza</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0f0f0f;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      padding: 30px 20px;
+      text-align: center;
+      border-bottom: 1px solid #222;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+    header p {
+      margin-top: 10px;
+      color: #aaa;
+      font-size: 0.95rem;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .prompt-box {
+      background: #151515;
+      border: 1px solid #262626;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 25px;
+      position: relative;
+    }
+    .prompt-title {
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+    pre {
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      background: #0d0d0d;
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid #222;
+      font-size: 0.9rem;
+      line-height: 1.4;
+      user-select: text;
+    }
+    button {
+      margin-top: 12px;
+      background: #ffffff;
+      color: #000000;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.2s ease;
+    }
+    button:hover {
+      background: #e0e0e0;
+    }
+    .hint {
+      margin-top: 10px;
+      font-size: 0.8rem;
+      color: #888;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.8rem;
+      color: #777;
+      border-top: 1px solid #222;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Prompts by Tezza</h1>
+    <p>Página oficial para copiar prompts • Uso pessoal</p>
+  </header>
+
+  <div class="container">
+
+    <div class="prompt-box">
+      <div class="prompt-title">TEZZA PROMPTS</div>
+      <pre id="prompt1">(TEZZA PROMPTS)
+marque @tezza.vu
+
+site: /dreamina.capcut.com/
+
+Ultra-realistic cinematic female fashion portrait — Blender Cycles render
+
+Camera & composition:
+Vertical medium-full body portrait, framed from upper thighs to slightly above the head. Camera positioned at chest-to-eye level, straight-on angle, preserving natural proportions and realistic lens compression. Subject centered in frame with clean foreground separation.
+
+Pose & body orientation:
+Subject standing confidently, body facing forward. One arm raised with the hand gently touching the hair near the head, elbow bent outward. Other arm relaxed down along the body. Hips subtly shifted, creating a soft S-curve posture. Legs naturally positioned, one slightly forward for balance and elegance.
+
+Head & facial expression:
+Head upright with a subtle tilt. Calm, confident facial expression with a neutral gaze directed straight at the camera. Lips softly closed with a composed, fashion-editorial attitude. Facial proportions and expression preserved from the reference.
+
+Hair:
+Long blonde hair, natural golden-blonde tone. Hair styled in loose, soft waves, parted near the center, falling naturally over both shoulders and down the back. Same volume, curl pattern, and flow as the reference image, with realistic strand definition and gentle movement.
+
+Outfit:
+Textured knit beachwear ensemble in warm nude/sand tones. High-neck halter-style bodysuit with a central vertical cutout at the chest. Matching wrap skirt tied at the hip, creating an elegant drape and soft fabric folds. Fabric texture clearly visible with realistic weave detail.
+
+Accessories:
+Minimal jewelry: thin bracelet on the wrist. No visible piercings. Clean, refined styling.
+
+Skin & makeup:
+Fair to lightly warm skin tone with realistic texture and subtle natural highlights. Makeup refined and elegant: softly defined brows, neutral eyeshadow, subtle eyeliner, natural lashes, and deep rose/nude lipstick. Skin pores and light imperfections preserved for realism.
+
+Environment:
+Outdoor beachside or rustic resort setting. Background features a rope net structure and a thatched-roof building with wooden furniture. Ground partially visible with sand and green flooring. Background softly blurred to maintain focus on the subject.
+
+Lighting:
+Natural daylight with soft, diffused sunlight. Even illumination across the body with gentle shadows defining contours. Warm color balance enhancing skin tones and fabric texture.
+
+Mood & atmosphere:
+Elegant, confident, and coastal. Fashion-forward beach editorial aesthetic with a refined, natural presence.
+
+Style & quality:
+Ultra-realistic 3D render, Blender Cycles lighting and materials, cinematic photography look, HDR, sharp focus, 8K detail, realistic skin and fabric textures, IMVU / Second Life–compatible realism.
+
+Negative prompt:
+Cartoon, anime, stylized, plastic skin, over-smoothing, exaggerated curves, distorted anatomy, harsh shadows, flat lighting, noise, blur, painterly effect, watermark, text.</pre>
+      <button onclick="copyFallback('prompt1')">Copiar Prompt</button>
+      <div class="hint">Se o botão não funcionar, selecione o texto acima e copie manualmente.</div>
+    </div>
+
+  </div>
+
+  <footer>
+    © Prompts by Tezza — Conteúdo protegido. Não redistribuir.
+  </footer>
+
+  <script>
+    function copyFallback(id) {
+      const el = document.getElementById(id);
+      const range = document.createRange();
+      range.selectNodeContents(el);
+      const selection = window.getSelection();
+      selection.removeAllRanges();
+      selection.addRange(range);
+      try {
+        document.execCommand('copy');
+        alert('Prompt selecionado e copiado!');
+      } catch (err) {
+        alert('Não foi possível copiar automaticamente. Copie manualmente.');
+      }
+      selection.removeAllRanges();
+    }
+  </script>
+
+</body>
+</html>
+
+
