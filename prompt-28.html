@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prompts by Tezza</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0f0f0f;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      padding: 30px 20px;
+      text-align: center;
+      border-bottom: 1px solid #222;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+    header p {
+      margin-top: 10px;
+      color: #aaa;
+      font-size: 0.95rem;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .prompt-box {
+      background: #151515;
+      border: 1px solid #262626;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 25px;
+      position: relative;
+    }
+    .prompt-title {
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+    pre {
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      background: #0d0d0d;
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid #222;
+      font-size: 0.9rem;
+      line-height: 1.4;
+      user-select: text;
+    }
+    button {
+      margin-top: 12px;
+      background: #ffffff;
+      color: #000000;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.2s ease;
+    }
+    button:hover {
+      background: #e0e0e0;
+    }
+    .hint {
+      margin-top: 10px;
+      font-size: 0.8rem;
+      color: #888;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.8rem;
+      color: #777;
+      border-top: 1px solid #222;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Prompts by Tezza</h1>
+    <p>Página oficial para copiar prompts • Uso pessoal</p>
+  </header>
+
+  <div class="container">
+
+    <div class="prompt-box">
+      <div class="prompt-title">TEZZA PROMPTS</div>
+      <pre id="prompt1">(TEZZA PROMPTS)
+marque @tezza.vu
+
+site: /dreamina.capcut.com/
+
+Ultra-realistic cinematic lifestyle fashion portrait — Blender Cycles render
+
+Camera & composition
+Vertical medium-full body shot, framed from upper thighs to head. Three-quarter side profile pose, subject angled slightly to the left while turning the head toward the camera. Camera positioned at chest height, eye-level perspective, preserving natural proportions and realistic lens compression. Subject placed slightly off-center, allowing environment visibility.
+
+Subject & pose
+Female subject standing beside a pool table indoors. Body turned sideways, hips subtly angled, shoulders relaxed. One hand holding a wooden pool cue vertically, the other holding a billiard ball close to the waist. Pose confident, casual, and sensual without exaggeration. Direct, calm gaze toward the camera.
+
+Hair
+Blonde hair, shoulder-length to slightly longer, wet and naturally textured, loose strands framing the face. Slightly tousled appearance, realistic moisture shine. No stylization.
+
+Headwear
+Straw cowboy-style hat with natural woven texture, warm beige tones, sitting naturally on the head.
+
+Face & expression
+Soft yet confident facial expression. Natural glam makeup with subtle contouring, warm blush, defined brows, and neutral glossy lips. Skin texture visible with realistic highlights.
+
+Outfit & accessories
+Red string bikini with triangle top and low-rise bottoms, thin straps tied at the neck and hips. Gold-toned bracelets and minimal jewelry on wrists. Pool cue made of natural wood with realistic grain. Billiard ball held in hand.
+
+Body & skin
+Slim, athletic feminine body with natural curves. Warm sun-kissed skin tone with realistic sheen and subtle highlights, visible skin texture, no smoothing.
+
+Environment & background
+Indoor leisure/game room with modern tropical architecture. Wooden ceiling beams with recessed lighting. Large windows revealing lush green tropical foliage outside. Pool table in the foreground with billiard balls scattered on the felt. Additional table games visible softly in the background.
+
+Lighting
+Warm indoor ambient lighting combined with natural daylight entering through windows. Soft highlights on skin and hair, gentle shadows defining body contours. Cinematic light balance with warm tones.
+
+Mood & atmosphere
+Relaxed luxury, tropical resort lifestyle aesthetic. Casual, confident, sensual editorial vibe. Natural, effortless elegance.
+
+Rendering style & quality
+Ultra-realistic, cinematic lighting, Blender Cycles render. HDR, 8K resolution, sharp focus on subject, shallow depth of field. Physically accurate materials, realistic skin shader with visible pores and texture. IMVU / Second Life realism reference.
+
+Negative prompt
+Cartoon, anime, painterly, stylized, low resolution, blurry, plastic skin, exaggerated curves, harsh shadows, overexposed highlights, artificial lighting, distorted anatomy, noise, artifacts.</pre>
+      <button onclick="copyFallback('prompt1')">Copiar Prompt</button>
+      <div class="hint">Se o botão não funcionar, selecione o texto acima e copie manualmente.</div>
+    </div>
+
+  </div>
+
+  <footer>
+    © Prompts by Tezza — Conteúdo protegido. Não redistribuir.
+  </footer>
+
+  <script>
+    function copyFallback(id) {
+      const el = document.getElementById(id);
+      const range = document.createRange();
+      range.selectNodeContents(el);
+      const selection = window.getSelection();
+      selection.removeAllRanges();
+      selection.addRange(range);
+      try {
+        document.execCommand('copy');
+        alert('Prompt selecionado e copiado!');
+      } catch (err) {
+        alert('Não foi possível copiar automaticamente. Copie manualmente.');
+      }
+      selection.removeAllRanges();
+    }
+  </script>
+
+</body>
+</html>
+
