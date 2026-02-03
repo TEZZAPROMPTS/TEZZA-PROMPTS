@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prompts by Tezza</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0f0f0f;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      padding: 30px 20px;
+      text-align: center;
+      border-bottom: 1px solid #222;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+    header p {
+      margin-top: 10px;
+      color: #aaa;
+      font-size: 0.95rem;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .prompt-box {
+      background: #151515;
+      border: 1px solid #262626;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 25px;
+      position: relative;
+    }
+    .prompt-title {
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+    pre {
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      background: #0d0d0d;
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid #222;
+      font-size: 0.9rem;
+      line-height: 1.4;
+      user-select: text;
+    }
+    button {
+      margin-top: 12px;
+      background: #ffffff;
+      color: #000000;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.2s ease;
+    }
+    button:hover {
+      background: #e0e0e0;
+    }
+    .hint {
+      margin-top: 10px;
+      font-size: 0.8rem;
+      color: #888;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.8rem;
+      color: #777;
+      border-top: 1px solid #222;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Prompts by Tezza</h1>
+    <p>Página oficial para copiar prompts • Uso pessoal</p>
+  </header>
+
+  <div class="container">
+
+    <div class="prompt-box">
+      <div class="prompt-title">TEZZA PROMPTS</div>
+      <pre id="prompt1">(TEZZA PROMPTS)
+marque @tezza.vu
+
+site: /dreamina.capcut.com/
+
+Ultra-realistic cinematic female fashion portrait — Blender Cycles render
+
+Camera & composition:
+Vertical medium-full shot, framed from ground level to head. Camera positioned slightly below waist height, creating a subtle low-angle perspective that elongates the legs. Subject centered slightly to the right, with strong leading lines from the parking garage walls guiding focus toward the subject. Natural lens compression, realistic proportions.
+
+Pose & posture:
+Subject in a deep squat pose, heels grounded, knees bent and close together. Torso upright with a slight forward lean. One arm resting casually on the knee, the other hand lifted mid-gesture near the face, creating a candid, fashion-editorial feel. Confident, composed posture.
+
+Face & expression:
+Neutral-to-confident expression with softly parted lips. Head turned slightly to the side, gaze directed forward through sunglasses. Facial structure, jawline, lips and nose strictly respecting the reference image identity.
+
+Hair:
+Blonde hair, warm golden blonde tone. Long, loose waves falling past the shoulders. Middle part with natural strands and loose flyaway hairs framing the face, some hair falling forward over the shoulders for realism. No excessive volume or stylization.
+
+Eyes & eyewear:
+Eyes respecting the original reference shape and spacing. Wearing slim rectangular black sunglasses with dark lenses, matte finish.
+
+Outfit:
+Black long-sleeve fitted crop top with smooth matte fabric. Black mini skirt fitted at the hips. Clean, minimal silhouette emphasizing a sleek, modern aesthetic.
+
+Accessories:
+Black quilted luxury shoulder bag placed on the ground in front of the subject, gold chain strap and metallic logo detail. Black minimal-strap heeled sandals. Subtle gold bracelet on wrist.
+
+Body & proportions:
+Slim, toned feminine body with realistic anatomy. Natural thigh and leg volume. No exaggeration or distortion.
+
+Skin & texture:
+Natural warm tan skin tone with visible skin texture. Subtle highlights on legs and arms. Realistic pores and soft sheen, no plastic or over-smoothed look.
+
+Lighting:
+Artificial overhead lighting typical of an underground parking garage. Soft neutral-white fluorescent lights creating mild shadows beneath the subject. Balanced exposure with cinematic contrast, realistic shadow falloff.
+
+Environment & background:
+Minimalist underground parking garage with smooth concrete floor, white painted walls and exposed ceiling panels. Clean, modern industrial atmosphere. Background softly blurred, preserving depth without losing environmental context.
+
+Render & quality:
+Ultra-realistic, photorealistic output. Blender Cycles render. Cinematic lighting, HDR, 8K resolution, sharp focus, realistic fabric, skin and hair shaders.
+
+Negative prompt:
+Cartoon, anime, doll-like face, over-smoothed skin, plastic texture, exaggerated curves, distorted anatomy, extra limbs, incorrect pose, unrealistic lighting, blur, low resolution.</pre>
+      <button onclick="copyFallback('prompt1')">Copiar Prompt</button>
+      <div class="hint">Se o botão não funcionar, selecione o texto acima e copie manualmente.</div>
+    </div>
+
+  </div>
+
+  <footer>
+    © Prompts by Tezza — Conteúdo protegido. Não redistribuir.
+  </footer>
+
+  <script>
+    function copyFallback(id) {
+      const el = document.getElementById(id);
+      const range = document.createRange();
+      range.selectNodeContents(el);
+      const selection = window.getSelection();
+      selection.removeAllRanges();
+      selection.addRange(range);
+      try {
+        document.execCommand('copy');
+        alert('Prompt selecionado e copiado!');
+      } catch (err) {
+        alert('Não foi possível copiar automaticamente. Copie manualmente.');
+      }
+      selection.removeAllRanges();
+    }
+  </script>
+
+</body>
+</html>
+
+
