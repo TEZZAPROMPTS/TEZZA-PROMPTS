@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prompts by Tezza</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0f0f0f;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      padding: 30px 20px;
+      text-align: center;
+      border-bottom: 1px solid #222;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+    header p {
+      margin-top: 10px;
+      color: #aaa;
+      font-size: 0.95rem;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .prompt-box {
+      background: #151515;
+      border: 1px solid #262626;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 25px;
+      position: relative;
+    }
+    .prompt-title {
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+    pre {
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      background: #0d0d0d;
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid #222;
+      font-size: 0.9rem;
+      line-height: 1.4;
+      user-select: text;
+    }
+    button {
+      margin-top: 12px;
+      background: #ffffff;
+      color: #000000;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.2s ease;
+    }
+    button:hover {
+      background: #e0e0e0;
+    }
+    .hint {
+      margin-top: 10px;
+      font-size: 0.8rem;
+      color: #888;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.8rem;
+      color: #777;
+      border-top: 1px solid #222;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Prompts by Tezza</h1>
+    <p>Página oficial para copiar prompts • Uso pessoal</p>
+  </header>
+
+  <div class="container">
+
+    <div class="prompt-box">
+      <div class="prompt-title">TEZZA PROMPTS</div>
+      <pre id="prompt1">(TEZZA PROMPTS)
+marque @tezza.vu
+
+site: /dreamina.capcut.com/
+
+Ultra-realistic cinematic female lifestyle fashion portrait — Blender Cycles render
+
+Camera & composition:
+Vertical full-body shot with slight low-angle perspective. Camera positioned at knee level, angled subtly upward, maintaining realistic proportions and natural lens compression. Subject centered, squatting on a stone edge with heels elevated, knees bent symmetrically. Framing captures from head to feet with balanced negative space on both sides.
+
+Pose & body language:
+Elegant, relaxed squatting pose. One arm resting loosely on the knee, the other raised holding a wine glass near the lips. Spine upright with a soft natural curve. Body language conveys calm confidence, leisure and refinement.
+
+Face & identity:
+Adult female with delicate facial features and symmetrical structure. Neutral, composed expression. Eyes looking slightly forward, focused. Natural makeup with soft highlights, subtle blush and glossy lips. Realistic skin texture with visible pores and gentle glow.
+
+Hair details:
+Short to medium-length blonde hair, slicked back and slightly wet-looking, tucked behind the ears. Clean strands with soft golden reflections under ambient light. Hair color remains the only modified attribute.
+
+Outfit & styling:
+Mint green bikini set with thin straps. Bandeau-style top featuring a central white floral appliqué. Matching low-rise bikini bottom. Transparent high-heel sandals with clear straps and acrylic heels. Minimal gold jewelry (small hoop earrings).
+
+Body & anatomy:
+Slender, toned feminine body. Defined legs and arms, subtle abdominal definition. Natural skin folds at joints and realistic muscle tension due to squatting pose. Proportions remain fully faithful to the reference.
+
+Lighting & atmosphere:
+Soft natural daylight with balanced shadows. Diffused sunlight creating gentle highlights on skin and fabric. Cinematic color grading with warm undertones and natural contrast. HDR lighting, global illumination, ultra-sharp focus, 8K realism.
+
+Environment & background:
+Elegant garden setting beside a historic stone manor. Lush green grass, colorful flower beds with purple, yellow and red blooms. Stone pathway extending into the background. Architectural details softly blurred for depth.
+
+Mood & aesthetic:
+Luxury summer lifestyle, refined, serene and editorial. European garden elegance with a relaxed high-fashion vibe.</pre>
+      <button onclick="copyFallback('prompt1')">Copiar Prompt</button>
+      <div class="hint">Se o botão não funcionar, selecione o texto acima e copie manualmente.</div>
+    </div>
+
+  </div>
+
+  <footer>
+    © Prompts by Tezza — Conteúdo protegido. Não redistribuir.
+  </footer>
+
+  <script>
+    function copyFallback(id) {
+      const el = document.getElementById(id);
+      const range = document.createRange();
+      range.selectNodeContents(el);
+      const selection = window.getSelection();
+      selection.removeAllRanges();
+      selection.addRange(range);
+      try {
+        document.execCommand('copy');
+        alert('Prompt selecionado e copiado!');
+      } catch (err) {
+        alert('Não foi possível copiar automaticamente. Copie manualmente.');
+      }
+      selection.removeAllRanges();
+    }
+  </script>
+
+</body>
+</html>
+
