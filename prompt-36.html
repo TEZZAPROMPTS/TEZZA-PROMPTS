@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prompts by Tezza</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0f0f0f;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      padding: 30px 20px;
+      text-align: center;
+      border-bottom: 1px solid #222;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+    header p {
+      margin-top: 10px;
+      color: #aaa;
+      font-size: 0.95rem;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .prompt-box {
+      background: #151515;
+      border: 1px solid #262626;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 25px;
+      position: relative;
+    }
+    .prompt-title {
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+    pre {
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      background: #0d0d0d;
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid #222;
+      font-size: 0.9rem;
+      line-height: 1.4;
+      user-select: text;
+    }
+    button {
+      margin-top: 12px;
+      background: #ffffff;
+      color: #000000;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.2s ease;
+    }
+    button:hover {
+      background: #e0e0e0;
+    }
+    .hint {
+      margin-top: 10px;
+      font-size: 0.8rem;
+      color: #888;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.8rem;
+      color: #777;
+      border-top: 1px solid #222;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Prompts by Tezza</h1>
+    <p>Página oficial para copiar prompts • Uso pessoal</p>
+  </header>
+
+  <div class="container">
+
+    <div class="prompt-box">
+      <div class="prompt-title">TEZZA PROMPTS</div>
+      <pre id="prompt1">(TEZZA PROMPTS)
+marque @tezza.vu
+
+site: /dreamina.capcut.com/
+
+Ultra-realistic cinematic female fashion portrait — Blender Cycles render
+
+Camera & composition:
+Vertical full-body shot with a strong low-angle perspective. Camera positioned close to ground level, angled upward, emphasizing legs, hips and dynamic posture. Subject centered, knees on the sandy ground, legs slightly apart, creating a powerful triangular stance. Arms raised above the head, elbows bent, hands resting loosely behind the head. Perspective, proportions and lens compression strictly matching the reference image.
+
+Pose & body language:
+Confident, sensual and expressive pose. Torso slightly arched forward, abdomen engaged, shoulders open. Head tilted back subtly, chin lifted, conveying freedom and confidence. Knees grounded firmly in the sand, boots planted with visible texture and weight.
+
+Face & identity:
+Adult female with soft yet strong facial features. Eyes gently closed or half-closed, relaxed expression. Defined brows, long lashes, warm-toned eyeshadow. Natural glowing skin with visible pores and realistic texture. Facial identity strictly preserved from the reference.
+
+Hair details:
+Long blonde hair, loose and flowing. Hair lifted and slightly scattered by a natural breeze, with strands crossing the face and forehead. Combination of smooth lengths and subtle flyaway strands for realism. Sunlight creating golden highlights and depth throughout the hair.
+
+Outfit & styling:
+Brown suede or leather sleeveless zip-front crop top with high neckline, structured fit. Matching low-rise mini skirt in the same earthy tone. Decorative belt with metallic buckle and layered textures wrapped around the hips. Western-style black boots with worn leather texture. Minimal jewelry, small earrings only.
+
+Body & anatomy:
+Toned, athletic feminine body. Defined thighs, natural muscle tension visible due to pose. Soft abdominal definition with realistic skin folds and shadow transitions. Proportions remain fully realistic and reference-accurate.
+
+Lighting & atmosphere:
+Strong natural daylight under a clear blue sky. Direct sunlight casting crisp shadows on the ground and body contours. Warm color grading with cinematic contrast. HDR lighting, global illumination, ultra-sharp focus, 8K resolution, Blender Cycles realism.
+
+Environment & background:
+Outdoor desert-like landscape with sandy ground, sparse green bushes and distant rock formations. Clear sky gradient from deep blue to lighter tones near the horizon. Background slightly softened to maintain focus on the subject.
+
+Mood & aesthetic:
+Editorial, fashion-forward, bold and sun-drenched. Western-inspired, free-spirited, confident energy.</pre>
+      <button onclick="copyFallback('prompt1')">Copiar Prompt</button>
+      <div class="hint">Se o botão não funcionar, selecione o texto acima e copie manualmente.</div>
+    </div>
+
+  </div>
+
+  <footer>
+    © Prompts by Tezza — Conteúdo protegido. Não redistribuir.
+  </footer>
+
+  <script>
+    function copyFallback(id) {
+      const el = document.getElementById(id);
+      const range = document.createRange();
+      range.selectNodeContents(el);
+      const selection = window.getSelection();
+      selection.removeAllRanges();
+      selection.addRange(range);
+      try {
+        document.execCommand('copy');
+        alert('Prompt selecionado e copiado!');
+      } catch (err) {
+        alert('Não foi possível copiar automaticamente. Copie manualmente.');
+      }
+      selection.removeAllRanges();
+    }
+  </script>
+
+</body>
+</html>
+
+
