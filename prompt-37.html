@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prompts by Tezza</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0f0f0f;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      padding: 30px 20px;
+      text-align: center;
+      border-bottom: 1px solid #222;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+    header p {
+      margin-top: 10px;
+      color: #aaa;
+      font-size: 0.95rem;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .prompt-box {
+      background: #151515;
+      border: 1px solid #262626;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 25px;
+      position: relative;
+    }
+    .prompt-title {
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+    pre {
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      background: #0d0d0d;
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid #222;
+      font-size: 0.9rem;
+      line-height: 1.4;
+      user-select: text;
+    }
+    button {
+      margin-top: 12px;
+      background: #ffffff;
+      color: #000000;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.2s ease;
+    }
+    button:hover {
+      background: #e0e0e0;
+    }
+    .hint {
+      margin-top: 10px;
+      font-size: 0.8rem;
+      color: #888;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.8rem;
+      color: #777;
+      border-top: 1px solid #222;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Prompts by Tezza</h1>
+    <p>Página oficial para copiar prompts • Uso pessoal</p>
+  </header>
+
+  <div class="container">
+
+    <div class="prompt-box">
+      <div class="prompt-title">TEZZA PROMPTS</div>
+      <pre id="prompt1">(TEZZA PROMPTS)
+marque @tezza.vu
+
+site: /dreamina.capcut.com/
+
+Ultra-realistic cinematic female western fashion portrait — Blender Cycles render
+
+Camera & composition:
+Vertical medium-full shot, framed from mid-thighs to slightly above the head. Subject leaning casually against the back of a vintage pickup truck. One arm raised with the hand resting on the brim of the hat, the other arm relaxed at the side with a soft bend at the elbow. Camera positioned at waist-to-chest level, slightly low-angle, preserving original perspective, proportions, and lens compression.
+
+Subject & face identity:
+Adult female character with strong yet feminine facial structure. Almond-shaped eyes with defined lashes and warm gaze looking slightly off-camera. Sculpted cheekbones, smooth skin texture with visible pores, full lips with natural nude gloss. Expression confident, relaxed and subtly sultry. Facial identity strictly preserved from the reference image.
+
+Hair details:
+Light blonde hair, long and loose, with natural waves falling over the shoulders and down the back. Hair partially tucked behind the ears, with subtle flyaway strands. Realistic shine and soft movement, reacting gently to outdoor breeze.
+
+Headwear & accessories:
+Brown suede cowboy hat with structured brim and natural wear texture. Thick statement bangles on the wrist. Minimal additional jewelry to keep a western-inspired aesthetic.
+
+Outfit & styling:
+Black western-inspired halter top with sheer fabric and intricate beadwork, featuring long fringe strands cascading down the torso. Black lace mini skirt with subtle transparency and textured pattern. Leather belt with metallic buckle. Western boots partially visible, adding authenticity to the look.
+
+Body & anatomy:
+Athletic, toned feminine body with natural curves. Defined waist, visible abdominal tone, smooth thighs. Accurate anatomy with realistic skin shading and subtle specular highlights on shoulders, arms and legs.
+
+Lighting & render style:
+Strong natural daylight with warm sun tones. Directional sunlight casting defined yet soft shadows across the body and truck. Cinematic contrast, HDR lighting, global illumination enabled. Ultra-realistic skin shader, sharp focus, 8K resolution, Blender Cycles render.
+
+Background & environment:
+Outdoor desert-like setting with clear blue sky. Vintage blue pickup truck as the main backdrop, showing metallic textures, paint wear and reflections. Distant natural elements softly blurred to maintain subject focus..</pre>
+      <button onclick="copyFallback('prompt1')">Copiar Prompt</button>
+      <div class="hint">Se o botão não funcionar, selecione o texto acima e copie manualmente.</div>
+    </div>
+
+  </div>
+
+  <footer>
+    © Prompts by Tezza — Conteúdo protegido. Não redistribuir.
+  </footer>
+
+  <script>
+    function copyFallback(id) {
+      const el = document.getElementById(id);
+      const range = document.createRange();
+      range.selectNodeContents(el);
+      const selection = window.getSelection();
+      selection.removeAllRanges();
+      selection.addRange(range);
+      try {
+        document.execCommand('copy');
+        alert('Prompt selecionado e copiado!');
+      } catch (err) {
+        alert('Não foi possível copiar automaticamente. Copie manualmente.');
+      }
+      selection.removeAllRanges();
+    }
+  </script>
+
+</body>
+</html>
+
+
