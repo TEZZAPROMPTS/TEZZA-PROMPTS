@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prompts by Tezza</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0f0f0f;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      padding: 30px 20px;
+      text-align: center;
+      border-bottom: 1px solid #222;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+    header p {
+      margin-top: 10px;
+      color: #aaa;
+      font-size: 0.95rem;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .prompt-box {
+      background: #151515;
+      border: 1px solid #262626;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 25px;
+      position: relative;
+    }
+    .prompt-title {
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+    pre {
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      background: #0d0d0d;
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid #222;
+      font-size: 0.9rem;
+      line-height: 1.4;
+      user-select: text;
+    }
+    button {
+      margin-top: 12px;
+      background: #ffffff;
+      color: #000000;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.2s ease;
+    }
+    button:hover {
+      background: #e0e0e0;
+    }
+    .hint {
+      margin-top: 10px;
+      font-size: 0.8rem;
+      color: #888;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.8rem;
+      color: #777;
+      border-top: 1px solid #222;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Prompts by Tezza</h1>
+    <p>Página oficial para copiar prompts • Uso pessoal</p>
+  </header>
+
+  <div class="container">
+
+    <div class="prompt-box">
+      <div class="prompt-title">TEZZA PROMPTS</div>
+      <pre id="prompt1">(TEZZA PROMPTS)
+marque @tezza.vu
+
+site: /dreamina.capcut.com/
+
+Ultra-realistic cinematic couple portrait — Blender Cycles render
+Camera & composition
+
+Vertical portrait orientation (9:16). Eye-level camera angle, slightly tilted to capture an intimate street moment. Medium-full body framing, from mid-thigh to head, with both subjects centered in the frame. Natural handheld feeling, as if captured spontaneously during an outdoor event. Balanced composition with the couple as the clear focal point while background figures remain softly visible.
+
+Pose & interaction
+
+Young couple standing very close, bodies pressed together.
+The woman is positioned slightly to the left, turned toward the man. Her left arm is wrapped around the back of his neck, pulling him closer. Her right hand gently cups his cheek and jawline, fingers spread softly along his face.
+The man faces her directly, torso slightly angled toward the camera. One arm wraps firmly around her lower back and waist, pulling her in. His other hand rests near his hip, holding a small crossbody pouch.
+They are kissing naturally, lips softly touching, conveying affection and intimacy. The interaction feels genuine, spontaneous, and emotionally warm.
+
+Head position & gaze
+
+Both heads tilted slightly toward each other to meet in the kiss. Eyes closed or partially closed. No forced posing — the moment feels candid and real.
+
+Facial expression
+
+Soft, affectionate, and intimate. Relaxed facial muscles. No exaggerated expressions.
+
+Female subject — identity & appearance
+
+Facial structure must remain faithful to the reference image. No reshaping or beautification.
+
+Hair:
+Natural blonde hair Long, flowing hair reaching past the chest. Hair is loose, slightly wavy, with natural volume and subtle movement caused by outdoor air. Individual strands visible. Realistic texture and weight, no artificial shine.
+
+Outfit:
+White bandeau-style top, snugly fitted. Pink tulle skirt with multiple soft, semi-transparent layers creating volume and a playful silhouette. Fabric shows realistic folds and light-catching texture. Pink mesh arm warmer/glove on one arm. Small pink headband with horn-like festive carnival elements.
+
+Skin:
+Warm tan skin tone with visible natural texture. Slight sheen from heat and outdoor conditions. Realistic pores and subtle imperfections.
+
+Male subject — appearance
+
+Athletic build with defined arms and shoulders. Shirtless torso with natural skin texture and subtle muscle definition. Short, dark hair with a clean fade. Wearing a pink tulle skirt matching the woman’s outfit, creating a coordinated, playful look. Small crossbody bag worn across the chest. Natural skin highlights from sunlight.
+
+Environment
+
+Outdoor urban street setting during a daytime festival or parade. Asphalt street with visible wear. Electrical poles and overhead cables in the background. Low-rise residential and commercial buildings visible. Several people in casual clothing standing and walking in the background, slightly out of focus. Festive, crowded atmosphere.
+
+Lighting
+
+Natural daylight under a partly cloudy sky. Soft diffused sunlight with mild shadows. Even exposure across skin tones. No harsh contrast. Slight haze in the air, adding realism.
+
+Mood & atmosphere
+
+Joyful, affectionate, festive, and spontaneous. A candid moment of love captured in the middle of a lively street celebration. Youthful energy mixed with tenderness.
+
+Style & render quality
+
+Ultra-photorealistic realism. Blender Cycles render. IMVU / Second Life–level realism.
+8K resolution, HDR. Sharp focus on the couple with natural depth of field.
+Physically accurate skin, hair, fabric, and lighting.
+No stylization, no CGI look, no filters, no smoothing.</pre>
+      <button onclick="copyFallback('prompt1')">Copiar Prompt</button>
+      <div class="hint">Se o botão não funcionar, selecione o texto acima e copie manualmente.</div>
+    </div>
+
+  </div>
+
+  <footer>
+    © Prompts by Tezza — Conteúdo protegido. Não redistribuir.
+  </footer>
+
+  <script>
+    function copyFallback(id) {
+      const el = document.getElementById(id);
+      const range = document.createRange();
+      range.selectNodeContents(el);
+      const selection = window.getSelection();
+      selection.removeAllRanges();
+      selection.addRange(range);
+      try {
+        document.execCommand('copy');
+        alert('Prompt selecionado e copiado!');
+      } catch (err) {
+        alert('Não foi possível copiar automaticamente. Copie manualmente.');
+      }
+      selection.removeAllRanges();
+    }
+  </script>
+
+</body>
+</html>
+
+
