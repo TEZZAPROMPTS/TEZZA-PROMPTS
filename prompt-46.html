@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prompts by Tezza</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0f0f0f;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      padding: 30px 20px;
+      text-align: center;
+      border-bottom: 1px solid #222;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+    header p {
+      margin-top: 10px;
+      color: #aaa;
+      font-size: 0.95rem;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .prompt-box {
+      background: #151515;
+      border: 1px solid #262626;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 25px;
+      position: relative;
+    }
+    .prompt-title {
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+    pre {
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      background: #0d0d0d;
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid #222;
+      font-size: 0.9rem;
+      line-height: 1.4;
+      user-select: text;
+    }
+    button {
+      margin-top: 12px;
+      background: #ffffff;
+      color: #000000;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.2s ease;
+    }
+    button:hover {
+      background: #e0e0e0;
+    }
+    .hint {
+      margin-top: 10px;
+      font-size: 0.8rem;
+      color: #888;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.8rem;
+      color: #777;
+      border-top: 1px solid #222;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Prompts by Tezza</h1>
+    <p>Página oficial para copiar prompts • Uso pessoal</p>
+  </header>
+
+  <div class="container">
+
+    <div class="prompt-box">
+      <div class="prompt-title">TEZZA PROMPTS</div>
+      <pre id="prompt1">(TEZZA PROMPTS)
+marque @tezza.vu
+
+site: /dreamina.capcut.com/
+
+Ultra-realistic cinematic male portrait — Blender Cycles render
+Camera & composition
+
+Vertical portrait orientation (9:16). Medium-close portrait framed from upper chest to just above the head. Camera positioned slightly above chest level and aligned straight-on with a subtle natural perspective. Subject centered in frame. Tight crop emphasizing facial features, eyes, beard texture, and headwear. Shallow depth of field with the face in razor-sharp focus and the background softly blurred.
+
+Pose & body positioning (reference-locked)
+
+Male subject seated inside a car. Upper body relaxed, leaning slightly back against the seat. Right arm raised with hand resting on the head, fingers partially visible near the cap. Left arm relaxed and out of frame. Posture casual, confident, and natural.
+
+Head position & gaze
+
+Head facing forward with a slight tilt. Gaze directed straight toward the camera lens. Eyes relaxed and expressive, creating a calm, self-assured presence.
+
+Facial expression
+
+Neutral to subtly confident expression. Lips gently closed with a relaxed mouth shape. Facial muscles natural and at ease, conveying calm masculinity.
+
+Face & identity (reference-based, do not alter)
+
+Face must strictly preserve the facial identity from the reference image. Maintain exact facial structure, cheekbone definition, jawline, nose shape, lip volume, eyebrow thickness, and eye spacing. No facial redesign, no beautification, no stylization. Natural realism only.
+
+Hair & facial hair (reference-accurate)
+
+Short dark hair mostly covered by a black baseball cap worn backward. Cap strap and metal buckle clearly visible at the forehead. Well-groomed short beard and mustache with clean edges and natural density. Individual beard hairs visible with realistic variation and texture. Physically accurate hair and beard shader.
+
+Accessories & details
+
+Black baseball cap worn backward with adjustable strap and metallic clasp. Dark smartwatch or fitness watch visible on the wrist. No visible jewelry on the face.
+
+Outfit
+
+Casual white crew-neck T-shirt. Soft cotton fabric with realistic weave texture. Natural fabric folds around the shoulders and chest. Matte fabric shader with subtle light absorption.
+
+Body & physique
+
+Athletic to average masculine build. Broad shoulders visible under the T-shirt. Neck and upper chest naturally proportioned. No exaggeration.
+
+Skin & realism
+
+Medium warm skin tone. Ultra-realistic skin texture with visible pores, fine facial hair stubble, and natural oil highlights on the forehead, nose bridge, cheeks, and lips. Physically accurate subsurface scattering. No over-smoothing, no plastic or artificial look.
+
+Lighting
+
+Natural daylight entering through the car window from the side. Soft directional light illuminating the face, creating gentle highlights on cheekbones, nose, and eyes. Subtle shadows adding depth to facial structure. Balanced exposure with realistic contrast.
+
+Environment
+
+Car interior setting. Visible car seat with muted reddish upholstery. Side window revealing blurred greenery outside, indicating a daytime outdoor environment. Interior elements softly out of focus, ensuring full attention on the subject.
+
+Mood & aesthetic
+
+Relaxed, confident, modern lifestyle mood. Casual masculine elegance. Authentic, spontaneous selfie-like portrait with cinematic polish.
+
+Style & render quality
+
+Ultra-photorealistic 3D realism. Blender Cycles–style render. IMVU / Second Life compatible realism. HDR lighting, 8K resolution, razor-sharp facial focus. Physically accurate shaders for skin, hair, fabric, metal, and glass. No CGI look, no filters, no artificial effects.</pre>
+      <button onclick="copyFallback('prompt1')">Copiar Prompt</button>
+      <div class="hint">Se o botão não funcionar, selecione o texto acima e copie manualmente.</div>
+    </div>
+
+  </div>
+
+  <footer>
+    © Prompts by Tezza — Conteúdo protegido. Não redistribuir.
+  </footer>
+
+  <script>
+    function copyFallback(id) {
+      const el = document.getElementById(id);
+      const range = document.createRange();
+      range.selectNodeContents(el);
+      const selection = window.getSelection();
+      selection.removeAllRanges();
+      selection.addRange(range);
+      try {
+        document.execCommand('copy');
+        alert('Prompt selecionado e copiado!');
+      } catch (err) {
+        alert('Não foi possível copiar automaticamente. Copie manualmente.');
+      }
+      selection.removeAllRanges();
+    }
+  </script>
+
+</body>
+</html>
+
+
