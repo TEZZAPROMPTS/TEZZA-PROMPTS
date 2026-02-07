@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prompts by Tezza</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0f0f0f;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      padding: 30px 20px;
+      text-align: center;
+      border-bottom: 1px solid #222;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+    header p {
+      margin-top: 10px;
+      color: #aaa;
+      font-size: 0.95rem;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .prompt-box {
+      background: #151515;
+      border: 1px solid #262626;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 25px;
+      position: relative;
+    }
+    .prompt-title {
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+    pre {
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      background: #0d0d0d;
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid #222;
+      font-size: 0.9rem;
+      line-height: 1.4;
+      user-select: text;
+    }
+    button {
+      margin-top: 12px;
+      background: #ffffff;
+      color: #000000;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.2s ease;
+    }
+    button:hover {
+      background: #e0e0e0;
+    }
+    .hint {
+      margin-top: 10px;
+      font-size: 0.8rem;
+      color: #888;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.8rem;
+      color: #777;
+      border-top: 1px solid #222;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Prompts by Tezza</h1>
+    <p>Página oficial para copiar prompts • Uso pessoal</p>
+  </header>
+
+  <div class="container">
+
+    <div class="prompt-box">
+      <div class="prompt-title">TEZZA PROMPTS</div>
+      <pre id="prompt1">(TEZZA PROMPTS)
+marque @tezza.vu
+
+site: /dreamina.capcut.com/
+
+Ultra-realistic cinematic female portrait — Blender Cycles render
+Camera & composition
+
+Vertical portrait (9:16). Medium-full body framing from upper thighs to just above the head. Mirror selfie composition. Camera aligned at chest height, slightly angled downward due to handheld smartphone perspective. Subject centered against a textured beige plaster wall. Shallow depth of field with the subject in sharp focus and the background softly blurred.
+
+Pose & body positioning (reference-locked)
+
+Female subject standing with weight shifted onto one leg, creating a natural hip curve. One thigh slightly forward toward the mirror. Left arm relaxed, cardigan slipping off the shoulder. Right arm raised holding a smartphone in front of the face, partially covering it. Posture relaxed and casual, typical of an indoor mirror selfie.
+
+Head position & gaze
+
+Head slightly tilted to the side. Gaze directed toward the smartphone screen. Facial angle preserved exactly from the reference image.
+
+Facial identity & realism (reference-based)
+
+Face must strictly preserve the original facial identity from the reference image. No facial redesign, no beautification, no stylization. Maintain exact proportions of jawline, cheeks, lips, nose, eyes, and eyebrows.
+
+Face clarity & resolution (8K priority)
+
+Ultra-sharp facial rendering in true 8K resolution, even partially obscured by the phone. Visible skin pores, natural texture, fine peach fuzz, subtle imperfections. Eyes with realistic moisture, sharp iris detail, and soft catchlights. No blur, no smoothing, no beauty filters.
+
+Hair (color adjusted to blonde)
+
+Loose, naturally falling hair with soft waves. Color changed to natural blonde, ranging from beige blonde to light golden tones. Hair texture realistic with individual strands, subtle frizz, and natural volume. No artificial shine.
+
+Outfit & branding detail
+
+Tight white fitted bodysuit with a scoop neckline, hugging the torso naturally.
+A clean, minimal Nike swoosh logo printed on the center chest area of the bodysuit, subtle and realistic, consistent with sportswear branding.
+Black high-waisted mini skirt with smooth fabric and natural folds.
+Oversized light gray cardigan worn loosely off one shoulder, soft knit texture clearly visible.
+
+Accessories & objects
+
+Modern smartphone (iPhone-style) held in front of the face, matte dark case with visible camera lenses. No additional accessories.
+
+Body & physique
+
+Curvy feminine physique with defined waist, full hips, and natural thigh volume. Proportions realistic and unexaggerated. Natural body flow consistent with the reference image.
+
+Skin & materials
+
+Warm natural skin tone with realistic subsurface scattering. Visible skin texture, soft highlights on chest, arms, and thighs. No plastic or CGI appearance.
+
+Lighting
+
+Soft indoor ambient lighting. Even light distribution with minimal harsh shadows. Natural reflections on skin and fabric. Neutral white balance.
+
+Environment
+
+Minimalist indoor setting with textured beige plaster wall. No clutter. Clean and neutral environment.
+
+Mood & aesthetic
+
+Casual, modern, lifestyle mirror selfie. Natural confidence with relaxed sensuality. Clean, contemporary fashion aesthetic.
+
+Style & render quality
+
+Ultra-photorealistic render. Blender Cycles realism. HDR lighting. True 8K resolution. Razor-sharp focus. Physically accurate shaders for skin, fabric, hair, and wall texture. IMVU / Second Life compatible realism. No stylization, no filters, no CGI look.</pre>
+      <button onclick="copyFallback('prompt1')">Copiar Prompt</button>
+      <div class="hint">Se o botão não funcionar, selecione o texto acima e copie manualmente.</div>
+    </div>
+
+  </div>
+
+  <footer>
+    © Prompts by Tezza — Conteúdo protegido. Não redistribuir.
+  </footer>
+
+  <script>
+    function copyFallback(id) {
+      const el = document.getElementById(id);
+      const range = document.createRange();
+      range.selectNodeContents(el);
+      const selection = window.getSelection();
+      selection.removeAllRanges();
+      selection.addRange(range);
+      try {
+        document.execCommand('copy');
+        alert('Prompt selecionado e copiado!');
+      } catch (err) {
+        alert('Não foi possível copiar automaticamente. Copie manualmente.');
+      }
+      selection.removeAllRanges();
+    }
+  </script>
+
+</body>
+</html>
+
+
