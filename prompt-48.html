@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prompts by Tezza</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0f0f0f;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      padding: 30px 20px;
+      text-align: center;
+      border-bottom: 1px solid #222;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+    header p {
+      margin-top: 10px;
+      color: #aaa;
+      font-size: 0.95rem;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .prompt-box {
+      background: #151515;
+      border: 1px solid #262626;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 25px;
+      position: relative;
+    }
+    .prompt-title {
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+    pre {
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      background: #0d0d0d;
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid #222;
+      font-size: 0.9rem;
+      line-height: 1.4;
+      user-select: text;
+    }
+    button {
+      margin-top: 12px;
+      background: #ffffff;
+      color: #000000;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.2s ease;
+    }
+    button:hover {
+      background: #e0e0e0;
+    }
+    .hint {
+      margin-top: 10px;
+      font-size: 0.8rem;
+      color: #888;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.8rem;
+      color: #777;
+      border-top: 1px solid #222;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Prompts by Tezza</h1>
+    <p>Página oficial para copiar prompts • Uso pessoal</p>
+  </header>
+
+  <div class="container">
+
+    <div class="prompt-box">
+      <div class="prompt-title">TEZZA PROMPTS</div>
+      <pre id="prompt1">(TEZZA PROMPTS)
+marque @tezza.vu
+
+site: /dreamina.capcut.com/
+
+Ultra-realistic cinematic female portrait — Blender Cycles render
+Camera & composition
+
+Vertical close-up portrait (9:16), framed from upper chest to slightly above the hat brim. Camera positioned at face level with a subtle three-quarter angle. Tight crop emphasizing facial features and accessories. Natural lens compression, no distortion. Subject slightly off-center, background softly blurred.
+
+Pose & hand positioning (reference-locked)
+
+Female subject holding one hand gently under the chin, fingers relaxed and slightly bent. Fingertips visible with natural manicure. Neck elongated, shoulders relaxed. Exact hand pose, proportions, and gesture preserved from the reference image.
+
+Head position & gaze
+
+Head turned slightly to the side, chin subtly lifted. Face angled away from the camera while maintaining a confident presence. Eyes hidden behind sunglasses, gaze implied forward. Head angle and posture locked to the reference.
+
+Facial identity & realism (reference-based)
+
+Exact facial structure preserved from the reference. Balanced oval face, smooth jawline, refined nose, full lips with natural volume. No facial reshaping or stylization. High-fidelity realism with natural asymmetry.
+
+Face clarity & micro-details
+
+Ultra-sharp facial rendering even in close-up. Visible skin pores, fine lines, subtle freckles, and natural skin texture. Glossy lips with realistic reflections. Precise specular highlights on cheekbones, nose bridge, and lips. No blur, no beauty filters.
+
+Hair (blonde, reference-accurate)
+
+Hair fully blonde with warm honey-golden undertones. Hair pulled back naturally beneath the straw hat, with soft baby hairs visible along the hairline. Realistic hair density and individual strands. No artificial shine or stylization.
+
+Accessories & styling
+
+Wide-brim straw hat with visible woven texture and natural imperfections. Black rectangular sunglasses with gold frames and decorative gold hinges. Large sculptural gold earrings with organic curved design. Minimal gold rings on fingers. Thin hat cord resting naturally along the face and neck.
+
+Skin & materials
+
+Sun-kissed warm skin tone with realistic tanning. Accurate subsurface scattering. Natural oiliness and sheen on skin. Light shadow patterns cast by the straw hat creating organic highlights and shadows across the face, neck, and shoulder.
+
+Lighting
+
+Strong natural sunlight filtered through the straw hat. Dappled light creating patterned shadows on skin. Warm highlights and soft contrast. Balanced exposure with cinematic daylight realism.
+
+Environment
+
+Outdoor tropical or garden setting. Lush green foliage in the background, softly out of focus. Bright daytime atmosphere with a relaxed summer mood.
+
+Mood & aesthetic
+
+Luxury summer lifestyle aesthetic. Editorial fashion portrait. Calm, confident, elegant, and sun-soaked vibe. Minimalist yet sophisticated styling.
+
+Style & render quality
+
+Ultra-photorealistic. Blender Cycles render. HDR lighting. 8K resolution. Razor-sharp focus. Physically accurate skin, hair, jewelry, and fabric shaders. IMVU / Second Life compatible realism. No stylization, no cartoon look, no painterly effects.</pre>
+      <button onclick="copyFallback('prompt1')">Copiar Prompt</button>
+      <div class="hint">Se o botão não funcionar, selecione o texto acima e copie manualmente.</div>
+    </div>
+
+  </div>
+
+  <footer>
+    © Prompts by Tezza — Conteúdo protegido. Não redistribuir.
+  </footer>
+
+  <script>
+    function copyFallback(id) {
+      const el = document.getElementById(id);
+      const range = document.createRange();
+      range.selectNodeContents(el);
+      const selection = window.getSelection();
+      selection.removeAllRanges();
+      selection.addRange(range);
+      try {
+        document.execCommand('copy');
+        alert('Prompt selecionado e copiado!');
+      } catch (err) {
+        alert('Não foi possível copiar automaticamente. Copie manualmente.');
+      }
+      selection.removeAllRanges();
+    }
+  </script>
+
+</body>
+</html>
+
+
