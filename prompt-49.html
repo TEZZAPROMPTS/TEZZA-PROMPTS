@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prompts by Tezza</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0f0f0f;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      padding: 30px 20px;
+      text-align: center;
+      border-bottom: 1px solid #222;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+    header p {
+      margin-top: 10px;
+      color: #aaa;
+      font-size: 0.95rem;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .prompt-box {
+      background: #151515;
+      border: 1px solid #262626;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 25px;
+      position: relative;
+    }
+    .prompt-title {
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+    pre {
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      background: #0d0d0d;
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid #222;
+      font-size: 0.9rem;
+      line-height: 1.4;
+      user-select: text;
+    }
+    button {
+      margin-top: 12px;
+      background: #ffffff;
+      color: #000000;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.2s ease;
+    }
+    button:hover {
+      background: #e0e0e0;
+    }
+    .hint {
+      margin-top: 10px;
+      font-size: 0.8rem;
+      color: #888;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.8rem;
+      color: #777;
+      border-top: 1px solid #222;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Prompts by Tezza</h1>
+    <p>Página oficial para copiar prompts • Uso pessoal</p>
+  </header>
+
+  <div class="container">
+
+    <div class="prompt-box">
+      <div class="prompt-title">TEZZA PROMPTS</div>
+      <pre id="prompt1">(TEZZA PROMPTS)
+marque @tezza.vu
+
+site: /dreamina.capcut.com/
+
+Ultra-realistic cinematic female portrait — Blender Cycles render
+
+Camera & composition
+Vertical portrait orientation (9:16). Medium-close shot framed from upper thighs to just above the head. Camera positioned slightly below chest level, angled upward with a subtle low-angle perspective to enhance depth and body presence. Subject standing at a slight diagonal angle to the mirror, torso gently twisted to the side, creating an elegant S-curve silhouette. Subject centered in frame. Clean indoor background with neutral walls, softly lit. Shallow depth of field with the subject in razor-sharp focus and background subtly softened.
+
+Pose & body positioning (reference-locked)
+Female subject standing indoors, weight shifted onto one hip, hips angled slightly sideways. Upper body subtly leaned forward toward the mirror. One arm raised holding a smartphone for a mirror selfie, the other arm relaxed alongside the body. Posture confident, feminine, and poised. Natural stance with relaxed shoulders.
+
+Head position & gaze
+Head slightly tilted and turned to the side. Gaze directed toward the phone screen rather than the camera lens. Neck elongated, chin relaxed, enhancing elegance and natural proportions.
+
+Facial expression
+Soft, neutral expression with slightly parted lips. Calm, confident, and composed mood. No exaggerated emotion.
+
+Face & identity (reference-based, do not alter)
+Face must strictly preserve the facial identity from the reference image. Maintain exact facial proportions, eye shape, eye spacing, nose structure, lips volume, jawline, cheekbones, and eyebrow shape. No beautification, no facial redesign, no stylization. Pure natural realism.
+
+Hair (reference-accurate shape, blonde)
+Long, voluminous hair with soft, flowing waves cascading over the shoulders and chest. Natural blonde tones ranging from light golden blonde to warm honey blonde. Hair parted near the center with smooth root transition. Realistic strand definition with physically accurate Blender Cycles hair simulation. Natural movement and subtle highlights, no artificial shine.
+
+Accessories & details
+Smartphone held in hand with a matte light-gray finish. Short to medium-length manicured nails in a soft pastel nude or pale pink tone with a glossy but realistic finish. No additional jewelry or accessories.
+
+Outfit
+Form-fitting strapless mini dress in deep satin red. Smooth, slightly reflective satin fabric with realistic tension, natural folds, and gathered ruching along one side. Dress hugs the torso and hips naturally, with accurate fabric stretch and subtle sheen under light.
+
+Body & physique
+Curvy, feminine physique with natural proportions. Defined waist, full hips, soft thighs, and naturally shaped chest. No exaggeration or distortion. Anatomically accurate body structure.
+
+Skin & realism
+Light to fair skin tone with ultra-realistic texture. Visible pores, subtle freckles or micro-details where applicable, soft natural blush. Physically accurate subsurface scattering. Gentle highlights on shoulders, arms, chest, and face. No plastic or over-smoothed appearance.
+
+Lighting
+Natural indoor daylight entering from the side, creating soft highlights and gentle shadows. Balanced exposure with smooth tonal transitions. Face remains clearly visible and sharply defined even at medium distance. No harsh shadows.
+
+Environment
+Minimalist indoor setting with neutral-colored walls and clean architectural lines. Modern, uncluttered background to emphasize the subject. Calm, elegant atmosphere.
+
+Mood & aesthetic
+Luxury fashion editorial mood. Confident, feminine, modern elegance. Clean, polished, high-end magazine cover energy with subtle sensuality.
+
+Style & render quality
+Ultra-photorealistic 3D realism. Blender Cycles–style render. IMVU / Second Life compatible realism. HDR lighting, 8K resolution, razor-sharp facial clarity even at distance. Physically accurate shaders for skin, hair, fabric, and lighting. No CGI look, no filters, no artificial effects.</pre>
+      <button onclick="copyFallback('prompt1')">Copiar Prompt</button>
+      <div class="hint">Se o botão não funcionar, selecione o texto acima e copie manualmente.</div>
+    </div>
+
+  </div>
+
+  <footer>
+    © Prompts by Tezza — Conteúdo protegido. Não redistribuir.
+  </footer>
+
+  <script>
+    function copyFallback(id) {
+      const el = document.getElementById(id);
+      const range = document.createRange();
+      range.selectNodeContents(el);
+      const selection = window.getSelection();
+      selection.removeAllRanges();
+      selection.addRange(range);
+      try {
+        document.execCommand('copy');
+        alert('Prompt selecionado e copiado!');
+      } catch (err) {
+        alert('Não foi possível copiar automaticamente. Copie manualmente.');
+      }
+      selection.removeAllRanges();
+    }
+  </script>
+
+</body>
+</html>
+
+
