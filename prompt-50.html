@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prompts by Tezza</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0f0f0f;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      padding: 30px 20px;
+      text-align: center;
+      border-bottom: 1px solid #222;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+    header p {
+      margin-top: 10px;
+      color: #aaa;
+      font-size: 0.95rem;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .prompt-box {
+      background: #151515;
+      border: 1px solid #262626;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 25px;
+      position: relative;
+    }
+    .prompt-title {
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+    pre {
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      background: #0d0d0d;
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid #222;
+      font-size: 0.9rem;
+      line-height: 1.4;
+      user-select: text;
+    }
+    button {
+      margin-top: 12px;
+      background: #ffffff;
+      color: #000000;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.2s ease;
+    }
+    button:hover {
+      background: #e0e0e0;
+    }
+    .hint {
+      margin-top: 10px;
+      font-size: 0.8rem;
+      color: #888;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.8rem;
+      color: #777;
+      border-top: 1px solid #222;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Prompts by Tezza</h1>
+    <p>Página oficial para copiar prompts • Uso pessoal</p>
+  </header>
+
+  <div class="container">
+
+    <div class="prompt-box">
+      <div class="prompt-title">TEZZA PROMPTS</div>
+      <pre id="prompt1">(TEZZA PROMPTS)
+marque @tezza.vu
+
+site: /dreamina.capcut.com/
+
+Ultra-realistic cinematic dual portrait — Blender Cycles render
+Camera & composition
+
+Vertical close-up portrait, tightly framed from upper chest to the top of the heads. Intimate selfie-style composition captured at eye level. Subjects seated side by side on an airplane seat. Camera slightly angled inward to include both faces equally in frame. Shallow depth of field with both faces in sharp focus and the airplane interior softly blurred.
+
+Subjects & positioning
+
+Two subjects positioned closely together.
+
+Adult female (left):
+Seated upright, shoulders relaxed, head slightly tilted toward the child. Soft, calm expression with a gentle closed-mouth smile. Gaze directed toward the camera lens.
+
+Child (right, approximately 3 years old):
+Seated beside the adult, body facing forward. Head slightly tilted, relaxed posture. Neutral, calm facial expression with lips softly parted. Gaze directed forward toward the camera.
+
+Face & identity (STRICT reference-locked, do not alter)
+
+Both faces must strictly match their respective reference images.
+
+Adult female face:
+Preserve exact facial structure, proportions, jawline, cheek volume, nose shape, lip fullness, eyebrow thickness and arch, eye size, eye spacing, eyelid structure, and natural facial symmetry. No beautification, no facial redesign, no stylization.
+
+Child face:
+Preserve exact toddler facial proportions, including round cheeks, soft jawline, small nose, natural lip shape, eye placement, eyelid thickness, forehead proportion, and youthful softness. No aging up, no refinement, no adult features.
+
+Do not merge identities. Do not average faces. Do not modify facial anatomy.
+
+Hair
+
+Adult: Short to medium-length blonde hair in a softly wavy bob. Natural blonde tone with subtle highlights. Hair parted slightly off-center. Realistic strand definition with soft volume and natural movement.
+Child: Light brown to dark blonde hair, fine texture, slightly wavy, medium-short length. Natural toddler hair density with soft flyaways.
+
+Ultra-realistic Blender Cycles hair simulation with physically accurate shaders.
+
+Skin & realism
+
+Adult: Fair-to-light skin tone with natural warmth. Visible skin texture, fine pores, soft blush on cheeks, subtle highlights on forehead, nose bridge, and lips.
+Child: Fair skin with natural rosy cheeks, soft subsurface scattering, delicate texture appropriate to toddler skin.
+
+No over-smoothing, no plastic look.
+
+Outfits
+
+Adult: White knitted or crochet-style sleeveless top with visible fabric weave and natural folds.
+Child: Green sleeveless dress with textured knit or woven fabric, natural folds and soft structure.
+
+Fabric shaders physically accurate with realistic light interaction.
+
+Lighting
+
+Soft natural daylight filtering through the airplane cabin. Even, diffused lighting illuminating both faces. Gentle shadows under the chin and around facial contours. Neutral color temperature with a warm, natural feel.
+
+Environment
+
+Airplane interior setting. Light-colored leather seat backs visible behind the subjects. Subtle cabin details softly blurred. Clean, modern travel atmosphere with no distracting elements.
+
+Mood & aesthetic
+
+Warm, intimate and they are happy,  serene moment. Calm, affectionate presence between adult and child. Natural, candid travel portrait with a soft, comforting emotional tone.
+
+Style & render quality
+
+Ultra-photorealistic 3D realism. Blender Cycles render. 8K resolution, HDR lighting, razor-sharp facial focus. Physically accurate skin, hair, fabric, and lighting. No CGI look, no filters, no stylization. IMVU / Second Life compatible realism.</pre>
+      <button onclick="copyFallback('prompt1')">Copiar Prompt</button>
+      <div class="hint">Se o botão não funcionar, selecione o texto acima e copie manualmente.</div>
+    </div>
+
+  </div>
+
+  <footer>
+    © Prompts by Tezza — Conteúdo protegido. Não redistribuir.
+  </footer>
+
+  <script>
+    function copyFallback(id) {
+      const el = document.getElementById(id);
+      const range = document.createRange();
+      range.selectNodeContents(el);
+      const selection = window.getSelection();
+      selection.removeAllRanges();
+      selection.addRange(range);
+      try {
+        document.execCommand('copy');
+        alert('Prompt selecionado e copiado!');
+      } catch (err) {
+        alert('Não foi possível copiar automaticamente. Copie manualmente.');
+      }
+      selection.removeAllRanges();
+    }
+  </script>
+
+</body>
+</html>
+
+
