@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prompts by Tezza</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0f0f0f;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      padding: 30px 20px;
+      text-align: center;
+      border-bottom: 1px solid #222;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+    header p {
+      margin-top: 10px;
+      color: #aaa;
+      font-size: 0.95rem;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .prompt-box {
+      background: #151515;
+      border: 1px solid #262626;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 25px;
+      position: relative;
+    }
+    .prompt-title {
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+    pre {
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      background: #0d0d0d;
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid #222;
+      font-size: 0.9rem;
+      line-height: 1.4;
+      user-select: text;
+    }
+    button {
+      margin-top: 12px;
+      background: #ffffff;
+      color: #000000;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.2s ease;
+    }
+    button:hover {
+      background: #e0e0e0;
+    }
+    .hint {
+      margin-top: 10px;
+      font-size: 0.8rem;
+      color: #888;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.8rem;
+      color: #777;
+      border-top: 1px solid #222;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Prompts by Tezza</h1>
+    <p>Página oficial para copiar prompts • Uso pessoal</p>
+  </header>
+
+  <div class="container">
+
+    <div class="prompt-box">
+      <div class="prompt-title">TEZZA PROMPTS</div>
+      <pre id="prompt1">(TEZZA PROMPTS)
+marque @tezza.vu
+
+site: /dreamina.capcut.com/
+
+Ultra-realistic cinematic female portrait — Blender Cycles render
+
+Camera & composition
+Vertical tight medium shot. Framed from upper chest to top of head. Close, intimate selfie-style composition. Camera positioned slightly above chest level, angled slightly upward. Subject positioned slightly right of center. Large American Bully dog occupying left side of frame, leaning into her shoulder. Shallow depth of field with sharp focus on both faces.
+
+Pose & body positioning
+Subject holding a smartphone in her right hand, partially visible in frame. Large muscular American Bully dog resting its front paws over her shoulder and chest, leaning its body weight gently against her. Their faces pressed closely together, creating a protective, intimate composition.
+
+Head position & gaze
+Head upright, slightly tilted toward the dog. Face angled forward toward camera. Eyes partially hidden behind futuristic visor sunglasses. Chin neutral, confident posture.
+
+Facial expression
+Neutral-to-confident expression. Lips slightly parted with glossy nude finish. Strong jawline definition. Relaxed but dominant energy.
+
+Face & identity
+Reference-locked identity. Symmetrical facial structure. High cheekbones with defined contour. Smooth nose bridge with subtle highlight. Full sculpted lips with realistic gloss reflections. Thick, well-defined eyebrows with individual strand detail. Visible natural skin texture — pores, micro-variations, subtle sheen. No cartoon exaggeration.
+
+Hair
+Long blonde hair styled in a sleek high bun. Ultra-smooth texture with visible strand definition. Clean middle part leading into the bun. Subtle baby hairs along hairline. Soft light reflections emphasizing silky texture. No frizz, controlled polished finish.
+
+Accessories & details
+Futuristic oversized visor sunglasses with reflective dark lens and orange nose bridge detail. Long glossy pink acrylic nails. Smartphone case with soft decorative elements (flower accents). Thin chain necklace.
+
+Outfit
+Black lace bralette visible at chest area. Delicate lace texture with realistic fabric transparency and fine detailing.
+
+Body
+The very large bust and subtle shading around collarbones. Natural skin compression where dog’s paws rest.
+
+Skin & realism
+Ultra-realistic skin texture with visible pores, soft peach fuzz, and natural imperfections. Smooth subsurface scattering with gentle light diffusion. Slight natural sheen on skin, especially on thighs and abdomen. plastic overly smooth effect.
+
+Dog description
+Large muscular American Bully with cropped ears. Merle coat pattern (brown and white marbled fur). One icy blue eye and one lighter eye (heterochromia). Realistic fur strand detail. Natural wet nose texture. Soft shadow under jaw. Paw resting over her shoulder with visible muscle structure and short nails.
+
+Lighting
+Soft indoor neutral lighting from front-left. Controlled highlights on skin and dog’s fur. Gentle shadow behind subjects. HDR dynamic range. Realistic light bounce.
+
+Environment
+Minimal neutral interior background, soft gray-beige wall. Clean indoor setting without distractions.
+
+Mood & aesthetic
+Luxury urban aesthetic. Powerful, confident, protective energy. Strong presence with intimate composition.
+
+Style & render quality
+Ultra-photorealistic 3D render, Blender Cycles. 8K resolution, HDR, razor-sharp facial and fur detail. Physically accurate materials and lighting. IMVU / Second Life compatible realism. No cartoon effect, no over-smoothing, no stylized distortion.</pre>
+      <button onclick="copyFallback('prompt1')">Copiar Prompt</button>
+      <div class="hint">Se o botão não funcionar, selecione o texto acima e copie manualmente.</div>
+    </div>
+
+  </div>
+
+  <footer>
+    © Prompts by Tezza — Conteúdo protegido. Não redistribuir.
+  </footer>
+
+  <script>
+    function copyFallback(id) {
+      const el = document.getElementById(id);
+      const range = document.createRange();
+      range.selectNodeContents(el);
+      const selection = window.getSelection();
+      selection.removeAllRanges();
+      selection.addRange(range);
+      try {
+        document.execCommand('copy');
+        alert('Prompt selecionado e copiado!');
+      } catch (err) {
+        alert('Não foi possível copiar automaticamente. Copie manualmente.');
+      }
+      selection.removeAllRanges();
+    }
+  </script>
+
+</body>
+</html>
+
+
