@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prompts by Tezza</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0f0f0f;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      padding: 30px 20px;
+      text-align: center;
+      border-bottom: 1px solid #222;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+    header p {
+      margin-top: 10px;
+      color: #aaa;
+      font-size: 0.95rem;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .prompt-box {
+      background: #151515;
+      border: 1px solid #262626;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 25px;
+      position: relative;
+    }
+    .prompt-title {
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+    pre {
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      background: #0d0d0d;
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid #222;
+      font-size: 0.9rem;
+      line-height: 1.4;
+      user-select: text;
+    }
+    button {
+      margin-top: 12px;
+      background: #ffffff;
+      color: #000000;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.2s ease;
+    }
+    button:hover {
+      background: #e0e0e0;
+    }
+    .hint {
+      margin-top: 10px;
+      font-size: 0.8rem;
+      color: #888;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.8rem;
+      color: #777;
+      border-top: 1px solid #222;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Prompts by Tezza</h1>
+    <p>Página oficial para copiar prompts • Uso pessoal</p>
+  </header>
+
+  <div class="container">
+
+    <div class="prompt-box">
+      <div class="prompt-title">TEZZA PROMPTS</div>
+      <pre id="prompt1">(TEZZA PROMPTS)
+marque @tezza.vu
+
+site: /dreamina.capcut.com/
+
+Ultra-realistic cinematic female portrait — Blender Cycles render
+
+Camera & composition
+Vertical medium-close portrait captured with an extreme forced perspective. Camera positioned slightly below chest level and angled upward, creating a dominant foreground focus on the extended hand reaching toward the lens. Wide-angle compression enhances depth, making the hand appear larger while the face remains sharply visible in the background. Subject centered with strong forward motion toward the camera. Shallow depth of field isolates the subject against a dark studio backdrop.
+
+Pose & body positioning
+Subject leaning forward with torso slightly bent toward the camera, one arm fully extended outward, fingers spread confidently toward the lens. Shoulders angled diagonally, creating a dynamic fashion-editorial stance. Hips subtly shifted to one side, maintaining balance and attitude-driven posture.
+
+Head position & gaze
+Head tilted slightly front and angled to the side. Chin raised, conveying confidence and dominance. Eyes partially obscured by reflective sunglasses, gaze directed toward the viewer through the lens reflection, reinforcing a bold editorial presence.
+
+Facial expression
+Confident, provocative fashion expression with lips slightly parted and tongue subtly outside, suggesting attitude and high-fashion edge rather than exaggerated emotion. Expression relaxed yet assertive.
+
+Face & identity
+Defined facial structure with sculpted cheekbones, smooth jawline, and symmetrical proportions. Glam makeup featuring contoured cheeks, glossy lips, dramatic eyeliner, and long lashes. Skin retains realistic pore detail and natural tonal variation.
+
+Hair
+Long blonde hair replacing the original color, voluminous waves cascading over shoulders and back. Warm platinum-blonde tones with subtle golden highlights and natural root shadow for realism. Individual strands visible with realistic light reflection and softness.
+
+Accessories & details
+Square reflective fashion sunglasses with metallic black frames. Only three statement rings across fingers with the name "TEZZA" oversized iced-out typography rings. Layered metallic necklaces and bracelets adding urban luxury styling. Long acrylic nails with elaborate nail art, rhinestones, and glossy finish. 
+
+Outfit
+Fitted long-sleeve cropped top in neutral tones with stretch fabric behavior and realistic folds. Low-rise dark denim jeans with metallic chain accessories attached at the waist. Fabric materials display accurate texture response and subtle specular highlights.
+
+Body & physique
+Slim yet curvy physique with natural anatomical proportions. Subtle muscle definition in arms and torso, realistic posture compression caused by forward lean. No stylization beyond photorealistic human anatomy.
+
+Skin & realism
+Ultra-realistic Blender Cycles skin shading with visible pores, micro texture, and balanced gloss variation. Subsurface scattering creates natural skin translucency. Hands show detailed knuckle structure, nail beds, and realistic specular reflections.
+
+Lighting
+Dark cinematic studio lighting with directional key light from above and slightly to the front, creating strong highlights on jewelry and nails. Soft rim lighting separates the subject from the dark background. Controlled contrast enhances editorial fashion mood without clipping highlights.
+
+Environment
+Minimal dark studio environment with smooth gradient background, free of distractions. Background kept intentionally subdued to emphasize the subject and foreground hand perspective.
+
+Mood & aesthetic
+Bold, urban luxury fashion aesthetic. Editorial, confident, and high-impact visual energy emphasizing attitude, style, and dominance through perspective.
+
+Style & render quality
+Ultra-photorealistic Blender Cycles render, cinematic lighting, HDR, 8K resolution, razor-sharp focus, realistic global illumination, physically accurate materials, high-detail skin shading, IMVU / Second Life compatible realism, reference-locked identity, no painterly stylization.</pre>
+      <button onclick="copyFallback('prompt1')">Copiar Prompt</button>
+      <div class="hint">Se o botão não funcionar, selecione o texto acima e copie manualmente.</div>
+    </div>
+
+  </div>
+
+  <footer>
+    © Prompts by Tezza — Conteúdo protegido. Não redistribuir.
+  </footer>
+
+  <script>
+    function copyFallback(id) {
+      const el = document.getElementById(id);
+      const range = document.createRange();
+      range.selectNodeContents(el);
+      const selection = window.getSelection();
+      selection.removeAllRanges();
+      selection.addRange(range);
+      try {
+        document.execCommand('copy');
+        alert('Prompt selecionado e copiado!');
+      } catch (err) {
+        alert('Não foi possível copiar automaticamente. Copie manualmente.');
+      }
+      selection.removeAllRanges();
+    }
+  </script>
+
+</body>
+</html>
+
+
