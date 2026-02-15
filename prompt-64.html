@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prompts by Tezza</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0f0f0f;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      padding: 30px 20px;
+      text-align: center;
+      border-bottom: 1px solid #222;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+    header p {
+      margin-top: 10px;
+      color: #aaa;
+      font-size: 0.95rem;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .prompt-box {
+      background: #151515;
+      border: 1px solid #262626;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 25px;
+      position: relative;
+    }
+    .prompt-title {
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+    pre {
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      background: #0d0d0d;
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid #222;
+      font-size: 0.9rem;
+      line-height: 1.4;
+      user-select: text;
+    }
+    button {
+      margin-top: 12px;
+      background: #ffffff;
+      color: #000000;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.2s ease;
+    }
+    button:hover {
+      background: #e0e0e0;
+    }
+    .hint {
+      margin-top: 10px;
+      font-size: 0.8rem;
+      color: #888;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.8rem;
+      color: #777;
+      border-top: 1px solid #222;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Prompts by Tezza</h1>
+    <p>Página oficial para copiar prompts • Uso pessoal</p>
+  </header>
+
+  <div class="container">
+
+    <div class="prompt-box">
+      <div class="prompt-title">TEZZA PROMPTS</div>
+      <pre id="prompt1">(TEZZA PROMPTS)
+marque @tezza.vu
+
+site: /dreamina.capcut.com/
+
+Ultra-realistic cinematic female portrait — Blender Cycles render
+
+Camera & composition
+Vertical extreme close-up beauty portrait framed tightly from upper shoulders to top of the head. Camera positioned directly at eye level, centered for a symmetrical high-fashion composition. Tight crop emphasizes facial structure, makeup precision, and hand placement framing the face. Shallow depth of field keeps facial features razor sharp while softly diffusing the neutral studio background.
+
+Pose & body positioning
+Subject facing forward with shoulders relaxed and aligned. Both hands positioned elegantly around the face: one hand resting across the forehead with fingers extended downward, while the other supports the chin from below. Fingers elongated and softly curved, creating a sculptural editorial pose commonly seen in luxury beauty campaigns.
+
+Head position & gaze
+Head held upright with minimal tilt, maintaining strong symmetry. Direct gaze into the camera creates intense visual connection and confident presence. Chin slightly lowered to enhance eye prominence and facial contour definition.
+
+Facial expression
+Calm, confident beauty expression with relaxed lips slightly parted. Expression neutral yet captivating, conveying elegance and high-fashion sophistication.
+
+Face & identity
+Defined oval facial structure with sculpted cheekbones, refined jawline, and balanced symmetry. Professional glam makeup featuring softly blended contour, luminous bronzed skin, defined nose highlight, full feathered brows, dramatic smokey eyeshadow, precise eyeliner, and voluminous lashes. Lips finished with soft nude-pink satin gloss. Skin shows realistic pore detail and natural tonal variation.
+
+Hair
+Slicked-back blonde hair styled with a wet-look finish. Cool champagne-blonde tones blended with subtle golden undertones, creating depth and realism. Hair appears slightly damp with controlled strands combed backward, enhancing facial visibility and editorial beauty focus.
+
+Accessories & details
+Medium-sized gold hoop earrings with polished metallic reflections. Minimalist gold rings on fingers with delicate texture detailing. Nude almond-shaped manicure with glossy finish, clean cuticles, and realistic nail translucency enhancing elegance.
+
+Outfit
+Bare-shoulder beauty styling suggesting strapless or off-shoulder wardrobe outside frame. Focus intentionally maintained on face, makeup, and accessories rather than clothing.
+
+Body & physique
+Natural feminine proportions visible through shoulders and collarbone area. Subtle clavicle definition enhances realism and elegance without stylization.
+
+Skin & realism
+Ultra-realistic Blender Cycles skin shading featuring visible pores, micro skin texture, subtle peach fuzz, and natural subsurface scattering. Balanced gloss variation across forehead, nose, and cheeks creates authentic cosmetic sheen without artificial plastic effect.
+
+Lighting
+Soft professional studio beauty lighting with large diffused key light positioned frontally, producing even illumination and smooth shadow transitions. Gentle fill lighting reduces harsh contrast while maintaining facial dimension. Subtle specular highlights emphasize makeup textures and skin realism.
+
+Environment
+Clean neutral studio background with soft gradient tones, distraction-free and optimized for beauty editorial presentation.
+
+Mood & aesthetic
+Luxury beauty editorial aesthetic — clean, polished, sophisticated, and timeless. Focus on elegance, precision makeup artistry, and cinematic realism.
+
+Style & render quality
+Ultra-photorealistic Blender Cycles render, cinematic lighting, HDR, 8K resolution, razor-sharp facial focus, realistic global illumination, physically accurate materials, high-detail skin shading, IMVU / Second Life compatible realism, reference-locked identity, no stylization, no painterly effects.</pre>
+      <button onclick="copyFallback('prompt1')">Copiar Prompt</button>
+      <div class="hint">Se o botão não funcionar, selecione o texto acima e copie manualmente.</div>
+    </div>
+
+  </div>
+
+  <footer>
+    © Prompts by Tezza — Conteúdo protegido. Não redistribuir.
+  </footer>
+
+  <script>
+    function copyFallback(id) {
+      const el = document.getElementById(id);
+      const range = document.createRange();
+      range.selectNodeContents(el);
+      const selection = window.getSelection();
+      selection.removeAllRanges();
+      selection.addRange(range);
+      try {
+        document.execCommand('copy');
+        alert('Prompt selecionado e copiado!');
+      } catch (err) {
+        alert('Não foi possível copiar automaticamente. Copie manualmente.');
+      }
+      selection.removeAllRanges();
+    }
+  </script>
+
+</body>
+</html>
+
+
