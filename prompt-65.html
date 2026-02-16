@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prompts by Tezza</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0f0f0f;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      padding: 30px 20px;
+      text-align: center;
+      border-bottom: 1px solid #222;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+    header p {
+      margin-top: 10px;
+      color: #aaa;
+      font-size: 0.95rem;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .prompt-box {
+      background: #151515;
+      border: 1px solid #262626;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 25px;
+      position: relative;
+    }
+    .prompt-title {
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+    pre {
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      background: #0d0d0d;
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid #222;
+      font-size: 0.9rem;
+      line-height: 1.4;
+      user-select: text;
+    }
+    button {
+      margin-top: 12px;
+      background: #ffffff;
+      color: #000000;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.2s ease;
+    }
+    button:hover {
+      background: #e0e0e0;
+    }
+    .hint {
+      margin-top: 10px;
+      font-size: 0.8rem;
+      color: #888;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.8rem;
+      color: #777;
+      border-top: 1px solid #222;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Prompts by Tezza</h1>
+    <p>Página oficial para copiar prompts • Uso pessoal</p>
+  </header>
+
+  <div class="container">
+
+    <div class="prompt-box">
+      <div class="prompt-title">TEZZA PROMPTS</div>
+      <pre id="prompt1">(TEZZA PROMPTS)
+marque @tezza.vu
+
+site: /dreamina.capcut.com/
+
+Ultra-realistic cinematic female portrait — Blender Cycles render
+
+Camera & composition
+Vertical full-body cinematic portrait captured at water level, slightly low-angle perspective enhancing body proportions while maintaining natural realism. Subject positioned slightly off-center, standing in shallow ocean water. Medium-wide framing from upper thighs to head, allowing environment interaction while keeping strong focus on the subject. Natural depth of field with crisp subject separation and softly detailed horizon line.
+
+Pose & body positioning
+Relaxed beach pose with torso gently arched backward and shoulders pulled slightly behind, creating an elegant elongated silhouette. One leg subtly forward in the water, hips naturally shifted to one side for a fluid feminine posture. Arms positioned behind the body with hands lightly resting together, conveying ease and confidence.
+
+Head position & gaze
+Head tilted slightly backward toward sunlight, chin elevated. Eyes softly closed, face angled upward as if enjoying warmth and ocean breeze, creating a serene and carefree moment.
+
+Facial expression
+Soft relaxed smile with naturally lifted cheeks and calm expression, conveying peaceful enjoyment and summer freedom. Expression natural and effortless.
+
+Face & identity
+Harmonious oval facial structure with smooth jawline, delicate nose, softly defined cheekbones, and balanced facial symmetry. Full natural lips with subtle hydration shine. Eyebrows softly shaped and natural. Features maintain reference-based realism without stylization.
+
+Hair
+Long straight blonde hair with wet texture, slicked back near the scalp and flowing downward along the back and shoulders. Individual damp strands visible, reflecting sunlight with golden highlights and subtle darker wet tones for realism.
+
+Accessories & details
+No visible accessories. Minimal styling emphasizing natural beauty and beach realism.
+
+Outfit (STRICTLY reference-based, do not alter):
+Clothing must exactly match the provided outfit reference image.
+Preserve original colors, fabric type, seams, cut and fit.
+Natural fabric stretch and behavior.
+No redesign, no color changes, no style alteration.
+Outfit must follow the reference precisely.
+
+Body & physique
+Slim athletic feminine physique with natural proportions, softly defined abdomen, toned legs, and smooth body transitions. Anatomical realism preserved with natural posture balance.
+
+Skin & realism
+Sun-kissed golden tan skin with realistic wet sheen. Visible water droplets and subtle reflections across shoulders, torso, and legs. Blender Cycles subsurface scattering creates natural light diffusion through skin, with micro skin texture and realistic highlights.
+
+Lighting
+Bright natural midday sunlight from above, producing defined yet soft shadows. Strong specular highlights on wet skin and hair. Natural ocean light bounce adds soft illumination from below, enhancing warmth and realism.
+
+Environment
+Clear tropical ocean with shallow transparent turquoise water and gentle ripples surrounding the subject. Visible horizon line separating calm sea and clear blue sky. Minimal environmental distractions, emphasizing a clean beach aesthetic.
+
+Mood & aesthetic
+Fresh, radiant, summer lifestyle atmosphere conveying freedom, warmth, confidence, and relaxed coastal elegance.
+
+Style & render quality
+Ultra-realistic cinematic render, Blender Cycles, HDR, 8K resolution, physically accurate materials, realistic water interaction, subsurface scattering skin shader, sharp facial focus, high micro-detail clarity, global illumination, IMVU / Second Life compatible realism, reference-based identity, cinematic natural realism.</pre>
+      <button onclick="copyFallback('prompt1')">Copiar Prompt</button>
+      <div class="hint">Se o botão não funcionar, selecione o texto acima e copie manualmente.</div>
+    </div>
+
+  </div>
+
+  <footer>
+    © Prompts by Tezza — Conteúdo protegido. Não redistribuir.
+  </footer>
+
+  <script>
+    function copyFallback(id) {
+      const el = document.getElementById(id);
+      const range = document.createRange();
+      range.selectNodeContents(el);
+      const selection = window.getSelection();
+      selection.removeAllRanges();
+      selection.addRange(range);
+      try {
+        document.execCommand('copy');
+        alert('Prompt selecionado e copiado!');
+      } catch (err) {
+        alert('Não foi possível copiar automaticamente. Copie manualmente.');
+      }
+      selection.removeAllRanges();
+    }
+  </script>
+
+</body>
+</html>
+
+
