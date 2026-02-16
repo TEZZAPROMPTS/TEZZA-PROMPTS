@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prompts by Tezza</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0f0f0f;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      padding: 30px 20px;
+      text-align: center;
+      border-bottom: 1px solid #222;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+    header p {
+      margin-top: 10px;
+      color: #aaa;
+      font-size: 0.95rem;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .prompt-box {
+      background: #151515;
+      border: 1px solid #262626;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 25px;
+      position: relative;
+    }
+    .prompt-title {
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+    pre {
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      background: #0d0d0d;
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid #222;
+      font-size: 0.9rem;
+      line-height: 1.4;
+      user-select: text;
+    }
+    button {
+      margin-top: 12px;
+      background: #ffffff;
+      color: #000000;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.2s ease;
+    }
+    button:hover {
+      background: #e0e0e0;
+    }
+    .hint {
+      margin-top: 10px;
+      font-size: 0.8rem;
+      color: #888;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.8rem;
+      color: #777;
+      border-top: 1px solid #222;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Prompts by Tezza</h1>
+    <p>Página oficial para copiar prompts • Uso pessoal</p>
+  </header>
+
+  <div class="container">
+
+    <div class="prompt-box">
+      <div class="prompt-title">TEZZA PROMPTS</div>
+      <pre id="prompt1">(TEZZA PROMPTS)
+marque @tezza.vu
+
+site: /dreamina.capcut.com/
+
+Ultra-realistic cinematic female portrait — Blender Cycles render
+
+Camera & composition
+Vertical medium portrait captured at water level inside a swimming pool. Framing from upper thighs to slightly above the head, maintaining a balanced centered composition. Camera positioned at chest height with a subtle downward angle, creating a fashion-editorial perspective while preserving natural proportions. Shallow depth of field with crisp subject clarity and softly diffused water background.
+
+Pose & body positioning
+Subject standing partially submerged in clear pool water, waterline positioned around upper thighs. Torso upright with relaxed shoulders and elegant posture. One arm lowered naturally into the water while the opposite hand is raised near the chest, fingers softly curved creating a refined fashion pose. Body aligned forward with slight natural hip balance.
+
+Head position & gaze
+Head slightly tilted downward with chin gently lowered. Face oriented toward the camera while gaze remains partially hidden behind sunglasses, creating a confident and mysterious fashion attitude.
+
+Facial expression
+Neutral, composed expression with relaxed lips and subtle natural fullness. Expression conveys calm confidence and high-fashion minimal emotion.
+
+Face & identity
+Harmonious facial proportions with softly sculpted cheekbones, smooth jawline, delicate nose structure, and symmetrical features. Natural lip volume with soft hydration shine. Clean skin appearance maintaining reference-based realism without stylization.
+
+Hair
+Blonde hair styled in a sleek pulled-back updo with smooth gathered structure at the back of the head. Hair appears slightly damp with subtle shine, maintaining controlled strands and polished elegance.
+
+Accessories & details
+Rectangular narrow black sunglasses with dark lenses and thin metallic frames. Multiple layered gold necklaces including chain styles and pendant details resting naturally against the collarbone. Gold bracelets stacked on the wrist and a delicate ring on the finger. Jewelry reflects sunlight realistically with metallic highlights.
+
+Outfit
+Minimalist black one-piece swimsuit with thin straps and clean modern cut. Fabric appears slightly wet, clinging naturally to the body with realistic tension and subtle reflective sheen caused by water contact.
+
+Body & physique
+Slim feminine physique with natural proportions, softly defined shoulders, toned arms, and smooth torso transitions. Anatomical realism preserved with elegant posture and natural balance.
+
+Skin & realism
+Warm sun-kissed skin tone with visible water droplets and realistic wet surface reflections. Blender Cycles subsurface scattering produces natural light diffusion through skin layers. Micro skin texture and subtle pores visible under strong lighting conditions.
+
+Lighting
+Bright natural sunlight from above creating clear highlights on shoulders, collarbones, and arms. Water surface reflections project dynamic caustic light patterns onto the skin and swimsuit. Balanced contrast with soft shadow transitions enhancing depth and realism.
+
+Environment
+Clear turquoise swimming pool with visible ripples and refracted light patterns beneath the water surface. Background remains minimal and softly blurred to emphasize subject presence while preserving environmental realism.
+
+Mood & aesthetic
+Luxury summer fashion aesthetic combining poolside elegance, minimalism, and confident editorial energy. Atmosphere calm, sophisticated, and sun-drenched.
+
+Style & render quality
+Ultra-realistic cinematic render, Blender Cycles, HDR, 8K resolution, physically accurate materials, realistic water caustics, subsurface scattering skin shader, high micro-detail clarity, global illumination, sharp facial focus, IMVU / Second Life compatible realism, reference-based identity, cinematic photorealism.</pre>
+      <button onclick="copyFallback('prompt1')">Copiar Prompt</button>
+      <div class="hint">Se o botão não funcionar, selecione o texto acima e copie manualmente.</div>
+    </div>
+
+  </div>
+
+  <footer>
+    © Prompts by Tezza — Conteúdo protegido. Não redistribuir.
+  </footer>
+
+  <script>
+    function copyFallback(id) {
+      const el = document.getElementById(id);
+      const range = document.createRange();
+      range.selectNodeContents(el);
+      const selection = window.getSelection();
+      selection.removeAllRanges();
+      selection.addRange(range);
+      try {
+        document.execCommand('copy');
+        alert('Prompt selecionado e copiado!');
+      } catch (err) {
+        alert('Não foi possível copiar automaticamente. Copie manualmente.');
+      }
+      selection.removeAllRanges();
+    }
+  </script>
+
+</body>
+</html>
+
+
