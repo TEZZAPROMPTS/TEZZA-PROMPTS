@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prompts by Tezza</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0f0f0f;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      padding: 30px 20px;
+      text-align: center;
+      border-bottom: 1px solid #222;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+    header p {
+      margin-top: 10px;
+      color: #aaa;
+      font-size: 0.95rem;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .prompt-box {
+      background: #151515;
+      border: 1px solid #262626;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 25px;
+      position: relative;
+    }
+    .prompt-title {
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+    pre {
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      background: #0d0d0d;
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid #222;
+      font-size: 0.9rem;
+      line-height: 1.4;
+      user-select: text;
+    }
+    button {
+      margin-top: 12px;
+      background: #ffffff;
+      color: #000000;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.2s ease;
+    }
+    button:hover {
+      background: #e0e0e0;
+    }
+    .hint {
+      margin-top: 10px;
+      font-size: 0.8rem;
+      color: #888;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.8rem;
+      color: #777;
+      border-top: 1px solid #222;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Prompts by Tezza</h1>
+    <p>Página oficial para copiar prompts • Uso pessoal</p>
+  </header>
+
+  <div class="container">
+
+    <div class="prompt-box">
+      <div class="prompt-title">TEZZA PROMPTS</div>
+      <pre id="prompt1">(TEZZA PROMPTS)
+marque @tezza.vu
+
+site: /dreamina.capcut.com/
+
+Ultra-realistic cinematic female portrait — Blender Cycles render (8K)
+
+Ultra-realistic cinematic winter portrait, Blender Cycles render, 8K resolution, HDR, razor-sharp focus, hyper-detailed skin texture, physically accurate snow lighting, IMVU / Second Life compatible, reference-based realism.
+
+Camera & composition
+Vertical close-up selfie composition. Camera positioned slightly above chest level, angled slightly downward in a natural handheld perspective. Tight framing from upper chest to top of head. Subject centered in the foreground, second figure positioned directly behind her, partially visible. Subtle wide-lens smartphone perspective with realistic depth compression.
+
+Pose & body positioning
+Female subject standing upright in snow, shoulders slightly raised due to thick winter jacket. One arm extended forward holding the camera. Body facing forward, posture straight and steady. Second figure standing close behind her, aligned symmetrically.
+
+Head position & gaze
+Head facing directly toward the camera. Chin neutral, slightly tucked due to winter layers. Direct forward gaze hidden behind reflective ski visor. Expression neutral, calm, composed.
+
+Facial features
+Softly contoured face with symmetrical proportions. Smooth skin with natural cold-weather matte finish. Full, naturally shaped lips in soft nude tone. Subtle blush on cheeks from winter temperature. Nose refined and straight. Minimal visible makeup for winter aesthetic.
+
+Hair
+Long straight blonde hair. Hair parted slightly off-center. Smooth, sleek texture flowing out from under hood and headband. Fine strands visible against dark jacket, subtle shine reflecting cold daylight. Hair slightly wind-swept at the ends.
+
+Outfit
+Oversized black insulated winter jacket with high collar and padded structure. Black hood pulled over head. Black headband underneath hood. Large mirrored ski visor goggles with chrome reflective lens covering eyes and upper face. Black gloves visible. Second figure behind wearing all-black winter gear with hood and mirrored ski goggles.
+
+Body & skin details
+Skin appears smooth with realistic subsurface scattering. Subtle natural highlights on lips and nose bridge from cold daylight reflection. Soft natural shadows under chin and around hood edges.
+
+Lighting
+Natural outdoor winter daylight. Soft diffused lighting from overcast snowy sky. Snow acting as natural reflector, creating even illumination across face and jacket. Realistic reflections of snowy landscape visible in mirrored ski goggles.
+
+Background
+Snow-covered mountain landscape. Soft rolling snowy hills and distant tree lines. Pale winter sky with light cloud cover. Minimal depth of field keeping background slightly softened while maintaining environmental realism.
+
+Mood & aesthetic
+Luxury winter vacation aesthetic. High-end ski resort vibe. Minimalist, modern, cold-weather fashion editorial. Calm, powerful, winter-chic energy.
+
+Style & render quality
+Blender Cycles ultra-realistic render, 8K HDR, cinematic winter lighting, hyper-detailed fabric texture, realistic snow environment, accurate reflections in visor, high-definition hair strands, IMVU / Second Life compatible, no stylization, no cartoon effect, no painterly look.</pre>
+      <button onclick="copyFallback('prompt1')">Copiar Prompt</button>
+      <div class="hint">Se o botão não funcionar, selecione o texto acima e copie manualmente.</div>
+    </div>
+
+  </div>
+
+  <footer>
+    © Prompts by Tezza — Conteúdo protegido. Não redistribuir.
+  </footer>
+
+  <script>
+    function copyFallback(id) {
+      const el = document.getElementById(id);
+      const range = document.createRange();
+      range.selectNodeContents(el);
+      const selection = window.getSelection();
+      selection.removeAllRanges();
+      selection.addRange(range);
+      try {
+        document.execCommand('copy');
+        alert('Prompt selecionado e copiado!');
+      } catch (err) {
+        alert('Não foi possível copiar automaticamente. Copie manualmente.');
+      }
+      selection.removeAllRanges();
+    }
+  </script>
+
+</body>
+</html>
+
+
