@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prompts by Tezza</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0f0f0f;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      padding: 30px 20px;
+      text-align: center;
+      border-bottom: 1px solid #222;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+    header p {
+      margin-top: 10px;
+      color: #aaa;
+      font-size: 0.95rem;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .prompt-box {
+      background: #151515;
+      border: 1px solid #262626;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 25px;
+      position: relative;
+    }
+    .prompt-title {
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+    pre {
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      background: #0d0d0d;
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid #222;
+      font-size: 0.9rem;
+      line-height: 1.4;
+      user-select: text;
+    }
+    button {
+      margin-top: 12px;
+      background: #ffffff;
+      color: #000000;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.2s ease;
+    }
+    button:hover {
+      background: #e0e0e0;
+    }
+    .hint {
+      margin-top: 10px;
+      font-size: 0.8rem;
+      color: #888;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.8rem;
+      color: #777;
+      border-top: 1px solid #222;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Prompts by Tezza</h1>
+    <p>Página oficial para copiar prompts • Uso pessoal</p>
+  </header>
+
+  <div class="container">
+
+    <div class="prompt-box">
+      <div class="prompt-title">TEZZA PROMPTS</div>
+      <pre id="prompt1">(TEZZA PROMPTS)
+marque @tezza.vu
+
+site: /dreamina.capcut.com/
+
+Ultra-realistic cinematic female portrait — Blender Cycles render
+
+Camera & composition
+Vertical close-up portrait captured inside a car interior. Camera positioned slightly below eye level and very close to the subject, creating an intimate influencer-style selfie perspective. Tight framing from upper chest to top of the head. Slight wide-angle smartphone perspective with realistic facial proportions preserved. Subject positioned slightly off-center, creating a candid lifestyle composition. Shallow depth of field with softly blurred exterior visible through car windows.
+
+Pose & body positioning
+Subject seated inside a car seat with torso angled diagonally toward the camera. Upper body leaning slightly forward in a relaxed posture. One arm raised with elbow bent, hand touching and adjusting the sunglasses frame. Shoulders relaxed, natural candid body language typical of spontaneous lifestyle photography.
+
+Head position & gaze
+Head slightly tilted sideways with chin subtly projected forward. Face angled toward the camera while maintaining relaxed alignment. Eyes directed toward the camera through the sunglasses, creating confident engagement.
+
+Facial expression
+Playful teasing expression with the subject lightly biting her tongue between slightly parted lips. Jaw relaxed with subtle asymmetry caused by the tongue position. Lips glossy and softly compressed around the tongue, creating a candid flirtatious micro-expression. Natural cheek lift and relaxed facial muscles, avoiding exaggerated posing.
+
+Face & identity (reference-locked)
+Face must remain identity-locked and realistic, preserving natural facial anatomy, symmetry, bone structure, jawline contour, nose proportions, lip volume, and eye spacing. No stylization, no artificial smoothing, no beauty-filter effect.
+
+Hair
+Long blonde hair, smooth and silky with natural density and realistic strand separation. Straight texture flowing naturally over shoulders and chest with subtle light reflections.
+
+Accessories & details (STRICTLY reference-based, do not alter):
+Sunglasses must exactly match the provided reference image.
+Preserve original frame shape, proportions, lens size, curvature, thickness, and overall structure.
+Maintain original material appearance, reflections, gloss level, and lens opacity.
+Natural interaction with lighting and realistic reflections consistent with Blender Cycles rendering.
+No redesign, no stylistic reinterpretation, no color modification, and no shape alteration.
+Sunglasses must follow the reference precisely.
+Glossy lip finish, manicured nails with red polish, subtle jewelry details preserved realistically.
+
+Outfit (STRICTLY reference-based, do not alter):
+Clothing must exactly match the provided outfit reference image.
+Preserve original colors, fabric type, seams, cut and fit.
+Natural fabric stretch and behavior.
+No redesign, no color changes, no style alteration.
+Outfit must follow the reference precisely.
+
+Body & physique
+Slim feminine physique with natural anatomical proportions. Soft collarbone definition and realistic upper torso structure.
+
+Skin & realism
+Ultra-realistic skin texture with visible pores, micro-details, natural gloss variation, and accurate subsurface scattering typical of Blender Cycles rendering.
+
+Lighting
+Natural daylight entering through car windows producing soft directional illumination. Balanced highlights on lips and hair with realistic shadow gradients across facial contours.
+
+Environment
+Modern car interior with neutral upholstery tones. Exterior urban environment softly blurred, contributing realistic reflections visible on the sunglasses lenses.
+
+Mood & aesthetic
+Luxury lifestyle influencer aesthetic with candid, playful, confident feminine energy. Editorial realism with spontaneous social-media capture feeling.
+
+Style & render quality
+Ultra-photorealistic, Blender Cycles render, cinematic lighting, HDR, 8K resolution, razor-sharp focus, physically accurate materials, global illumination, realistic reflections, IMVU / Second Life compatible realism, reference-based rendering, no stylization.</pre>
+      <button onclick="copyFallback('prompt1')">Copiar Prompt</button>
+      <div class="hint">Se o botão não funcionar, selecione o texto acima e copie manualmente.</div>
+    </div>
+
+  </div>
+
+  <footer>
+    © Prompts by Tezza — Conteúdo protegido. Não redistribuir.
+  </footer>
+
+  <script>
+    function copyFallback(id) {
+      const el = document.getElementById(id);
+      const range = document.createRange();
+      range.selectNodeContents(el);
+      const selection = window.getSelection();
+      selection.removeAllRanges();
+      selection.addRange(range);
+      try {
+        document.execCommand('copy');
+        alert('Prompt selecionado e copiado!');
+      } catch (err) {
+        alert('Não foi possível copiar automaticamente. Copie manualmente.');
+      }
+      selection.removeAllRanges();
+    }
+  </script>
+
+</body>
+</html>
+
