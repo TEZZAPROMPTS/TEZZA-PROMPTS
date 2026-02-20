@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prompts by Tezza</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0f0f0f;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      padding: 30px 20px;
+      text-align: center;
+      border-bottom: 1px solid #222;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+    header p {
+      margin-top: 10px;
+      color: #aaa;
+      font-size: 0.95rem;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .prompt-box {
+      background: #151515;
+      border: 1px solid #262626;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 25px;
+      position: relative;
+    }
+    .prompt-title {
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+    pre {
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      background: #0d0d0d;
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid #222;
+      font-size: 0.9rem;
+      line-height: 1.4;
+      user-select: text;
+    }
+    button {
+      margin-top: 12px;
+      background: #ffffff;
+      color: #000000;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.2s ease;
+    }
+    button:hover {
+      background: #e0e0e0;
+    }
+    .hint {
+      margin-top: 10px;
+      font-size: 0.8rem;
+      color: #888;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.8rem;
+      color: #777;
+      border-top: 1px solid #222;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Prompts by Tezza</h1>
+    <p>Página oficial para copiar prompts • Uso pessoal</p>
+  </header>
+
+  <div class="container">
+
+    <div class="prompt-box">
+      <div class="prompt-title">TEZZA PROMPTS</div>
+      <pre id="prompt1">(TEZZA PROMPTS)
+marque @tezza.vu
+
+site: /dreamina.capcut.com/
+
+With reference to the style and appearance of the subject in the input images, generate an ultra-realistic cinematic portrait in a natural outdoor perspective. The woman is blonde, with long, flowing platinum-blonde hair reaching past the waist, styled in loose natural waves with soft irregular texture and subtle strand separation. Hair moves organically with slight ocean breeze influence, maintaining realistic volume and natural flow. A large vibrant red hibiscus flower is positioned behind one ear, partially tucked into the hair, creating a strong tropical focal point.
+
+The composition is a vertical medium portrait captured from hip level to slightly above the head, with the subject positioned in a three-quarter side profile while turning her face gently toward the camera. The pose feels relaxed and elegant, with both hands softly raised near the chest, fingers naturally curved, conveying a calm and poised gesture.
+
+Facial features are delicate and refined with smooth symmetry: softly arched natural eyebrows, almond-shaped eyes with subtle warm-toned makeup, fine eyeliner definition, and natural lashes. Skin appears smooth and luminous with visible realistic texture, soft blush across the cheeks and nose bridge, and balanced natural highlights produced by ambient sunset lighting. Lips are softly defined with a natural coral-red tone and a slightly parted relaxed expression, conveying a serene and confident mood.
+
+She wears a minimal red bandeau-style bikini top with clean edges and natural fabric tension, matching a red bikini bottom visible at the waistline. Fabric appears matte with realistic stretch behavior and accurate contouring to the body. Accessories include a red beaded necklace with a central white shell pendant resting naturally at the upper chest, reinforcing a tropical aesthetic.
+
+The environment is a beach shoreline during sunset, with ocean waves visible behind the subject and a dramatic cloudy sky illuminated by warm golden-hour tones mixed with cooler twilight hues. Background remains softly blurred with shallow depth of field, emphasizing subject separation while preserving environmental realism.
+
+Lighting is natural cinematic sunset lighting, combining soft warm highlights on the skin with gentle cool shadows, creating dimensional depth and realistic color transitions. Subtle rim lighting outlines the hair and shoulders, enhancing silhouette definition against the ocean backdrop.
+
+The style must be ultra-photorealistic, Blender Cycles render, cinematic realism, 8K resolution, HDR, razor-sharp facial focus, realistic skin micro-texture, natural color grading, IMVU / Second Life compatible realism, with no stylization or artistic alteration — strictly high-fidelity photographic realism.</pre>
+      <button onclick="copyFallback('prompt1')">Copiar Prompt</button>
+      <div class="hint">Se o botão não funcionar, selecione o texto acima e copie manualmente.</div>
+    </div>
+
+  </div>
+
+  <footer>
+    © Prompts by Tezza — Conteúdo protegido. Não redistribuir.
+  </footer>
+
+  <script>
+    function copyFallback(id) {
+      const el = document.getElementById(id);
+      const range = document.createRange();
+      range.selectNodeContents(el);
+      const selection = window.getSelection();
+      selection.removeAllRanges();
+      selection.addRange(range);
+      try {
+        document.execCommand('copy');
+        alert('Prompt selecionado e copiado!');
+      } catch (err) {
+        alert('Não foi possível copiar automaticamente. Copie manualmente.');
+      }
+      selection.removeAllRanges();
+    }
+  </script>
+
+</body>
+</html>
+
+
