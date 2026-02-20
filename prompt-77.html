@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prompts by Tezza</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0f0f0f;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      padding: 30px 20px;
+      text-align: center;
+      border-bottom: 1px solid #222;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+    header p {
+      margin-top: 10px;
+      color: #aaa;
+      font-size: 0.95rem;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .prompt-box {
+      background: #151515;
+      border: 1px solid #262626;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 25px;
+      position: relative;
+    }
+    .prompt-title {
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+    pre {
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      background: #0d0d0d;
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid #222;
+      font-size: 0.9rem;
+      line-height: 1.4;
+      user-select: text;
+    }
+    button {
+      margin-top: 12px;
+      background: #ffffff;
+      color: #000000;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.2s ease;
+    }
+    button:hover {
+      background: #e0e0e0;
+    }
+    .hint {
+      margin-top: 10px;
+      font-size: 0.8rem;
+      color: #888;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.8rem;
+      color: #777;
+      border-top: 1px solid #222;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Prompts by Tezza</h1>
+    <p>Página oficial para copiar prompts • Uso pessoal</p>
+  </header>
+
+  <div class="container">
+
+    <div class="prompt-box">
+      <div class="prompt-title">TEZZA PROMPTS</div>
+      <pre id="prompt1">(TEZZA PROMPTS)
+marque @tezza.vu
+
+site: /dreamina.capcut.com/
+
+Ultra-realistic cinematic female portrait — Blender Cycles render
+Camera & composition
+
+Vertical high-angle cinematic shot captured from above, camera positioned slightly behind the subject, looking downward toward her back and body. Composition centered with the subject lying diagonally along the pool edge. Frame focuses on the back, waist, hips, and legs, with natural perspective depth. Pool water occupies one side of the frame while textured concrete poolside fills the opposite side. Shallow depth of field with sharp subject focus and softly detailed background.
+
+Pose & body positioning
+
+Subject lying prone on the poolside surface, torso leaning forward with arms supporting her upper body outside the frame. Back slightly arched, hips naturally elevated, legs extended backward with relaxed positioning. Body posture conveys a relaxed sunbathing moment.
+
+Head position & gaze
+
+Head turned slightly downward and away from the camera, face not visible. Neck relaxed, hair naturally falling toward the back and shoulders.
+
+Facial expression
+
+Face hidden from view; mood expressed through body language suggesting calmness, relaxation, and warm outdoor leisure.
+
+Face & identity
+
+Identity remains reference-locked though facial features are not visible due to camera angle. Realistic anatomical proportions maintained.
+
+Hair
+
+Blonde hair with soft natural highlights, long length, straight texture with subtle volume. Hair parted slightly off-center, falling smoothly along the back with natural sunlit reflections and fine individual strands visible.
+
+Accessories & details
+
+Minimal accessories visible. Clean, natural styling emphasizing simplicity and realism.
+
+Outfit (STRICTLY reference-based, do not alter):
+Clothing must exactly match the provided outfit reference image.
+Preserve original colors, fabric type, seams, cut and fit.
+Natural fabric stretch and behavior.
+No redesign, no color changes, no style alteration.
+Outfit must follow the reference precisely.
+
+Body & physique
+
+Slim, feminine physique with natural curves big. Defined lower back contour, soft muscle tone, realistic proportions, and smooth anatomical transitions.
+
+Skin & realism
+
+Sun-kissed skin tone with warm highlights. Visible natural skin texture, subtle pores, soft tonal variation, and realistic light reflections. Blender Cycles skin shading with ultra-photorealistic subsurface scattering and smooth gloss response under sunlight.
+
+Lighting
+
+Strong natural sunlight coming from the upper side, creating defined shadows and bright highlights. High-contrast outdoor lighting producing realistic shadow falloff across the body and poolside surface. Light reflections bouncing from the water onto the skin.
+
+Environment
+
+Outdoor swimming pool setting with clear turquoise water showing natural ripple patterns and caustic reflections. Beige textured concrete pool edge adds contrast and realism to the scene.
+
+Mood & aesthetic
+
+Summer lifestyle aesthetic, relaxed luxury atmosphere, warm vacation mood, natural candid moment with sun-soaked cinematic realism.
+
+Style & render quality
+
+Ultra-realistic cinematic photography, Blender Cycles render, 8K resolution, HDR imaging, sharp focus, physically accurate lighting, photorealistic materials, IMVU / Second Life compatible realism, reference-based identity preservation, high micro-detail fidelity, natural color grading, professional editorial quality.</pre>
+      <button onclick="copyFallback('prompt1')">Copiar Prompt</button>
+      <div class="hint">Se o botão não funcionar, selecione o texto acima e copie manualmente.</div>
+    </div>
+
+  </div>
+
+  <footer>
+    © Prompts by Tezza — Conteúdo protegido. Não redistribuir.
+  </footer>
+
+  <script>
+    function copyFallback(id) {
+      const el = document.getElementById(id);
+      const range = document.createRange();
+      range.selectNodeContents(el);
+      const selection = window.getSelection();
+      selection.removeAllRanges();
+      selection.addRange(range);
+      try {
+        document.execCommand('copy');
+        alert('Prompt selecionado e copiado!');
+      } catch (err) {
+        alert('Não foi possível copiar automaticamente. Copie manualmente.');
+      }
+      selection.removeAllRanges();
+    }
+  </script>
+
+</body>
+</html>
+
+
