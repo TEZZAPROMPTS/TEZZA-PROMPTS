@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prompts by Tezza</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0f0f0f;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      padding: 30px 20px;
+      text-align: center;
+      border-bottom: 1px solid #222;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+    header p {
+      margin-top: 10px;
+      color: #aaa;
+      font-size: 0.95rem;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .prompt-box {
+      background: #151515;
+      border: 1px solid #262626;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 25px;
+      position: relative;
+    }
+    .prompt-title {
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+    pre {
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      background: #0d0d0d;
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid #222;
+      font-size: 0.9rem;
+      line-height: 1.4;
+      user-select: text;
+    }
+    button {
+      margin-top: 12px;
+      background: #ffffff;
+      color: #000000;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.2s ease;
+    }
+    button:hover {
+      background: #e0e0e0;
+    }
+    .hint {
+      margin-top: 10px;
+      font-size: 0.8rem;
+      color: #888;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.8rem;
+      color: #777;
+      border-top: 1px solid #222;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Prompts by Tezza</h1>
+    <p>Página oficial para copiar prompts • Uso pessoal</p>
+  </header>
+
+  <div class="container">
+
+    <div class="prompt-box">
+      <div class="prompt-title">TEZZA PROMPTS</div>
+      <pre id="prompt1">(TEZZA PROMPTS)
+marque @tezza.vu
+
+site: /dreamina.capcut.com/
+
+Ultra-realistic cinematic female portrait — Blender Cycles render
+
+Camera & composition  
+Vertical close-up portrait framed from upper chest to top of the head. Camera positioned slightly behind the subject’s shoulder, capturing a soft over-shoulder angle. Head turned back toward the camera, creating an elegant neck line and jaw contour. Slight upward tilt of the chin enhancing facial symmetry. Shallow depth of field with strong facial focus and softly blurred background.
+
+Pose & body positioning  
+Upper body angled away from the camera while the head rotates back toward the viewer. Shoulder slightly raised, creating a gentle natural curve through the collarbone and neck. One hand resting delicately near the shoulder with relaxed fingers, adding softness and femininity to the pose.
+
+Head position & gaze  
+Head tilted subtly backward and sideways. Eyes directed toward the camera with a calm, confident, soft gaze. Expression serene and composed, conveying elegance and quiet confidence.
+
+Facial expression  
+Neutral-soft expression with relaxed facial muscles. Lips gently closed with natural fullness and a subtle pout. Cheeks softly lifted, creating a refined editorial beauty look without exaggerated emotion.
+
+Face & identity  
+Symmetrical feminine facial structure with smooth jawline, softly sculpted cheekbones, and balanced facial proportions. Straight refined nose bridge, naturally full lips, and softly rounded chin. Features remain realistic and reference-locked with no stylization or exaggeration.
+
+Hair  
+Long blonde hair, ultra-smooth and glossy, middle-parted precisely at the center. Hair falls straight and sleek down the back with subtle natural weight and realistic strand separation. Soft reflective highlights along the hair surface emphasizing healthy texture and photorealistic rendering.
+
+Accessories & details  
+Minimal styling with no visible jewelry. Focus remains entirely on facial beauty, skin texture, and hair realism. Natural manicured nails in a soft nude tone visible near the shoulder.
+
+Outfit  
+Bare shoulders visible, suggesting a strapless or off-shoulder styling. Clean, minimal aesthetic to emphasize portrait elegance and skin realism.
+
+Body & physique  
+Slim feminine proportions with smooth shoulder line and delicate collarbone definition. Natural anatomical realism without exaggeration.
+
+Skin & realism  
+Ultra-realistic skin texture with visible pores, subtle tonal variation, and soft natural highlights. Healthy skin glow with realistic subsurface scattering typical of Blender Cycles rendering. Smooth but not plastic; micro-details preserved for realism.
+
+Lighting  
+Soft diffused studio lighting from the front-side, producing gentle highlights on cheekbones, nose bridge, and shoulder. Balanced shadows enhancing facial depth while maintaining a clean beauty aesthetic. Even illumination with natural falloff.
+
+Environment  
+Minimal indoor studio environment with neutral beige wall panels softly blurred in the background. Clean editorial setting designed to keep attention fully on the subject.
+
+Mood & aesthetic  
+Elegant, refined, beauty editorial aesthetic. Calm, luxurious, feminine atmosphere emphasizing sophistication and natural attractiveness.
+
+Style & render quality  
+Ultra-realistic cinematic portrait, Blender Cycles render, 8K resolution, HDR, razor-sharp focus, photorealistic skin shading, global illumination, realistic light bounce, high micro-detail fidelity, IMVU / Second Life compatible realism, reference-based identity preserved, no stylization or artistic distortion.</pre>
+      <button onclick="copyFallback('prompt1')">Copiar Prompt</button>
+      <div class="hint">Se o botão não funcionar, selecione o texto acima e copie manualmente.</div>
+    </div>
+
+  </div>
+
+  <footer>
+    © Prompts by Tezza — Conteúdo protegido. Não redistribuir.
+  </footer>
+
+  <script>
+    function copyFallback(id) {
+      const el = document.getElementById(id);
+      const range = document.createRange();
+      range.selectNodeContents(el);
+      const selection = window.getSelection();
+      selection.removeAllRanges();
+      selection.addRange(range);
+      try {
+        document.execCommand('copy');
+        alert('Prompt selecionado e copiado!');
+      } catch (err) {
+        alert('Não foi possível copiar automaticamente. Copie manualmente.');
+      }
+      selection.removeAllRanges();
+    }
+  </script>
+
+</body>
+</html>
+
+
