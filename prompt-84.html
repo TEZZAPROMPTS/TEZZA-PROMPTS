@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prompts by Tezza</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0f0f0f;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      padding: 30px 20px;
+      text-align: center;
+      border-bottom: 1px solid #222;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+    header p {
+      margin-top: 10px;
+      color: #aaa;
+      font-size: 0.95rem;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .prompt-box {
+      background: #151515;
+      border: 1px solid #262626;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 25px;
+      position: relative;
+    }
+    .prompt-title {
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+    pre {
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      background: #0d0d0d;
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid #222;
+      font-size: 0.9rem;
+      line-height: 1.4;
+      user-select: text;
+    }
+    button {
+      margin-top: 12px;
+      background: #ffffff;
+      color: #000000;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.2s ease;
+    }
+    button:hover {
+      background: #e0e0e0;
+    }
+    .hint {
+      margin-top: 10px;
+      font-size: 0.8rem;
+      color: #888;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.8rem;
+      color: #777;
+      border-top: 1px solid #222;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Prompts by Tezza</h1>
+    <p>Página oficial para copiar prompts • Uso pessoal</p>
+  </header>
+
+  <div class="container">
+
+    <div class="prompt-box">
+      <div class="prompt-title">TEZZA PROMPTS</div>
+      <pre id="prompt1">(TEZZA PROMPTS)
+marque @tezza.vu
+
+site: /dreamina.capcut.com/   [AGENTE DE IA]
+
+Ultra-realistic cinematic male portrait — Blender Cycles render
+
+CAMERA & COMPOSITION
+Vertical medium portrait framing from mid-torso to head. Camera positioned at approximately chest level creating a natural eye-line perspective. The subject is centered in the frame taking a mirror selfie with a smartphone, producing a contemporary lifestyle composition. Shallow depth of field keeps the subject sharply defined while the corridor background appears softly blurred, emphasizing realism and subject isolation.
+
+POSE & BODY POSITIONING
+Relaxed standing posture in front of a mirror. Torso slightly angled toward the mirror while shoulders remain naturally squared. One arm raised holding the smartphone to capture the reflection while the opposite hand rests casually inside the pants pocket. Body posture confident yet effortless, with relaxed shoulders and balanced weight distribution.
+
+HEAD POSITION & GAZE
+Head slightly tilted downward and subtly angled toward the phone screen. Eyes directed toward the smartphone display rather than the mirror lens, reinforcing the candid selfie dynamic. Neck posture relaxed with natural alignment.
+
+FACIAL EXPRESSION
+Calm and introspective facial expression. Lips gently closed with a subtle relaxed tension around the mouth. Eyebrows neutral and facial muscles relaxed, giving a composed, slightly thoughtful appearance.
+
+FACE & IDENTITY
+Young adult man with well-defined masculine facial structure. Strong jawline with subtle beard contour, trimmed short beard and mustache outlining the jaw and chin. Straight nose bridge, thick natural eyebrows, and almond-shaped dark eyes. Facial proportions symmetrical with defined cheekbones and a balanced facial profile.
+
+HAIR
+Short dark hair styled neatly with a slight groomed texture. Hair combed back and slightly to the side, maintaining volume at the top while the sides appear more controlled and tapered.
+
+ACCESSORIES & DETAILS
+Black smartphone held in one hand while taking the mirror selfie. No visible jewelry or accessories, maintaining a clean modern aesthetic.
+
+OUTFIT
+Black textured zip-up knit sweater with a ribbed fabric structure and a metallic front zipper partially closed. Underneath, a white crew-neck shirt provides contrast at the neckline. Dark minimalist pants complement the outfit, creating a refined casual style.
+
+BODY & PHYSIQUE
+Athletic masculine physique with broad shoulders and proportionate torso. Body structure appears fit and well balanced without exaggerated muscular definition. Natural posture highlights confident and composed body language.
+
+SKIN & REALISM
+Realistic male skin texture with visible natural pores, subtle beard shadow, and soft tonal variations across the face. Light skin reflections and natural complexion gradients enhance photorealism. Physically accurate subsurface scattering typical of Blender Cycles skin rendering.
+
+LIGHTING
+Bright overhead indoor lighting typical of a retail or fitting-room environment. Even illumination across the face and clothing with soft shadows beneath the chin and around the neck. Light reflections on the phone and zipper add realistic material interaction.
+
+ENVIRONMENT
+Indoor clothing store or fitting-room corridor environment with white curtain panels on one side and reflective mirror surfaces along the wall. Neutral textured floor pattern and bright ceiling lights create a modern commercial interior setting.
+
+MOOD & AESTHETIC
+Modern lifestyle aesthetic with a casual fashion editorial tone. Clean, contemporary, and slightly candid mood created by the mirror selfie composition. Atmosphere calm, confident, and natural.
+
+STYLE & RENDER QUALITY
+Ultra-photorealistic Blender Cycles render, cinematic realism, 8K resolution, HDR, razor-sharp focus on the subject, realistic skin micro-details, physically accurate lighting simulation, high-fidelity textures, natural color grading, no stylization or artistic exaggeration.</pre>
+      <button onclick="copyFallback('prompt1')">Copiar Prompt</button>
+      <div class="hint">Se o botão não funcionar, selecione o texto acima e copie manualmente.</div>
+    </div>
+
+  </div>
+
+  <footer>
+    © Prompts by Tezza — Conteúdo protegido. Não redistribuir.
+  </footer>
+
+  <script>
+    function copyFallback(id) {
+      const el = document.getElementById(id);
+      const range = document.createRange();
+      range.selectNodeContents(el);
+      const selection = window.getSelection();
+      selection.removeAllRanges();
+      selection.addRange(range);
+      try {
+        document.execCommand('copy');
+        alert('Prompt selecionado e copiado!');
+      } catch (err) {
+        alert('Não foi possível copiar automaticamente. Copie manualmente.');
+      }
+      selection.removeAllRanges();
+    }
+  </script>
+
+</body>
+</html>
+
+
