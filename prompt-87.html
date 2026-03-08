@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prompts by Tezza</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0f0f0f;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      padding: 30px 20px;
+      text-align: center;
+      border-bottom: 1px solid #222;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+    header p {
+      margin-top: 10px;
+      color: #aaa;
+      font-size: 0.95rem;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .prompt-box {
+      background: #151515;
+      border: 1px solid #262626;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 25px;
+      position: relative;
+    }
+    .prompt-title {
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+    pre {
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      background: #0d0d0d;
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid #222;
+      font-size: 0.9rem;
+      line-height: 1.4;
+      user-select: text;
+    }
+    button {
+      margin-top: 12px;
+      background: #ffffff;
+      color: #000000;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.2s ease;
+    }
+    button:hover {
+      background: #e0e0e0;
+    }
+    .hint {
+      margin-top: 10px;
+      font-size: 0.8rem;
+      color: #888;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.8rem;
+      color: #777;
+      border-top: 1px solid #222;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Prompts by Tezza</h1>
+    <p>Página oficial para copiar prompts • Uso pessoal</p>
+  </header>
+
+  <div class="container">
+
+    <div class="prompt-box">
+      <div class="prompt-title">TEZZA PROMPTS</div>
+      <pre id="prompt1">(TEZZA PROMPTS)
+marque @tezza.vu
+
+site: /dreamina.capcut.com/   [AGENTE DE IA]
+
+Ultra-realistic cinematic portrait — Blender Cycles style reference
+Camera & composition
+
+Close-up vertical selfie portrait framed from the upper chest/shoulders to the top of the head.
+Camera positioned very close to the face, likely from a handheld smartphone perspective.
+The subject is lying on a soft surface (bed or pillow), with the head slightly tilted sideways.
+Composition is intimate and centered around the face, filling most of the frame.
+Background depth is shallow with the pillow softly visible, keeping attention on facial features.
+
+Face & identity (reference-based, do not alter)
+
+Face shows soft and rounded facial structure with defined cheekbones and full lips.
+Expression is calm and slightly playful with lips gently pursed in a subtle pout.
+Eyes directed toward the camera, creating a direct and engaging gaze.
+Eyebrows are full, well-shaped, and darker than the hair, framing the eyes prominently.
+Natural micro-expressions give a relaxed and casual selfie atmosphere.
+
+Hair (reference-accurate & realistic)
+
+Long platinum-blonde hair spread around the head on the pillow surface.
+Hair is smooth with soft natural waves and visible strand separation.
+Two hair clips hold the front sections of the hair away from the face.
+Strands fall naturally along the sides of the face and shoulders.
+
+Body & physique
+
+Only a small portion of the shoulders and upper chest is visible.
+Body posture suggests the subject is lying down in a relaxed position.
+Shoulders appear relaxed with a natural casual posture typical of a selfie taken while resting.
+
+Outfit & accessories
+
+Black top or garment partially visible near the shoulder area.
+Two visible hair clips placed on the front sections of the hair.
+No other accessories visible.
+
+Skin & realism
+
+Skin appears smooth with natural highlights from soft lighting.
+Subtle natural skin texture and tone variation are visible.
+Warm skin tone with slight blush in the cheek area.
+Natural gloss on the lips giving them a reflective, hydrated appearance.
+
+Lighting
+
+Soft diffuse indoor lighting, likely ambient room light or window light.
+Light evenly illuminates the face with minimal harsh shadows.
+Gentle highlights appear on the forehead, nose bridge, and lips.
+
+Environment
+
+Indoor environment with a white pillow and soft bedding visible.
+Background is simple and neutral with no distracting elements.
+The soft fabric surface adds a cozy and intimate atmosphere.
+
+Mood & aesthetic
+
+Casual, relaxed, and intimate selfie moment.
+Soft lifestyle aesthetic with a cozy resting environment.
+Natural and spontaneous mood rather than a formal portrait.
+
+Style & render quality
+
+Real-life smartphone selfie reference.
+High detail in facial features, hair strands, and skin reflections.
+Clean, minimal composition emphasizing the face as the central subject.</pre>
+      <button onclick="copyFallback('prompt1')">Copiar Prompt</button>
+      <div class="hint">Se o botão não funcionar, selecione o texto acima e copie manualmente.</div>
+    </div>
+
+  </div>
+
+  <footer>
+    © Prompts by Tezza — Conteúdo protegido. Não redistribuir.
+  </footer>
+
+  <script>
+    function copyFallback(id) {
+      const el = document.getElementById(id);
+      const range = document.createRange();
+      range.selectNodeContents(el);
+      const selection = window.getSelection();
+      selection.removeAllRanges();
+      selection.addRange(range);
+      try {
+        document.execCommand('copy');
+        alert('Prompt selecionado e copiado!');
+      } catch (err) {
+        alert('Não foi possível copiar automaticamente. Copie manualmente.');
+      }
+      selection.removeAllRanges();
+    }
+  </script>
+
+</body>
+</html>
+
+
