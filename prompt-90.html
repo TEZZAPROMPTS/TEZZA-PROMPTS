@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prompts by Tezza</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0f0f0f;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      padding: 30px 20px;
+      text-align: center;
+      border-bottom: 1px solid #222;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+    header p {
+      margin-top: 10px;
+      color: #aaa;
+      font-size: 0.95rem;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .prompt-box {
+      background: #151515;
+      border: 1px solid #262626;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 25px;
+      position: relative;
+    }
+    .prompt-title {
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+    pre {
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      background: #0d0d0d;
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid #222;
+      font-size: 0.9rem;
+      line-height: 1.4;
+      user-select: text;
+    }
+    button {
+      margin-top: 12px;
+      background: #ffffff;
+      color: #000000;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.2s ease;
+    }
+    button:hover {
+      background: #e0e0e0;
+    }
+    .hint {
+      margin-top: 10px;
+      font-size: 0.8rem;
+      color: #888;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.8rem;
+      color: #777;
+      border-top: 1px solid #222;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Prompts by Tezza</h1>
+    <p>Página oficial para copiar prompts • Uso pessoal</p>
+  </header>
+
+  <div class="container">
+
+    <div class="prompt-box">
+      <div class="prompt-title">TEZZA PROMPTS</div>
+      <pre id="prompt1">(TEZZA PROMPTS)
+marque @tezza.vu
+
+site: /dreamina.capcut.com/   [AGENTE DE IA]
+
+Ultra-realistic cinematic female portrait — Blender Cycles render
+
+Camera & composition
+
+
+
+Vertical close-up selfie portrait framed from the upper chest to the top of the head.
+
+Camera positioned slightly above face level, angled downward toward the subject, typical of a handheld smartphone selfie.
+
+The subject fills most of the frame, with the face centered and the fur-lined hood framing the composition.
+
+Foreground includes part of a bag strap and patterned bag near the shoulder.
+
+Background shows a stone pavement surface, softly blurred, keeping visual focus on the subject.
+
+
+
+Face & identity (reference-based, do not alter)
+
+
+
+Face displays a soft feminine facial structure with defined cheekbones and a smooth jawline.
+
+Lips are full with a glossy finish and a relaxed neutral expression.
+
+Eyes are slightly narrowed with a calm, confident gaze directed toward the camera.
+
+Eyebrows are full and naturally shaped, framing the eyes with balanced symmetry.
+
+Subtle micro-expressions convey a composed and self-assured mood.
+
+
+
+Hair (reference-accurate & realistic)
+
+
+
+Long blonde hair visible beneath the hood and headband.
+
+Hair appears straight with soft natural flow along the chest and shoulders.
+
+Strands fall smoothly with realistic separation and soft shine.
+
+Fine individual strands are visible, contributing to a natural layered appearance.
+
+
+
+Body & physique
+
+
+
+Only the upper torso and shoulders are visible in the frame.
+
+Posture suggests the subject is standing outdoors while holding the camera at arm’s length.
+
+Shoulders appear relaxed with a natural casual pose typical of a selfie.
+
+
+
+Outfit & accessories
+
+
+
+Thick winter jacket with a large fur-lined hood framing the face.
+
+Olive-green headband covering the top of the head beneath the hood.
+
+Black jacket fabric visible beneath the fur trim.
+
+Designer-style patterned handbag strap and bag visible over the shoulder.
+
+
+
+Skin & realism
+
+
+
+Natural warm skin tone with subtle highlights across the cheekbones and nose bridge.
+
+Skin displays realistic texture with slight tonal variations.
+
+Glossy lips reflect surrounding light sources.
+
+Soft reflective highlights add realism without appearing overly smooth.
+
+
+
+Lighting
+
+
+
+Mixed lighting environment with ambient outdoor light combined with colored artificial light.
+
+A red light source casts soft red highlights across the nose, lips and lower face.
+
+The lighting creates dynamic color contrast while maintaining natural skin visibility.
+
+Shadows from the hood subtly shape the facial structure.
+
+
+
+Environment
+
+
+
+Outdoor nighttime or low-light urban setting suggested by pavement surface and artificial lighting.
+
+Minimal visible background elements, keeping focus on the subject.
+
+Environment feels like a street or sidewalk location.
+
+
+
+Mood & aesthetic
+
+
+
+Stylish winter street-style aesthetic.
+
+Confident and composed expression with a modern lifestyle vibe.
+
+Atmosphere feels slightly cinematic due to the colored lighting and winter clothing.
+
+
+
+Style & render quality
+
+
+
+Ultra-photorealistic reference suitable for high-quality Blender Cycles rendering.
+
+High detail in fur texture, hair strands and skin reflections.
+
+Realistic lighting interaction between colored light and skin surfaces.
+
+Clean portrait composition emphasizing realism and detail.</pre>
+      <button onclick="copyFallback('prompt1')">Copiar Prompt</button>
+      <div class="hint">Se o botão não funcionar, selecione o texto acima e copie manualmente.</div>
+    </div>
+
+  </div>
+
+  <footer>
+    © Prompts by Tezza — Conteúdo protegido. Não redistribuir.
+  </footer>
+
+  <script>
+    function copyFallback(id) {
+      const el = document.getElementById(id);
+      const range = document.createRange();
+      range.selectNodeContents(el);
+      const selection = window.getSelection();
+      selection.removeAllRanges();
+      selection.addRange(range);
+      try {
+        document.execCommand('copy');
+        alert('Prompt selecionado e copiado!');
+      } catch (err) {
+        alert('Não foi possível copiar automaticamente. Copie manualmente.');
+      }
+      selection.removeAllRanges();
+    }
+  </script>
+
+</body>
+</html>
+
+
+
