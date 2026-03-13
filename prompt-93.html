@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prompts by Tezza</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0f0f0f;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      padding: 30px 20px;
+      text-align: center;
+      border-bottom: 1px solid #222;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+    header p {
+      margin-top: 10px;
+      color: #aaa;
+      font-size: 0.95rem;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .prompt-box {
+      background: #151515;
+      border: 1px solid #262626;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 25px;
+      position: relative;
+    }
+    .prompt-title {
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+    pre {
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      background: #0d0d0d;
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid #222;
+      font-size: 0.9rem;
+      line-height: 1.4;
+      user-select: text;
+    }
+    button {
+      margin-top: 12px;
+      background: #ffffff;
+      color: #000000;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.2s ease;
+    }
+    button:hover {
+      background: #e0e0e0;
+    }
+    .hint {
+      margin-top: 10px;
+      font-size: 0.8rem;
+      color: #888;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.8rem;
+      color: #777;
+      border-top: 1px solid #222;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Prompts by Tezza</h1>
+    <p>Página oficial para copiar prompts • Uso pessoal</p>
+  </header>
+
+  <div class="container">
+
+    <div class="prompt-box">
+      <div class="prompt-title">TEZZA PROMPTS</div>
+      <pre id="prompt1">(TEZZA PROMPTS)
+marque @tezza.vu
+
+site: /dreamina.capcut.com/   [AGENTE DE IA]
+
+Ultra-realistic cinematic female portrait — Blender Cycles render
+
+
+
+Camera & composition
+
+
+
+Vertical portrait orientation (9:16). Medium shot framed from the waist up to just above the head. Camera positioned slightly below chest level with a subtle upward perspective, enhancing body depth and presence. Subject positioned diagonally across the frame with the torso angled toward the camera. Clean neutral studio background occupying the upper portion of the composition. Shallow depth of field with the subject in razor-sharp focus and the background softly softened.
+
+
+
+Pose & body positioning (reference-locked)
+
+
+
+Female subject seated on the floor leaning slightly backward while supporting her weight with both hands placed behind her on the ground. Upper body arched slightly creating a confident, relaxed posture. Shoulders open and relaxed with a natural asymmetrical body angle. Legs positioned outside the visible crop while the torso remains the primary focus.
+
+
+
+Head position & gaze
+
+
+
+Head turned slightly toward the camera with a subtle backward tilt. Face angled over the shoulder while maintaining eye contact with the viewer.
+
+
+
+Facial expression
+
+
+
+Soft confident expression with slightly parted lips. Expression calm, composed, and subtly seductive while maintaining natural realism.
+
+
+
+Face & identity (reference-based, do not alter)
+
+
+
+Face must strictly preserve the facial identity from the reference image. Maintain exact facial proportions, cheekbone structure, jawline, lips, nose shape, eyebrow structure, and eye spacing. No facial redesign, no beautification, no stylization. Natural realism only.
+
+
+
+Hair
+
+
+
+Long straight blonde hair flowing naturally down the back and over the shoulders. Hair texture sleek with subtle natural shine and realistic strand separation. Physically accurate Blender Cycles hair simulation.
+
+
+
+Accessories & details
+
+
+
+Minimal accessories with a clean styling approach. Natural glossy manicure visible on the hands.
+
+
+
+Outfit
+
+
+
+Fitted short-sleeve crop top in vibrant red fabric with subtle velvet-like texture and soft reflective sheen. Minimal black underwear visible at the waistline. Fabric rendered with realistic cloth tension and folds.
+
+
+
+Body & physique
+
+
+
+Curvy feminine physique with natural waist definition and smooth body contours. Realistic anatomy with balanced proportions and natural posture.
+
+
+
+Skin & realism
+
+
+
+Warm light-medium skin tone with ultra-realistic skin texture. Visible pores and subtle natural highlights on shoulders, arms, and collarbone. Physically accurate subsurface scattering. No over-smoothing or artificial plastic appearance.
+
+
+
+Lighting
+
+
+
+Direct studio flash-style lighting from the front creating crisp highlights and defined shadows on the floor and background. Balanced exposure emphasizing skin texture and fabric reflections.
+
+
+
+Environment
+
+
+
+Minimalist indoor studio environment with a smooth light-colored background and clean floor surface. No visual clutter.
+
+
+
+Mood & aesthetic
+
+
+
+Bold contemporary fashion aesthetic with confident, editorial studio energy. Clean minimalist composition focusing on the subject and styling.
+
+
+
+Style & render quality
+
+
+
+Ultra-photorealistic 3D realism. Blender Cycles–style render. IMVU / Second Life compatible realism. HDR lighting, 8K resolution, razor-sharp focus. Physically accurate shaders for skin, hair, fabric, and floor materials. No CGI look, no filters, no artificial effects.</pre>
+      <button onclick="copyFallback('prompt1')">Copiar Prompt</button>
+      <div class="hint">Se o botão não funcionar, selecione o texto acima e copie manualmente.</div>
+    </div>
+
+  </div>
+
+  <footer>
+    © Prompts by Tezza — Conteúdo protegido. Não redistribuir.
+  </footer>
+
+  <script>
+    function copyFallback(id) {
+      const el = document.getElementById(id);
+      const range = document.createRange();
+      range.selectNodeContents(el);
+      const selection = window.getSelection();
+      selection.removeAllRanges();
+      selection.addRange(range);
+      try {
+        document.execCommand('copy');
+        alert('Prompt selecionado e copiado!');
+      } catch (err) {
+        alert('Não foi possível copiar automaticamente. Copie manualmente.');
+      }
+      selection.removeAllRanges();
+    }
+  </script>
+
+</body>
+</html>
+
+
+
