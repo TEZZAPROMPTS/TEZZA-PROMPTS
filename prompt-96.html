@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prompts by Tezza</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0f0f0f;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      padding: 30px 20px;
+      text-align: center;
+      border-bottom: 1px solid #222;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+    header p {
+      margin-top: 10px;
+      color: #aaa;
+      font-size: 0.95rem;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .prompt-box {
+      background: #151515;
+      border: 1px solid #262626;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 25px;
+      position: relative;
+    }
+    .prompt-title {
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+    pre {
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      background: #0d0d0d;
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid #222;
+      font-size: 0.9rem;
+      line-height: 1.4;
+      user-select: text;
+    }
+    button {
+      margin-top: 12px;
+      background: #ffffff;
+      color: #000000;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.2s ease;
+    }
+    button:hover {
+      background: #e0e0e0;
+    }
+    .hint {
+      margin-top: 10px;
+      font-size: 0.8rem;
+      color: #888;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.8rem;
+      color: #777;
+      border-top: 1px solid #222;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Prompts by Tezza</h1>
+    <p>Página oficial para copiar prompts • Uso pessoal</p>
+  </header>
+
+  <div class="container">
+
+    <div class="prompt-box">
+      <div class="prompt-title">TEZZA PROMPTS</div>
+      <pre id="prompt1">(TEZZA PROMPTS)
+marque @tezza.vu
+
+site: /dreamina.capcut.com/   [AGENTE DE IA]
+
+Ultra-realistic cinematic female portrait — Blender Cycles render
+
+Camera & composition
+
+
+
+Vertical close-up portrait framed from the upper chest to the top of the head.
+
+Camera positioned at approximately face level with a slight handheld perspective similar to a smartphone selfie.
+
+The subject is centered in the frame, filling most of the composition.
+
+Background softly recedes showing a beach environment with sand, distant buildings and palm trees.
+
+Shallow depth of field keeps the subject sharply in focus while the background remains slightly blurred.
+
+
+
+Face & identity (reference-based, do not alter)
+
+
+
+Face displays soft feminine facial structure with defined cheekbones and smooth jawline.
+
+Lips are full and slightly pursed in a playful blowing-kiss expression.
+
+Eyes are hidden behind sunglasses but the facial expression conveys a relaxed and cheerful mood.
+
+Natural facial proportions preserved with balanced features and soft skin highlights.
+
+
+
+Hair (reference-accurate & realistic)
+
+
+
+Long blonde hair positioned under a hooded jacket.
+
+Strands of blonde hair are partially visible around the face and near the hood edges.
+
+Hair appears smooth with natural volume and soft wave structure.
+
+Fine individual strands visible where hair emerges from the hood, maintaining natural separation and realistic texture.
+
+
+
+Body & physique
+
+
+
+Only the upper torso and shoulders are visible.
+
+Posture is relaxed and slightly leaning toward the camera in a casual selfie pose.
+
+Shoulders appear relaxed, conveying a natural lifestyle moment at the beach.
+
+
+
+Outfit & accessories
+
+
+
+Brown teddy-style hooded jacket covering the head and shoulders.
+
+Large brown cat-eye sunglasses covering the eyes.
+
+Light pink manicure with long polished nails.
+
+Multiple rings visible on the fingers.
+
+Hand positioned near the lips while blowing a kiss.
+
+
+
+Skin & realism
+
+
+
+Warm natural skin tone illuminated by sunlight.
+
+Skin shows realistic highlights and subtle natural texture.
+
+Soft glow on the forehead, nose and cheeks created by directional sunlight.
+
+Lips have a glossy natural finish.
+
+
+
+Lighting
+
+
+
+Strong natural sunlight typical of a coastal outdoor environment.
+
+Directional warm sunlight illuminating the face from the front/side.
+
+Soft shadows created by the hood framing the face.
+
+Balanced exposure with natural outdoor color temperature.
+
+
+
+Environment
+
+
+
+Outdoor beach environment with visible sand and coastal scenery.
+
+Palm trees and seaside buildings appear softly in the background.
+
+Ocean and shoreline visible in the distance, adding depth and atmosphere.
+
+
+
+Mood & aesthetic
+
+
+
+Casual beach lifestyle moment.
+
+Playful and affectionate mood with the blowing-kiss gesture.
+
+Warm sunny atmosphere conveying a relaxed coastal day.
+
+
+
+Style & render quality
+
+
+
+Ultra-photorealistic visual reference.
+
+High detail in skin texture, fabric fibers of the jacket, and manicure.
+
+Natural cinematic lighting with realistic environmental depth.
+
+Suitable as a reference for high-quality Blender Cycles–style photorealistic rendering. </pre>
+      <button onclick="copyFallback('prompt1')">Copiar Prompt</button>
+      <div class="hint">Se o botão não funcionar, selecione o texto acima e copie manualmente.</div>
+    </div>
+
+  </div>
+
+  <footer>
+    © Prompts by Tezza — Conteúdo protegido. Não redistribuir.
+  </footer>
+
+  <script>
+    function copyFallback(id) {
+      const el = document.getElementById(id);
+      const range = document.createRange();
+      range.selectNodeContents(el);
+      const selection = window.getSelection();
+      selection.removeAllRanges();
+      selection.addRange(range);
+      try {
+        document.execCommand('copy');
+        alert('Prompt selecionado e copiado!');
+      } catch (err) {
+        alert('Não foi possível copiar automaticamente. Copie manualmente.');
+      }
+      selection.removeAllRanges();
+    }
+  </script>
+
+</body>
+</html>
+
+
+
