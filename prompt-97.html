@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prompts by Tezza</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0f0f0f;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      padding: 30px 20px;
+      text-align: center;
+      border-bottom: 1px solid #222;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+    header p {
+      margin-top: 10px;
+      color: #aaa;
+      font-size: 0.95rem;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .prompt-box {
+      background: #151515;
+      border: 1px solid #262626;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 25px;
+      position: relative;
+    }
+    .prompt-title {
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+    pre {
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      background: #0d0d0d;
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid #222;
+      font-size: 0.9rem;
+      line-height: 1.4;
+      user-select: text;
+    }
+    button {
+      margin-top: 12px;
+      background: #ffffff;
+      color: #000000;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.2s ease;
+    }
+    button:hover {
+      background: #e0e0e0;
+    }
+    .hint {
+      margin-top: 10px;
+      font-size: 0.8rem;
+      color: #888;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.8rem;
+      color: #777;
+      border-top: 1px solid #222;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Prompts by Tezza</h1>
+    <p>Página oficial para copiar prompts • Uso pessoal</p>
+  </header>
+
+  <div class="container">
+
+    <div class="prompt-box">
+      <div class="prompt-title">TEZZA PROMPTS</div>
+      <pre id="prompt1">(TEZZA PROMPTS)
+marque @tezza.vu
+
+site: /dreamina.capcut.com/   [AGENTE DE IA]
+
+Ultra-realistic cinematic male portrait — Blender Cycles render
+
+Camera & composition
+
+
+
+Medium close portrait framed from the chest to the head.
+
+The camera is positioned directly in front of the subject at sofa height, creating a relaxed and intimate perspective.
+
+The subject leans forward over the backrest of a sofa while holding a smartphone to take a mirror-style selfie.
+
+Both arms rest over the sofa back, forming strong horizontal lines that frame the composition.
+
+Background remains minimal and softly blurred, keeping the visual focus entirely on the subject.
+
+
+
+Face & identity (reference-based, do not alter)
+
+
+
+Young masculine face with defined yet soft facial structure.
+
+Rounded jawline with subtle angular definition along the cheekbones.
+
+Neutral facial expression with a calm, slightly introspective gaze directed toward the phone screen.
+
+Eyes appear relaxed and focused downward.
+
+Natural eyebrows with medium thickness and gentle curvature.
+
+Facial proportions remain balanced and realistic.
+
+
+
+Hair
+
+
+
+Short dark hair styled in a textured, slightly wavy crop.
+
+Hair sits naturally close to the scalp with soft volume on top.
+
+Subtle natural shine and visible strand definition create realism.
+
+
+
+Body & physique
+
+
+
+Athletic and muscular upper body with defined shoulders, arms and chest.
+
+Arms rest heavily across the sofa back, showing relaxed musculature and natural weight distribution.
+
+
+
+Outfit & accessories
+
+
+
+Upper body appears shirtless, small stud earrings in both ears.
+
+Smartphone held in the right hand used to capture the selfie.
+
+
+
+Skin & realism
+
+
+
+Natural skin tone with subtle tonal variation and realistic micro-texture.
+
+Soft shadows across the arms and shoulders highlight muscle structure.
+
+Visible pores and small natural skin imperfections enhance photorealism.
+
+
+
+Lighting
+
+
+
+Soft indoor ambient lighting coming from the front-left side of the frame.
+
+Light is diffused and gentle, producing smooth shadows across the face and arms.
+
+Overall lighting feels natural and intimate, similar to daylight entering a living room.
+
+
+
+Environment
+
+
+
+Minimalist indoor living room environment.
+
+Neutral-toned sofa backrest occupies the foreground.
+
+Behind the subject, a clean wall with a framed black-and-white portrait artwork adds subtle visual interest.
+
+
+
+Mood & aesthetic
+
+
+
+Relaxed and casual lifestyle portrait.
+
+The mood is intimate, calm and reflective, capturing a quiet everyday moment.
+
+Modern aesthetic with minimalist interior design.
+
+
+
+Style & render quality
+
+
+
+Ultra-photorealistic cinematic render designed for Blender Cycles.
+
+High fidelity skin shading, detailed tattoo textures and realistic hair rendering.
+
+Natural depth of field and balanced lighting emphasize realism and photographic authenticity. </pre>
+      <button onclick="copyFallback('prompt1')">Copiar Prompt</button>
+      <div class="hint">Se o botão não funcionar, selecione o texto acima e copie manualmente.</div>
+    </div>
+
+  </div>
+
+  <footer>
+    © Prompts by Tezza — Conteúdo protegido. Não redistribuir.
+  </footer>
+
+  <script>
+    function copyFallback(id) {
+      const el = document.getElementById(id);
+      const range = document.createRange();
+      range.selectNodeContents(el);
+      const selection = window.getSelection();
+      selection.removeAllRanges();
+      selection.addRange(range);
+      try {
+        document.execCommand('copy');
+        alert('Prompt selecionado e copiado!');
+      } catch (err) {
+        alert('Não foi possível copiar automaticamente. Copie manualmente.');
+      }
+      selection.removeAllRanges();
+    }
+  </script>
+
+</body>
+</html>
+
+
+
