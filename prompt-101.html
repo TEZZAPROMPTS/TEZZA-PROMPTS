@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prompts by Tezza</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0f0f0f;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      padding: 30px 20px;
+      text-align: center;
+      border-bottom: 1px solid #222;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+    header p {
+      margin-top: 10px;
+      color: #aaa;
+      font-size: 0.95rem;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .prompt-box {
+      background: #151515;
+      border: 1px solid #262626;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 25px;
+      position: relative;
+    }
+    .prompt-title {
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+    pre {
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      background: #0d0d0d;
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid #222;
+      font-size: 0.9rem;
+      line-height: 1.4;
+      user-select: text;
+    }
+    button {
+      margin-top: 12px;
+      background: #ffffff;
+      color: #000000;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.2s ease;
+    }
+    button:hover {
+      background: #e0e0e0;
+    }
+    .hint {
+      margin-top: 10px;
+      font-size: 0.8rem;
+      color: #888;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.8rem;
+      color: #777;
+      border-top: 1px solid #222;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Prompts by Tezza</h1>
+    <p>Página oficial para copiar prompts • Uso pessoal</p>
+  </header>
+
+  <div class="container">
+
+    <div class="prompt-box">
+      <div class="prompt-title">TEZZA PROMPTS</div>
+      <pre id="prompt1">(TEZZA PROMPTS)
+marque @tezza.vu
+
+site: /dreamina.capcut.com/   [AGENTE DE IA]
+
+Ultra-realistic cinematic female portrait — Blender Cycles render
+
+Camera & composition
+
+Vertical medium-full portrait framed from mid-thigh to head. Camera positioned at chest height with a slightly frontal angle, maintaining natural perspective. Subject stands close to a textured wall, with the body slightly angled and head turned to the side. Strong shadow of the subject is cast sharply on the wall, becoming a key compositional element. Framing is clean and centered, with the subject occupying the majority of the scene.
+
+Face & identity (reference-based, do not alter)
+
+Feminine face with refined and symmetrical facial structure. Defined cheekbones and a soft, sculpted jawline. Full lips with a relaxed, neutral expression. Eyes directed slightly to the side, creating a confident and editorial gaze. Eyebrows are well-defined with a natural arch, framing the eyes precisely. Facial proportions remain balanced and realistic.
+
+Hair (reference-accurate & realistic)
+
+Long blonde hair styled straight with a smooth, sleek finish. Hair falls evenly over both shoulders with subtle layering at the ends. Natural shine and fine strand detail visible, enhancing realism. Clean center part contributes to a polished fashion look.
+
+Body & physique
+
+Slim feminine physique with elegant proportions. Body posture slightly curved at the hip, creating a subtle S-shape silhouette. Arms positioned naturally along the body, reinforcing a relaxed yet confident pose.
+
+Outfit & accessories
+
+Tight strapless black mini dress, form-fitting and minimalistic. No visible accessories, keeping the focus on silhouette and lighting. Clean styling consistent with high-fashion editorial aesthetics.
+
+Skin & realism
+
+Warm skin tone with glossy highlights on the shoulders, collarbone and face. Natural skin texture with subtle pores and tonal variation. Specular highlights enhance contours without appearing artificial.
+
+Lighting
+
+Direct flash-style lighting simulating on-camera flash. Strong frontal illumination creates high contrast and sharp, defined shadows behind the subject. Slight highlight clipping on skin and fabric adds a realistic flash photography effect. Lighting emphasizes contours and texture with crisp clarity.
+
+Environment
+
+Minimalist indoor setting with a textured concrete-style wall. Background kept simple and uncluttered to emphasize subject and shadow interplay. Shadow on the wall acts as a secondary visual element.
+
+Mood & aesthetic
+
+High-fashion editorial mood with a bold and modern aesthetic. Confident, clean and slightly dramatic atmosphere driven by lighting contrast. Visual style inspired by candid flash photography.
+
+Style & render quality
+
+Ultra-photorealistic render designed for Blender Cycles. High-detail skin shading, realistic fabric simulation and sharp lighting response. Crisp image quality with strong contrast and controlled highlights. Clean editorial composition with cinematic yet flash-driven realism.</pre>
+      <button onclick="copyFallback('prompt1')">Copiar Prompt</button>
+      <div class="hint">Se o botão não funcionar, selecione o texto acima e copie manualmente.</div>
+    </div>
+
+  </div>
+
+  <footer>
+    © Prompts by Tezza — Conteúdo protegido. Não redistribuir.
+  </footer>
+
+  <script>
+    function copyFallback(id) {
+      const el = document.getElementById(id);
+      const range = document.createRange();
+      range.selectNodeContents(el);
+      const selection = window.getSelection();
+      selection.removeAllRanges();
+      selection.addRange(range);
+      try {
+        document.execCommand('copy');
+        alert('Prompt selecionado e copiado!');
+      } catch (err) {
+        alert('Não foi possível copiar automaticamente. Copie manualmente.');
+      }
+      selection.removeAllRanges();
+    }
+  </script>
+
+</body>
+</html>
+
+
+
