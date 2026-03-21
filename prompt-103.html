@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prompts by Tezza</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0f0f0f;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      padding: 30px 20px;
+      text-align: center;
+      border-bottom: 1px solid #222;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+    header p {
+      margin-top: 10px;
+      color: #aaa;
+      font-size: 0.95rem;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .prompt-box {
+      background: #151515;
+      border: 1px solid #262626;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 25px;
+      position: relative;
+    }
+    .prompt-title {
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+    pre {
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      background: #0d0d0d;
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid #222;
+      font-size: 0.9rem;
+      line-height: 1.4;
+      user-select: text;
+    }
+    button {
+      margin-top: 12px;
+      background: #ffffff;
+      color: #000000;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.2s ease;
+    }
+    button:hover {
+      background: #e0e0e0;
+    }
+    .hint {
+      margin-top: 10px;
+      font-size: 0.8rem;
+      color: #888;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.8rem;
+      color: #777;
+      border-top: 1px solid #222;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Prompts by Tezza</h1>
+    <p>Página oficial para copiar prompts • Uso pessoal</p>
+  </header>
+
+  <div class="container">
+
+    <div class="prompt-box">
+      <div class="prompt-title">TEZZA PROMPTS</div>
+      <pre id="prompt1">(TEZZA PROMPTS)
+marque @tezza.vu
+
+site: /dreamina.capcut.com/   [AGENTE DE IA]
+
+Ultra-realistic cinematic female portrait — Blender Cycles render
+
+
+
+Camera & composition
+
+Vertical medium portrait framed from upper thighs to slightly above the head. Camera positioned at chest height with a subtle low-angle perspective, enhancing body proportions while maintaining natural realism. Subject centered with a slight diagonal body orientation, creating dynamic fashion composition. Shallow depth of field keeps the subject sharply isolated while the background remains softly blurred.
+
+
+
+Pose & body positioning
+
+Standing pose with torso slightly angled toward the camera. One arm raised with the hand resting behind the head, creating an elongated shoulder line and relaxed confidence. Opposite arm lowered naturally with hand resting near the waistband of the jeans. Hips subtly shifted to one side, producing a natural S-curve silhouette.
+
+
+
+Head position & gaze
+
+Head gently tilted sideways with chin slightly lowered. Direct gaze toward the camera, conveying a confident and seductive editorial presence.
+
+
+
+Facial expression
+
+Soft parted lips with a relaxed, confident expression. Eyes slightly narrowed, creating a cinematic fashion mood with effortless attitude.
+
+
+
+Face & identity
+
+Young woman with refined symmetrical facial structure, softly defined cheekbones, slim nose bridge, almond-shaped eyes, and naturally full lips. Smooth facial transitions maintaining reference-based realism and natural proportions.
+
+
+
+Hair
+
+Blonde hair, long and straight with soft natural volume. Warm golden-blonde tones with subtle highlights reflecting ambient light. Hair parted slightly off-center, with strands falling naturally around the face and behind the shoulders, maintaining realistic strand separation and texture.
+
+
+
+Accessories & details
+
+Small metallic hoop earrings and a delicate minimal necklace resting at the collarbone. Subtle rings visible on fingers, adding understated fashion detail.
+
+
+
+Outfit (STRICTLY reference-based, do not alter):
+
+Clothing must exactly match the provided outfit reference image.
+
+Preserve original colors, fabric type, seams, cut and fit.
+
+Natural fabric stretch and behavior.
+
+No redesign, no color changes, no style alteration.
+
+Outfit must follow the reference precisely.
+
+
+
+Body & physique
+
+Slim feminine physique with natural anatomical proportions. Defined waistline and soft muscular tone preserved without exaggeration, maintaining photorealistic balance.
+
+
+
+Skin & realism
+
+Smooth skin with realistic micro-texture and subtle specular highlights. Soft cinematic glow enhanced by Blender Cycles subsurface scattering, preserving pores and natural tonal variation.
+
+
+
+Lighting
+
+Direct flash-style frontal lighting creating strong subject illumination with crisp highlights and soft shadows. High contrast between illuminated subject and darker environment, producing editorial night photography aesthetics.
+
+
+
+Environment
+
+Nighttime urban or indoor parking-like environment with dark background and neon linear lights visible above. Black-and-white checkered wall pattern behind the subject adds graphic visual contrast and retro racing-inspired aesthetic.
+
+
+
+Mood & aesthetic
+
+Bold cinematic fashion mood combining nightlife energy and modern editorial styling. Atmosphere confident, stylish, and slightly edgy, emphasizing luxury street-fashion aesthetics.
+
+
+
+Style & render quality
+
+Ultra-realistic cinematic render, Blender Cycles, HDR, 8K resolution, sharp facial focus, realistic leather and denim material simulation, physically accurate lighting, global illumination, high-detail skin texture, IMVU / Second Life compatible realism, reference-based identity, cinematic photorealism.</pre>
+      <button onclick="copyFallback('prompt1')">Copiar Prompt</button>
+      <div class="hint">Se o botão não funcionar, selecione o texto acima e copie manualmente.</div>
+    </div>
+
+  </div>
+
+  <footer>
+    © Prompts by Tezza — Conteúdo protegido. Não redistribuir.
+  </footer>
+
+  <script>
+    function copyFallback(id) {
+      const el = document.getElementById(id);
+      const range = document.createRange();
+      range.selectNodeContents(el);
+      const selection = window.getSelection();
+      selection.removeAllRanges();
+      selection.addRange(range);
+      try {
+        document.execCommand('copy');
+        alert('Prompt selecionado e copiado!');
+      } catch (err) {
+        alert('Não foi possível copiar automaticamente. Copie manualmente.');
+      }
+      selection.removeAllRanges();
+    }
+  </script>
+
+</body>
+</html>
+
+
+
