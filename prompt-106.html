@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prompts by Tezza</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0f0f0f;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      padding: 30px 20px;
+      text-align: center;
+      border-bottom: 1px solid #222;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+    header p {
+      margin-top: 10px;
+      color: #aaa;
+      font-size: 0.95rem;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .prompt-box {
+      background: #151515;
+      border: 1px solid #262626;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 25px;
+      position: relative;
+    }
+    .prompt-title {
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+    pre {
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      background: #0d0d0d;
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid #222;
+      font-size: 0.9rem;
+      line-height: 1.4;
+      user-select: text;
+    }
+    button {
+      margin-top: 12px;
+      background: #ffffff;
+      color: #000000;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.2s ease;
+    }
+    button:hover {
+      background: #e0e0e0;
+    }
+    .hint {
+      margin-top: 10px;
+      font-size: 0.8rem;
+      color: #888;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.8rem;
+      color: #777;
+      border-top: 1px solid #222;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Prompts by Tezza</h1>
+    <p>Página oficial para copiar prompts • Uso pessoal</p>
+  </header>
+
+  <div class="container">
+
+    <div class="prompt-box">
+      <div class="prompt-title">TEZZA PROMPTS</div>
+      <pre id="prompt1">(TEZZA PROMPTS)
+marque @tezza.vu
+
+site: /dreamina.capcut.com/   [AGENTE DE IA]
+
+Ultra-realistic cinematic female portrait — Blender Cycles render
+
+
+
+Camera & composition
+
+Extreme close-up vertical portrait captured through a car mirror reflection. Composition framed tightly around half of the subject’s face, with the mirror borders naturally visible creating a cinematic framing effect. Smartphone partially covering the right side of the face, producing an asymmetrical composition. Camera positioned at eye level with very shallow depth of field, emphasizing facial micro-details while softly blurring surrounding car interior textures.
+
+
+
+Pose & body positioning
+
+Subject seated inside a vehicle, holding a smartphone close to the mirror while taking a selfie. Body mostly outside frame, with focus centered exclusively on facial area and hand positioning. Shoulder posture relaxed and natural.
+
+
+
+Head position & gaze
+
+Head slightly angled toward the mirror, maintaining a soft diagonal alignment. Eye directed toward the mirror reflection rather than directly toward the lens, creating an intimate candid selfie perspective.
+
+
+
+Facial expression
+
+Soft neutral expression with slightly parted lips forming a relaxed pout. Expression conveys calm confidence and effortless beauty, resembling a spontaneous captured moment.
+
+
+
+Face & identity
+
+Reference-locked feminine facial structure with soft sculpted cheekbones, delicate jawline, and balanced proportions. Natural freckles scattered across cheeks and nose bridge, enhancing realism and individuality. Smooth skin transitions with subtle facial contour definition.
+
+
+
+Hair
+
+Long blonde hair styled straight and sleek, tucked naturally behind the ear on the visible side. Soft golden blonde tones with subtle natural highlights reflecting warm ambient light.
+
+
+
+Accessories & details
+
+Medium-sized polished gold hoop earring visible on the exposed ear. Smartphone partially covering the face with matte dark case. Well-groomed eyebrows with natural density and upward brushed texture. Soft glossy nude manicure visible on fingers holding the phone.
+
+
+
+Outfit
+
+Clothing mostly out of frame; only minimal neutral-toned fabric hints visible near shoulder area, maintaining focus on facial composition.
+
+
+
+Body & physique
+
+Not fully visible; only facial and partial shoulder anatomy present, maintaining realistic feminine proportions.
+
+
+
+Skin & realism
+
+Ultra-realistic skin rendering with visible pores, natural freckles, subtle peach fuzz, and realistic skin texture variation. Soft warm highlights across cheekbone and nose bridge. Physically accurate subsurface scattering producing lifelike translucency and natural complexion depth.
+
+
+
+Lighting
+
+Warm natural sunlight entering from the side, producing soft golden highlights and gentle shadow gradients. Light reflects naturally inside the car environment, enhancing skin warmth and realism without harsh contrast.
+
+
+
+Environment
+
+Interior of a vehicle with dark leather textures visible in background. Mirror frame creates layered composition, adding depth and realism typical of candid mirror selfies.
+
+
+
+Mood & aesthetic
+
+Minimalist luxury selfie aesthetic — intimate, candid, beauty-focused composition with warm natural tones and effortless elegance.
+
+
+
+Style & render quality
+
+Ultra-photorealistic Blender Cycles render, cinematic realism, 8K resolution, HDR, razor-sharp facial detail, physically accurate lighting behavior, realistic depth of field, IMVU / Second Life compatible realism, reference-based identity preservation, no stylization or artistic exaggeration.</pre>
+      <button onclick="copyFallback('prompt1')">Copiar Prompt</button>
+      <div class="hint">Se o botão não funcionar, selecione o texto acima e copie manualmente.</div>
+    </div>
+
+  </div>
+
+  <footer>
+    © Prompts by Tezza — Conteúdo protegido. Não redistribuir.
+  </footer>
+
+  <script>
+    function copyFallback(id) {
+      const el = document.getElementById(id);
+      const range = document.createRange();
+      range.selectNodeContents(el);
+      const selection = window.getSelection();
+      selection.removeAllRanges();
+      selection.addRange(range);
+      try {
+        document.execCommand('copy');
+        alert('Prompt selecionado e copiado!');
+      } catch (err) {
+        alert('Não foi possível copiar automaticamente. Copie manualmente.');
+      }
+      selection.removeAllRanges();
+    }
+  </script>
+
+</body>
+</html>
+
+
