@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prompts by Tezza</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0f0f0f;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      padding: 30px 20px;
+      text-align: center;
+      border-bottom: 1px solid #222;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+    header p {
+      margin-top: 10px;
+      color: #aaa;
+      font-size: 0.95rem;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .prompt-box {
+      background: #151515;
+      border: 1px solid #262626;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 25px;
+      position: relative;
+    }
+    .prompt-title {
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+    pre {
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      background: #0d0d0d;
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid #222;
+      font-size: 0.9rem;
+      line-height: 1.4;
+      user-select: text;
+    }
+    button {
+      margin-top: 12px;
+      background: #ffffff;
+      color: #000000;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.2s ease;
+    }
+    button:hover {
+      background: #e0e0e0;
+    }
+    .hint {
+      margin-top: 10px;
+      font-size: 0.8rem;
+      color: #888;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.8rem;
+      color: #777;
+      border-top: 1px solid #222;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Prompts by Tezza</h1>
+    <p>Página oficial para copiar prompts • Uso pessoal</p>
+  </header>
+
+  <div class="container">
+
+    <div class="prompt-box">
+      <div class="prompt-title">TEZZA PROMPTS</div>
+      <pre id="prompt1">(TEZZA PROMPTS)
+marque @tezza.vu
+
+site: /dreamina.capcut.com/   [AGENTE DE IA]
+
+CONCEPT
+Ultra-realistic cinematic female portrait, rendered in Blender Cycles.
+
+CAMERA AND COMPOSITION
+Full-body vertical shot. Camera positioned slightly above body level, angled downward, creating a soft editorial top-down perspective. Moderate lens compression (around 50–85mm equivalent). Model positioned diagonally across the frame, lying on snow. Composition emphasizes body curves and natural light contrast. Subject in sharp focus with high detail, snow surface softly diffused in highlights.
+
+FACE AND IDENTITY (WITH REFERENCE)
+Facial identity defined by reference. Balanced symmetrical proportions. Softly defined cheekbones, delicate feminine jawline. Straight refined nose. Natural full lips. Light-colored eyes partially visible due to angle, framed by natural lashes. Skin exhibits realistic detail and subtle glow under strong daylight. No exaggeration.
+
+POSE AND BODY LANGUAGE
+Model lying on her back on the snow. One arm extended upward into the snow, the other resting relaxed along the body. Torso slightly twisted, creating a natural curve. Legs extended with slight asymmetry, one knee subtly relaxed. Pose conveys calmness, softness, and effortless sensuality. Relaxed, editorial body language.
+
+HAIR
+Long blonde hair flowing naturally over the snow. Warm platinum-blonde tone with soft golden undertones. Slightly tousled strands due to contact with snow. Natural volume and strand separation. Subtle highlights enhanced by direct sunlight. No artificial shine.
+
+SKIN AND REALISM
+Light skin tone with natural sunlit warmth. Visible microtexture on legs and arms. Realistic interaction with cold environment—slight redness on exposed areas. Soft specular highlights from sunlight. No artificial smoothing.
+
+CLOTHING
+Beige high-neck bodysuit, fitted closely to the body, emphasizing silhouette. Fabric appears smooth and slightly elastic. Over it, an oversized off-white faux fur coat worn open, adding volume and contrast. Soft, plush texture with high realism. Winter styling contrasts with minimal underlayer.
+
+ACCESSORIES AND DETAILS
+Furry winter hat matching the coat in tone and texture. Minimal visible jewelry. Clean styling. Subtle natural makeup. No excessive accessories.
+
+ENVIRONMENT
+Outdoor snowy landscape. Ground fully covered in fresh snow with soft texture. Background composed of distant pine trees slightly out of focus. Clear sky with crisp winter atmosphere. No artificial elements.
+
+LIGHTING
+Strong natural daylight. Directional sunlight creating defined highlights and soft shadows across the body and snow. High contrast between illuminated snow and shaded areas. Natural reflections from snow enhance skin luminosity. Balanced exposure preserving detail in both highlights and shadows.
+
+MOOD AND AESTHETICS
+Cold luxury aesthetic. Contrast between warmth of the subject and icy environment. Calm, serene, and slightly sensual mood. Editorial winter fashion vibe with a soft, intimate tone. Natural elegance with subtle boldness.
+
+STYLE AND FINAL QUALITY
+Ultra-photorealistic 3D rendering. Blender Cycles. 8K resolution. HDR lighting. Physically accurate shaders (skin, fabric, fur, hair). High fidelity textures and lighting realism. No stylization. No cartoon effect. Maximum realism.</pre>
+      <button onclick="copyFallback('prompt1')">Copiar Prompt</button>
+      <div class="hint">Se o botão não funcionar, selecione o texto acima e copie manualmente.</div>
+    </div>
+
+  </div>
+
+  <footer>
+    © Prompts by Tezza — Conteúdo protegido. Não redistribuir.
+  </footer>
+
+  <script>
+    function copyFallback(id) {
+      const el = document.getElementById(id);
+      const range = document.createRange();
+      range.selectNodeContents(el);
+      const selection = window.getSelection();
+      selection.removeAllRanges();
+      selection.addRange(range);
+      try {
+        document.execCommand('copy');
+        alert('Prompt selecionado e copiado!');
+      } catch (err) {
+        alert('Não foi possível copiar automaticamente. Copie manualmente.');
+      }
+      selection.removeAllRanges();
+    }
+  </script>
+
+</body>
+</html>
+
+
+
