@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prompts by Tezza</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0f0f0f;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      padding: 30px 20px;
+      text-align: center;
+      border-bottom: 1px solid #222;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+    header p {
+      margin-top: 10px;
+      color: #aaa;
+      font-size: 0.95rem;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .prompt-box {
+      background: #151515;
+      border: 1px solid #262626;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 25px;
+      position: relative;
+    }
+    .prompt-title {
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+    pre {
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      background: #0d0d0d;
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid #222;
+      font-size: 0.9rem;
+      line-height: 1.4;
+      user-select: text;
+    }
+    button {
+      margin-top: 12px;
+      background: #ffffff;
+      color: #000000;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.2s ease;
+    }
+    button:hover {
+      background: #e0e0e0;
+    }
+    .hint {
+      margin-top: 10px;
+      font-size: 0.8rem;
+      color: #888;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.8rem;
+      color: #777;
+      border-top: 1px solid #222;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Prompts by Tezza</h1>
+    <p>Página oficial para copiar prompts • Uso pessoal</p>
+  </header>
+
+  <div class="container">
+
+    <div class="prompt-box">
+      <div class="prompt-title">TEZZA PROMPTS</div>
+      <pre id="prompt1">(TEZZA PROMPTS)
+marque @tezza.vu
+
+site: /dreamina.capcut.com/   [AGENTE DE IA]
+
+Ultra-realistic cinematic female portrait — Blender Cycles render
+
+CAMERA & COMPOSITION
+Vertical close-up portrait framed from mid-torso to top of head. Camera positioned slightly below face level, creating a subtle low-angle perspective that enhances facial structure and upper body presence. Subject centered against a plain background. Sharp focus on subject with shallow depth of field softly blurring the background.
+
+POSE & BODY POSITIONING
+Upper body facing forward with a slight natural arch in posture. One arm raised with the hand placed behind the head, creating an open and confident pose. The other arm relaxed out of frame. Shoulders slightly angled, emphasizing natural curves.
+
+HEAD POSITION & GAZE
+Head tilted slightly to one side and slightly forward. Eyes directed toward the camera with a confident and playful gaze. Neck naturally extended, enhancing posture.
+
+FACIAL EXPRESSION
+Playful and bold expression with lips parted and teeth slightly clenched, creating a teasing and expressive look. Facial muscles engaged, conveying confidence and attitude.
+
+FACE & IDENTITY
+Young woman with symmetrical feminine features. Defined cheekbones, sculpted jawline, straight nose, and full lips. Light-colored eyes with strong definition. Well-shaped eyebrows with medium density. Makeup slightly more pronounced, with emphasis on lashes, blush, and lips.
+
+HAIR
+Long blonde hair with voluminous soft waves. Hair parted near the center and cascading over shoulders. Texture appears full, soft, and slightly tousled with natural movement.
+
+ACCESSORIES & DETAILS
+Minimal jewelry including a delicate necklace and subtle bracelet. Clean skin with no tattoos. Neutral manicure with clean finish.
+
+OUTFIT
+Black structured bra-style top with a smooth, slightly reflective fabric. Deep neckline emphasizing form. Fabric appears supportive with realistic tension and curvature.
+
+BODY & PHYSIQUE
+Slim feminine physique with pronounced curves in the upper body. Defined waistline and natural proportions. Anatomy remains realistic without distortion.
+
+SKIN & REALISM
+Smooth skin with visible natural texture and soft highlights. Slight sheen on shoulders and chest due to lighting. Subtle tonal variations and realistic complexion rendering.
+
+LIGHTING
+Direct frontal flash lighting creating strong illumination on the subject. Noticeable shadows cast onto the background, enhancing depth. High contrast between highlights and shadows, typical of flash photography.
+
+ENVIRONMENT
+Minimal indoor setting with plain light-colored wall. Clean and uncluttered background, keeping full focus on the subject.
+
+MOOD & AESTHETIC
+Bold modern glam aesthetic — confident, playful, and slightly edgy. Strong presence with a mix of sensuality and attitude.
+
+STYLE & RENDER QUALITY
+Ultra-photorealistic Blender Cycles render, cinematic realism, 8K resolution, HDR, sharp detail, realistic skin rendering, accurate flash lighting simulation, high contrast, no stylization or exaggeration.</pre>
+      <button onclick="copyFallback('prompt1')">Copiar Prompt</button>
+      <div class="hint">Se o botão não funcionar, selecione o texto acima e copie manualmente.</div>
+    </div>
+
+  </div>
+
+  <footer>
+    © Prompts by Tezza — Conteúdo protegido. Não redistribuir.
+  </footer>
+
+  <script>
+    function copyFallback(id) {
+      const el = document.getElementById(id);
+      const range = document.createRange();
+      range.selectNodeContents(el);
+      const selection = window.getSelection();
+      selection.removeAllRanges();
+      selection.addRange(range);
+      try {
+        document.execCommand('copy');
+        alert('Prompt selecionado e copiado!');
+      } catch (err) {
+        alert('Não foi possível copiar automaticamente. Copie manualmente.');
+      }
+      selection.removeAllRanges();
+    }
+  </script>
+
+</body>
+</html>
+
+
+
