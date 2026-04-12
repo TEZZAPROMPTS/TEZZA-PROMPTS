@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prompts by Tezza</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0f0f0f;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      padding: 30px 20px;
+      text-align: center;
+      border-bottom: 1px solid #222;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+    header p {
+      margin-top: 10px;
+      color: #aaa;
+      font-size: 0.95rem;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .prompt-box {
+      background: #151515;
+      border: 1px solid #262626;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 25px;
+      position: relative;
+    }
+    .prompt-title {
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+    pre {
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      background: #0d0d0d;
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid #222;
+      font-size: 0.9rem;
+      line-height: 1.4;
+      user-select: text;
+    }
+    button {
+      margin-top: 12px;
+      background: #ffffff;
+      color: #000000;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.2s ease;
+    }
+    button:hover {
+      background: #e0e0e0;
+    }
+    .hint {
+      margin-top: 10px;
+      font-size: 0.8rem;
+      color: #888;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.8rem;
+      color: #777;
+      border-top: 1px solid #222;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Prompts by Tezza</h1>
+    <p>Página oficial para copiar prompts • Uso pessoal</p>
+  </header>
+
+  <div class="container">
+
+    <div class="prompt-box">
+      <div class="prompt-title">TEZZA PROMPTS</div>
+      <pre id="prompt1">(TEZZA PROMPTS)
+marque @tezza.vu
+
+site: /dreamina.capcut.com/   [AGENTE DE IA]
+
+CONCEPT
+Ultra-realistic cinematic male portrait, rendered in Blender Cycles.
+
+CAMERA AND COMPOSITION
+Full-body vertical shot. Camera positioned at waist height with a slight upward angle, enhancing presence and structure. 85mm lens compression effect. Model framed leaning against a metal railing, slightly off-center to create a cinematic composition. Background urban environment softly blurred with bokeh lights. Clean framing with strong depth separation.
+
+FACE AND IDENTITY (WITH REFERENCE)
+Facial identity defined by reference. Strong masculine facial structure. Defined jawline, prominent cheekbones. Straight and structured nose. Natural lips with a neutral expression. Deep-set eyes with an intense gaze directed off-camera. Realistic skin texture with subtle imperfections. No exaggeration or stylization.
+
+POSE AND BODY LANGUAGE
+Model leaning forward slightly, resting forearms on a railing. One hand holding a phone, the other relaxed. Shoulders slightly hunched in a natural stance. Head turned to the side, gaze focused into the distance. Body language conveys contemplation, confidence, and quiet intensity.
+
+HAIR
+Short dark hair, neatly styled with a natural side part. Slightly textured strands with subtle volume on top. Clean sides with realistic density. Natural matte finish with minimal shine. No artificial styling.
+
+SKIN AND REALISM
+Light to medium skin tone with natural variation. Visible skin microtexture across face and hands. Subtle highlights on cheekbones and nose. No artificial smoothing. Realistic shading under low light conditions.
+
+CLOTHING
+Black button-up shirt, fitted to the body. Top buttons slightly open, revealing part of the chest. Fabric appears matte with slight natural folds and tension. Dark, minimalistic styling enhancing the silhouette.
+
+ACCESSORIES AND DETAILS
+Metal chain necklace, subtle and minimal. Bracelet on wrist and ring on finger. Smartphone held casually in hand. Accessories are understated and masculine. No excessive elements.
+
+ENVIRONMENT
+Urban outdoor setting, likely a balcony or elevated walkway. Background includes dark architectural structures and distant city lights. Environment blurred to emphasize subject. Moody and cinematic atmosphere.
+
+LIGHTING
+Low-light cinematic setup. Soft directional light illuminating the face and upper body. Subtle highlights on hair and cheekbones. Background lights create soft bokeh effect. Balanced contrast preserving details in shadows and highlights.
+
+MOOD AND AESTHETICS
+Dark, moody, and cinematic aesthetic. атмосферe of introspection and quiet confidence. Masculine elegance with a modern editorial feel. Slightly mysterious and dramatic tone.
+
+STYLE AND FINAL QUALITY
+Ultra-photorealistic 3D rendering. Blender Cycles. 8K resolution. HDR lighting. Physically accurate shaders (skin, fabric, hair, metal). High-detail realism with cinematic grading. No cartoon effect. No stylization. Maximum realism.  </pre>
+      <button onclick="copyFallback('prompt1')">Copiar Prompt</button>
+      <div class="hint">Se o botão não funcionar, selecione o texto acima e copie manualmente.</div>
+    </div>
+
+  </div>
+
+  <footer>
+    © Prompts by Tezza — Conteúdo protegido. Não redistribuir.
+  </footer>
+
+  <script>
+    function copyFallback(id) {
+      const el = document.getElementById(id);
+      const range = document.createRange();
+      range.selectNodeContents(el);
+      const selection = window.getSelection();
+      selection.removeAllRanges();
+      selection.addRange(range);
+      try {
+        document.execCommand('copy');
+        alert('Prompt selecionado e copiado!');
+      } catch (err) {
+        alert('Não foi possível copiar automaticamente. Copie manualmente.');
+      }
+      selection.removeAllRanges();
+    }
+  </script>
+
+</body>
+</html>
+
+
+
