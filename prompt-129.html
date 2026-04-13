@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prompts by Tezza</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0f0f0f;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      padding: 30px 20px;
+      text-align: center;
+      border-bottom: 1px solid #222;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+    header p {
+      margin-top: 10px;
+      color: #aaa;
+      font-size: 0.95rem;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .prompt-box {
+      background: #151515;
+      border: 1px solid #262626;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 25px;
+      position: relative;
+    }
+    .prompt-title {
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+    pre {
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      background: #0d0d0d;
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid #222;
+      font-size: 0.9rem;
+      line-height: 1.4;
+      user-select: text;
+    }
+    button {
+      margin-top: 12px;
+      background: #ffffff;
+      color: #000000;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.2s ease;
+    }
+    button:hover {
+      background: #e0e0e0;
+    }
+    .hint {
+      margin-top: 10px;
+      font-size: 0.8rem;
+      color: #888;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.8rem;
+      color: #777;
+      border-top: 1px solid #222;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Prompts by Tezza</h1>
+    <p>Página oficial para copiar prompts • Uso pessoal</p>
+  </header>
+
+  <div class="container">
+
+    <div class="prompt-box">
+      <div class="prompt-title">TEZZA PROMPTS</div>
+      <pre id="prompt1">(TEZZA PROMPTS)
+marque @tezza.vu
+
+site: /dreamina.capcut.com/   [AGENTE DE IA]
+
+CONCEPT
+Ultra-realistic cinematic female portrait, rendered in Blender Cycles.
+
+CAMERA AND COMPOSITION
+Full-body vertical shot. Camera positioned at thigh height with a frontal perspective, typical of fashion. 85mm lens compression effect. Model centered against a blurred nightclub-style background with soft geometric light patterns. Symmetrical and clean framing that emphasizes the body's silhouette. Model in sharp focus, background heavily blurred with depth-of-field and motion hints from falling elements.
+
+FACE AND IDENTITY (WITH REFERENCE)
+Facial identity defined by reference. Balanced symmetrical proportions. Defined cheekbones, sculpted and feminine jawline. Straight and refined nose. Full lips with glossy finish. Almond-shaped light eyes with long, voluminous, and highly defined eyelashes. Dramatic eye makeup with shimmer and precise liner. Ultra-detailed skin texture with a radiant, slightly dewy glow. No exaggeration.
+
+POSE AND BODY LANGUAGE
+Model standing in a dynamic, slightly tilted pose. One arm raised above the head with a relaxed wrist, the other hand placed near the chest area. Torso elongated with a subtle arch, emphasizing curves. Hips pushed slightly to one side, creating a pronounced S-curve. Legs extended with one knee slightly bent forward. Confident, seductive, and editorial body language.
+
+HAIR
+Long platinum blonde hair cascading over the shoulders and down the back. Cool platinum tone. Smooth texture with soft volume and gentle waves at the ends. Center parting with clean hairline definition. High strand separation and realistic density. Subtle natural highlights enhancing dimension. No artificial shine.
+
+SKIN AND REALISM
+Medium-tan skin tone with warm undertones and a luminous studio glow. Visible microtexture across the body, especially on thighs, abdomen, and arms. Controlled specular highlights on shoulders, hips, and legs to enhance realism. No artificial smoothing.
+
+CLOTHING
+Luxury crystal-embellished lingerie set. Metallic silver rhinestone bra with circular structured cups and cascading crystal fringe draping over the torso. Matching minimal thong with delicate crystal detailing. A white faux fur coat worn off the shoulders, adding contrast and texture while framing the body.
+
+ACCESSORIES AND DETAILS
+Statement crystal choker necklace with layered intricate design. Long, dangling rhinestone earrings. High-heeled strappy sandals in metallic or glossy white finish. Subtle body shimmer on collarbones, shoulders, and legs. Glossy lips complementing the luminous aesthetic. Floating dollar bills around the model adding motion and narrative detail.
+
+ENVIRONMENT
+Stylized nightclub or VIP lounge setting. Background composed of blurred square light panels resembling a digital wall or LED grid. No physical props besides the floating money. Clean but visually rich atmosphere focused on nightlife luxury.
+
+LIGHTING
+Studio lighting with nightclub influence. Soft frontal key light illuminating face and torso evenly. Secondary rim light highlighting the contours of the body and separating the figure from the background. Subtle reflections on crystals and glossy surfaces. High dynamic range preserving highlights on jewelry and skin while maintaining depth in shadows.
+
+MOOD AND AESTHETICS
+Dark glam with luxury nightlife influence. Sensual, bold, and confident energy. Aesthetic inspired by high-end club visuals and glamorous editorial fantasy. Atmosphere of wealth, seduction, and power. Nocturnal, vibrant, and slightly provocative tone.
+
+STYLE AND FINAL QUALITY
+Ultra-photorealistic 3D rendering. Blender Cycles. 8K resolution. HDR lighting. Physically accurate shaders (skin, crystals, fur, hair). Impeccable facial fidelity. Realism compatible with IMVU/Second Life. No cartoonish style. No stylization. Maximum realism.</pre>
+      <button onclick="copyFallback('prompt1')">Copiar Prompt</button>
+      <div class="hint">Se o botão não funcionar, selecione o texto acima e copie manualmente.</div>
+    </div>
+
+  </div>
+
+  <footer>
+    © Prompts by Tezza — Conteúdo protegido. Não redistribuir.
+  </footer>
+
+  <script>
+    function copyFallback(id) {
+      const el = document.getElementById(id);
+      const range = document.createRange();
+      range.selectNodeContents(el);
+      const selection = window.getSelection();
+      selection.removeAllRanges();
+      selection.addRange(range);
+      try {
+        document.execCommand('copy');
+        alert('Prompt selecionado e copiado!');
+      } catch (err) {
+        alert('Não foi possível copiar automaticamente. Copie manualmente.');
+      }
+      selection.removeAllRanges();
+    }
+  </script>
+
+</body>
+</html>
+
+
+
