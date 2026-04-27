@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prompts by Tezza</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0f0f0f;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      padding: 30px 20px;
+      text-align: center;
+      border-bottom: 1px solid #222;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+    header p {
+      margin-top: 10px;
+      color: #aaa;
+      font-size: 0.95rem;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .prompt-box {
+      background: #151515;
+      border: 1px solid #262626;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 25px;
+      position: relative;
+    }
+    .prompt-title {
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+    pre {
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      background: #0d0d0d;
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid #222;
+      font-size: 0.9rem;
+      line-height: 1.4;
+      user-select: text;
+    }
+    button {
+      margin-top: 12px;
+      background: #ffffff;
+      color: #000000;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.2s ease;
+    }
+    button:hover {
+      background: #e0e0e0;
+    }
+    .hint {
+      margin-top: 10px;
+      font-size: 0.8rem;
+      color: #888;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.8rem;
+      color: #777;
+      border-top: 1px solid #222;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Prompts by Tezza</h1>
+    <p>Página oficial para copiar prompts • Uso pessoal</p>
+  </header>
+
+  <div class="container">
+
+    <div class="prompt-box">
+      <div class="prompt-title">TEZZA PROMPTS</div>
+      <pre id="prompt1">(TEZZA PROMPTS)
+marque @tezza.vu
+
+site: /dreamina.capcut.com/   [AGENTE DE IA]
+
+Ultra-realistic cinematic female portrait — Blender Cycles render
+
+CAMERA & COMPOSITION
+Vertical medium-full body portrait cropped from upper thighs to head. Camera positioned slightly below chest level, angled upward to create a subtle low-angle perspective. Mirror-selfie composition with the smartphone partially visible, adding a candid social-media framing. Subject occupies the majority of the frame with shallow depth of field.
+
+POSE & BODY POSITIONING
+Seated sideways on a countertop with torso slightly leaned back and supported by one arm placed behind. Hips angled toward the camera, creating natural curvature. One arm extended forward holding the phone. Posture relaxed, confident, and slightly playful.
+
+HEAD POSITION & GAZE
+Head tilted slightly backward and turned toward the phone. Gaze focused on the phone screen rather than directly at the viewer. Neck elongated, enhancing facial structure.
+
+FACIAL EXPRESSION
+Soft pout expression with lips gently pushed forward. Facial muscles relaxed, conveying a playful and self-aware mood typical of selfie aesthetics.
+
+FACE & IDENTITY
+Young woman with symmetrical feminine facial structure. Defined cheekbones, sculpted jawline, straight nose bridge, and full lips with matte finish. Almond-shaped eyes enhanced with bold eyeliner and long lashes. Eyebrows thick and sharply defined. Smooth skin with even tone.
+
+HAIR
+Long blonde hair styled in a high ponytail with a sleek finish. Hair pulled tightly from the scalp with a smooth, glossy texture, extending down the back with controlled volume.
+
+ACCESSORIES & DETAILS
+Smartphone held in hand with glossy dark case. Long manicured nails with a clean finish. Subtle navel piercing visible. Minimal additional accessories to maintain focus on subject.
+
+OUTFIT
+Cropped white hoodie with graphic print, slightly oversized fit. Black bikini bottom with side ties, fabric appearing soft and elastic with natural tension at the hips.
+
+BODY & PHYSIQUE
+Slim feminine physique with defined waistline, natural hip curvature, and toned abdomen. Balanced anatomical proportions maintained realistically.
+
+SKIN & REALISM
+Ultra-detailed skin rendering with visible pores, smooth transitions in tone, and soft highlights. Slight reflective qualities on skin consistent with indoor lighting. Physically accurate subsurface scattering.
+
+LIGHTING
+Soft indoor ambient lighting with warm-neutral tones. Even illumination across the subject with minimal harsh shadows. Subtle highlights on face and body enhancing depth.
+
+ENVIRONMENT
+Modern indoor bathroom or dressing area with neutral walls and countertop surface. Clean, minimal setting with mirror presence implied through composition.
+
+MOOD & AESTHETIC
+Casual modern lifestyle aesthetic — relaxed, playful, and slightly sensual. Social media-inspired atmosphere with a candid, self-captured feel.
+
+STYLE & RENDER QUALITY
+Ultra-photorealistic Blender Cycles render, cinematic realism, 8K resolution, HDR, razor-sharp focus, realistic skin micro-detail, physically accurate lighting, IMVU / Second Life compatible realism, reference-based identity preservation, no stylization or artistic exaggeration.</pre>
+      <button onclick="copyFallback('prompt1')">Copiar Prompt</button>
+      <div class="hint">Se o botão não funcionar, selecione o texto acima e copie manualmente.</div>
+    </div>
+
+  </div>
+
+  <footer>
+    © Prompts by Tezza — Conteúdo protegido. Não redistribuir.
+  </footer>
+
+  <script>
+    function copyFallback(id) {
+      const el = document.getElementById(id);
+      const range = document.createRange();
+      range.selectNodeContents(el);
+      const selection = window.getSelection();
+      selection.removeAllRanges();
+      selection.addRange(range);
+      try {
+        document.execCommand('copy');
+        alert('Prompt selecionado e copiado!');
+      } catch (err) {
+        alert('Não foi possível copiar automaticamente. Copie manualmente.');
+      }
+      selection.removeAllRanges();
+    }
+  </script>
+
+</body>
+</html>
+
+
+
