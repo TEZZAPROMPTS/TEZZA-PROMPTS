@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Título oficial que aparecerá no link do Instagram -->
+  <title>TEZZA PROMPTS OFICIAL</title>
+  
+  <!-- Meta Tags para o Instagram mostrar apenas o nome limpo -->
+  <meta property="og:title" content="TEZZA PROMPTS OFICIAL">
+  <meta property="og:description" content="Prompts Oficiais da Tezza">
+  <meta property="og:type" content="website">
+  
+  <!-- Forçando uma imagem de fundo preta sólida para evitar que o Instagram busque o laço -->
+  <meta property="og:image" content="https://placehold.co/1200x630/000000/000000.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Quicksand:wght@300..700&family=Comfortaa:wght@300..700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg-dark: #000000;
+      --card-bg: rgba(20, 20, 20, 0.95);
+      --text-white: #ffffff;
+      --text-gray: #a0a0a0;
+      --border-gray: #333333;
+      --accent-white: #f5f5f5;
+      --glow-color: rgba(255, 255, 255, 0.4);
+      --glow-active: rgba(255, 255, 255, 0.9);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background-color: var(--bg-dark);
+      background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+      background-size: 30px 30px;
+      background-attachment: fixed;
+      color: var(--text-white);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
+      position: relative;
+    }
+
+    .container {
+      position: relative;
+      z-index: 10;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 500px;
+      background: var(--card-bg);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 2px solid var(--border-gray);
+      border-radius: 45px;
+      padding: 50px 35px;
+      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+      position: relative;
+      text-align: center;
+      transition: all 0.4s ease;
+    }
+
+    .card:hover {
+      border-color: var(--text-gray);
+      box-shadow: 0 0 20px var(--glow-color), 0 25px 50px rgba(0, 0, 0, 0.5);
+    }
+
+    .header {
+      margin-bottom: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .title-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      width: 100%;
+    }
+
+    .bow-gif {
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
+      filter: grayscale(100%) brightness(1.5);
+    }
+
+    .bow-gif.right {
+      transform: scaleX(-1);
+    }
+
+    .header h1 {
+      font-family: 'Fredoka', sans-serif;
+      font-size: clamp(2.5rem, 8vw, 3.5rem);
+      color: var(--text-white);
+      font-weight: 600;
+      letter-spacing: -1px;
+      line-height: 1;
+    }
+
+    .subtitle {
+      font-family: 'Fredoka', sans-serif;
+      font-size: 0.9rem;
+      color: var(--text-gray);
+      letter-spacing: 1.5px;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+
+    .divider {
+      width: 50%;
+      height: 2px;
+      background: var(--border-gray);
+      border-radius: 10px;
+      margin: 25px auto;
+      transition: all 0.4s ease;
+    }
+
+    .card:hover .divider {
+      background: var(--text-gray);
+      box-shadow: 0 0 10px var(--glow-color);
+    }
+
+    .prompt-section {
+      margin-top: 20px;
+    }
+
+    pre {
+      background: rgba(255, 255, 255, 0.05);
+      border: 2px solid var(--border-gray);
+      padding: 25px;
+      border-radius: 30px;
+      font-family: 'Comfortaa', cursive;
+      font-size: 0.95rem;
+      font-weight: 600;
+      line-height: 1.6;
+      color: var(--accent-white);
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      margin-bottom: 30px;
+      text-align: left;
+      transition: all 0.4s ease;
+    }
+
+    pre:hover {
+      border-color: var(--text-gray);
+      box-shadow: 0 0 15px var(--glow-color);
+    }
+
+    button {
+      width: 100%;
+      padding: 18px;
+      background: var(--text-white);
+      color: var(--bg-dark);
+      border: 3px solid transparent;
+      border-radius: 50px;
+      font-family: 'Fredoka', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      position: relative;
+    }
+
+    button:hover {
+      transform: translateY(-5px) scale(1.02);
+      background: var(--accent-white);
+      box-shadow: 0 15px 25px rgba(255, 255, 255, 0.2), 0 0 15px var(--glow-color);
+    }
+
+    button:active {
+      transform: scale(0.95);
+    }
+
+    @keyframes button-glow-pulse {
+      0% { border-color: transparent; box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1); }
+      50% { border-color: var(--text-white); box-shadow: 0 0 25px var(--glow-active); }
+      100% { border-color: transparent; box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1); }
+    }
+
+    button.copy-success {
+      animation: button-glow-pulse 0.8s ease-in-out infinite;
+      background: var(--text-white) !important;
+      color: var(--bg-dark) !important;
+    }
+
+    .info-section {
+      margin-top: 35px;
+    }
+
+    .info-mark {
+      font-family: 'Fredoka', sans-serif;
+      color: var(--text-white);
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+      letter-spacing: 1px;
+    }
+
+    .info-footer {
+      font-family: 'Quicksand', sans-serif;
+      color: var(--text-gray);
+      font-size: 0.8rem;
+      font-weight: 500;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border-gray);
+      font-family: 'Fredoka', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: var(--text-gray);
+      letter-spacing: 1px;
+    }
+
+    @media (max-width: 640px) {
+      .card { padding: 40px 25px; margin: 0 10px; border-radius: 35px; }
+      .bow-gif { width: 45px; height: 45px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card" id="mainCard">
+      <div class="content">
+        <div class="header">
+          <div class="title-wrapper">
+            <img class="bow-gif left" src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExdGJieHI0aXdjcHJsaGptZWp1OXlpeHA2Z2ZtbzdoZ2poOGE5MXgzcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/nxQA5nWEKzB5uz3Yr8/giphy.gif" alt="bow" />
+            <h1>Tezza</h1>
+            <img class="bow-gif right" src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExdGJieHI0aXdjcHJsaGptZWp1OXlpeHA2Z2ZtbzdoZ2poOGE5MXgzcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/nxQA5nWEKzB5uz3Yr8/giphy.gif" alt="bow" />
+          </div>
+          <p class="subtitle">TEZZA PROMPTS OFICIAL</p>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="prompt-section">
+          <pre id="promptText">
+            
+GEMINI   [MODO PRO]
+
+Ultra-realistic cinematic avatar 3D friends portrait, Blender Cycles render in CGI, inspired by Seedream 5.0 beauty realism and high-end IMVU/The Sims virtual aesthetics. Clearly fictional digital avatars and not real photographs. Hyper-detailed virtual influencer friends design with stylized CGI beauty proportions, luxury editorial aesthetics, advanced cinematic lighting, ultra-polished 3D rendering, and “TEZZA PROMPTS” text at the bottom center in elegant minimalist typography.
+
+IMPORTANT IDENTITY PRIORITY
+Use the uploaded reference images as absolute facial identity sources. Facial identity accuracy is more important than cinematic beauty enhancement, editorial stylization, IMVU aesthetics, or luxury beauty rendering. Maintain exact recognizable identity fidelity for both avatars independently. Identity separation is mandatory.
+
+CAMERA & COMPOSITION
+Vertical 9:16 aspect ratio cinematic urban portrait shot with realistic vintage-flash photography aesthetics. Medium full-body framing with one avatar positioned standing against the wall and the second avatar seated naturally on the ground. Slightly low-angle perspective emphasizing facial features, masculine streetwear styling, upper body proportions, and fashionable friends chemistry. Sharp focus on both faces, hairstyles, outfits, and accessories while maintaining soft cinematic depth of field. Composition inspired by underground streetwear editorials with moody nightlife atmosphere, realistic grain texture, and polished urban CGI realism.
+
+POSE & BODY POSITIONING
+First male avatar positioned standing naturally against the wall with relaxed masculine posture, both hands placed behind the body, and one leg bent casually against the surface exactly matching the reference image. Second male avatar positioned seated on the floor with one knee raised while one hand partially covers the lower face area in a relaxed editorial pose. Both avatars preserve the exact body posture, pose structure, shoulder positioning, hand placement, leg positioning, body proportions, and overall physical interaction from the reference image without reinterpretation. Natural youthful masculine body language with polished streetwear editorial energy.
+
+HEAD POSITION & GAZE
+First male avatar facing slightly sideways with chin subtly lowered and calm detached gaze directed away from the camera. Second male avatar positioned with head slightly tilted downward while partially hiding the face behind the hand and sunglasses, maintaining relaxed mysterious energy. Preserve exact head angles, gaze direction, expression posture, and facial orientation from the reference image with realistic masculine editorial aesthetics.
+
+FACIAL EXPRESSION
+Both avatars maintain calm relaxed expressions with subtle detached nightlife energy inspired by modern underground fashion editorials. Preserve the exact lip positioning, eye openness, eyebrow structure, facial tension, and emotional tone from each reference independently without beautification or reinterpretation. Atmosphere feels cinematic, youthful, mysterious, stylish, urban, and naturally confident.
+
+FIRST MALE AVATAR
+            
+FACE & IDENTITY
+Adult male CGI avatar with facial identity preserved exactly like the standing reference subject. Use ONLY the first reference image for this avatar. Do not borrow facial features, hairstyle, skin tone, facial proportions, jawline structure, eye shape, eyebrow shape, nose anatomy, lip shape, cheekbone placement, forehead proportions, or beauty characteristics from the second subject. Preserve the exact facial geometry, facial symmetry, hairstyle silhouette, expression style, and recognizable masculine identity without modification, beautification, enhancement, stylization, or reinterpretation. Smooth youthful masculine facial structure with soft jawline definition, naturally full lips, narrow nose structure, calm facial expression, and relaxed editorial energy identical to the reference image. Skin tone features a soft medium warm-brown complexion with realistic pores, subtle glossy highlights, natural skin texture, and refined Seedream realism while remaining clearly fictional CGI avatar aesthetics.
+
+HAIR
+Dark curly medium-length hairstyle with soft natural volume and textured curls exactly matching the reference appearance. Hair contains realistic curl separation, strand detail, cinematic shine, natural density variation, soft shadow depth, and advanced Blender-style hair rendering. Preserve the exact haircut silhouette and natural messy texture independently from the second avatar.
+
+ACCESSORIES & DETAILS
+Slim black futuristic sunglasses with glossy reflective lenses, subtle metallic earrings, thin layered silver necklaces, and realistic polished reflections illuminated naturally by the cinematic urban lighting. Preserve accessory placement and proportions exactly like the reference image.
+
+OUTFIT
+Black zip-up hoodie layered above a fitted white t-shirt combined with oversized light-wash denim shorts exactly matching the reference image. Clothing contains realistic fabric folds, stitched detailing, natural fabric tension, oversized streetwear proportions, cinematic shadows, and polished urban fashion aesthetics. White crew socks and black-and-white skate sneakers with realistic material texture and physically accurate footwear detailing.
+
+BODY & PHYSIQUE
+Lean youthful masculine physique with relaxed shoulders, slim waistline, naturally toned limbs, narrow torso proportions, and realistic teenage-inspired streetwear anatomy. Preserve exact posture, proportions, body silhouette, and physical identity from the original reference image with polished IMVU/Sims-inspired CGI contour shading.
+
+SECOND MALE AVATAR
+            
+FACE & IDENTITY
+Adult male CGI avatar with facial identity preserved exactly like the seated reference subject. Use ONLY the second reference image for this avatar. Do not borrow facial features, hairstyle, skin tone, facial proportions, jawline structure, eye shape, eyebrow shape, nose anatomy, lip shape, cheekbone placement, forehead proportions, or beauty characteristics from the first subject. Preserve the exact facial geometry, facial symmetry, hairstyle silhouette, expression style, and recognizable masculine identity without modification, beautification, enhancement, stylization, or reinterpretation. Maintain the exact recognizable identity fidelity from the reference image while remaining clearly fictional CGI avatar aesthetics instead of photoreal human rendering.
+
+HAIR
+Dark short curly hairstyle with dense textured volume and soft rounded silhouette exactly matching the reference appearance. Hair contains realistic curl definition, cinematic shine, natural strand separation, detailed shadow depth, and advanced Blender-style realism. Preserve the exact haircut structure independently from the first avatar.
+
+ACCESSORIES & DETAILS
+Slim black futuristic sunglasses with glossy reflective lenses and realistic cinematic reflections. Preserve exact accessory placement, proportions, and positioning from the reference image with polished Blender-style material realism.
+
+OUTFIT
+Black oversized athletic sweatshirt with subtle tonal sleeve stripe detailing combined with oversized light-wash denim shorts exactly matching the reference image. Clothing contains realistic fabric simulation, soft folds, oversized proportions, natural tension, realistic cotton texture, and polished underground streetwear aesthetics. White crew socks and black-and-white skate sneakers rendered with realistic material detailing and cinematic reflections.
+
+BODY & PHYSIQUE
+Slim youthful masculine physique with relaxed posture, natural limb proportions, slightly curved seated body positioning, toned legs, and realistic teenage-inspired anatomy identical to the reference image. Preserve exact body structure, proportions, silhouette, and seated posture with polished cinematic CGI contour shading.
+
+SKIN & REALISM
+Ultra-detailed Seedream 5.0 skin rendering with realistic pores, subtle glossy highlights, hydrated skin sheen, natural facial texture, and physically accurate subsurface scattering. Preserve both individual skin tones separately with absolute fidelity to their respective references. Do not average, blend, harmonize, neutralize, or unify skin complexions between avatars. Maintain each original undertone, saturation, facial contrast, skin brightness, texture variation, facial structure, and hair coloration independently. Do not harmonize male facial features between subjects. Natural CGI skin texture without excessive smoothing, preserving realistic cinematic Blender-style material rendering while remaining clearly fictional avatars.
+
+LIGHTING
+Moody cinematic nighttime lighting combined with soft vintage-flash illumination creates atmospheric shadows, glossy skin highlights, realistic reflections across the sunglasses and sneakers, and cinematic contrast throughout the composition. Dim urban ambient lighting mixed with realistic grain texture and subtle greenish tonal grading inspired directly by the reference image atmosphere.
+
+ENVIRONMENT
+Minimal urban exterior environment with textured concrete wall background and dark nighttime atmosphere exactly matching the reference image. Preserve the realistic spatial positioning, wall texture, ground surface, environmental depth, and cinematic empty-space composition from the original reference. Background remains softly blurred with atmospheric urban realism and polished underground editorial aesthetics.
+
+MOOD & AESTHETIC
+Luxury underground friends aesthetic mixed with modern streetwear culture, premium social-media editorial photography, polished Y2K masculine fashion energy, cinematic urban nightlife atmosphere, and high-end virtual-avatar beauty rendering. Stylish, youthful, mysterious, urban, polished, relaxed, fashionable, and naturally confident atmosphere inspired by modern underground fashion campaigns and luxury Instagram streetwear editorials.
+
+STYLE & RENDER QUALITY
+Ultra-photorealistic Blender Cycles CGI render, cinematic realism, Seedream 5.0 beauty rendering, 8K UHD quality, physically accurate lighting and materials, realistic skin micro-detail, IMVU-inspired beauty repaint style, high-fidelity friends avatar rendering, realistic depth of field, glossy beauty aesthetic, polished virtual influencer atmosphere, advanced ray tracing, realistic reflections, luxury editorial lighting, ultra-clean cinematic render quality, subtle vintage grain effect, and clearly fictional CGI avatar aesthetics instead of real photographs. Maintain exact facial likeness from the references with zero facial alteration.            
+
+</pre>
+
+          <button onclick="copyPrompt()" id="copyBtn">
+            <span id="btnText">Copiar Prompt</span>
+          </button>
+
+          <div class="info-section">
+            <p class="info-mark">MARQUE @tezza.vu</p>
+            <p class="info-footer">TEZZA PROMPTS OFICIAL — Conteúdo protegido.</p>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        TEZZA PROMPTS OFICIAL
+      </footer>
+    </div>
+  </div>
+
+  <script>
+    function copyPrompt() {
+      const promptText = document.getElementById('promptText').innerText;
+      const copyBtn = document.getElementById('copyBtn');
+      const btnText = document.getElementById('btnText');
+
+      function triggerSuccess() {
+        const originalText = btnText.innerText;
+        btnText.innerText = 'Prompt copiado com sucesso!';
+        copyBtn.classList.add('copy-success');
+        setTimeout(() => {
+          btnText.innerText = originalText;
+          copyBtn.classList.remove('copy-success');
+        }, 3000);
+      }
+
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(promptText).then(triggerSuccess).catch(() => fallbackCopy(promptText));
+      } else {
+        fallbackCopy(promptText);
+      }
+
+      function fallbackCopy(text) {
+        try {
+          const textArea = document.createElement("textarea");
+          textArea.value = text;
+          textArea.style.position = "fixed";
+          textArea.style.left = "-9999px";
+          document.body.appendChild(textArea);
+          textArea.focus();
+          textArea.select();
+          const successful = document.execCommand('copy');
+          document.body.removeChild(textArea);
+          if (successful) triggerSuccess();
+        } catch (err) { console.error('Erro ao copiar:', err); }
+      }
+    }
+  </script>
+</body>
+</html>
