@@ -96,14 +96,18 @@
       width: 100%;
     }
 
-    .bow-gif {
+    /* LAÇOS COMO BACKGROUND CSS PARA NÃO APARECEREM NO LINK */
+    .bow-icon {
       width: 60px;
       height: 60px;
-      object-fit: contain;
+      background-image: url('https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExdGJieHI0aXdjcHJsaGptZWp1OXlpeHA2Z2ZtbzdoZ2poOGE5MXgzcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/nxQA5nWEKzB5uz3Yr8/giphy.gif');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
       filter: grayscale(100%) brightness(1.5);
     }
 
-    .bow-gif.right {
+    .bow-icon.right {
       transform: scaleX(-1);
     }
 
@@ -240,7 +244,7 @@
 
     @media (max-width: 640px) {
       .card { padding: 40px 25px; margin: 0 10px; border-radius: 35px; }
-      .bow-gif { width: 45px; height: 45px; }
+      .bow-icon { width: 45px; height: 45px; }
     }
   </style>
 </head>
@@ -250,9 +254,10 @@
       <div class="content">
         <div class="header">
           <div class="title-wrapper">
-            <img class="bow-gif left" src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExdGJieHI0aXdjcHJsaGptZWp1OXlpeHA2Z2ZtbzdoZ2poOGE5MXgzcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/nxQA5nWEKzB5uz3Yr8/giphy.gif" alt="bow" />
+            <!-- USANDO DIV COM BACKGROUND CSS EM VEZ DE IMG -->
+            <div class="bow-icon left"></div>
             <h1>Tezza</h1>
-            <img class="bow-gif right" src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExdGJieHI0aXdjcHJsaGptZWp1OXlpeHA2Z2ZtbzdoZ2poOGE5MXgzcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/nxQA5nWEKzB5uz3Yr8/giphy.gif" alt="bow" />
+            <div class="bow-icon right"></div>
           </div>
           <p class="subtitle">TEZZA PROMPTS OFICIAL</p>
         </div>
