@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Título oficial que aparecerá no link -->
+  <title>TEZZA PROMPTS OFICIAL</title>
+  
+  <!-- Meta Tags para o link ficar compacto, curto e SEM preview de imagem -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="TEZZA PROMPTS OFICIAL">
+  <meta property="og:title" content="TEZZA PROMPTS OFICIAL">
+  <meta property="og:description" content="Prompts Oficiais da Tezza">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Quicksand:wght@300..700&family=Comfortaa:wght@300..700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg-dark: #000000;
+      --card-bg: rgba(20, 20, 20, 0.95);
+      --text-white: #ffffff;
+      --text-gray: #a0a0a0;
+      --border-gray: #333333;
+      --accent-white: #f5f5f5;
+      --glow-color: rgba(255, 255, 255, 0.4);
+      --glow-active: rgba(255, 255, 255, 0.9);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background-color: var(--bg-dark);
+      background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+      background-size: 30px 30px;
+      background-attachment: fixed;
+      color: var(--text-white);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
+      position: relative;
+    }
+
+    .container {
+      position: relative;
+      z-index: 10;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 500px;
+      background: var(--card-bg);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 2px solid var(--border-gray);
+      border-radius: 45px;
+      padding: 50px 35px;
+      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+      position: relative;
+      text-align: center;
+      transition: all 0.4s ease;
+    }
+
+    .card:hover {
+      border-color: var(--text-gray);
+      box-shadow: 0 0 20px var(--glow-color), 0 25px 50px rgba(0, 0, 0, 0.5);
+    }
+
+    .header {
+      margin-bottom: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .title-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      width: 100%;
+    }
+
+    /* LAÇOS COMO BACKGROUND CSS PARA NÃO APARECEREM NO LINK */
+    .bow-icon {
+      width: 60px;
+      height: 60px;
+      background-image: url('https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExdGJieHI0aXdjcHJsaGptZWp1OXlpeHA2Z2ZtbzdoZ2poOGE5MXgzcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/nxQA5nWEKzB5uz3Yr8/giphy.gif');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      filter: grayscale(100%) brightness(1.5);
+    }
+
+    .bow-icon.right {
+      transform: scaleX(-1);
+    }
+
+    .header h1 {
+      font-family: 'Fredoka', sans-serif;
+      font-size: clamp(2.5rem, 8vw, 3.5rem);
+      color: var(--text-white);
+      font-weight: 600;
+      letter-spacing: -1px;
+      line-height: 1;
+    }
+
+    .subtitle {
+      font-family: 'Fredoka', sans-serif;
+      font-size: 0.9rem;
+      color: var(--text-gray);
+      letter-spacing: 1.5px;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+
+    .divider {
+      width: 50%;
+      height: 2px;
+      background: var(--border-gray);
+      border-radius: 10px;
+      margin: 25px auto;
+      transition: all 0.4s ease;
+    }
+
+    .card:hover .divider {
+      background: var(--text-gray);
+      box-shadow: 0 0 10px var(--glow-color);
+    }
+
+    .prompt-section {
+      margin-top: 20px;
+    }
+
+    pre {
+      background: rgba(255, 255, 255, 0.05);
+      border: 2px solid var(--border-gray);
+      padding: 25px;
+      border-radius: 30px;
+      font-family: 'Comfortaa', cursive;
+      font-size: 0.95rem;
+      font-weight: 600;
+      line-height: 1.6;
+      color: var(--accent-white);
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      margin-bottom: 30px;
+      text-align: left;
+      transition: all 0.4s ease;
+    }
+
+    pre:hover {
+      border-color: var(--text-gray);
+      box-shadow: 0 0 15px var(--glow-color);
+    }
+
+    button {
+      width: 100%;
+      padding: 18px;
+      background: var(--text-white);
+      color: var(--bg-dark);
+      border: 3px solid transparent;
+      border-radius: 50px;
+      font-family: 'Fredoka', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      position: relative;
+    }
+
+    button:hover {
+      transform: translateY(-5px) scale(1.02);
+      background: var(--accent-white);
+      box-shadow: 0 15px 25px rgba(255, 255, 255, 0.2), 0 0 15px var(--glow-color);
+    }
+
+    button:active {
+      transform: scale(0.95);
+    }
+
+    @keyframes button-glow-pulse {
+      0% { border-color: transparent; box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1); }
+      50% { border-color: var(--text-white); box-shadow: 0 0 25px var(--glow-active); }
+      100% { border-color: transparent; box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1); }
+    }
+
+    button.copy-success {
+      animation: button-glow-pulse 0.8s ease-in-out infinite;
+      background: var(--text-white) !important;
+      color: var(--bg-dark) !important;
+    }
+
+    .info-section {
+      margin-top: 35px;
+    }
+
+    .info-mark {
+      font-family: 'Fredoka', sans-serif;
+      color: var(--text-white);
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+      letter-spacing: 1px;
+    }
+
+    .info-footer {
+      font-family: 'Quicksand', sans-serif;
+      color: var(--text-gray);
+      font-size: 0.8rem;
+      font-weight: 500;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border-gray);
+      font-family: 'Fredoka', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: var(--text-gray);
+      letter-spacing: 1px;
+    }
+
+    @media (max-width: 640px) {
+      .card { padding: 40px 25px; margin: 0 10px; border-radius: 35px; }
+      .bow-icon { width: 45px; height: 45px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card" id="mainCard">
+      <div class="content">
+        <div class="header">
+          <div class="title-wrapper">
+            <!-- USANDO DIV COM BACKGROUND CSS EM VEZ DE IMG -->
+            <div class="bow-icon left"></div>
+            <h1>Tezza</h1>
+            <div class="bow-icon right"></div>
+          </div>
+          <p class="subtitle">TEZZA PROMPTS OFICIAL</p>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="prompt-section">
+          <pre id="promptText">
+            
+GEMINI   [MODO PRO]
+
+Ultra-realistic cinematic avatar 3D couple portrait, Blender Cycles render in CGI, inspired by Seedream 5.0 beauty realism and high-end IMVU/The Sims virtual aesthetics. Clearly fictional digital avatars and not real photographs. Hyper-detailed virtual influencer couple design with stylized CGI beauty proportions, luxury editorial aesthetics, advanced cinematic lighting, ultra-polished 3D rendering, and “TEZZA PROMPTS” text at the bottom center in elegant minimalist typography.
+
+
+CAMERA & COMPOSITION
+Vertical 9:16 aspect ratio close-up shot of an intimate couple moment. The framing is tight on the subjects' faces and shoulders, capturing the intensity of their connection. The camera angle is eye-level, creating a direct and personal atmosphere. The background features a dark, textured wall (possibly marble or slate), rendered with a cinematic depth of field that keeps the focus sharp on the couple's intricate facial details and the red lipstick marks.
+
+
+POSE & BODY POSITIONING
+The couple is posed in a highly intimate and romantic manner. The female avatar is positioned slightly behind and to the side of the male avatar, leaning her cheek against his. She has her hand placed tenderly on the side of his face, her long fingers with dark red nails framing his jawline. The male avatar is shirtless, his head tilted slightly back, looking directly at the camera with a calm and confident expression. His face and neck are covered in multiple vibrant red lipstick kiss marks, suggesting a playful and passionate interaction.
+
+
+HEAD POSITION & GAZE
+Both subjects face the camera directly. The female avatar has a sultry, knowing gaze, her head tilted elegantly towards the male. The male avatar looks straight into the lens with a steady, captivating gaze, his expression relaxed and satisfied. Their head positions emphasize their closeness and the romantic narrative of the scene.
+
+
+FACIAL EXPRESSION
+The female avatar displays a confident, alluring expression with a subtle, mysterious smile. The male avatar has a calm, masculine, and contented expression. The multiple kiss marks on his face add a layer of playful romance and shared passion, typical of a high-profile virtual influencer couple's intimate life update.
+
+
+FEMALE AVATAR
+
+
+FACE & IDENTITY
+Adult female CGI avatar with the specific "TZ3" facial identity. She has an oval face with high cheekbones and a radiant, alluring expression. Her skin tone is a luminous light-medium bronze with warm undertones and realistic texture, featuring prominent sun-kissed freckles across her nose and cheeks. Her eyes are large and captivating, with a unique aqua-green/bluish hue, framed by dramatic, thick, fluttery black lashes and sharp winged eyeliner. Her eyebrows are thick, dark, and arched in a stylish "feathered" look. Her lips are full and voluminous, finished with a glossy deep red lipstick that matches the kiss marks on the male avatar.
+
+
+HAIR
+Long, voluminous blonde hair with a soft, natural texture. The hair falls gracefully over her shoulders and back, featuring bright luxury blonde coloration with silky reflections and a fluid, airy movement. The strands are rendered with cinematic shine and realistic detail, catching the warm ambient light of the setting.
+
+
+ACCESSORIES & DETAILS
+Her hand on the male avatar's face features perfectly manicured long nails with a deep, glossy red finish. Her accessories are minimal to maintain the focus on the intimate interaction and the facial details.
+
+
+OUTFIT
+A simple black strap of a top is visible on her shoulder, suggesting a sleek and minimal look that emphasizes her shoulders and neck.
+
+
+BODY & PHYSIQUE
+Slim and elegant feminine physique with a graceful neck and delicate features. Her anatomy is rendered with polished cinematic CGI contour shading, highlighting her fit and fashionable silhouette as she leans towards the male avatar.
+
+
+MALE AVATAR
+
+
+FACE & IDENTITY
+Adult male CGI avatar with the specific "FACEFELIX" facial identity. He has a strong, handsome facial structure with a defined jawline and prominent cheekbones. He features a dense, dark beard with an impeccable fade, a stylish mustache with slightly curled tips, and a connected goatee. His eyebrows are thick, dark, and well-defined. His skin tone is a medium tan bronze with warm neutral undertones and realistic pore detail. He wears small diamond stud earrings in both ears.
+
+
+HAIR
+Short, thick dark hair styled in a modern, well-groomed look with texture on top and a clean low fade on the sides. The hair is deep black with realistic density and subtle highlights from the ambient lighting.
+
+
+ACCESSORIES & DETAILS
+The most prominent detail is the multiple vibrant red lipstick kiss marks scattered across his cheek, jaw, and neck. These marks feature realistic texture and varying levels of opacity, as if freshly applied. He wears small, sparkling diamond stud earrings.
+
+
+OUTFIT
+He is shirtless, showcasing his broad shoulders and athletic, masculine build. The skin texture and muscle definition are rendered with high precision, reflecting his fit and healthy lifestyle.
+
+
+BODY & PHYSIQUE
+Broad-shouldered and athletic masculine physique with a powerful, toned upper body. His posture is relaxed and receptive as he poses with the female avatar, reflecting a strong and romantic presence.
+
+
+SKIN & REALISM
+Ultra-detailed Seedream 5.0 skin rendering with physically accurate subsurface scattering. The female skin has a radiant, freckled glow, while the male skin features a smooth, masculine tan with realistic facial hair and pore detail. Both subjects exhibit realistic skin micro-details, including subtle highlights, natural textures, and the specific material properties of the glossy lipstick marks, enhancing the CGI realism under the soft, warm light.
+
+
+LIGHTING
+Soft, warm ambient indoor lighting with a slight directional focus on the subjects' faces. The illumination creates gentle highlights on the skin, hair, and the glossy lipstick marks, while the dark background provides a cinematic contrast. The lighting enhances the intimate and romantic mood of the scene.
+
+
+ENVIRONMENT
+A sophisticated and private indoor setting, likely a luxury bedroom or a private lounge. The background features a dark, textured marble or slate wall, creating an exclusive and high-end atmosphere that emphasizes the couple's intimacy.
+
+
+MOOD & AESTHETIC
+Intimate, passionate, and playful. The aesthetic combines the luxury of a high-end private setting with the spontaneous, heartfelt energy of a romantic interaction. The mood is one of love, shared passion, and high-status lifestyle, inspired by premium social-media editorial photography.
+
+
+STYLE & RENDER QUALITY
+Ultra-photorealistic Blender Cycles CGI render, cinematic realism, Seedream 5.0 beauty rendering, 8K UHD quality, physically accurate lighting and materials, realistic skin micro-detail, IMVU-inspired beauty repaint style, high-fidelity couple avatar rendering, realistic depth of field, glossy beauty aesthetic, polished virtual influencer atmosphere, advanced ray tracing, realistic reflections, luxury editorial lighting, ultra-clean cinematic render quality, and clearly fictional CGI avatar aesthetics instead of real photographs.            
+
+</pre>
+
+          <button onclick="copyPrompt()" id="copyBtn">
+            <span id="btnText">Copiar Prompt</span>
+          </button>
+
+          <div class="info-section">
+            <p class="info-mark">MARQUE @tezza.vu</p>
+            <p class="info-footer">TEZZA PROMPTS OFICIAL — Conteúdo protegido.</p>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        TEZZA PROMPTS OFICIAL
+      </footer>
+    </div>
+  </div>
+
+  <script>
+    function copyPrompt() {
+      const promptText = document.getElementById('promptText').innerText;
+      const copyBtn = document.getElementById('copyBtn');
+      const btnText = document.getElementById('btnText');
+
+      function triggerSuccess() {
+        const originalText = btnText.innerText;
+        btnText.innerText = 'Prompt copiado com sucesso!';
+        copyBtn.classList.add('copy-success');
+        setTimeout(() => {
+          btnText.innerText = originalText;
+          copyBtn.classList.remove('copy-success');
+        }, 3000);
+      }
+
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(promptText).then(triggerSuccess).catch(() => fallbackCopy(promptText));
+      } else {
+        fallbackCopy(promptText);
+      }
+
+      function fallbackCopy(text) {
+        try {
+          const textArea = document.createElement("textarea");
+          textArea.value = text;
+          textArea.style.position = "fixed";
+          textArea.style.left = "-9999px";
+          document.body.appendChild(textArea);
+          textArea.focus();
+          textArea.select();
+          const successful = document.execCommand('copy');
+          document.body.removeChild(textArea);
+          if (successful) triggerSuccess();
+        } catch (err) { console.error('Erro ao copiar:', err); }
+      }
+    }
+  </script>
+</body>
+</html>
