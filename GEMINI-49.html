@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Título oficial que aparecerá no link -->
+  <title>TEZZA PROMPTS OFICIAL</title>
+  
+  <!-- Meta Tags para o link ficar compacto, curto e SEM preview de imagem -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="TEZZA PROMPTS OFICIAL">
+  <meta property="og:title" content="TEZZA PROMPTS OFICIAL">
+  <meta property="og:description" content="Prompts Oficiais da Tezza">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Quicksand:wght@300..700&family=Comfortaa:wght@300..700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg-dark: #000000;
+      --card-bg: rgba(20, 20, 20, 0.95);
+      --text-white: #ffffff;
+      --text-gray: #a0a0a0;
+      --border-gray: #333333;
+      --accent-white: #f5f5f5;
+      --glow-color: rgba(255, 255, 255, 0.4);
+      --glow-active: rgba(255, 255, 255, 0.9);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background-color: var(--bg-dark);
+      background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+      background-size: 30px 30px;
+      background-attachment: fixed;
+      color: var(--text-white);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
+      position: relative;
+    }
+
+    .container {
+      position: relative;
+      z-index: 10;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 500px;
+      background: var(--card-bg);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 2px solid var(--border-gray);
+      border-radius: 45px;
+      padding: 50px 35px;
+      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+      position: relative;
+      text-align: center;
+      transition: all 0.4s ease;
+    }
+
+    .card:hover {
+      border-color: var(--text-gray);
+      box-shadow: 0 0 20px var(--glow-color), 0 25px 50px rgba(0, 0, 0, 0.5);
+    }
+
+    .header {
+      margin-bottom: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .title-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      width: 100%;
+    }
+
+    /* LAÇOS COMO BACKGROUND CSS PARA NÃO APARECEREM NO LINK */
+    .bow-icon {
+      width: 60px;
+      height: 60px;
+      background-image: url('https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExdGJieHI0aXdjcHJsaGptZWp1OXlpeHA2Z2ZtbzdoZ2poOGE5MXgzcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/nxQA5nWEKzB5uz3Yr8/giphy.gif');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      filter: grayscale(100%) brightness(1.5);
+    }
+
+    .bow-icon.right {
+      transform: scaleX(-1);
+    }
+
+    .header h1 {
+      font-family: 'Fredoka', sans-serif;
+      font-size: clamp(2.5rem, 8vw, 3.5rem);
+      color: var(--text-white);
+      font-weight: 600;
+      letter-spacing: -1px;
+      line-height: 1;
+    }
+
+    .subtitle {
+      font-family: 'Fredoka', sans-serif;
+      font-size: 0.9rem;
+      color: var(--text-gray);
+      letter-spacing: 1.5px;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+
+    .divider {
+      width: 50%;
+      height: 2px;
+      background: var(--border-gray);
+      border-radius: 10px;
+      margin: 25px auto;
+      transition: all 0.4s ease;
+    }
+
+    .card:hover .divider {
+      background: var(--text-gray);
+      box-shadow: 0 0 10px var(--glow-color);
+    }
+
+    .prompt-section {
+      margin-top: 20px;
+    }
+
+    pre {
+      background: rgba(255, 255, 255, 0.05);
+      border: 2px solid var(--border-gray);
+      padding: 25px;
+      border-radius: 30px;
+      font-family: 'Comfortaa', cursive;
+      font-size: 0.95rem;
+      font-weight: 600;
+      line-height: 1.6;
+      color: var(--accent-white);
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      margin-bottom: 30px;
+      text-align: left;
+      transition: all 0.4s ease;
+    }
+
+    pre:hover {
+      border-color: var(--text-gray);
+      box-shadow: 0 0 15px var(--glow-color);
+    }
+
+    button {
+      width: 100%;
+      padding: 18px;
+      background: var(--text-white);
+      color: var(--bg-dark);
+      border: 3px solid transparent;
+      border-radius: 50px;
+      font-family: 'Fredoka', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      position: relative;
+    }
+
+    button:hover {
+      transform: translateY(-5px) scale(1.02);
+      background: var(--accent-white);
+      box-shadow: 0 15px 25px rgba(255, 255, 255, 0.2), 0 0 15px var(--glow-color);
+    }
+
+    button:active {
+      transform: scale(0.95);
+    }
+
+    @keyframes button-glow-pulse {
+      0% { border-color: transparent; box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1); }
+      50% { border-color: var(--text-white); box-shadow: 0 0 25px var(--glow-active); }
+      100% { border-color: transparent; box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1); }
+    }
+
+    button.copy-success {
+      animation: button-glow-pulse 0.8s ease-in-out infinite;
+      background: var(--text-white) !important;
+      color: var(--bg-dark) !important;
+    }
+
+    .info-section {
+      margin-top: 35px;
+    }
+
+    .info-mark {
+      font-family: 'Fredoka', sans-serif;
+      color: var(--text-white);
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+      letter-spacing: 1px;
+    }
+
+    .info-footer {
+      font-family: 'Quicksand', sans-serif;
+      color: var(--text-gray);
+      font-size: 0.8rem;
+      font-weight: 500;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border-gray);
+      font-family: 'Fredoka', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: var(--text-gray);
+      letter-spacing: 1px;
+    }
+
+    @media (max-width: 640px) {
+      .card { padding: 40px 25px; margin: 0 10px; border-radius: 35px; }
+      .bow-icon { width: 45px; height: 45px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card" id="mainCard">
+      <div class="content">
+        <div class="header">
+          <div class="title-wrapper">
+            <!-- USANDO DIV COM BACKGROUND CSS EM VEZ DE IMG -->
+            <div class="bow-icon left"></div>
+            <h1>Tezza</h1>
+            <div class="bow-icon right"></div>
+          </div>
+          <p class="subtitle">TEZZA PROMPTS OFICIAL</p>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="prompt-section">
+          <pre id="promptText">
+            
+GEMINI   [MODO PRO]
+
+Ultra-realistic cinematic avatar 3D female portrait, Blender Cycles render in CGI, inspired by Seedream 5.0 beauty realism and high-end IMVU/The Sims virtual aesthetics. Clearly a fictional digital avatar and not a real photograph. Hyper-detailed virtual influencer design with stylized CGI beauty proportions, luxury editorial aesthetics, advanced cinematic lighting, ultra-polished 3D rendering, and “TEZZA PROMPTS” text at the bottom center in elegant minimalist typography.
+
+CAMERA & COMPOSITION
+Full-body mirror selfie shot with a vertical 9:16 aspect ratio. The subject is standing in a modern home interior, captured through a smartphone perspective. The framing includes the entire outfit from the cowboy hat to the boots. Natural indoor lighting with soft shadows, creating a realistic living room atmosphere.
+
+POSE & BODY POSITIONING
+The subject is standing in a confident cowgirl-inspired pose, holding a smartphone with one hand to take a mirror selfie. Her body is slightly angled, showing a slender and curvy silhouette. The other arm hangs naturally at her side. One leg is slightly forward, highlighting the stylish western boots.
+
+HEAD POSITION & GAZE
+Head tilted slightly to the side, looking at the smartphone screen while capturing the selfie. A subtle, confident smile is visible. The face is partially framed by long hair and the brim of a straw cowboy hat.
+
+FACIAL EXPRESSION
+Relaxed and stylish facial expression with a gentle, fashionable smile. The mood is casual yet sophisticated, reflecting a modern influencer lifestyle.
+
+FACE & IDENTITY
+Adult female CGI avatar with delicate feminine features, soft jawline, and symmetrical proportions. Luminous pale skin tone with realistic texture and subtle highlights. Large expressive eyes and well-defined eyebrows. The identity is consistent with a high-end virtual influencer.
+
+HAIR
+Long blonde hair with a smooth and slightly wavy texture, flowing naturally down the shoulders and back. The hair has a silky sheen and realistic strand detail, peeking out from under the cowboy hat with a soft, fluid fall.
+
+ACCESSORIES & DETAILS
+Classic straw cowboy hat with a wide brim. A delicate gold necklace is visible around the neck. The subject is holding a modern smartphone in a stylish case. High-quality brown leather western boots with traditional stitching details.
+
+OUTFIT
+Western-style outfit featuring a brown corset-style top with intricate embroidery and white lace trim at the neckline. Paired with a short, flared white skirt that has a delicate lace hem. The look is a modern "Coastal Cowgirl" aesthetic, blending rustic elements with polished fashion.
+
+BODY & PHYSIQUE
+Slim and toned physique with an elegant feminine silhouette. Well-defined waistline and slender legs, maintaining the stylized CGI beauty proportions inspired by premium virtual aesthetics.
+
+SKIN & REALISM
+Ultra-detailed CGI skin rendering with subtle pores, hydrated sheen, and physically accurate subsurface scattering. Soft reflections on the skin from the indoor ambient lighting, creating a polished yet realistic 3D material quality.
+
+LIGHTING
+Warm indoor ambient lighting combined with natural light coming from an adjacent room. Soft highlights on the hair, hat, and clothing, with realistic reflections in the mirror. The lighting enhances the depth and three-dimensional quality of the avatar.
+
+ENVIRONMENT
+Modern home interior featuring a kitchen and living area in the background. Visible details include a refrigerator, kitchen island, a patterned rug on the floor, and a small dog sitting nearby. The environment is slightly out of focus to keep the emphasis on the subject.
+
+MOOD & AESTHETIC
+Modern Western-chic influencer aesthetic. The atmosphere is casual, stylish, and high-end, blending everyday lifestyle photography with premium virtual beauty rendering.
+
+STYLE & RENDER QUALITY
+Ultra-photorealistic Blender Cycles CGI render, cinematic realism, Seedream 5.0 beauty rendering, 8K UHD quality, physically accurate lighting and materials, realistic skin micro-detail, IMVU-inspired beauty repaint style, high-fidelity feminine avatar rendering, realistic depth of field, glossy beauty aesthetic, polished virtual influencer atmosphere, advanced ray tracing, realistic reflections, luxury editorial lighting, ultra-clean cinematic render quality, and clearly fictional CGI avatar aesthetics instead of a real photograph.            
+
+</pre>
+
+          <button onclick="copyPrompt()" id="copyBtn">
+            <span id="btnText">Copiar Prompt</span>
+          </button>
+
+          <div class="info-section">
+            <p class="info-mark">MARQUE @tezza.vu</p>
+            <p class="info-footer">TEZZA PROMPTS OFICIAL — Conteúdo protegido.</p>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        TEZZA PROMPTS OFICIAL
+      </footer>
+    </div>
+  </div>
+
+  <script>
+    function copyPrompt() {
+      const promptText = document.getElementById('promptText').innerText;
+      const copyBtn = document.getElementById('copyBtn');
+      const btnText = document.getElementById('btnText');
+
+      function triggerSuccess() {
+        const originalText = btnText.innerText;
+        btnText.innerText = 'Prompt copiado com sucesso!';
+        copyBtn.classList.add('copy-success');
+        setTimeout(() => {
+          btnText.innerText = originalText;
+          copyBtn.classList.remove('copy-success');
+        }, 3000);
+      }
+
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(promptText).then(triggerSuccess).catch(() => fallbackCopy(promptText));
+      } else {
+        fallbackCopy(promptText);
+      }
+
+      function fallbackCopy(text) {
+        try {
+          const textArea = document.createElement("textarea");
+          textArea.value = text;
+          textArea.style.position = "fixed";
+          textArea.style.left = "-9999px";
+          document.body.appendChild(textArea);
+          textArea.focus();
+          textArea.select();
+          const successful = document.execCommand('copy');
+          document.body.removeChild(textArea);
+          if (successful) triggerSuccess();
+        } catch (err) { console.error('Erro ao copiar:', err); }
+      }
+    }
+  </script>
+</body>
+</html>
