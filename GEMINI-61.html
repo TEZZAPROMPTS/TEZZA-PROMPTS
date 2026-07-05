@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Título oficial que aparecerá no link -->
+  <title>TEZZA PROMPTS OFICIAL</title>
+  
+  <!-- Meta Tags para o link ficar compacto, curto e SEM preview de imagem -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="TEZZA PROMPTS OFICIAL">
+  <meta property="og:title" content="TEZZA PROMPTS OFICIAL">
+  <meta property="og:description" content="Prompts Oficiais da Tezza">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Quicksand:wght@300..700&family=Comfortaa:wght@300..700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg-dark: #000000;
+      --card-bg: rgba(20, 20, 20, 0.95);
+      --text-white: #ffffff;
+      --text-gray: #a0a0a0;
+      --border-gray: #333333;
+      --accent-white: #f5f5f5;
+      --glow-color: rgba(255, 255, 255, 0.4);
+      --glow-active: rgba(255, 255, 255, 0.9);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background-color: var(--bg-dark);
+      background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+      background-size: 30px 30px;
+      background-attachment: fixed;
+      color: var(--text-white);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
+      position: relative;
+    }
+
+    .container {
+      position: relative;
+      z-index: 10;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 500px;
+      background: var(--card-bg);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 2px solid var(--border-gray);
+      border-radius: 45px;
+      padding: 50px 35px;
+      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+      position: relative;
+      text-align: center;
+      transition: all 0.4s ease;
+    }
+
+    .card:hover {
+      border-color: var(--text-gray);
+      box-shadow: 0 0 20px var(--glow-color), 0 25px 50px rgba(0, 0, 0, 0.5);
+    }
+
+    .header {
+      margin-bottom: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .title-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      width: 100%;
+    }
+
+    /* LAÇOS COMO BACKGROUND CSS PARA NÃO APARECEREM NO LINK */
+    .bow-icon {
+      width: 60px;
+      height: 60px;
+      background-image: url('https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExdGJieHI0aXdjcHJsaGptZWp1OXlpeHA2Z2ZtbzdoZ2poOGE5MXgzcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/nxQA5nWEKzB5uz3Yr8/giphy.gif');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      filter: grayscale(100%) brightness(1.5);
+    }
+
+    .bow-icon.right {
+      transform: scaleX(-1);
+    }
+
+    .header h1 {
+      font-family: 'Fredoka', sans-serif;
+      font-size: clamp(2.5rem, 8vw, 3.5rem);
+      color: var(--text-white);
+      font-weight: 600;
+      letter-spacing: -1px;
+      line-height: 1;
+    }
+
+    .subtitle {
+      font-family: 'Fredoka', sans-serif;
+      font-size: 0.9rem;
+      color: var(--text-gray);
+      letter-spacing: 1.5px;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+
+    .divider {
+      width: 50%;
+      height: 2px;
+      background: var(--border-gray);
+      border-radius: 10px;
+      margin: 25px auto;
+      transition: all 0.4s ease;
+    }
+
+    .card:hover .divider {
+      background: var(--text-gray);
+      box-shadow: 0 0 10px var(--glow-color);
+    }
+
+    .prompt-section {
+      margin-top: 20px;
+    }
+
+    pre {
+      background: rgba(255, 255, 255, 0.05);
+      border: 2px solid var(--border-gray);
+      padding: 25px;
+      border-radius: 30px;
+      font-family: 'Comfortaa', cursive;
+      font-size: 0.95rem;
+      font-weight: 600;
+      line-height: 1.6;
+      color: var(--accent-white);
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      margin-bottom: 30px;
+      text-align: left;
+      transition: all 0.4s ease;
+    }
+
+    pre:hover {
+      border-color: var(--text-gray);
+      box-shadow: 0 0 15px var(--glow-color);
+    }
+
+    button {
+      width: 100%;
+      padding: 18px;
+      background: var(--text-white);
+      color: var(--bg-dark);
+      border: 3px solid transparent;
+      border-radius: 50px;
+      font-family: 'Fredoka', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      position: relative;
+    }
+
+    button:hover {
+      transform: translateY(-5px) scale(1.02);
+      background: var(--accent-white);
+      box-shadow: 0 15px 25px rgba(255, 255, 255, 0.2), 0 0 15px var(--glow-color);
+    }
+
+    button:active {
+      transform: scale(0.95);
+    }
+
+    @keyframes button-glow-pulse {
+      0% { border-color: transparent; box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1); }
+      50% { border-color: var(--text-white); box-shadow: 0 0 25px var(--glow-active); }
+      100% { border-color: transparent; box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1); }
+    }
+
+    button.copy-success {
+      animation: button-glow-pulse 0.8s ease-in-out infinite;
+      background: var(--text-white) !important;
+      color: var(--bg-dark) !important;
+    }
+
+    .info-section {
+      margin-top: 35px;
+    }
+
+    .info-mark {
+      font-family: 'Fredoka', sans-serif;
+      color: var(--text-white);
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+      letter-spacing: 1px;
+    }
+
+    .info-footer {
+      font-family: 'Quicksand', sans-serif;
+      color: var(--text-gray);
+      font-size: 0.8rem;
+      font-weight: 500;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border-gray);
+      font-family: 'Fredoka', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: var(--text-gray);
+      letter-spacing: 1px;
+    }
+
+    @media (max-width: 640px) {
+      .card { padding: 40px 25px; margin: 0 10px; border-radius: 35px; }
+      .bow-icon { width: 45px; height: 45px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card" id="mainCard">
+      <div class="content">
+        <div class="header">
+          <div class="title-wrapper">
+            <!-- USANDO DIV COM BACKGROUND CSS EM VEZ DE IMG -->
+            <div class="bow-icon left"></div>
+            <h1>Tezza</h1>
+            <div class="bow-icon right"></div>
+          </div>
+          <p class="subtitle">TEZZA PROMPTS OFICIAL</p>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="prompt-section">
+          <pre id="promptText">
+            
+GEMINI   [MODO PRO]
+
+Ultra-realistic cinematic avatar 3D female portrait, Blender Cycles render in CGI, inspired by Seedream 5.0 beauty realism and high-end IMVU/The Sims virtual aesthetics. Clearly a fictional digital avatar and not a real photograph. Hyper-detailed virtual influencer design with stylized CGI beauty proportions, luxury editorial aesthetics, advanced cinematic lighting, ultra-polished 3D rendering, and “TEZZA PROMPTS” text at the bottom center in elegant minimalist typography.
+
+CAMERA & COMPOSITION
+Vertical 9:16 aspect ratio mirror selfie. Medium close-up framing from the upper hips to the top of the head. Eye-level handheld camera perspective faithfully reproducing the original mirror selfie composition. Subject positioned centrally inside the mirror while occupying most of the frame. The compact digital camera remains fully visible beside the face without covering the facial identity. Natural mirror perspective with physically accurate optics, subtle wide-angle distortion, sharp focus across the face, headscarf, camera, and outfit. Soft cinematic depth of field gently blurs the background while maintaining crystal-clear facial detail. Editorial lifestyle framing with realistic handheld composition and balanced visual symmetry.
+
+POSE & BODY POSITIONING
+Subject standing naturally in front of the mirror with an upright relaxed posture. Torso facing directly toward the mirror with shoulders remaining level and relaxed. Right arm naturally bent upward holding a compact digital camera beside the face while capturing the selfie. Left hand gently gripping the lower edge of the tank top near the waist, creating realistic fabric tension and subtle natural folds. Weight distributed evenly with a slight relaxed hip shift. Body language remains effortless, casual, and identical to the original composition while preserving the authentic mirror selfie aesthetic.
+
+HEAD POSITION & GAZE
+Head positioned upright with only a slight natural inclination. Face directed straight toward the mirror. Eyes looking directly into the camera lens through the mirror reflection with a calm confident gaze. Neck elongated naturally while preserving the exact facial orientation and relaxed posture.
+
+FACIAL EXPRESSION
+Neutral editorial facial expression with relaxed eyebrows, softly focused eyes, naturally closed glossy lips, and subtle confidence. Calm influencer-style beauty aesthetic with effortless elegance and no exaggerated emotion, faithfully preserving the original expression.
+
+FACE & IDENTITY
+Adult female CGI avatar preserving the exact facial identity, facial proportions, bone structure, forehead width, jawline, chin shape, cheekbone definition, eye spacing, eyebrow density, nose proportions, lip shape, complexion, and overall visual identity. Large almond-shaped light gray-blue eyes rendered with detailed irises, subtle limbal rings, realistic moisture, physically accurate reflections, and individually rendered eyelashes. Thick naturally full eyebrows with realistic strand density and soft feathered edges. Slim refined nose bridge with delicate nostril definition. Naturally full glossy lips featuring hydrated texture, realistic lip lines, soft translucency, and refined specular highlights. Smooth pale complexion with visible pores, delicate epidermal variation, realistic skin grain, subtle peach fuzz, and premium Blender Cycles skin realism while maintaining a stylized CGI avatar appearance instead of photoreal human rendering.
+
+HAIR
+Long blonde hair maintaining the original hairstyle beneath the headscarf. Smooth straight texture with naturally aligned strands flowing behind the shoulders. Visible front strands softly frame both sides of the face while preserving the original appearance. Hair features realistic root density, silky salon-quality texture, subtle strand separation, physically accurate anisotropic reflections, soft platinum and warm golden tonal variation, advanced strand-based rendering, natural gravity-driven movement, and premium Blender hair simulation.
+
+ACCESSORIES & DETAILS
+Brazil-themed bandana wrapped securely around the head featuring a white base with green and yellow printed graphics inspired by the Brazilian flag. Realistic woven cotton texture with visible stitching, soft wrinkles, natural folds, and authentic fabric tension around the tied areas. Compact black digital camera featuring realistic metallic construction, textured grip, detailed control buttons, physical lens glass reflections, visible wrist strap attachment, and subtle polished highlights. Gold bracelet with reflective metallic finish around the wrist. No additional accessories beyond those visible.
+
+OUTFIT
+Fitted yellow Brazil tank top with green shoulder straps and matching green neckline trim. Prominent green "BRASIL" lettering centered across the chest. Stretch cotton fabric displaying realistic weave texture, visible stitching, natural elasticity, soft compression around the torso, subtle wrinkles beneath the bust, realistic tension created by the hand holding the hem, physically accurate shading, and authentic Brazilcore styling while preserving the exact garment proportions.
+
+BODY & PHYSIQUE
+Slim feminine physique with naturally balanced anatomy, elegant shoulders, slender arms, softly defined waistline, realistic collarbone visibility, smooth body transitions, subtle feminine curves, refined muscle tone, and premium IMVU-inspired avatar proportions while preserving the original silhouette without exaggeration.
+
+SKIN & REALISM
+Ultra-detailed Seedream 5.0 skin rendering with realistic pores, refined epidermal texture, delicate peach fuzz, subtle skin grain, physically accurate subsurface scattering, advanced micro-normal detailing, hydrated skin finish, soft glossy highlights, and premium Blender Cycles material realism. Natural reflections appear across the forehead, cheeks, nose bridge, lips, shoulders, collarbones, arms, and upper chest while maintaining polished CGI realism without excessive smoothing.
+
+LIGHTING
+Soft natural daylight entering from the surrounding environment provides even frontal illumination across the face and body. Gentle ambient light fills the shadows while preserving realistic facial depth and dimension. Natural highlights appear across the skin, lips, hair, digital camera, bracelet, and tank top. Lighting remains clean, balanced, physically accurate, and consistent with an indoor daytime mirror selfie while maintaining cinematic Blender Cycles realism.
+
+ENVIRONMENT
+Simple residential interior featuring a wall-mounted mirror positioned directly in front of the subject. Neutral-colored walls and a doorway remain softly visible behind the avatar. Background elements stay naturally blurred through cinematic depth of field while preserving the authentic indoor atmosphere. Clean minimalist environment reinforces the casual Brazilcore influencer aesthetic without introducing unnecessary decorative elements.
+
+MOOD & AESTHETIC
+Luxury Brazilcore fashion blended with contemporary influencer culture, premium CGI avatar beauty, casual editorial photography, youthful confidence, polished virtual lifestyle aesthetics, cinematic realism, modern social-media energy, refined everyday elegance, and sophisticated digital beauty rendering.
+
+STYLE & RENDER QUALITY
+Ultra-photorealistic Blender Cycles CGI render, cinematic realism, Seedream 5.0 beauty rendering, 8K UHD quality, physically accurate lighting and materials, realistic skin micro-detail, IMVU-inspired beauty repaint style, high-fidelity feminine avatar rendering, realistic depth of field, glossy beauty aesthetic, polished virtual influencer atmosphere, advanced ray tracing, realistic reflections, luxury editorial lighting, ultra-clean cinematic render quality, and clearly fictional CGI avatar aesthetics instead of a real photograph.
+            
+
+</pre>
+
+          <button onclick="copyPrompt()" id="copyBtn">
+            <span id="btnText">Copiar Prompt</span>
+          </button>
+
+          <div class="info-section">
+            <p class="info-mark">MARQUE @tezza.vu</p>
+            <p class="info-footer">TEZZA PROMPTS OFICIAL — Conteúdo protegido.</p>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        TEZZA PROMPTS OFICIAL
+      </footer>
+    </div>
+  </div>
+
+  <script>
+    function copyPrompt() {
+      const promptText = document.getElementById('promptText').innerText;
+      const copyBtn = document.getElementById('copyBtn');
+      const btnText = document.getElementById('btnText');
+
+      function triggerSuccess() {
+        const originalText = btnText.innerText;
+        btnText.innerText = 'Prompt copiado com sucesso!';
+        copyBtn.classList.add('copy-success');
+        setTimeout(() => {
+          btnText.innerText = originalText;
+          copyBtn.classList.remove('copy-success');
+        }, 3000);
+      }
+
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(promptText).then(triggerSuccess).catch(() => fallbackCopy(promptText));
+      } else {
+        fallbackCopy(promptText);
+      }
+
+      function fallbackCopy(text) {
+        try {
+          const textArea = document.createElement("textarea");
+          textArea.value = text;
+          textArea.style.position = "fixed";
+          textArea.style.left = "-9999px";
+          document.body.appendChild(textArea);
+          textArea.focus();
+          textArea.select();
+          const successful = document.execCommand('copy');
+          document.body.removeChild(textArea);
+          if (successful) triggerSuccess();
+        } catch (err) { console.error('Erro ao copiar:', err); }
+      }
+    }
+  </script>
+</body>
+</html>
