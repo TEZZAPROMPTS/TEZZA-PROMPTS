@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Título oficial que aparecerá no link -->
+  <title>TEZZA PROMPTS OFICIAL</title>
+  
+  <!-- Meta Tags para o link ficar compacto, curto e SEM preview de imagem -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="TEZZA PROMPTS OFICIAL">
+  <meta property="og:title" content="TEZZA PROMPTS OFICIAL">
+  <meta property="og:description" content="Prompts Oficiais da Tezza">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Quicksand:wght@300..700&family=Comfortaa:wght@300..700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg-dark: #000000;
+      --card-bg: rgba(20, 20, 20, 0.95);
+      --text-white: #ffffff;
+      --text-gray: #a0a0a0;
+      --border-gray: #333333;
+      --accent-white: #f5f5f5;
+      --glow-color: rgba(255, 255, 255, 0.4);
+      --glow-active: rgba(255, 255, 255, 0.9);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background-color: var(--bg-dark);
+      background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+      background-size: 30px 30px;
+      background-attachment: fixed;
+      color: var(--text-white);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
+      position: relative;
+    }
+
+    .container {
+      position: relative;
+      z-index: 10;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 500px;
+      background: var(--card-bg);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 2px solid var(--border-gray);
+      border-radius: 45px;
+      padding: 50px 35px;
+      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+      position: relative;
+      text-align: center;
+      transition: all 0.4s ease;
+    }
+
+    .card:hover {
+      border-color: var(--text-gray);
+      box-shadow: 0 0 20px var(--glow-color), 0 25px 50px rgba(0, 0, 0, 0.5);
+    }
+
+    .header {
+      margin-bottom: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .title-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      width: 100%;
+    }
+
+    /* LAÇOS COMO BACKGROUND CSS PARA NÃO APARECEREM NO LINK */
+    .bow-icon {
+      width: 60px;
+      height: 60px;
+      background-image: url('https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExdGJieHI0aXdjcHJsaGptZWp1OXlpeHA2Z2ZtbzdoZ2poOGE5MXgzcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/nxQA5nWEKzB5uz3Yr8/giphy.gif');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      filter: grayscale(100%) brightness(1.5);
+    }
+
+    .bow-icon.right {
+      transform: scaleX(-1);
+    }
+
+    .header h1 {
+      font-family: 'Fredoka', sans-serif;
+      font-size: clamp(2.5rem, 8vw, 3.5rem);
+      color: var(--text-white);
+      font-weight: 600;
+      letter-spacing: -1px;
+      line-height: 1;
+    }
+
+    .subtitle {
+      font-family: 'Fredoka', sans-serif;
+      font-size: 0.9rem;
+      color: var(--text-gray);
+      letter-spacing: 1.5px;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+
+    .divider {
+      width: 50%;
+      height: 2px;
+      background: var(--border-gray);
+      border-radius: 10px;
+      margin: 25px auto;
+      transition: all 0.4s ease;
+    }
+
+    .card:hover .divider {
+      background: var(--text-gray);
+      box-shadow: 0 0 10px var(--glow-color);
+    }
+
+    .prompt-section {
+      margin-top: 20px;
+    }
+
+    pre {
+      background: rgba(255, 255, 255, 0.05);
+      border: 2px solid var(--border-gray);
+      padding: 25px;
+      border-radius: 30px;
+      font-family: 'Comfortaa', cursive;
+      font-size: 0.95rem;
+      font-weight: 600;
+      line-height: 1.6;
+      color: var(--accent-white);
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      margin-bottom: 30px;
+      text-align: left;
+      transition: all 0.4s ease;
+    }
+
+    pre:hover {
+      border-color: var(--text-gray);
+      box-shadow: 0 0 15px var(--glow-color);
+    }
+
+    button {
+      width: 100%;
+      padding: 18px;
+      background: var(--text-white);
+      color: var(--bg-dark);
+      border: 3px solid transparent;
+      border-radius: 50px;
+      font-family: 'Fredoka', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      position: relative;
+    }
+
+    button:hover {
+      transform: translateY(-5px) scale(1.02);
+      background: var(--accent-white);
+      box-shadow: 0 15px 25px rgba(255, 255, 255, 0.2), 0 0 15px var(--glow-color);
+    }
+
+    button:active {
+      transform: scale(0.95);
+    }
+
+    @keyframes button-glow-pulse {
+      0% { border-color: transparent; box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1); }
+      50% { border-color: var(--text-white); box-shadow: 0 0 25px var(--glow-active); }
+      100% { border-color: transparent; box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1); }
+    }
+
+    button.copy-success {
+      animation: button-glow-pulse 0.8s ease-in-out infinite;
+      background: var(--text-white) !important;
+      color: var(--bg-dark) !important;
+    }
+
+    .info-section {
+      margin-top: 35px;
+    }
+
+    .info-mark {
+      font-family: 'Fredoka', sans-serif;
+      color: var(--text-white);
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+      letter-spacing: 1px;
+    }
+
+    .info-footer {
+      font-family: 'Quicksand', sans-serif;
+      color: var(--text-gray);
+      font-size: 0.8rem;
+      font-weight: 500;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border-gray);
+      font-family: 'Fredoka', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: var(--text-gray);
+      letter-spacing: 1px;
+    }
+
+    @media (max-width: 640px) {
+      .card { padding: 40px 25px; margin: 0 10px; border-radius: 35px; }
+      .bow-icon { width: 45px; height: 45px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card" id="mainCard">
+      <div class="content">
+        <div class="header">
+          <div class="title-wrapper">
+            <!-- USANDO DIV COM BACKGROUND CSS EM VEZ DE IMG -->
+            <div class="bow-icon left"></div>
+            <h1>Tezza</h1>
+            <div class="bow-icon right"></div>
+          </div>
+          <p class="subtitle">TEZZA PROMPTS OFICIAL</p>
+           <p class="subtitle">FLOW</p>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="prompt-section">
+          <pre id="promptText">
+
+Ultra-realistic cinematic avatar 3D couple portrait, Blender Cycles render in CGI, inspired by Seedream 5.0 beauty realism and high-end IMVU/The Sims virtual aesthetics. Clearly fictional digital avatars and not real photographs. Hyper-detailed virtual influencer couple design with stylized CGI beauty proportions, luxury editorial aesthetics, advanced cinematic lighting, ultra-polished 3D rendering, and “TEZZA PROMPTS” text at the bottom center in elegant minimalist typography.
+
+CAMERA & COMPOSITION
+Vertical 9:16 intimate candid smartphone photograph inside a luxury car. Tight medium close-up framing from the front passenger-side perspective, showing both adult avatars inside the front area of the vehicle, with the black leather seats, steering wheel, dashboard, center console, side window, roof controls, and softly blurred green trees outside. Natural handheld smartphone perspective, slightly tilted composition, realistic daylight, close romantic proximity, sharp focus on both faces, hands, hair, clothing, and intimate interaction, with authentic interior depth and realistic smartphone photography aesthetics.
+
+POSE & BODY POSITIONING
+Adult male avatar seated underneath in the driver’s seat, while the adult female avatar is seated directly on top of his lap, positioned across his thighs in a natural intimate posture. She is clearly above him, with her torso leaning toward his face as they kiss. The male avatar securely holds her by the gluteal area and lower waist, supporting her naturally and keeping her balanced on his lap. His other arm wraps firmly around her back, hip, or waist in a protective embrace. The female avatar rests one hand against the side of his face while leaning into the kiss. Preserve realistic weight distribution, natural seated anatomy, believable body contact, accurate hands and fingers, and affectionate adult couple body language. No floating bodies, no distorted limbs, no extra fingers, no awkward anatomy.
+
+HEAD POSITION & GAZE
+Female avatar positioned above him, leaning downward and slightly forward, head gently tilted to one side during the kiss, eyes naturally closed. Male avatar positioned below her, leaning upward toward her, head tilted in the opposite direction, eyes closed or softly lowered while kissing her. Preserve the exact facial proportions, head shape, and recognizable identity of both avatars.
+
+FACIAL EXPRESSION
+Tender, affectionate, spontaneous romantic expression during a natural kiss. Relaxed facial muscles, realistic lip contact, subtle cheek compression, emotional warmth, and genuine intimate body language without exaggerated posing.
+
+FEMALE AVATAR
+
+FACE & IDENTITY
+Adult female CGI avatar with preserved facial identity and exact recognizable facial structure. Maintain large light green eyes, dramatic dark lashes, thick feathered brows, delicate straight nose, softly sculpted cheekbones, defined feminine jawline, full glossy nude-pink lips, facial symmetry, soft light-medium bronze complexion with warm undertones, realistic pores, natural skin texture, and small freckles across the nose and cheeks. Clearly fictional CGI avatar appearance, not a real human photograph.
+
+HAIR
+Long, flowing soft blonde hair with elegant natural waves and a silky smooth texture. The waves are loose, fluid, softly defined, and naturally cascading over both shoulders and down her back. Fine realistic strands, subtle blonde tonal variation, luminous silky shine, natural volume, and graceful movement following gravity and the seated position above him. Preserve the long length, wavy pattern, blonde color, soft density, and polished salon-quality appearance without tight curls, frizz, braids, stiff shapes, or excessive artificial volume.
+
+ACCESSORIES & DETAILS
+Subtle refined jewelry, delicate details, realistic glossy nude manicure, and natural fingers touching the male avatar’s face. Preserve realistic skin-to-skin contact and authentic hand positioning. Do not add tattoos, invented markings, scars, symbols, or unrelated accessories.
+
+OUTFIT
+Dark fitted casual long-sleeve top or black sweatshirt with soft cotton texture, realistic folds, natural seams, and subtle highlights from the daylight inside the car. Preserve understated dark casual styling without unrelated patterns, logos, or flashy details.
+
+BODY & PHYSIQUE
+Natural adult feminine anatomy with realistic proportions, slim curvy silhouette, natural shoulders, arms, torso, hips, and seated body position. Preserve believable weight distribution while sitting directly on the male avatar’s lap, natural body compression against the seat and his thighs, and accurate intimate posture without exaggeration.
+
+MALE AVATAR
+
+FACE & IDENTITY
+Adult male CGI avatar with preserved facial identity and exact recognizable masculine structure. Maintain the strong square jawline, defined cheekbones, thick dark eyebrows, deep-set dark brown eyes, broad straight nose, full lips, sharp beard structure, dense mustache with gently curled ends, trimmed goatee connection, facial symmetry, and medium-dark tan bronze complexion with warm neutral undertones. Preserve realistic pores, subtle skin texture, natural highlights, and polished Blender-style realism while remaining clearly fictional CGI avatar aesthetics.
+
+HAIR
+Short black textured haircut with compact straight fringe across the forehead and a clean low fade on the sides. Dense coarse strands, slightly irregular natural texture, controlled short movement, realistic barber detailing, and subtle matte-to-satin highlights. Preserve the exact short length, dark color, rounded top shape, frontal fringe, and low-fade transition without adding curls, long hair, or excessive volume.
+
+ACCESSORIES & DETAILS
+Small metallic earrings with restrained reflective highlights, realistic beard strands, polished grooming definition, and both hands positioned naturally while securely holding the female avatar by the gluteal area, lower waist, and back. Do not add tattoos, facial piercings, scars, symbols, or invented markings.
+
+OUTFIT
+Black oversized hoodie or black casual sweatshirt with relaxed fit, soft fabric texture, natural folds around the shoulders and elbows, and subtle daylight highlights. Preserve dark monochromatic streetwear styling without unrelated colors, logos, or prints.
+
+BODY & PHYSIQUE
+Natural adult masculine anatomy with broad shoulders, solid upper body, realistic arms and torso, and believable seated posture in the driver’s seat. Preserve his position underneath her, his supportive hold around her gluteal area and waist, the close embrace, accurate proportions, and natural clothing compression.
+
+SKIN & REALISM
+Ultra-detailed CGI skin rendering with realistic pores, subtle imperfections, natural hydrated sheen, physically accurate subsurface scattering, and believable facial and body contact. Preserve the female avatar’s lighter warm bronze complexion and freckles separately from the male avatar’s deeper medium-dark tan bronze complexion. No plastic skin, excessive smoothing, artificial whitening, duplicated facial features, tattoos, or invented skin markings.
+
+LIGHTING
+Natural daylight entering through the car windows, creating soft directional highlights on the couple’s faces, hair, hands, and clothing. Balanced ambient illumination inside the vehicle with gentle shadows from the roof, dashboard, steering wheel, and seats. Realistic smartphone-camera exposure and natural interior reflections without artificial neon or studio lighting.
+
+ENVIRONMENT
+Realistic modern luxury car interior with black leather seats, dark dashboard, steering wheel, center console, gear selector, door panel, rearview mirror, roof controls, and side window revealing softly blurred green trees and daylight outside. Preserve the intimate enclosed atmosphere and authentic spatial depth of the vehicle.
+
+MOOD & AESTHETIC
+Spontaneous romantic couple moment inside a car, intimate, affectionate, candid, emotionally warm, and natural. The male avatar is seated underneath while the female avatar is seated on top of his lap, and he securely holds her by the gluteal area as they kiss. Authentic private relationship energy mixed with polished cinematic CGI avatar aesthetics.
+
+STYLE & RENDER QUALITY
+Ultra-photorealistic Blender Cycles CGI render, cinematic realism, Seedream 5.0 beauty rendering, 8K UHD quality, physically accurate lighting and materials, realistic skin micro-detail, IMVU-inspired beauty repaint style, high-fidelity couple avatar rendering, realistic depth of field, glossy beauty aesthetic, polished virtual influencer atmosphere, advanced ray tracing, realistic reflections, luxury editorial lighting, ultra-clean cinematic render quality, and clearly fictional CGI avatar aesthetics instead of real photographs.
+            
+
+</pre>
+
+          <button onclick="copyPrompt()" id="copyBtn">
+            <span id="btnText">Copiar Prompt</span>
+          </button>
+
+          <div class="info-section">
+            <p class="info-mark">MARQUE @tezza.vu</p>
+            <p class="info-footer">TEZZA PROMPTS OFICIAL — Conteúdo protegido.</p>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        TEZZA PROMPTS OFICIAL
+      </footer>
+    </div>
+  </div>
+
+  <script>
+    function copyPrompt() {
+      const promptText = document.getElementById('promptText').innerText;
+      const copyBtn = document.getElementById('copyBtn');
+      const btnText = document.getElementById('btnText');
+
+      function triggerSuccess() {
+        const originalText = btnText.innerText;
+        btnText.innerText = 'Prompt copiado com sucesso!';
+        copyBtn.classList.add('copy-success');
+        setTimeout(() => {
+          btnText.innerText = originalText;
+          copyBtn.classList.remove('copy-success');
+        }, 3000);
+      }
+
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(promptText).then(triggerSuccess).catch(() => fallbackCopy(promptText));
+      } else {
+        fallbackCopy(promptText);
+      }
+
+      function fallbackCopy(text) {
+        try {
+          const textArea = document.createElement("textarea");
+          textArea.value = text;
+          textArea.style.position = "fixed";
+          textArea.style.left = "-9999px";
+          document.body.appendChild(textArea);
+          textArea.focus();
+          textArea.select();
+          const successful = document.execCommand('copy');
+          document.body.removeChild(textArea);
+          if (successful) triggerSuccess();
+        } catch (err) { console.error('Erro ao copiar:', err); }
+      }
+    }
+  </script>
+</body>
+</html>
