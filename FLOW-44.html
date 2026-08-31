@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Título oficial que aparecerá no link -->
+  <title>TEZZA PROMPTS OFICIAL</title>
+  
+  <!-- Meta Tags para o link ficar compacto, curto e SEM preview de imagem -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="TEZZA PROMPTS OFICIAL">
+  <meta property="og:title" content="TEZZA PROMPTS OFICIAL">
+  <meta property="og:description" content="Prompts Oficiais da Tezza">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Quicksand:wght@300..700&family=Comfortaa:wght@300..700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg-dark: #000000;
+      --card-bg: rgba(20, 20, 20, 0.95);
+      --text-white: #ffffff;
+      --text-gray: #a0a0a0;
+      --border-gray: #333333;
+      --accent-white: #f5f5f5;
+      --glow-color: rgba(255, 255, 255, 0.4);
+      --glow-active: rgba(255, 255, 255, 0.9);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background-color: var(--bg-dark);
+      background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+      background-size: 30px 30px;
+      background-attachment: fixed;
+      color: var(--text-white);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
+      position: relative;
+    }
+
+    .container {
+      position: relative;
+      z-index: 10;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 500px;
+      background: var(--card-bg);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 2px solid var(--border-gray);
+      border-radius: 45px;
+      padding: 50px 35px;
+      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+      position: relative;
+      text-align: center;
+      transition: all 0.4s ease;
+    }
+
+    .card:hover {
+      border-color: var(--text-gray);
+      box-shadow: 0 0 20px var(--glow-color), 0 25px 50px rgba(0, 0, 0, 0.5);
+    }
+
+    .header {
+      margin-bottom: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .title-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      width: 100%;
+    }
+
+    /* LAÇOS COMO BACKGROUND CSS PARA NÃO APARECEREM NO LINK */
+    .bow-icon {
+      width: 60px;
+      height: 60px;
+      background-image: url('https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExdGJieHI0aXdjcHJsaGptZWp1OXlpeHA2Z2ZtbzdoZ2poOGE5MXgzcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/nxQA5nWEKzB5uz3Yr8/giphy.gif');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      filter: grayscale(100%) brightness(1.5);
+    }
+
+    .bow-icon.right {
+      transform: scaleX(-1);
+    }
+
+    .header h1 {
+      font-family: 'Fredoka', sans-serif;
+      font-size: clamp(2.5rem, 8vw, 3.5rem);
+      color: var(--text-white);
+      font-weight: 600;
+      letter-spacing: -1px;
+      line-height: 1;
+    }
+
+    .subtitle {
+      font-family: 'Fredoka', sans-serif;
+      font-size: 0.9rem;
+      color: var(--text-gray);
+      letter-spacing: 1.5px;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+
+    .divider {
+      width: 50%;
+      height: 2px;
+      background: var(--border-gray);
+      border-radius: 10px;
+      margin: 25px auto;
+      transition: all 0.4s ease;
+    }
+
+    .card:hover .divider {
+      background: var(--text-gray);
+      box-shadow: 0 0 10px var(--glow-color);
+    }
+
+    .prompt-section {
+      margin-top: 20px;
+    }
+
+    pre {
+      background: rgba(255, 255, 255, 0.05);
+      border: 2px solid var(--border-gray);
+      padding: 25px;
+      border-radius: 30px;
+      font-family: 'Comfortaa', cursive;
+      font-size: 0.95rem;
+      font-weight: 600;
+      line-height: 1.6;
+      color: var(--accent-white);
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      margin-bottom: 30px;
+      text-align: left;
+      transition: all 0.4s ease;
+    }
+
+    pre:hover {
+      border-color: var(--text-gray);
+      box-shadow: 0 0 15px var(--glow-color);
+    }
+
+    button {
+      width: 100%;
+      padding: 18px;
+      background: var(--text-white);
+      color: var(--bg-dark);
+      border: 3px solid transparent;
+      border-radius: 50px;
+      font-family: 'Fredoka', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      position: relative;
+    }
+
+    button:hover {
+      transform: translateY(-5px) scale(1.02);
+      background: var(--accent-white);
+      box-shadow: 0 15px 25px rgba(255, 255, 255, 0.2), 0 0 15px var(--glow-color);
+    }
+
+    button:active {
+      transform: scale(0.95);
+    }
+
+    @keyframes button-glow-pulse {
+      0% { border-color: transparent; box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1); }
+      50% { border-color: var(--text-white); box-shadow: 0 0 25px var(--glow-active); }
+      100% { border-color: transparent; box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1); }
+    }
+
+    button.copy-success {
+      animation: button-glow-pulse 0.8s ease-in-out infinite;
+      background: var(--text-white) !important;
+      color: var(--bg-dark) !important;
+    }
+
+    .info-section {
+      margin-top: 35px;
+    }
+
+    .info-mark {
+      font-family: 'Fredoka', sans-serif;
+      color: var(--text-white);
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+      letter-spacing: 1px;
+    }
+
+    .info-footer {
+      font-family: 'Quicksand', sans-serif;
+      color: var(--text-gray);
+      font-size: 0.8rem;
+      font-weight: 500;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border-gray);
+      font-family: 'Fredoka', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: var(--text-gray);
+      letter-spacing: 1px;
+    }
+
+    @media (max-width: 640px) {
+      .card { padding: 40px 25px; margin: 0 10px; border-radius: 35px; }
+      .bow-icon { width: 45px; height: 45px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card" id="mainCard">
+      <div class="content">
+        <div class="header">
+          <div class="title-wrapper">
+            <!-- USANDO DIV COM BACKGROUND CSS EM VEZ DE IMG -->
+            <div class="bow-icon left"></div>
+            <h1>Tezza</h1>
+            <div class="bow-icon right"></div>
+          </div>
+          <p class="subtitle">TEZZA PROMPTS OFICIAL</p>
+           <p class="subtitle">FLOW</p>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="prompt-section">
+          <pre id="promptText">
+
+Ultra-realistic cinematic avatar 3D female portrait, Blender Cycles render in CGI, inspired by Seedream 5.0 beauty realism and high-end IMVU/The Sims virtual aesthetics. Clearly a fictional digital avatar and not a real photograph. Hyper-detailed virtual influencer design with stylized CGI beauty proportions, luxury editorial aesthetics, advanced cinematic lighting, ultra-polished 3D rendering, and “TEZZA PROMPTS” text at the bottom center in elegant minimalist typography.
+
+CAMERA & COMPOSITION
+Vertical 9:16 full-body beach lifestyle photograph captured from a natural eye-level smartphone perspective. Adult woman positioned in the center of the frame, photographed from the top of her head to below the knees, standing near the shoreline. Use a balanced vacation-editorial composition with the turquoise ocean, foamy waves, rocky shore, seaweed-covered stones, distant swimmers, and expansive cloudy sky visible behind her. Preserve realistic handheld photography, natural perspective, moderate depth of field, sharp focus on the woman, and a spacious tropical coastal atmosphere.
+
+POSE & BODY POSITIONING
+Adult woman standing casually on a rocky beach with her weight shifted slightly to one side. One arm is bent upward with the hand touching or adjusting the hair near the temple, while the other arm hangs naturally beside the body beneath the lightweight cover-up. Torso relaxed and slightly angled toward the camera, shoulders soft, hips naturally aligned, and legs positioned close together in a graceful beach pose. Preserve the exact arm gesture, relaxed stance, natural body balance, and effortless vacation posture.
+
+HEAD POSITION & GAZE
+Head tilted gently to one side and slightly upward, with the face turned toward the camera. Eyes softly closed or nearly closed, conveying enjoyment of the sea breeze and sunlight. Chin subtly lifted, lips gently closed in a soft relaxed smile, and loose strands of hair moving around the face. Preserve the natural head angle, serene expression, and candid interaction with the wind.
+
+FACIAL EXPRESSION
+Soft, peaceful, and subtly joyful facial expression with closed eyes, relaxed cheeks, and a delicate closed-mouth smile. The mood is carefree, feminine, calm, and naturally happy, as though enjoying a warm day beside the ocean. Maintain understated emotion, natural facial relaxation, and polished beach-lifestyle energy without exaggeration.
+
+FACE & IDENTITY
+Adult female CGI avatar with the established feminine identity: delicate facial structure, softly sculpted cheekbones, smooth jawline, symmetrical proportions, large almond-shaped gray-blue eyes, full well-defined brows, slim nose bridge, naturally full glossy lips, warm luminous skin, and subtle freckles across the nose and cheeks. Preserve the exact facial proportions, mature adult appearance, refined beauty contours, and consistent visual identity. Do not change, age, exaggerate, beautify, or reinterpret the facial features.
+
+HAIR
+Long blonde hair with a warm golden-beige tone, predominantly straight with soft natural movement and lightly tousled ends. Hair falls freely over the shoulders and down the back, with several wind-swept strands crossing the face and flowing beside the body. Preserve the blonde color, long length, smooth texture, subtle natural volume, realistic strand detail, silky highlights, loose flyaways, and fluid movement created by the ocean breeze. Do not change the hair color, length, texture, or overall hairstyle.
+
+ACCESSORIES & DETAILS
+Delicate minimal jewelry, including small earrings, thin bracelets, and subtle necklaces if visible. Include a small metallic navel piercing with a refined reflective detail. Preserve realistic jewelry highlights, natural manicure, accurate hands, subtle water reflections, and fine fabric details. Keep accessories understated and avoid adding unrequested decorative elements.
+
+OUTFIT
+Soft pale-pink triangle bikini with thin adjustable straps and matching low-rise bikini bottoms. A long, lightweight, semi-sheer white cover-up is worn open over the bikini, with loose sleeves, flowing panels, and delicate fabric movement around the arms and thighs. Preserve the pastel pink swimwear, translucent white cover-up, natural folds, realistic fabric tension, thin straps, and elegant tropical-resort styling. Do not replace the bikini or cover-up with another outfit.
+
+BODY & PHYSIQUE
+Adult feminine physique with a defined waist, toned abdomen, balanced hips, elegant shoulders, long legs, and naturally proportioned feminine anatomy. Preserve realistic body lines, relaxed standing posture, subtle muscle definition, and believable proportions beneath the flowing cover-up. Maintain a graceful feminine silhouette without distortion, excessive exaggeration, or artificial reshaping.
+
+SKIN & REALISM
+Warm golden-tan sun-kissed skin with realistic pores, subtle natural tonal variation, soft hydrated highlights, and believable CGI texture. Add physically accurate subsurface scattering, luminous reflections across the forehead, cheeks, shoulders, chest, abdomen, arms, and legs, and gentle shadows cast by the cover-up and hair. Preserve natural summer warmth without plastic smoothing, excessive retouching, or artificial whitening.
+
+LIGHTING
+Bright natural coastal daylight with soft warm sunlight filtered through light cloud cover. Create gentle highlights on the blonde hair, face, shoulders, skin, jewelry, pink bikini, and white cover-up, with natural soft shadows beneath the fabric and body. Add subtle reflected light from the ocean and wet shoreline, balanced exposure, and mild atmospheric haze. Avoid harsh studio flash, nighttime lighting, or artificial neon colors.
+
+ENVIRONMENT
+Tropical rocky beach beside clear turquoise ocean water with small foamy waves breaking near the shoreline. Include dark rocks covered with seaweed in the foreground and around the subject, pale wet stones, distant swimmers, a low ocean horizon, and a broad blue sky filled with soft layered white and gray clouds. Preserve the natural seaside landscape, open horizon, coastal textures, and realistic vacation setting.
+
+MOOD & AESTHETIC
+Elegant tropical beach aesthetic blended with soft summer fashion, relaxed social-media influencer culture, oceanfront vacation photography, and polished virtual-avatar beauty. The atmosphere is peaceful, sun-warmed, feminine, carefree, and naturally glamorous. Emphasize the contrast between the pale-pink bikini, flowing white cover-up, long blonde hair, turquoise water, dark rocks, and expansive cloudy sky.
+
+STYLE & RENDER QUALITY
+Ultra-photorealistic Blender Cycles CGI render, cinematic realism, Seedream 5.0 beauty rendering, 8K UHD quality, physically accurate lighting and materials, realistic skin micro-detail, IMVU-inspired beauty repaint style, high-fidelity feminine avatar rendering, realistic depth of field, glossy beauty aesthetic, polished virtual influencer atmosphere, advanced ray tracing, realistic reflections, luxury editorial lighting, ultra-clean cinematic render quality, and clearly fictional CGI avatar aesthetics instead of a real photograph.
+            
+
+</pre>
+
+          <button onclick="copyPrompt()" id="copyBtn">
+            <span id="btnText">Copiar Prompt</span>
+          </button>
+
+          <div class="info-section">
+            <p class="info-mark">MARQUE @tezza.vu</p>
+            <p class="info-footer">TEZZA PROMPTS OFICIAL — Conteúdo protegido.</p>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        TEZZA PROMPTS OFICIAL
+      </footer>
+    </div>
+  </div>
+
+  <script>
+    function copyPrompt() {
+      const promptText = document.getElementById('promptText').innerText;
+      const copyBtn = document.getElementById('copyBtn');
+      const btnText = document.getElementById('btnText');
+
+      function triggerSuccess() {
+        const originalText = btnText.innerText;
+        btnText.innerText = 'Prompt copiado com sucesso!';
+        copyBtn.classList.add('copy-success');
+        setTimeout(() => {
+          btnText.innerText = originalText;
+          copyBtn.classList.remove('copy-success');
+        }, 3000);
+      }
+
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(promptText).then(triggerSuccess).catch(() => fallbackCopy(promptText));
+      } else {
+        fallbackCopy(promptText);
+      }
+
+      function fallbackCopy(text) {
+        try {
+          const textArea = document.createElement("textarea");
+          textArea.value = text;
+          textArea.style.position = "fixed";
+          textArea.style.left = "-9999px";
+          document.body.appendChild(textArea);
+          textArea.focus();
+          textArea.select();
+          const successful = document.execCommand('copy');
+          document.body.removeChild(textArea);
+          if (successful) triggerSuccess();
+        } catch (err) { console.error('Erro ao copiar:', err); }
+      }
+    }
+  </script>
+</body>
+</html>
