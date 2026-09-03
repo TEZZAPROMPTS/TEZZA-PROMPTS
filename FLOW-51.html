@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Título oficial que aparecerá no link -->
+  <title>TEZZA PROMPTS OFICIAL</title>
+  
+  <!-- Meta Tags para o link ficar compacto, curto e SEM preview de imagem -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="TEZZA PROMPTS OFICIAL">
+  <meta property="og:title" content="TEZZA PROMPTS OFICIAL">
+  <meta property="og:description" content="Prompts Oficiais da Tezza">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Quicksand:wght@300..700&family=Comfortaa:wght@300..700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg-dark: #000000;
+      --card-bg: rgba(20, 20, 20, 0.95);
+      --text-white: #ffffff;
+      --text-gray: #a0a0a0;
+      --border-gray: #333333;
+      --accent-white: #f5f5f5;
+      --glow-color: rgba(255, 255, 255, 0.4);
+      --glow-active: rgba(255, 255, 255, 0.9);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background-color: var(--bg-dark);
+      background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+      background-size: 30px 30px;
+      background-attachment: fixed;
+      color: var(--text-white);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
+      position: relative;
+    }
+
+    .container {
+      position: relative;
+      z-index: 10;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 500px;
+      background: var(--card-bg);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 2px solid var(--border-gray);
+      border-radius: 45px;
+      padding: 50px 35px;
+      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+      position: relative;
+      text-align: center;
+      transition: all 0.4s ease;
+    }
+
+    .card:hover {
+      border-color: var(--text-gray);
+      box-shadow: 0 0 20px var(--glow-color), 0 25px 50px rgba(0, 0, 0, 0.5);
+    }
+
+    .header {
+      margin-bottom: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .title-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      width: 100%;
+    }
+
+    /* LAÇOS COMO BACKGROUND CSS PARA NÃO APARECEREM NO LINK */
+    .bow-icon {
+      width: 60px;
+      height: 60px;
+      background-image: url('https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExdGJieHI0aXdjcHJsaGptZWp1OXlpeHA2Z2ZtbzdoZ2poOGE5MXgzcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/nxQA5nWEKzB5uz3Yr8/giphy.gif');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      filter: grayscale(100%) brightness(1.5);
+    }
+
+    .bow-icon.right {
+      transform: scaleX(-1);
+    }
+
+    .header h1 {
+      font-family: 'Fredoka', sans-serif;
+      font-size: clamp(2.5rem, 8vw, 3.5rem);
+      color: var(--text-white);
+      font-weight: 600;
+      letter-spacing: -1px;
+      line-height: 1;
+    }
+
+    .subtitle {
+      font-family: 'Fredoka', sans-serif;
+      font-size: 0.9rem;
+      color: var(--text-gray);
+      letter-spacing: 1.5px;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+
+    .divider {
+      width: 50%;
+      height: 2px;
+      background: var(--border-gray);
+      border-radius: 10px;
+      margin: 25px auto;
+      transition: all 0.4s ease;
+    }
+
+    .card:hover .divider {
+      background: var(--text-gray);
+      box-shadow: 0 0 10px var(--glow-color);
+    }
+
+    .prompt-section {
+      margin-top: 20px;
+    }
+
+    pre {
+      background: rgba(255, 255, 255, 0.05);
+      border: 2px solid var(--border-gray);
+      padding: 25px;
+      border-radius: 30px;
+      font-family: 'Comfortaa', cursive;
+      font-size: 0.95rem;
+      font-weight: 600;
+      line-height: 1.6;
+      color: var(--accent-white);
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      margin-bottom: 30px;
+      text-align: left;
+      transition: all 0.4s ease;
+    }
+
+    pre:hover {
+      border-color: var(--text-gray);
+      box-shadow: 0 0 15px var(--glow-color);
+    }
+
+    button {
+      width: 100%;
+      padding: 18px;
+      background: var(--text-white);
+      color: var(--bg-dark);
+      border: 3px solid transparent;
+      border-radius: 50px;
+      font-family: 'Fredoka', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      position: relative;
+    }
+
+    button:hover {
+      transform: translateY(-5px) scale(1.02);
+      background: var(--accent-white);
+      box-shadow: 0 15px 25px rgba(255, 255, 255, 0.2), 0 0 15px var(--glow-color);
+    }
+
+    button:active {
+      transform: scale(0.95);
+    }
+
+    @keyframes button-glow-pulse {
+      0% { border-color: transparent; box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1); }
+      50% { border-color: var(--text-white); box-shadow: 0 0 25px var(--glow-active); }
+      100% { border-color: transparent; box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1); }
+    }
+
+    button.copy-success {
+      animation: button-glow-pulse 0.8s ease-in-out infinite;
+      background: var(--text-white) !important;
+      color: var(--bg-dark) !important;
+    }
+
+    .info-section {
+      margin-top: 35px;
+    }
+
+    .info-mark {
+      font-family: 'Fredoka', sans-serif;
+      color: var(--text-white);
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+      letter-spacing: 1px;
+    }
+
+    .info-footer {
+      font-family: 'Quicksand', sans-serif;
+      color: var(--text-gray);
+      font-size: 0.8rem;
+      font-weight: 500;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border-gray);
+      font-family: 'Fredoka', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: var(--text-gray);
+      letter-spacing: 1px;
+    }
+
+    @media (max-width: 640px) {
+      .card { padding: 40px 25px; margin: 0 10px; border-radius: 35px; }
+      .bow-icon { width: 45px; height: 45px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card" id="mainCard">
+      <div class="content">
+        <div class="header">
+          <div class="title-wrapper">
+            <!-- USANDO DIV COM BACKGROUND CSS EM VEZ DE IMG -->
+            <div class="bow-icon left"></div>
+            <h1>Tezza</h1>
+            <div class="bow-icon right"></div>
+          </div>
+          <p class="subtitle">TEZZA PROMPTS OFICIAL</p>
+           <p class="subtitle">FLOW</p>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="prompt-section">
+          <pre id="promptText">
+
+Ultra-realistic cinematic avatar 3D male portrait, Blender Cycles render in CGI, inspired by Seedream 5.0 realism and high-end IMVU/The Sims virtual aesthetics. Clearly a fictional digital avatar and not a real photograph. Hyper-detailed virtual influencer design with stylized CGI masculine proportions, luxury editorial aesthetics, advanced cinematic lighting, ultra-polished 3D rendering, and “TEZZA PROMPTS” text at the bottom center in elegant minimalist typography.
+
+CAMERA & COMPOSITION
+
+Vertical 9:16 aspect ratio, dynamic high-angle lifestyle portrait captured from outside an open luxury sports car door. Subject seated in the driver’s seat and framed diagonally from the head to the feet, with one leg extending outward toward the lower-left foreground. Camera positioned above and slightly to the side, emphasizing the open car door, interior cabin, steering wheel, center console, clothing, hands, and full seated silhouette. Preserve the visible silver-gray exterior, open door frame, dark luxury interior, AMG-style door sill, paved ground, and nighttime or low-light outdoor atmosphere. Maintain sharp focus on the subject, face, cap, hands, smartphone, clothing textures, sneakers, car details, and realistic reflections.
+
+POSE & BODY POSITIONING
+
+Subject seated casually in the driver’s seat with the torso slightly reclined and turned toward the open door. Both hands are held together near the lap while operating or looking at a smartphone. One leg is bent inside the vehicle while the other extends outward through the open door, angled diagonally toward the lower-left corner of the composition. Shoulders remain relaxed, elbows naturally bent, and posture conveys a calm, comfortable, self-assured attitude. Preserve the authentic seated position, natural leg proportions, hand placement, and relaxed lifestyle body language.
+
+HEAD POSITION & GAZE
+
+Head angled downward toward the smartphone held near the lap. Chin slightly lowered, eyes directed toward the device screen, and facial orientation turned subtly toward the open door. Preserve the quiet focused gaze and natural downward head position. Maintain the visible side and three-quarter facial perspective without forcing direct eye contact with the camera.
+
+FACIAL EXPRESSION
+
+Calm, focused masculine expression with relaxed eyelids, softly closed lips, and a composed private demeanor. Expression conveys concentration, confidence, and understated sophistication without exaggerated emotion. Preserve the candid feeling of a subject absorbed in his phone while seated inside the car.
+
+FACE & IDENTITY
+
+Adult male CGI avatar with youthful masculine facial structure, defined jawline, straight nose, softly sculpted cheekbones, naturally shaped lips, strong chin, and balanced facial proportions. Preserve the visible facial profile, eye shape, nose structure, lips, jawline, ears, skin tone, and overall identity. Maintain a clearly fictional digitally generated avatar appearance with polished high-end CGI realism. Do not invent facial features outside the visible angle.
+
+HAIR
+
+Short dark hair mostly covered by a black fitted baseball cap or skull-style athletic cap. A small white embroidered emblem is visible near the front side of the cap. Preserve the compact headwear silhouette, dark color, subtle fabric texture, and minimal athletic styling. Any small visible hair at the sides should remain dark, short, and naturally neat without adding excessive volume.
+
+ACCESSORIES & DETAILS
+
+Black smartphone held horizontally or slightly angled near the lap with both hands, featuring realistic edges, screen reflections, and natural finger placement. Small metallic stud earrings visible on the ear, with understated polished reflections. Preserve realistic hand anatomy, subtle wrist details, clothing seams, and authentic automotive interior elements. Do not add necklaces, rings, watches, bracelets, or unrelated accessories. Do not include tattoos or tattoo-like markings.
+
+OUTFIT
+
+Dark charcoal or black technical athletic hoodie with a structured hood, fitted long sleeves, subtle panel construction, understated athletic emblem on the chest, and reflective piping or trim near the shoulder. Matching black or very dark athletic trousers with a relaxed tapered fit and realistic fabric folds around the hips, knees, and extended leg. White crew socks visible above light gray or white athletic sneakers with layered cushioning, textured panels, and subtle gray detailing. Preserve the monochromatic performance-streetwear styling, realistic fabric tension, and natural folds created by the seated pose.
+
+BODY & PHYSIQUE
+
+Athletic masculine physique with broad shoulders, strong upper torso, defined arms beneath the hoodie, balanced waist, muscular thighs, and proportionate lower-body anatomy. Preserve the natural seated silhouette, realistic leg length, relaxed hip position, and believable transitions between the torso, knees, ankles, and feet. Maintain a fit, powerful, but natural masculine appearance without exaggerated bodybuilding proportions or anatomical distortion.
+
+SKIN & REALISM
+
+Ultra-detailed Seedream 5.0 skin rendering with a natural light-to-medium skin tone, realistic pores, subtle tonal variation, soft facial texture, and believable skin sheen. Preserve natural highlights across the forehead, cheeks, nose, lips, ears, hands, and exposed lower legs. Physically accurate subsurface scattering creates realistic warmth and depth while maintaining refined CGI material quality. Avoid excessive smoothing, plastic texture, artificial gloss, or unnatural blemish removal.
+
+LIGHTING
+
+Direct cool-white illumination from the camera or nearby overhead source, combined with soft reflections from the car’s metallic exterior and interior surfaces. Bright highlights define the cap, face, hands, hoodie panels, smartphone, sneakers, steering wheel, and door sill. Preserve darker shadows within the cabin while maintaining legibility of the subject and interior details. Use physically accurate Blender-style ray-traced lighting, realistic automotive reflections, smooth shadow gradients, and authentic low-light lifestyle photography exposure.
+
+ENVIRONMENT
+
+Luxury high-performance sports car with the driver-side door fully open. Preserve the silver-gray exterior bodywork, black leather or premium dark interior, steering wheel on the left, center console, cup holders containing beverage cans, dashboard details, seat contours, door sill with AMG-style lettering, and black floor mats. Paved outdoor ground remains visible below the open door and extended foot. Maintain realistic automotive depth, subtle reflections, and a contemporary nighttime parking-area atmosphere without adding unrelated scenery.
+
+MOOD & AESTHETIC
+
+Luxury automotive lifestyle aesthetic mixed with modern athletic streetwear, understated masculine confidence, premium fitness culture, and high-end virtual-avatar realism. The atmosphere is calm, focused, stylish, discreet, and contemporary. Emphasize the open luxury vehicle, relaxed phone interaction, dark performance clothing, clean sneakers, reflective surfaces, and authentic candid lifestyle photography.
+
+STYLE & RENDER QUALITY
+
+Ultra-photorealistic Blender Cycles CGI render, cinematic realism, Seedream 5.0 masculine beauty rendering, 8K UHD quality, physically accurate lighting and materials, realistic skin micro-detail, IMVU-inspired avatar repaint aesthetics, high-fidelity masculine CGI rendering, realistic atmospheric depth, polished virtual influencer styling, advanced ray tracing, realistic reflections, luxury editorial lighting, ultra-clean cinematic render quality, and clearly fictional CGI-avatar aesthetics instead of a real photograph.
+            
+
+</pre>
+
+          <button onclick="copyPrompt()" id="copyBtn">
+            <span id="btnText">Copiar Prompt</span>
+          </button>
+
+          <div class="info-section">
+            <p class="info-mark">MARQUE @tezza.vu</p>
+            <p class="info-footer">TEZZA PROMPTS OFICIAL — Conteúdo protegido.</p>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        TEZZA PROMPTS OFICIAL
+      </footer>
+    </div>
+  </div>
+
+  <script>
+    function copyPrompt() {
+      const promptText = document.getElementById('promptText').innerText;
+      const copyBtn = document.getElementById('copyBtn');
+      const btnText = document.getElementById('btnText');
+
+      function triggerSuccess() {
+        const originalText = btnText.innerText;
+        btnText.innerText = 'Prompt copiado com sucesso!';
+        copyBtn.classList.add('copy-success');
+        setTimeout(() => {
+          btnText.innerText = originalText;
+          copyBtn.classList.remove('copy-success');
+        }, 3000);
+      }
+
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(promptText).then(triggerSuccess).catch(() => fallbackCopy(promptText));
+      } else {
+        fallbackCopy(promptText);
+      }
+
+      function fallbackCopy(text) {
+        try {
+          const textArea = document.createElement("textarea");
+          textArea.value = text;
+          textArea.style.position = "fixed";
+          textArea.style.left = "-9999px";
+          document.body.appendChild(textArea);
+          textArea.focus();
+          textArea.select();
+          const successful = document.execCommand('copy');
+          document.body.removeChild(textArea);
+          if (successful) triggerSuccess();
+        } catch (err) { console.error('Erro ao copiar:', err); }
+      }
+    }
+  </script>
+</body>
+</html>
