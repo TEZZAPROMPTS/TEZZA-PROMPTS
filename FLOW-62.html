@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Título oficial que aparecerá no link -->
+  <title>TEZZA PROMPTS OFICIAL</title>
+  
+  <!-- Meta Tags para o link ficar compacto, curto e SEM preview de imagem -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="TEZZA PROMPTS OFICIAL">
+  <meta property="og:title" content="TEZZA PROMPTS OFICIAL">
+  <meta property="og:description" content="Prompts Oficiais da Tezza">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Quicksand:wght@300..700&family=Comfortaa:wght@300..700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg-dark: #000000;
+      --card-bg: rgba(20, 20, 20, 0.95);
+      --text-white: #ffffff;
+      --text-gray: #a0a0a0;
+      --border-gray: #333333;
+      --accent-white: #f5f5f5;
+      --glow-color: rgba(255, 255, 255, 0.4);
+      --glow-active: rgba(255, 255, 255, 0.9);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background-color: var(--bg-dark);
+      background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+      background-size: 30px 30px;
+      background-attachment: fixed;
+      color: var(--text-white);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
+      position: relative;
+    }
+
+    .container {
+      position: relative;
+      z-index: 10;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 500px;
+      background: var(--card-bg);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 2px solid var(--border-gray);
+      border-radius: 45px;
+      padding: 50px 35px;
+      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+      position: relative;
+      text-align: center;
+      transition: all 0.4s ease;
+    }
+
+    .card:hover {
+      border-color: var(--text-gray);
+      box-shadow: 0 0 20px var(--glow-color), 0 25px 50px rgba(0, 0, 0, 0.5);
+    }
+
+    .header {
+      margin-bottom: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .title-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      width: 100%;
+    }
+
+    /* LAÇOS COMO BACKGROUND CSS PARA NÃO APARECEREM NO LINK */
+    .bow-icon {
+      width: 60px;
+      height: 60px;
+      background-image: url('https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExdGJieHI0aXdjcHJsaGptZWp1OXlpeHA2Z2ZtbzdoZ2poOGE5MXgzcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/nxQA5nWEKzB5uz3Yr8/giphy.gif');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      filter: grayscale(100%) brightness(1.5);
+    }
+
+    .bow-icon.right {
+      transform: scaleX(-1);
+    }
+
+    .header h1 {
+      font-family: 'Fredoka', sans-serif;
+      font-size: clamp(2.5rem, 8vw, 3.5rem);
+      color: var(--text-white);
+      font-weight: 600;
+      letter-spacing: -1px;
+      line-height: 1;
+    }
+
+    .subtitle {
+      font-family: 'Fredoka', sans-serif;
+      font-size: 0.9rem;
+      color: var(--text-gray);
+      letter-spacing: 1.5px;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+
+    .divider {
+      width: 50%;
+      height: 2px;
+      background: var(--border-gray);
+      border-radius: 10px;
+      margin: 25px auto;
+      transition: all 0.4s ease;
+    }
+
+    .card:hover .divider {
+      background: var(--text-gray);
+      box-shadow: 0 0 10px var(--glow-color);
+    }
+
+    .prompt-section {
+      margin-top: 20px;
+    }
+
+    pre {
+      background: rgba(255, 255, 255, 0.05);
+      border: 2px solid var(--border-gray);
+      padding: 25px;
+      border-radius: 30px;
+      font-family: 'Comfortaa', cursive;
+      font-size: 0.95rem;
+      font-weight: 600;
+      line-height: 1.6;
+      color: var(--accent-white);
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      margin-bottom: 30px;
+      text-align: left;
+      transition: all 0.4s ease;
+    }
+
+    pre:hover {
+      border-color: var(--text-gray);
+      box-shadow: 0 0 15px var(--glow-color);
+    }
+
+    button {
+      width: 100%;
+      padding: 18px;
+      background: var(--text-white);
+      color: var(--bg-dark);
+      border: 3px solid transparent;
+      border-radius: 50px;
+      font-family: 'Fredoka', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      position: relative;
+    }
+
+    button:hover {
+      transform: translateY(-5px) scale(1.02);
+      background: var(--accent-white);
+      box-shadow: 0 15px 25px rgba(255, 255, 255, 0.2), 0 0 15px var(--glow-color);
+    }
+
+    button:active {
+      transform: scale(0.95);
+    }
+
+    @keyframes button-glow-pulse {
+      0% { border-color: transparent; box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1); }
+      50% { border-color: var(--text-white); box-shadow: 0 0 25px var(--glow-active); }
+      100% { border-color: transparent; box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1); }
+    }
+
+    button.copy-success {
+      animation: button-glow-pulse 0.8s ease-in-out infinite;
+      background: var(--text-white) !important;
+      color: var(--bg-dark) !important;
+    }
+
+    .info-section {
+      margin-top: 35px;
+    }
+
+    .info-mark {
+      font-family: 'Fredoka', sans-serif;
+      color: var(--text-white);
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+      letter-spacing: 1px;
+    }
+
+    .info-footer {
+      font-family: 'Quicksand', sans-serif;
+      color: var(--text-gray);
+      font-size: 0.8rem;
+      font-weight: 500;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border-gray);
+      font-family: 'Fredoka', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: var(--text-gray);
+      letter-spacing: 1px;
+    }
+
+    @media (max-width: 640px) {
+      .card { padding: 40px 25px; margin: 0 10px; border-radius: 35px; }
+      .bow-icon { width: 45px; height: 45px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card" id="mainCard">
+      <div class="content">
+        <div class="header">
+          <div class="title-wrapper">
+            <!-- USANDO DIV COM BACKGROUND CSS EM VEZ DE IMG -->
+            <div class="bow-icon left"></div>
+            <h1>Tezza</h1>
+            <div class="bow-icon right"></div>
+          </div>
+          <p class="subtitle">TEZZA PROMPTS OFICIAL</p>
+           <p class="subtitle">FLOW</p>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="prompt-section">
+          <pre id="promptText">
+
+Ultra-realistic cinematic avatar 3D male portrait, Blender Cycles render in CGI, inspired by Seedream 5.0 realism and high-end IMVU/The Sims virtual aesthetics. Clearly a fictional digital avatar and not a real photograph. Hyper-detailed virtual influencer design with stylized CGI masculine proportions, luxury editorial aesthetics, advanced cinematic lighting, ultra-polished 3D rendering, and “TEZZA PROMPTS” text at the bottom center in elegant minimalist typography.
+
+CAMERA & COMPOSITION
+
+Vertical 9:16 aspect ratio, extreme close-up mirror-selfie portrait focused on the upper torso. Subject framed from the lower neck and shoulders to the waist, with the smartphone positioned prominently in the upper-right area and partially covering the face. Camera held very close to the mirror, creating intimate smartphone perspective and slight wide-angle distortion. Composition emphasizes the broad shoulders, upper chest, defined abdomen, muscular arms, phone, skin texture, and warm low-light reflections. Preserve the dark indoor environment, deep background shadows, subtle furniture shapes, and concentrated warm illumination.
+
+POSE & BODY POSITIONING
+
+Subject standing close to the mirror with the torso leaning slightly forward toward the camera. Shoulders angled naturally, one side positioned slightly closer to the mirror while both arms remain bent or lowered near the torso. Chest projected forward with relaxed but powerful posture, abdomen naturally visible, and waist positioned near the lower frame. Smartphone held vertically in front of the upper face, creating a concealed-face mirror-selfie composition. Preserve the close body-to-camera distance, natural shoulder asymmetry, and relaxed masculine stance.
+
+HEAD POSITION & GAZE
+
+Head positioned directly behind the smartphone and mostly concealed from view. Only minimal portions of the upper face or lower facial contour may remain outside the device. Maintain the natural alignment between the phone, neck, shoulders, and torso without inventing facial details hidden by the smartphone. Do not expose or reinterpret the concealed gaze.
+
+FACIAL EXPRESSION
+
+Facial expression fully or mostly obscured by the smartphone. Convey calm confidence and controlled masculine presence through the posture, neck position, shoulders, and body language rather than adding visible emotion. Maintain the authentic private mirror-selfie character without forcing a smile or dramatic facial expression.
+
+FACE & IDENTITY
+
+Adult male CGI avatar with a strong masculine facial structure concealed by the smartphone. Preserve only the visible neck, jawline edge, skin tone, and overall masculine proportions that can naturally be seen around the device. Do not invent facial features hidden behind the phone. Maintain a clearly fictional digitally generated avatar appearance with refined high-end CGI realism.
+
+HAIR
+
+Hair is mostly outside the visible framing and concealed by the close crop and smartphone placement. If minimally visible near the upper edge, maintain a dark natural color and understated texture without introducing a distinct hairstyle. Preserve the emphasis on the upper torso rather than adding unnecessary head or hair details.
+
+ACCESSORIES & DETAILS
+
+Large black smartphone held vertically in front of the face, with a prominent rear camera module and realistic reflective edges. Preserve natural hand placement, realistic fingers, phone proportions, subtle highlights, and authentic mirror-selfie positioning. No additional jewelry or accessories should be added. Do not include tattoos or tattoo-like markings in the prompt.
+
+OUTFIT
+
+Shirtless masculine styling with the shoulders, chest, arms, abdomen, waist, and upper torso exposed. Dark burgundy or deep maroon textured shorts visible at the lower edge of the composition, with a soft woven fabric surface and natural waistband placement. Preserve the contrast between the warm bare torso, dark background, black smartphone, and muted red shorts. Do not add shirts, jackets, necklaces, or unnecessary garments.
+
+BODY & PHYSIQUE
+
+Highly muscular masculine upper-body physique with extremely broad shoulders, prominent deltoids, thick arms, powerful pectoral muscles, defined chest separation, visible abdominal structure, strong obliques, narrow waist, and dense upper-torso anatomy. Preserve realistic transitions between the shoulders, chest, arms, abdomen, and waist while maintaining the dramatic close-up proportions created by the camera distance. Keep the anatomy powerful but coherent, without extra limbs or unnatural distortion.
+
+SKIN & REALISM
+
+Ultra-detailed Seedream 5.0 skin rendering with a warm medium-to-deep skin tone, realistic pores, fine natural texture, subtle tonal variation, and controlled low-light sheen. Preserve believable highlights across the shoulders, chest, arms, abdomen, neck, and hands. Physically accurate subsurface scattering creates realistic warmth and depth while maintaining polished CGI material quality. Avoid excessive smoothing, plastic texture, artificial gloss, or unnatural blemish removal.
+
+LIGHTING
+
+Warm low-key indoor lighting with concentrated highlights across the shoulders, chest, upper arms, abdomen, and skin contours. Deep shadows define the muscular separation beneath the pectorals, along the ribcage, under the arms, and around the waist. Smartphone and mirror reflections create subtle highlights on the device and upper body. Use physically accurate Blender-style ray-traced illumination, smooth shadow gradients, warm cinematic contrast, and intimate dark-room exposure without colored studio effects.
+
+ENVIRONMENT
+
+Dark private indoor environment with a mirror directly in front of the subject and indistinct furniture or room elements fading into the background. Preserve the shadowed room, subtle floor or furniture forms, warm reflections, and narrow personal-space atmosphere. Keep the background understated and defocused so complete attention remains on the phone, muscular torso, skin realism, and close mirror-selfie composition.
+
+MOOD & AESTHETIC
+
+Intense masculine mirror-selfie aesthetic mixed with private low-light portraiture, bodybuilding confidence, minimalist styling, and premium virtual-avatar realism. The atmosphere is powerful, intimate, controlled, mysterious, and visually dramatic. Emphasize the concealed face, oversized smartphone, muscular upper torso, warm shadows, close camera distance, dark environment, and high-end cinematic CGI realism.
+
+STYLE & RENDER QUALITY
+
+Ultra-photorealistic Blender Cycles CGI render, cinematic realism, Seedream 5.0 masculine beauty rendering, 8K UHD quality, physically accurate lighting and materials, realistic skin micro-detail, IMVU-inspired avatar repaint aesthetics, high-fidelity masculine CGI rendering, realistic atmospheric depth, polished virtual influencer styling, advanced ray tracing, realistic reflections, luxury editorial lighting, ultra-clean cinematic render quality, and clearly fictional CGI-avatar aesthetics instead of a real photograph.
+            
+
+</pre>
+
+          <button onclick="copyPrompt()" id="copyBtn">
+            <span id="btnText">Copiar Prompt</span>
+          </button>
+
+          <div class="info-section">
+            <p class="info-mark">MARQUE @tezza.vu</p>
+            <p class="info-footer">TEZZA PROMPTS OFICIAL — Conteúdo protegido.</p>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        TEZZA PROMPTS OFICIAL
+      </footer>
+    </div>
+  </div>
+
+  <script>
+    function copyPrompt() {
+      const promptText = document.getElementById('promptText').innerText;
+      const copyBtn = document.getElementById('copyBtn');
+      const btnText = document.getElementById('btnText');
+
+      function triggerSuccess() {
+        const originalText = btnText.innerText;
+        btnText.innerText = 'Prompt copiado com sucesso!';
+        copyBtn.classList.add('copy-success');
+        setTimeout(() => {
+          btnText.innerText = originalText;
+          copyBtn.classList.remove('copy-success');
+        }, 3000);
+      }
+
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(promptText).then(triggerSuccess).catch(() => fallbackCopy(promptText));
+      } else {
+        fallbackCopy(promptText);
+      }
+
+      function fallbackCopy(text) {
+        try {
+          const textArea = document.createElement("textarea");
+          textArea.value = text;
+          textArea.style.position = "fixed";
+          textArea.style.left = "-9999px";
+          document.body.appendChild(textArea);
+          textArea.focus();
+          textArea.select();
+          const successful = document.execCommand('copy');
+          document.body.removeChild(textArea);
+          if (successful) triggerSuccess();
+        } catch (err) { console.error('Erro ao copiar:', err); }
+      }
+    }
+  </script>
+</body>
+</html>
