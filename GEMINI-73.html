@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Título oficial que aparecerá no link -->
+  <title>TEZZA PROMPTS OFICIAL</title>
+  
+  <!-- Meta Tags para o link ficar compacto, curto e SEM preview de imagem -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="TEZZA PROMPTS OFICIAL">
+  <meta property="og:title" content="TEZZA PROMPTS OFICIAL">
+  <meta property="og:description" content="Prompts Oficiais da Tezza">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Quicksand:wght@300..700&family=Comfortaa:wght@300..700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg-dark: #000000;
+      --card-bg: rgba(20, 20, 20, 0.95);
+      --text-white: #ffffff;
+      --text-gray: #a0a0a0;
+      --border-gray: #333333;
+      --accent-white: #f5f5f5;
+      --glow-color: rgba(255, 255, 255, 0.4);
+      --glow-active: rgba(255, 255, 255, 0.9);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background-color: var(--bg-dark);
+      background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+      background-size: 30px 30px;
+      background-attachment: fixed;
+      color: var(--text-white);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
+      position: relative;
+    }
+
+    .container {
+      position: relative;
+      z-index: 10;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 500px;
+      background: var(--card-bg);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 2px solid var(--border-gray);
+      border-radius: 45px;
+      padding: 50px 35px;
+      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+      position: relative;
+      text-align: center;
+      transition: all 0.4s ease;
+    }
+
+    .card:hover {
+      border-color: var(--text-gray);
+      box-shadow: 0 0 20px var(--glow-color), 0 25px 50px rgba(0, 0, 0, 0.5);
+    }
+
+    .header {
+      margin-bottom: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .title-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      width: 100%;
+    }
+
+    /* LAÇOS COMO BACKGROUND CSS PARA NÃO APARECEREM NO LINK */
+    .bow-icon {
+      width: 60px;
+      height: 60px;
+      background-image: url('https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExdGJieHI0aXdjcHJsaGptZWp1OXlpeHA2Z2ZtbzdoZ2poOGE5MXgzcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/nxQA5nWEKzB5uz3Yr8/giphy.gif');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      filter: grayscale(100%) brightness(1.5);
+    }
+
+    .bow-icon.right {
+      transform: scaleX(-1);
+    }
+
+    .header h1 {
+      font-family: 'Fredoka', sans-serif;
+      font-size: clamp(2.5rem, 8vw, 3.5rem);
+      color: var(--text-white);
+      font-weight: 600;
+      letter-spacing: -1px;
+      line-height: 1;
+    }
+
+    .subtitle {
+      font-family: 'Fredoka', sans-serif;
+      font-size: 0.9rem;
+      color: var(--text-gray);
+      letter-spacing: 1.5px;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+
+    .divider {
+      width: 50%;
+      height: 2px;
+      background: var(--border-gray);
+      border-radius: 10px;
+      margin: 25px auto;
+      transition: all 0.4s ease;
+    }
+
+    .card:hover .divider {
+      background: var(--text-gray);
+      box-shadow: 0 0 10px var(--glow-color);
+    }
+
+    .prompt-section {
+      margin-top: 20px;
+    }
+
+    pre {
+      background: rgba(255, 255, 255, 0.05);
+      border: 2px solid var(--border-gray);
+      padding: 25px;
+      border-radius: 30px;
+      font-family: 'Comfortaa', cursive;
+      font-size: 0.95rem;
+      font-weight: 600;
+      line-height: 1.6;
+      color: var(--accent-white);
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      margin-bottom: 30px;
+      text-align: left;
+      transition: all 0.4s ease;
+    }
+
+    pre:hover {
+      border-color: var(--text-gray);
+      box-shadow: 0 0 15px var(--glow-color);
+    }
+
+    button {
+      width: 100%;
+      padding: 18px;
+      background: var(--text-white);
+      color: var(--bg-dark);
+      border: 3px solid transparent;
+      border-radius: 50px;
+      font-family: 'Fredoka', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      position: relative;
+    }
+
+    button:hover {
+      transform: translateY(-5px) scale(1.02);
+      background: var(--accent-white);
+      box-shadow: 0 15px 25px rgba(255, 255, 255, 0.2), 0 0 15px var(--glow-color);
+    }
+
+    button:active {
+      transform: scale(0.95);
+    }
+
+    @keyframes button-glow-pulse {
+      0% { border-color: transparent; box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1); }
+      50% { border-color: var(--text-white); box-shadow: 0 0 25px var(--glow-active); }
+      100% { border-color: transparent; box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1); }
+    }
+
+    button.copy-success {
+      animation: button-glow-pulse 0.8s ease-in-out infinite;
+      background: var(--text-white) !important;
+      color: var(--bg-dark) !important;
+    }
+
+    .info-section {
+      margin-top: 35px;
+    }
+
+    .info-mark {
+      font-family: 'Fredoka', sans-serif;
+      color: var(--text-white);
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+      letter-spacing: 1px;
+    }
+
+    .info-footer {
+      font-family: 'Quicksand', sans-serif;
+      color: var(--text-gray);
+      font-size: 0.8rem;
+      font-weight: 500;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border-gray);
+      font-family: 'Fredoka', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: var(--text-gray);
+      letter-spacing: 1px;
+    }
+
+    @media (max-width: 640px) {
+      .card { padding: 40px 25px; margin: 0 10px; border-radius: 35px; }
+      .bow-icon { width: 45px; height: 45px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card" id="mainCard">
+      <div class="content">
+        <div class="header">
+          <div class="title-wrapper">
+            <!-- USANDO DIV COM BACKGROUND CSS EM VEZ DE IMG -->
+            <div class="bow-icon left"></div>
+            <h1>Tezza</h1>
+            <div class="bow-icon right"></div>
+          </div>
+          <p class="subtitle">TEZZA PROMPTS OFICIAL</p>
+           <p class="subtitle">GEMINI [MODO PRO]</p>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="prompt-section">
+          <pre id="promptText">
+
+Ultra-realistic cinematic avatar 3D male portrait, Blender Cycles render in CGI, inspired by Seedream 5.0 beauty realism and high-end IMVU/The Sims virtual aesthetics. Clearly a fictional digital avatar and not a real photograph. Hyper-detailed virtual influencer design with stylized CGI beauty proportions, luxury editorial aesthetics, advanced cinematic lighting, ultra-polished 3D rendering, and “TEZZA PROMPTS” text at the bottom center in elegant minimalist typography.
+
+CAMERA & COMPOSITION
+
+Vertical 4:5 nightlife lifestyle portrait captured with a strong Dutch angle and dynamic editorial framing. Medium shot showing the subject from the head down to the hips, with the torso, accessories, belt details, drink, and facial expression clearly visible. Camera positioned slightly below the subject and tilted diagonally, creating energetic perspective and rebellious nightlife aesthetics. Subject placed slightly left of center while the raised drink occupies the upper-right area of the composition. Sharp focus on the face, sunglasses, necklace, drink, shirt texture, and accessories, with the neon background remaining detailed yet visually subordinate.
+
+POSE & BODY POSITIONING
+
+Subject standing in a relaxed but dynamic posture with the upper body leaning diagonally to one side in harmony with the tilted camera angle. One arm hangs naturally downward along the side of the body while the opposite arm is bent upward, holding a clear plastic cup near shoulder height. Shoulders remain relaxed, torso slightly angled, and body language conveys casual confidence, nightlife energy, and spontaneous party realism. Hand gripping the cup naturally with realistic finger positioning and relaxed wrist alignment.
+
+HEAD POSITION & GAZE
+
+Head turned slightly toward the upper-left side of the frame and tilted backward with the chin raised. Face directed away from the camera at a three-quarter angle while the hidden eyes remain oriented toward the surrounding party environment. Sunglasses cover the eyes, creating a cool, anonymous, confident presence. Neck elongated naturally and jawline emphasized by the upward head position.
+
+FACIAL EXPRESSION
+
+Broad relaxed smile with visible upper teeth and naturally parted lips, conveying genuine amusement and carefree nightlife energy. Expression feels spontaneous, playful, confident, youthful, and socially charismatic. Subtle cheek lift and relaxed facial muscles create a candid party-photography mood without exaggerated expression.
+
+FACE & IDENTITY
+
+Adult male CGI avatar with a lean masculine facial structure, defined jawline, subtly angular cheekbones, straight nose, naturally shaped lips, smooth clean-shaven jawline, and balanced facial proportions. Preserve a confident youthful masculine identity with natural facial symmetry, realistic lower-face definition, softly textured skin, and polished virtual-influencer aesthetics. The face must remain completely free of beard, mustache, stubble, or facial hair. Facial presentation remains clearly fictional and digitally generated while retaining believable human-inspired anatomy.
+
+HAIR
+
+Short black hair with slightly tousled textured volume beneath the cap. Hair remains naturally lifted at the front with loose strands visible around the forehead and temples. The texture is predominantly straight with subtle irregular bends and soft directional movement. Dark strands catch faint warm highlights from the ambient lighting, while the overall hair color remains consistently black. Hair styling appears casual, effortless, and suited to an urban nightlife portrait.
+
+ACCESSORIES & DETAILS
+
+Black wraparound sunglasses with a glossy curved frame and dark reflective lenses covering the eye area. Layered silver chain necklaces resting across the chest, including a longer chain with a dark rectangular pendant and a small metallic cross pendant. Black baseball cap worn backward with a visible curved brim behind the head. Clear plastic party cup held in the raised hand, filled with a pale golden beverage and soft foam near the top, with green-and-white graphic branding and a red star emblem on the cup. Accessories show realistic metallic reflections, plastic transparency, condensation, and natural movement.
+
+OUTFIT
+
+Loose black short-sleeve T-shirt with a relaxed oversized fit, soft matte cotton texture, and natural folds across the chest, shoulders, abdomen, and sleeves. Shirt hangs casually over the torso and creates a clean dark silhouette against the neon environment. Dark low-rise trousers with a wide gray textured belt and layered black belt hardware, including metallic eyelets and rectangular buckle details. Urban streetwear styling with alternative nightlife and modern festival aesthetics.
+
+BODY & PHYSIQUE
+
+Lean athletic masculine physique with naturally toned arms, broad but relaxed shoulders, defined neck structure, proportionate torso, and slim waist. Upper-body anatomy remains realistic beneath the loose shirt, with natural arm definition and believable posture. Silhouette appears youthful, casual, and balanced, emphasizing relaxed confidence rather than exaggerated musculature.
+
+SKIN & REALISM
+
+Warm medium skin tone with realistic pores, subtle tonal variation, natural facial texture, and soft highlights from the green ambient illumination. Skin across the face, neck, forearms, and hands retains believable CGI material definition with physically accurate subsurface scattering. Gentle perspiration-like sheen and nightlife reflections enhance the candid party atmosphere without excessive smoothing or artificial plasticity.
+
+LIGHTING
+
+Dramatic neon green ambient lighting from the illuminated background panels, combined with a soft warm frontal fill light illuminating the face, arms, shirt, and plastic cup. Strong green rim light outlines the cap, shoulders, arms, cup, and torso while deep shadows create cinematic contrast. Glossy reflections appear on the sunglasses, necklace, cup surface, belt hardware, and surrounding vinyl records. High-contrast nightlife lighting with realistic color spill, controlled highlights, and polished editorial flash-photography energy.
+
+ENVIRONMENT
+
+Stylized nightclub or music-event backdrop composed of repeating black vinyl records mounted inside glowing neon-green square frames. The geometric wall pattern extends diagonally across the background, creating strong depth, rhythm, and visual repetition. Dark surroundings contrast with vivid green illuminated borders and circular record shapes. The environment feels immersive, energetic, urban, retro-inspired, and connected to music culture while remaining clearly fictional and digitally rendered.
+
+MOOD & AESTHETIC
+
+Rebellious urban nightlife aesthetic mixed with alternative streetwear, music-culture energy, carefree party confidence, and vibrant neon editorial photography. The atmosphere is playful, spontaneous, stylish, charismatic, and slightly provocative without losing natural realism. Dynamic diagonal composition, vivid green illumination, dark clothing, reflective accessories, and casual body language create a bold premium virtual-influencer portrait.
+
+STYLE & RENDER QUALITY
+
+Ultra-photorealistic Blender Cycles CGI render, cinematic realism, Seedream 5.0 beauty rendering, 8K UHD quality, physically accurate lighting and materials, realistic skin micro-detail, IMVU-inspired beauty repaint style, high-fidelity  masculine avatar rendering, realistic depth of field, glossy beauty aesthetic, polished virtual influencer atmosphere, advanced ray tracing, realistic reflections, luxury editorial lighting, ultra-clean cinematic render quality, and clearly fictional CGI avatar aesthetics instead of a real photograph.
+            
+
+</pre>
+
+          <button onclick="copyPrompt()" id="copyBtn">
+            <span id="btnText">Copiar Prompt</span>
+          </button>
+
+          <div class="info-section">
+            <p class="info-mark">MARQUE @tezza.vu</p>
+            <p class="info-footer">TEZZA PROMPTS OFICIAL — Conteúdo protegido.</p>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        TEZZA PROMPTS OFICIAL
+      </footer>
+    </div>
+  </div>
+
+  <script>
+    function copyPrompt() {
+      const promptText = document.getElementById('promptText').innerText;
+      const copyBtn = document.getElementById('copyBtn');
+      const btnText = document.getElementById('btnText');
+
+      function triggerSuccess() {
+        const originalText = btnText.innerText;
+        btnText.innerText = 'Prompt copiado com sucesso!';
+        copyBtn.classList.add('copy-success');
+        setTimeout(() => {
+          btnText.innerText = originalText;
+          copyBtn.classList.remove('copy-success');
+        }, 3000);
+      }
+
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(promptText).then(triggerSuccess).catch(() => fallbackCopy(promptText));
+      } else {
+        fallbackCopy(promptText);
+      }
+
+      function fallbackCopy(text) {
+        try {
+          const textArea = document.createElement("textarea");
+          textArea.value = text;
+          textArea.style.position = "fixed";
+          textArea.style.left = "-9999px";
+          document.body.appendChild(textArea);
+          textArea.focus();
+          textArea.select();
+          const successful = document.execCommand('copy');
+          document.body.removeChild(textArea);
+          if (successful) triggerSuccess();
+        } catch (err) { console.error('Erro ao copiar:', err); }
+      }
+    }
+  </script>
+</body>
+</html>
