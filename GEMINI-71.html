@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Título oficial que aparecerá no link -->
+  <title>TEZZA PROMPTS OFICIAL</title>
+  
+  <!-- Meta Tags para o link ficar compacto, curto e SEM preview de imagem -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="TEZZA PROMPTS OFICIAL">
+  <meta property="og:title" content="TEZZA PROMPTS OFICIAL">
+  <meta property="og:description" content="Prompts Oficiais da Tezza">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Quicksand:wght@300..700&family=Comfortaa:wght@300..700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg-dark: #000000;
+      --card-bg: rgba(20, 20, 20, 0.95);
+      --text-white: #ffffff;
+      --text-gray: #a0a0a0;
+      --border-gray: #333333;
+      --accent-white: #f5f5f5;
+      --glow-color: rgba(255, 255, 255, 0.4);
+      --glow-active: rgba(255, 255, 255, 0.9);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background-color: var(--bg-dark);
+      background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+      background-size: 30px 30px;
+      background-attachment: fixed;
+      color: var(--text-white);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
+      position: relative;
+    }
+
+    .container {
+      position: relative;
+      z-index: 10;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 500px;
+      background: var(--card-bg);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 2px solid var(--border-gray);
+      border-radius: 45px;
+      padding: 50px 35px;
+      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+      position: relative;
+      text-align: center;
+      transition: all 0.4s ease;
+    }
+
+    .card:hover {
+      border-color: var(--text-gray);
+      box-shadow: 0 0 20px var(--glow-color), 0 25px 50px rgba(0, 0, 0, 0.5);
+    }
+
+    .header {
+      margin-bottom: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .title-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      width: 100%;
+    }
+
+    /* LAÇOS COMO BACKGROUND CSS PARA NÃO APARECEREM NO LINK */
+    .bow-icon {
+      width: 60px;
+      height: 60px;
+      background-image: url('https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExdGJieHI0aXdjcHJsaGptZWp1OXlpeHA2Z2ZtbzdoZ2poOGE5MXgzcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/nxQA5nWEKzB5uz3Yr8/giphy.gif');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      filter: grayscale(100%) brightness(1.5);
+    }
+
+    .bow-icon.right {
+      transform: scaleX(-1);
+    }
+
+    .header h1 {
+      font-family: 'Fredoka', sans-serif;
+      font-size: clamp(2.5rem, 8vw, 3.5rem);
+      color: var(--text-white);
+      font-weight: 600;
+      letter-spacing: -1px;
+      line-height: 1;
+    }
+
+    .subtitle {
+      font-family: 'Fredoka', sans-serif;
+      font-size: 0.9rem;
+      color: var(--text-gray);
+      letter-spacing: 1.5px;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+
+    .divider {
+      width: 50%;
+      height: 2px;
+      background: var(--border-gray);
+      border-radius: 10px;
+      margin: 25px auto;
+      transition: all 0.4s ease;
+    }
+
+    .card:hover .divider {
+      background: var(--text-gray);
+      box-shadow: 0 0 10px var(--glow-color);
+    }
+
+    .prompt-section {
+      margin-top: 20px;
+    }
+
+    pre {
+      background: rgba(255, 255, 255, 0.05);
+      border: 2px solid var(--border-gray);
+      padding: 25px;
+      border-radius: 30px;
+      font-family: 'Comfortaa', cursive;
+      font-size: 0.95rem;
+      font-weight: 600;
+      line-height: 1.6;
+      color: var(--accent-white);
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      margin-bottom: 30px;
+      text-align: left;
+      transition: all 0.4s ease;
+    }
+
+    pre:hover {
+      border-color: var(--text-gray);
+      box-shadow: 0 0 15px var(--glow-color);
+    }
+
+    button {
+      width: 100%;
+      padding: 18px;
+      background: var(--text-white);
+      color: var(--bg-dark);
+      border: 3px solid transparent;
+      border-radius: 50px;
+      font-family: 'Fredoka', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      position: relative;
+    }
+
+    button:hover {
+      transform: translateY(-5px) scale(1.02);
+      background: var(--accent-white);
+      box-shadow: 0 15px 25px rgba(255, 255, 255, 0.2), 0 0 15px var(--glow-color);
+    }
+
+    button:active {
+      transform: scale(0.95);
+    }
+
+    @keyframes button-glow-pulse {
+      0% { border-color: transparent; box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1); }
+      50% { border-color: var(--text-white); box-shadow: 0 0 25px var(--glow-active); }
+      100% { border-color: transparent; box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1); }
+    }
+
+    button.copy-success {
+      animation: button-glow-pulse 0.8s ease-in-out infinite;
+      background: var(--text-white) !important;
+      color: var(--bg-dark) !important;
+    }
+
+    .info-section {
+      margin-top: 35px;
+    }
+
+    .info-mark {
+      font-family: 'Fredoka', sans-serif;
+      color: var(--text-white);
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+      letter-spacing: 1px;
+    }
+
+    .info-footer {
+      font-family: 'Quicksand', sans-serif;
+      color: var(--text-gray);
+      font-size: 0.8rem;
+      font-weight: 500;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border-gray);
+      font-family: 'Fredoka', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: var(--text-gray);
+      letter-spacing: 1px;
+    }
+
+    @media (max-width: 640px) {
+      .card { padding: 40px 25px; margin: 0 10px; border-radius: 35px; }
+      .bow-icon { width: 45px; height: 45px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card" id="mainCard">
+      <div class="content">
+        <div class="header">
+          <div class="title-wrapper">
+            <!-- USANDO DIV COM BACKGROUND CSS EM VEZ DE IMG -->
+            <div class="bow-icon left"></div>
+            <h1>Tezza</h1>
+            <div class="bow-icon right"></div>
+          </div>
+          <p class="subtitle">TEZZA PROMPTS OFICIAL</p>
+           <p class="subtitle">GEMINI [MODO PRO]</p>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="prompt-section">
+          <pre id="promptText">
+
+Ultra-realistic cinematic avatar 3D male portrait, Blender Cycles render in CGI, inspired by Seedream 5.0 beauty realism and high-end IMVU/The Sims virtual aesthetics. Clearly a fictional digital avatar and not a real photograph. Hyper-detailed virtual influencer design with stylized CGI beauty proportions, luxury editorial aesthetics, advanced cinematic lighting, ultra-polished 3D rendering, and “TEZZA PROMPTS” text at the bottom center in elegant minimalist typography.
+
+CAMERA & COMPOSITION
+
+Vertical 3:4 aspect ratio nighttime lifestyle portrait captured outdoors or near an open architectural entrance with cinematic Nike streetwear-editorial framing. Medium close-up composition from the upper chest upward, emphasizing the subject’s side-profile facial structure, beanie, sunglasses, layered Nike clothing, skin texture, and shoulder line. Camera positioned slightly below eye level with a close handheld smartphone perspective and direct frontal flash illumination. Subject placed slightly left of center, facing toward the viewer’s left, while a dark nighttime environment with faint foliage and architectural elements remains visible behind him. Sharp focus on the face, sunglasses, beanie texture, ear, lips, beard, Nike clothing details, and skin reflections while the background remains dark and softly defocused.
+
+POSE & BODY POSITIONING
+
+Subject standing in a relaxed three-quarter profile with the torso angled slightly away from the camera and the head turned toward the viewer’s left. Shoulders remain naturally lowered and relaxed, with the upper body leaning subtly forward in a casual candid posture. Neck and jawline are clearly visible above the shirt collar. Arms remain outside the primary frame or relaxed naturally beside the body. The pose feels spontaneous, composed, masculine, and authentic to nighttime Nike streetwear photography.
+
+HEAD POSITION & GAZE
+
+Head turned clearly toward the viewer’s left in a strong side-profile orientation with a subtle downward tilt. Chin gently lowered, emphasizing the nose bridge, lips, jawline, cheekbone, and neck contour. Eyes are concealed behind dark wraparound sunglasses, with the face directed away from the camera rather than making direct eye contact. Facial positioning feels calm, reserved, stylish, and naturally photogenic.
+
+FACIAL EXPRESSION
+
+Neutral, composed masculine facial expression with relaxed closed lips and understated confidence. Expression conveys quiet self-assurance, controlled energy, and modern urban style without exaggerated emotion. The slightly lowered gaze and side-profile pose create a thoughtful, detached, and editorial presence.
+
+FACE & IDENTITY
+
+Adult male CGI avatar with a lean masculine facial structure, defined cheekbones, straight prominent nose bridge, slightly rounded nose tip, angular jawline, naturally full lips, subtle mustache, short neatly trimmed beard along the jaw and chin, and balanced facial proportions. Preserve the facial identity, facial structure, skin tone, beard placement, eyebrow shape, nose proportions, lip shape, jawline, and masculine appearance. Maintain the recognizable side-profile silhouette, including the forehead slope, nose projection, mouth shape, chin structure, and neck transition. Facial features remain partially obscured by the sunglasses and beanie while retaining a coherent identity. Hyper-detailed Seedream 5.0 skin rendering combined with polished IMVU/Sims-inspired CGI realism while remaining clearly fictional and digitally generated instead of photoreal human appearance.
+
+HAIR
+
+Short black hair concealed beneath the fitted light gray knit beanie, maintaining a compact and slightly textured appearance around the temples and lower hairline where subtly visible. Hair remains dark black with short natural strands, controlled direction, and minimal volume beneath the headwear. No long strands or loose hair extending beyond the beanie.
+
+ACCESSORIES & DETAILS
+
+Light gray fitted knit beanie covering the crown and upper forehead with realistic fabric folds and soft ribbed texture. Sporty wraparound sunglasses with a silver-gray frame, elongated dark lenses, curved arms, and glossy reflections from the direct flash. Small metallic earrings visible around the ear area. Preserve accurate accessory scale, natural placement, realistic material reflections, and polished high-end CGI rendering. Do not describe tattoos or add any tattoo details.
+
+OUTFIT
+
+Premium Nike streetwear styling with an oversized black Nike short-sleeve T-shirt featuring a small refined Nike Swoosh logo near the center-left chest area. A narrow white Nike undershirt collar is subtly visible around the neckline, creating understated black-and-white layering. The shirt has a relaxed boxy silhouette, broad shoulder line, soft draping fabric, realistic cotton texture, and natural wrinkles across the chest and upper arm. Preserve the dark minimalist styling, loose fit, muted palette, and contemporary athletic appearance.
+
+BODY & PHYSIQUE
+
+Lean athletic masculine physique with broad natural shoulders, defined neck structure, balanced upper-body proportions, and a relaxed silhouette beneath the oversized Nike shirt. Subtle muscle definition appears through the neck, shoulder, and upper chest without exaggeration. Natural masculine contour transitions with realistic clothing-to-body interaction and polished CGI anatomy shading.
+
+SKIN & REALISM
+
+Warm medium-brown skin tone with realistic pores, fine facial texture, subtle tonal variations, natural facial hair detail, and physically accurate subsurface scattering. Soft flash highlights appear across the forehead, nose bridge, cheekbone, lips, ear, jawline, and neck while maintaining the dark nighttime atmosphere. Preserve realistic skin texture without excessive smoothing, artificial whitening, or plastic appearance.
+
+LIGHTING
+
+Strong direct smartphone flash lighting against a dark nighttime environment. Bright frontal flash creates crisp highlights across the sunglasses, beanie, forehead, nose, cheekbone, lips, beard, ear, neck, Nike Swoosh, and shirt surface while deep shadows remain behind the subject. The flash produces realistic specular reflections on the silver sunglasses frame and subtle texture definition in the gray knit fabric. Physically accurate Blender-style ray-traced illumination generates strong cinematic contrast, smooth facial shadow gradients, realistic material response, and natural handheld-photography intensity without overexposure.
+
+ENVIRONMENT
+
+Dark nighttime outdoor or semi-outdoor residential environment with indistinct foliage, shadowed architectural structures, and faint background surfaces visible behind the subject. Deep black and muted green tones create a subdued nocturnal atmosphere while the background remains softly defocused. Environmental details stay secondary to the subject, preserving intimate Nike streetwear portrait composition and strong subject separation.
+
+MOOD & AESTHETIC
+
+Minimalist Nike nighttime streetwear aesthetic mixed with candid smartphone flash photography, quiet urban attitude, and premium virtual-avatar realism. Calm, detached, stylish, understated, masculine, and editorial atmosphere. The image conveys modern fashion confidence through the fitted gray beanie, silver wraparound sunglasses, oversized black Nike shirt, side-profile pose, and dramatic dark environment.
+
+STYLE & RENDER QUALITY
+
+Ultra-photorealistic Blender Cycles CGI render, cinematic realism, Seedream 5.0 beauty rendering, 8K UHD quality, physically accurate lighting and materials, realistic skin micro-detail, IMVU-inspired beauty repaint style, high-fidelity masculine avatar rendering, realistic depth of field, glossy beauty aesthetic, polished virtual influencer atmosphere, advanced ray tracing, realistic reflections, luxury editorial lighting, ultra-clean cinematic render quality, and clearly fictional CGI avatar aesthetics instead of a real photograph.
+            
+
+</pre>
+
+          <button onclick="copyPrompt()" id="copyBtn">
+            <span id="btnText">Copiar Prompt</span>
+          </button>
+
+          <div class="info-section">
+            <p class="info-mark">MARQUE @tezza.vu</p>
+            <p class="info-footer">TEZZA PROMPTS OFICIAL — Conteúdo protegido.</p>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        TEZZA PROMPTS OFICIAL
+      </footer>
+    </div>
+  </div>
+
+  <script>
+    function copyPrompt() {
+      const promptText = document.getElementById('promptText').innerText;
+      const copyBtn = document.getElementById('copyBtn');
+      const btnText = document.getElementById('btnText');
+
+      function triggerSuccess() {
+        const originalText = btnText.innerText;
+        btnText.innerText = 'Prompt copiado com sucesso!';
+        copyBtn.classList.add('copy-success');
+        setTimeout(() => {
+          btnText.innerText = originalText;
+          copyBtn.classList.remove('copy-success');
+        }, 3000);
+      }
+
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(promptText).then(triggerSuccess).catch(() => fallbackCopy(promptText));
+      } else {
+        fallbackCopy(promptText);
+      }
+
+      function fallbackCopy(text) {
+        try {
+          const textArea = document.createElement("textarea");
+          textArea.value = text;
+          textArea.style.position = "fixed";
+          textArea.style.left = "-9999px";
+          document.body.appendChild(textArea);
+          textArea.focus();
+          textArea.select();
+          const successful = document.execCommand('copy');
+          document.body.removeChild(textArea);
+          if (successful) triggerSuccess();
+        } catch (err) { console.error('Erro ao copiar:', err); }
+      }
+    }
+  </script>
+</body>
+</html>
