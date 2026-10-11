@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Título oficial que aparecerá no link -->
+  <title>TEZZA PROMPTS OFICIAL</title>
+  
+  <!-- Meta Tags para o link ficar compacto, curto e SEM preview de imagem -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="TEZZA PROMPTS OFICIAL">
+  <meta property="og:title" content="TEZZA PROMPTS OFICIAL">
+  <meta property="og:description" content="Prompts Oficiais da Tezza">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Quicksand:wght@300..700&family=Comfortaa:wght@300..700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg-dark: #000000;
+      --card-bg: rgba(20, 20, 20, 0.95);
+      --text-white: #ffffff;
+      --text-gray: #a0a0a0;
+      --border-gray: #333333;
+      --accent-white: #f5f5f5;
+      --glow-color: rgba(255, 255, 255, 0.4);
+      --glow-active: rgba(255, 255, 255, 0.9);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background-color: var(--bg-dark);
+      background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+      background-size: 30px 30px;
+      background-attachment: fixed;
+      color: var(--text-white);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
+      position: relative;
+    }
+
+    .container {
+      position: relative;
+      z-index: 10;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 500px;
+      background: var(--card-bg);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 2px solid var(--border-gray);
+      border-radius: 45px;
+      padding: 50px 35px;
+      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+      position: relative;
+      text-align: center;
+      transition: all 0.4s ease;
+    }
+
+    .card:hover {
+      border-color: var(--text-gray);
+      box-shadow: 0 0 20px var(--glow-color), 0 25px 50px rgba(0, 0, 0, 0.5);
+    }
+
+    .header {
+      margin-bottom: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .title-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      width: 100%;
+    }
+
+    /* LAÇOS COMO BACKGROUND CSS PARA NÃO APARECEREM NO LINK */
+    .bow-icon {
+      width: 60px;
+      height: 60px;
+      background-image: url('https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExdGJieHI0aXdjcHJsaGptZWp1OXlpeHA2Z2ZtbzdoZ2poOGE5MXgzcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/nxQA5nWEKzB5uz3Yr8/giphy.gif');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      filter: grayscale(100%) brightness(1.5);
+    }
+
+    .bow-icon.right {
+      transform: scaleX(-1);
+    }
+
+    .header h1 {
+      font-family: 'Fredoka', sans-serif;
+      font-size: clamp(2.5rem, 8vw, 3.5rem);
+      color: var(--text-white);
+      font-weight: 600;
+      letter-spacing: -1px;
+      line-height: 1;
+    }
+
+    .subtitle {
+      font-family: 'Fredoka', sans-serif;
+      font-size: 0.9rem;
+      color: var(--text-gray);
+      letter-spacing: 1.5px;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+
+    .divider {
+      width: 50%;
+      height: 2px;
+      background: var(--border-gray);
+      border-radius: 10px;
+      margin: 25px auto;
+      transition: all 0.4s ease;
+    }
+
+    .card:hover .divider {
+      background: var(--text-gray);
+      box-shadow: 0 0 10px var(--glow-color);
+    }
+
+    .prompt-section {
+      margin-top: 20px;
+    }
+
+    pre {
+      background: rgba(255, 255, 255, 0.05);
+      border: 2px solid var(--border-gray);
+      padding: 25px;
+      border-radius: 30px;
+      font-family: 'Comfortaa', cursive;
+      font-size: 0.95rem;
+      font-weight: 600;
+      line-height: 1.6;
+      color: var(--accent-white);
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      margin-bottom: 30px;
+      text-align: left;
+      transition: all 0.4s ease;
+    }
+
+    pre:hover {
+      border-color: var(--text-gray);
+      box-shadow: 0 0 15px var(--glow-color);
+    }
+
+    button {
+      width: 100%;
+      padding: 18px;
+      background: var(--text-white);
+      color: var(--bg-dark);
+      border: 3px solid transparent;
+      border-radius: 50px;
+      font-family: 'Fredoka', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      position: relative;
+    }
+
+    button:hover {
+      transform: translateY(-5px) scale(1.02);
+      background: var(--accent-white);
+      box-shadow: 0 15px 25px rgba(255, 255, 255, 0.2), 0 0 15px var(--glow-color);
+    }
+
+    button:active {
+      transform: scale(0.95);
+    }
+
+    @keyframes button-glow-pulse {
+      0% { border-color: transparent; box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1); }
+      50% { border-color: var(--text-white); box-shadow: 0 0 25px var(--glow-active); }
+      100% { border-color: transparent; box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1); }
+    }
+
+    button.copy-success {
+      animation: button-glow-pulse 0.8s ease-in-out infinite;
+      background: var(--text-white) !important;
+      color: var(--bg-dark) !important;
+    }
+
+    .info-section {
+      margin-top: 35px;
+    }
+
+    .info-mark {
+      font-family: 'Fredoka', sans-serif;
+      color: var(--text-white);
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+      letter-spacing: 1px;
+    }
+
+    .info-footer {
+      font-family: 'Quicksand', sans-serif;
+      color: var(--text-gray);
+      font-size: 0.8rem;
+      font-weight: 500;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border-gray);
+      font-family: 'Fredoka', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: var(--text-gray);
+      letter-spacing: 1px;
+    }
+
+    @media (max-width: 640px) {
+      .card { padding: 40px 25px; margin: 0 10px; border-radius: 35px; }
+      .bow-icon { width: 45px; height: 45px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card" id="mainCard">
+      <div class="content">
+        <div class="header">
+          <div class="title-wrapper">
+            <!-- USANDO DIV COM BACKGROUND CSS EM VEZ DE IMG -->
+            <div class="bow-icon left"></div>
+            <h1>Tezza</h1>
+            <div class="bow-icon right"></div>
+          </div>
+          <p class="subtitle">TEZZA PROMPTS OFICIAL</p>
+           <p class="subtitle">FLOW</p>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="prompt-section">
+          <pre id="promptText">
+
+Ultra-realistic cinematic avatar 3D female and female baby portrait, Blender Cycles render in CGI, inspired by Seedream 5.0 beauty realism and high-end IMVU/The Sims virtual aesthetics. Clearly a fictional digital avatar and not a real photograph. Hyper-detailed virtual influencer design with stylized CGI beauty proportions, luxury editorial aesthetics, advanced cinematic lighting, ultra-polished 3D rendering, and “TEZZA PROMPTS” text at the bottom center in elegant minimalist typography.
+
+CAMERA & COMPOSITION
+
+Vertical 4:5 intimate indoor selfie-style portrait. Very close framing capturing a female avatar and her female baby leaning cheek-to-cheek toward the camera. The female occupies the left side of the frame while the female baby is positioned on the right side, slightly lower and closer to the foreground. Both faces are prominently visible with sharp focus, natural perspective, and a candid family lifestyle composition. The framing includes the female avatar’s upper chest, the female baby’s upper body, the colorful floral sleeve, a woven tabletop surface, and softly blurred interior details.
+
+POSE & BODY POSITIONING
+
+Female avatar leans naturally toward the camera from the left side while staying close to the female baby. Female baby leans forward beside her with one arm extended downward across the foreground, creating a spontaneous candid pose. Their shoulders and faces remain close together, conveying affectionate maternal connection and relaxed everyday interaction. Preserve natural anatomy, believable arm positioning, and realistic physical proximity.
+
+HEAD POSITION & GAZE
+
+Female avatar tilts her head slightly toward the female baby while looking directly at the camera with a soft confident smile. Female baby faces the camera with a playful squinting gaze and a subtle amused smile. Their cheeks remain close, with relaxed neck positioning and natural facial alignment.
+
+FEMALE AVATAR
+
+FACIAL EXPRESSION
+
+The female displays a gentle closed-mouth smile with relaxed eyes, softly raised cheeks, and a calm affectionate expression. Her gaze is warm and confident, conveying tenderness, comfort, and spontaneous everyday happiness.
+
+FACE & IDENTITY
+
+Adult female CGI avatar with a refined oval face, softly defined cheekbones, a smooth elegant jawline, and a delicate tapered chin. She has light grey-green almond-shaped eyes with natural eyelashes, softly groomed dark eyebrows, a straight refined nose, and full naturally rosy lips with a subtle glossy finish. Fair skin with warm-neutral undertones, realistic micro-pores, soft natural blush, delicate complexion variation, and polished fictional CGI beauty proportions. Preserve her recognizable facial harmony, natural expression, and intimate selfie presence.
+
+HAIR
+
+Long light blonde hair pulled back into a neat relaxed bun or low gathered style, with a smooth crown, subtle loose strands around the hairline, fine realistic strand definition, natural controlled volume, delicate flyaway hairs, and soft healthy shine. Advanced Blender-style hair rendering with a natural everyday finish.
+
+ACCESSORIES & DETAILS
+
+No visible tattoos. Small sparkling stud earrings and a delicate fine necklace with a tiny polished pendant. Minimal jewelry styling with realistic metallic reflections. Preserve the natural close-up selfie details and relaxed personal atmosphere.
+
+OUTFIT
+
+Dark plum or deep burgundy sleeveless top with a simple fitted silhouette, soft smooth fabric, natural neckline, subtle folds, and understated casual styling.
+
+BODY & PHYSIQUE
+
+Natural adult feminine physique with realistic shoulders, neck, upper chest, and relaxed leaning posture. Preserve natural proportions, graceful body transitions, realistic arm positioning, and believable closeness to the female baby.
+
+SKIN & REALISM
+
+Ultra-detailed Seedream 5.0 skin rendering with realistic pores, subtle complexion variation, natural blush, hydrated highlights, and physically accurate subsurface scattering. Soft indoor light creates gentle highlights across the face, neck, shoulders, and hands. Natural CGI skin texture without excessive smoothing, maintaining polished Blender-style material realism.
+
+FEMALE BABY AVATAR
+
+FACIAL EXPRESSION
+
+The female baby exhibits a playful, slightly mischievous expression with softly narrowed grey-green eyes, rounded cheeks, and a subtle closed-mouth smile. A small amount of light creamy food residue is visible around the lips, suggesting a recent casual snack and adding to the candid everyday family moment. Her expression conveys comfort, amusement, and innocent curiosity.
+
+FACE & IDENTITY
+
+Female baby CGI avatar with a softly rounded toddler face, full gentle cheeks, a smooth forehead, small delicate chin, and natural age-appropriate proportions. She has large grey-green eyes with fine eyelashes, softly defined eyebrows, a small rounded button nose, and naturally rosy lips. Fair skin with warm-neutral undertones, realistic fine texture, soft rosy cheek highlights, delicate natural freckles, and refined Seedream CGI realism. Preserve her cheerful toddler identity and natural playful expression.
+
+HAIR
+
+Short light blonde hair styled in a slightly tousled everyday half-up hairstyle, with soft wispy strands falling around the forehead and temples. Fine silky baby strands, subtle golden-beige tonal variation, natural volume, gentle movement, delicate flyaway hairs, and a soft healthy shine. Advanced Blender-style hair rendering with realistic toddler hair texture.
+
+ACCESSORIES & DETAILS
+
+No visible tattoos. Small delicate stud earrings and minimal child-appropriate styling. Preserve the natural creamy food residue around the mouth as a temporary everyday detail, not a permanent facial marking. Keep her facial features, small hands, and childlike details realistic and age-appropriate.
+
+OUTFIT
+
+Bright long-sleeve toddler top or dress with a playful multicolored floral pattern featuring large pastel flowers in lavender, pink, yellow, green, and blue. Soft smooth fabric, realistic textile texture, natural folds, comfortable fit, and cheerful everyday children's clothing styling.
+
+BODY & PHYSIQUE
+
+Realistic toddler anatomy with softly rounded proportions, delicate arms, small hands, gentle shoulders, and age-appropriate body structure. One arm extends naturally downward across the foreground while the child leans toward the camera beside the female avatar. Preserve believable posture, natural balance, and realistic interaction.
+
+SKIN & REALISM
+
+Ultra-detailed Seedream 5.0 toddler skin rendering with realistic softness, subtle complexion variation, delicate freckles, natural rosy cheeks, fine skin texture, hydrated highlights, and physically accurate subsurface scattering. Preserve the natural skin around the mouth and the small temporary food detail without excessive smoothing or artificial plastic appearance.
+
+LIGHTING
+
+Soft warm indoor ambient lighting illuminates both faces from the front-left side, creating gentle highlights across the blonde hair, skin, earrings, necklace, and colorful floral fabric. Smooth realistic shadows appear beneath the chin and around the facial contours. Maintain natural selfie exposure, subtle warm tones, and intimate candid illumination.
+
+ENVIRONMENT
+
+Cozy indoor home setting with softly blurred neutral walls, a woven textured tabletop or chair surface in the foreground, a partially visible open bag or household object behind them, and warm ambient light in the background. Keep the environment understated and softly defocused so the close emotional connection remains the main focus.
+
+MOOD & AESTHETIC
+
+Candid mother-and-female-baby selfie, warm everyday family lifestyle, playful snack-time moment, intimate cheek-to-cheek connection, natural domestic atmosphere, relaxed beauty, cheerful toddler energy, polished CGI realism, refined virtual influencer styling, and authentic emotional storytelling.
+
+STYLE & RENDER QUALITY
+
+Ultra-photorealistic Blender Cycles CGI render, cinematic realism, Seedream 5.0 beauty rendering, 8K UHD quality, physically accurate lighting and materials, realistic skin micro-detail, IMVU-inspired beauty repaint style, high-fidelity female and female baby avatar rendering, realistic depth of field, glossy beauty aesthetic, polished virtual influencer atmosphere, advanced ray tracing, realistic reflections, luxury editorial lighting, ultra-clean cinematic render quality, and clearly fictional CGI avatar aesthetics instead of a real photograph.
+            
+
+</pre>
+
+          <button onclick="copyPrompt()" id="copyBtn">
+            <span id="btnText">Copiar Prompt</span>
+          </button>
+
+          <div class="info-section">
+            <p class="info-mark">MARQUE @tezza.vu</p>
+            <p class="info-footer">TEZZA PROMPTS OFICIAL — Conteúdo protegido.</p>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        TEZZA PROMPTS OFICIAL
+      </footer>
+    </div>
+  </div>
+
+  <script>
+    function copyPrompt() {
+      const promptText = document.getElementById('promptText').innerText;
+      const copyBtn = document.getElementById('copyBtn');
+      const btnText = document.getElementById('btnText');
+
+      function triggerSuccess() {
+        const originalText = btnText.innerText;
+        btnText.innerText = 'Prompt copiado com sucesso!';
+        copyBtn.classList.add('copy-success');
+        setTimeout(() => {
+          btnText.innerText = originalText;
+          copyBtn.classList.remove('copy-success');
+        }, 3000);
+      }
+
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(promptText).then(triggerSuccess).catch(() => fallbackCopy(promptText));
+      } else {
+        fallbackCopy(promptText);
+      }
+
+      function fallbackCopy(text) {
+        try {
+          const textArea = document.createElement("textarea");
+          textArea.value = text;
+          textArea.style.position = "fixed";
+          textArea.style.left = "-9999px";
+          document.body.appendChild(textArea);
+          textArea.focus();
+          textArea.select();
+          const successful = document.execCommand('copy');
+          document.body.removeChild(textArea);
+          if (successful) triggerSuccess();
+        } catch (err) { console.error('Erro ao copiar:', err); }
+      }
+    }
+  </script>
+</body>
+</html>
