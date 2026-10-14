@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Título oficial que aparecerá no link -->
+  <title>TEZZA PROMPTS OFICIAL</title>
+  
+  <!-- Meta Tags para o link ficar compacto, curto e SEM preview de imagem -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="TEZZA PROMPTS OFICIAL">
+  <meta property="og:title" content="TEZZA PROMPTS OFICIAL">
+  <meta property="og:description" content="Prompts Oficiais da Tezza">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Quicksand:wght@300..700&family=Comfortaa:wght@300..700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg-dark: #000000;
+      --card-bg: rgba(20, 20, 20, 0.95);
+      --text-white: #ffffff;
+      --text-gray: #a0a0a0;
+      --border-gray: #333333;
+      --accent-white: #f5f5f5;
+      --glow-color: rgba(255, 255, 255, 0.4);
+      --glow-active: rgba(255, 255, 255, 0.9);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background-color: var(--bg-dark);
+      background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+      background-size: 30px 30px;
+      background-attachment: fixed;
+      color: var(--text-white);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
+      position: relative;
+    }
+
+    .container {
+      position: relative;
+      z-index: 10;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 500px;
+      background: var(--card-bg);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 2px solid var(--border-gray);
+      border-radius: 45px;
+      padding: 50px 35px;
+      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+      position: relative;
+      text-align: center;
+      transition: all 0.4s ease;
+    }
+
+    .card:hover {
+      border-color: var(--text-gray);
+      box-shadow: 0 0 20px var(--glow-color), 0 25px 50px rgba(0, 0, 0, 0.5);
+    }
+
+    .header {
+      margin-bottom: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .title-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      width: 100%;
+    }
+
+    /* LAÇOS COMO BACKGROUND CSS PARA NÃO APARECEREM NO LINK */
+    .bow-icon {
+      width: 60px;
+      height: 60px;
+      background-image: url('https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExdGJieHI0aXdjcHJsaGptZWp1OXlpeHA2Z2ZtbzdoZ2poOGE5MXgzcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/nxQA5nWEKzB5uz3Yr8/giphy.gif');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      filter: grayscale(100%) brightness(1.5);
+    }
+
+    .bow-icon.right {
+      transform: scaleX(-1);
+    }
+
+    .header h1 {
+      font-family: 'Fredoka', sans-serif;
+      font-size: clamp(2.5rem, 8vw, 3.5rem);
+      color: var(--text-white);
+      font-weight: 600;
+      letter-spacing: -1px;
+      line-height: 1;
+    }
+
+    .subtitle {
+      font-family: 'Fredoka', sans-serif;
+      font-size: 0.9rem;
+      color: var(--text-gray);
+      letter-spacing: 1.5px;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+
+    .divider {
+      width: 50%;
+      height: 2px;
+      background: var(--border-gray);
+      border-radius: 10px;
+      margin: 25px auto;
+      transition: all 0.4s ease;
+    }
+
+    .card:hover .divider {
+      background: var(--text-gray);
+      box-shadow: 0 0 10px var(--glow-color);
+    }
+
+    .prompt-section {
+      margin-top: 20px;
+    }
+
+    pre {
+      background: rgba(255, 255, 255, 0.05);
+      border: 2px solid var(--border-gray);
+      padding: 25px;
+      border-radius: 30px;
+      font-family: 'Comfortaa', cursive;
+      font-size: 0.95rem;
+      font-weight: 600;
+      line-height: 1.6;
+      color: var(--accent-white);
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      margin-bottom: 30px;
+      text-align: left;
+      transition: all 0.4s ease;
+    }
+
+    pre:hover {
+      border-color: var(--text-gray);
+      box-shadow: 0 0 15px var(--glow-color);
+    }
+
+    button {
+      width: 100%;
+      padding: 18px;
+      background: var(--text-white);
+      color: var(--bg-dark);
+      border: 3px solid transparent;
+      border-radius: 50px;
+      font-family: 'Fredoka', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      position: relative;
+    }
+
+    button:hover {
+      transform: translateY(-5px) scale(1.02);
+      background: var(--accent-white);
+      box-shadow: 0 15px 25px rgba(255, 255, 255, 0.2), 0 0 15px var(--glow-color);
+    }
+
+    button:active {
+      transform: scale(0.95);
+    }
+
+    @keyframes button-glow-pulse {
+      0% { border-color: transparent; box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1); }
+      50% { border-color: var(--text-white); box-shadow: 0 0 25px var(--glow-active); }
+      100% { border-color: transparent; box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1); }
+    }
+
+    button.copy-success {
+      animation: button-glow-pulse 0.8s ease-in-out infinite;
+      background: var(--text-white) !important;
+      color: var(--bg-dark) !important;
+    }
+
+    .info-section {
+      margin-top: 35px;
+    }
+
+    .info-mark {
+      font-family: 'Fredoka', sans-serif;
+      color: var(--text-white);
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+      letter-spacing: 1px;
+    }
+
+    .info-footer {
+      font-family: 'Quicksand', sans-serif;
+      color: var(--text-gray);
+      font-size: 0.8rem;
+      font-weight: 500;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border-gray);
+      font-family: 'Fredoka', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: var(--text-gray);
+      letter-spacing: 1px;
+    }
+
+    @media (max-width: 640px) {
+      .card { padding: 40px 25px; margin: 0 10px; border-radius: 35px; }
+      .bow-icon { width: 45px; height: 45px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card" id="mainCard">
+      <div class="content">
+        <div class="header">
+          <div class="title-wrapper">
+            <!-- USANDO DIV COM BACKGROUND CSS EM VEZ DE IMG -->
+            <div class="bow-icon left"></div>
+            <h1>Tezza</h1>
+            <div class="bow-icon right"></div>
+          </div>
+          <p class="subtitle">TEZZA PROMPTS OFICIAL</p>
+           <p class="subtitle">FLOW</p>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="prompt-section">
+          <pre id="promptText">
+
+Ultra-realistic cinematic avatar 3D female and female baby newborn portrait, Blender Cycles render in CGI, inspired by Seedream 5.0 beauty realism and high-end IMVU/The Sims virtual aesthetics. Clearly a fictional digital avatar and not a real photograph. Hyper-detailed virtual influencer design with stylized CGI beauty proportions, luxury editorial aesthetics, advanced cinematic lighting, ultra-polished 3D rendering, and “TEZZA PROMPTS” text at the bottom center in elegant minimalist typography.
+
+CAMERA & COMPOSITION
+
+Vertical 4:5 intimate bathroom mirror-selfie portrait. Medium shot capturing a female avatar standing in front of a bathroom mirror while securely holding her female baby newborn against her chest. The female avatar holds a black smartphone in one hand in front of the mirror, partially visible in the left foreground. The mirror reflection frames both the female avatar and the newborn, with the female avatar positioned on the right side of the composition and the female baby newborn held on the left side. The image includes a visible mirror edge, realistic bathroom tiles, a granite countertop along the lower foreground, and subtle smartphone reflection details. Natural handheld mirror-selfie perspective with realistic framing, intimate domestic composition, and sharp focus on both faces.
+
+POSE & BODY POSITIONING
+
+Female avatar stands in a relaxed upright posture in front of the bathroom mirror while securely holding the female baby newborn against her upper chest with one arm. One arm supports the newborn’s upper back and head while the other hand holds the black smartphone toward the mirror. The female avatar’s shoulders remain relaxed, her body is slightly angled toward the mirror, and her head turns gently toward the reflection. The female baby newborn is held safely in a slightly upright position with the torso supported against the female avatar, bent legs, relaxed arms, and complete head, neck, and back support. The newborn remains naturally nestled against the female avatar with realistic age-appropriate anatomy and safe maternal contact.
+
+HEAD POSITION & GAZE
+
+Female avatar turns her head slightly toward the mirror while looking at her reflected image with a soft composed expression and gently pursed lips. The newborn faces toward the mirror and camera reflection with calm partially open eyes and a peaceful newborn gaze. Maintain natural neck positioning with complete head and neck support. The smartphone is held at face and chest level without obstructing the female avatar’s face or the newborn’s facial features.
+
+FEMALE AVATAR
+
+FACIAL EXPRESSION
+
+The female displays a soft composed expression with gently pursed glossy lips and a subtle playful kiss-like pose toward the mirror. Her eyes remain calm and focused toward the reflection, with relaxed facial muscles and a confident yet tender maternal presence. The expression conveys intimacy, self-assurance, affectionate motherhood, and quiet happiness without an exaggerated smile.
+
+FACE & IDENTITY
+
+Adult female CGI avatar with a refined symmetrical oval face, high defined cheekbones, an elegant jawline, and a softly tapered chin. She has large almond-shaped grey-green eyes with dark softly smoked eye makeup, natural lashes, and perfectly groomed thick brushed-up dark blonde eyebrows. Her nose is straight and slender with a softly rounded tip, and her lips are full, glossy, and naturally rosy nude with a softly defined cupid’s bow. Her warm light-tan skin has realistic micro-pores, hydrated highlights, delicate natural freckles across the bridge of the nose and upper cheeks, subtle natural complexion variation, and refined fictional CGI beauty proportions.
+
+HAIR
+
+Long light blonde hair styled in a neat polished low bun gathered at the back of the head, with a smooth controlled finish, a clean elegant shape, subtle fine silky strands, delicate natural flyaway strands, and understated champagne-blonde tonal variation. The hair remains visibly blonde with realistic strand separation, natural texture, soft healthy shine, and a refined practical styling suitable for an intimate bathroom mirror portrait.
+
+ACCESSORIES & DETAILS
+
+Delicate small silver-toned earrings, a fine delicate chain necklace, a thin silver bracelet, and a subtle ring. Minimal jewelry styling with refined everyday elegance and realistic metallic reflections. The female avatar holds a black smartphone with visible camera lenses in one hand, naturally positioned in front of the mirror. No tattoos.
+
+OUTFIT
+
+Fitted dusty rose mauve strapless textured dress with a softly ruched fabric surface, subtle horizontal gathering, natural stretch, realistic folds, comfortable body-hugging draping, and elegant casual maternity-inspired styling. The outfit exposes the shoulders and upper chest while remaining refined and suitable for a private domestic portrait.
+
+BODY & PHYSIQUE
+
+Natural adult feminine physique with graceful shoulders, realistic arms and hands, balanced proportions, softly defined curves, relaxed upright posture, and believable body positioning while securely holding the female baby newborn. Realistic hand anatomy with natural finger placement around the smartphone and the newborn’s body.
+
+SKIN & REALISM
+
+Ultra-detailed Seedream 5.0 skin rendering with realistic pores, subtle complexion variation, soft natural freckles, hydrated skin sheen, delicate blush, and physically accurate subsurface scattering. Soft reflective highlights appear across the face, neck, shoulders, arms, and hands due to gentle indoor bathroom illumination. Natural CGI skin texture without excessive smoothing.
+
+FEMALE BABY NEWBORN AVATAR
+
+FACIAL EXPRESSION
+
+The female baby newborn has a peaceful newborn expression with relaxed facial muscles, softly open grey-green eyes, a tiny gently pursed mouth, and gentle natural newborn calmness. The expression is serene, delicate, curious, and age-appropriate, without exaggerated smiles or advanced toddler expressions.
+
+FACE & IDENTITY
+
+Newborn female baby newborn CGI avatar, approximately 0 to 3 months old, with a very delicate rounded newborn face, exceptionally full soft cheeks, a proportionally large head, a tiny rounded button nose, a small delicate chin, and natural newborn facial proportions. She has large soft grey-green eyes that are partially open, fine nearly invisible eyelashes, delicate light eyebrows, tiny rosy lips, subtle natural facial redness, and exceptionally soft fair skin with subtle warm-neutral undertones.
+
+HAIR
+
+Very fine short light blonde newborn hair with a delicate silky texture, subtle golden-beige tonal variation, soft natural direction, sparse realistic strand definition, gentle baby-fine fuzz, and an understated healthy sheen. The newborn hair remains delicate, naturally sparse, and softly visible around the forehead and crown.
+
+ACCESSORIES & DETAILS
+
+Soft light cream-colored knitted newborn bonnet with a small subtle animal-inspired detail and delicate fabric texture, kept comfortable, safe, and age-appropriate. The bonnet sits gently around the newborn’s head without covering the eyes or facial features.
+
+OUTFIT
+
+Soft white newborn wrap-style onesie with long sleeves, gentle ribbed texture, subtle dotted details, natural folds, delicate stitching, and premium breathable cotton fabric. A pale blush mauve knitted blanket is wrapped loosely around the lower body while keeping the face, neck, and upper chest comfortably visible. Safe newborn styling with no restrictive elements.
+
+BODY & PHYSIQUE
+
+Realistic newborn anatomy with a very small delicate body, proportionally large head, short neck, softly rounded torso, tiny arms, small closed or gently relaxed hands, bent legs, curled newborn posture, and age-appropriate proportions. The female baby newborn remains fully supported by the female avatar with the head, neck, and back safely cradled.
+
+SKIN & REALISM
+
+Ultra-detailed Seedream 5.0 newborn skin rendering with exceptionally soft fine texture, subtle natural redness, delicate translucent quality, realistic newborn micro-detail, gentle rosy cheeks, hydrated highlights, and physically accurate subsurface scattering.
+
+LIGHTING
+
+Soft diffused indoor bathroom lighting creates gentle highlights across the female avatar’s face, blonde hair, glossy lips, warm skin, jewelry, smartphone, and the newborn’s fine blonde hair and soft skin. Subtle overhead illumination blends with natural ambient light, creating smooth realistic shadows, delicate reflections in the mirror, gentle skin translucency, and an intimate candid bathroom atmosphere without harsh flash.
+
+ENVIRONMENT
+
+Clean modern bathroom with pale neutral ceramic wall tiles, a large vertical mirror, a visible dark mirror frame along the left side, a granite countertop across the lower foreground, subtle bathroom shelves and small personal-care items softly visible in the background, and realistic reflections. Minimal contemporary domestic interior with natural everyday details and softly controlled background clarity.
+
+MOOD & AESTHETIC
+
+Intimate maternal mirror-selfie portrait, peaceful newborn motherhood, affectionate female-and-female-baby-newborn connection, candid private bathroom moment, gentle domestic realism, soft feminine styling, mauve and ivory color palette, confident maternal presence, elegant everyday beauty, polished CGI realism, and high-end virtual-avatar beauty rendering.
+
+STYLE & RENDER QUALITY
+
+Ultra-photorealistic Blender Cycles CGI render, cinematic realism, Seedream 5.0 beauty rendering, 8K UHD quality, physically accurate lighting and materials, realistic skin micro-detail, IMVU-inspired beauty repaint style, high-fidelity female and female baby newborn avatar rendering, realistic depth of field, glossy beauty aesthetic, polished virtual influencer atmosphere, advanced ray tracing, realistic reflections, luxury editorial lighting, ultra-clean cinematic render quality, and clearly fictional CGI avatar aesthetics instead of a real photograph.
+            
+
+</pre>
+
+          <button onclick="copyPrompt()" id="copyBtn">
+            <span id="btnText">Copiar Prompt</span>
+          </button>
+
+          <div class="info-section">
+            <p class="info-mark">MARQUE @tezza.vu</p>
+            <p class="info-footer">TEZZA PROMPTS OFICIAL — Conteúdo protegido.</p>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        TEZZA PROMPTS OFICIAL
+      </footer>
+    </div>
+  </div>
+
+  <script>
+    function copyPrompt() {
+      const promptText = document.getElementById('promptText').innerText;
+      const copyBtn = document.getElementById('copyBtn');
+      const btnText = document.getElementById('btnText');
+
+      function triggerSuccess() {
+        const originalText = btnText.innerText;
+        btnText.innerText = 'Prompt copiado com sucesso!';
+        copyBtn.classList.add('copy-success');
+        setTimeout(() => {
+          btnText.innerText = originalText;
+          copyBtn.classList.remove('copy-success');
+        }, 3000);
+      }
+
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(promptText).then(triggerSuccess).catch(() => fallbackCopy(promptText));
+      } else {
+        fallbackCopy(promptText);
+      }
+
+      function fallbackCopy(text) {
+        try {
+          const textArea = document.createElement("textarea");
+          textArea.value = text;
+          textArea.style.position = "fixed";
+          textArea.style.left = "-9999px";
+          document.body.appendChild(textArea);
+          textArea.focus();
+          textArea.select();
+          const successful = document.execCommand('copy');
+          document.body.removeChild(textArea);
+          if (successful) triggerSuccess();
+        } catch (err) { console.error('Erro ao copiar:', err); }
+      }
+    }
+  </script>
+</body>
+</html>
