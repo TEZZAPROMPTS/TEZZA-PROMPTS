@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Título oficial que aparecerá no link -->
+  <title>TEZZA PROMPTS OFICIAL</title>
+  
+  <!-- Meta Tags para o link ficar compacto, curto e SEM preview de imagem -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="TEZZA PROMPTS OFICIAL">
+  <meta property="og:title" content="TEZZA PROMPTS OFICIAL">
+  <meta property="og:description" content="Prompts Oficiais da Tezza">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Quicksand:wght@300..700&family=Comfortaa:wght@300..700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg-dark: #000000;
+      --card-bg: rgba(20, 20, 20, 0.95);
+      --text-white: #ffffff;
+      --text-gray: #a0a0a0;
+      --border-gray: #333333;
+      --accent-white: #f5f5f5;
+      --glow-color: rgba(255, 255, 255, 0.4);
+      --glow-active: rgba(255, 255, 255, 0.9);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background-color: var(--bg-dark);
+      background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+      background-size: 30px 30px;
+      background-attachment: fixed;
+      color: var(--text-white);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
+      position: relative;
+    }
+
+    .container {
+      position: relative;
+      z-index: 10;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 500px;
+      background: var(--card-bg);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 2px solid var(--border-gray);
+      border-radius: 45px;
+      padding: 50px 35px;
+      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+      position: relative;
+      text-align: center;
+      transition: all 0.4s ease;
+    }
+
+    .card:hover {
+      border-color: var(--text-gray);
+      box-shadow: 0 0 20px var(--glow-color), 0 25px 50px rgba(0, 0, 0, 0.5);
+    }
+
+    .header {
+      margin-bottom: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .title-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      width: 100%;
+    }
+
+    /* LAÇOS COMO BACKGROUND CSS PARA NÃO APARECEREM NO LINK */
+    .bow-icon {
+      width: 60px;
+      height: 60px;
+      background-image: url('https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExdGJieHI0aXdjcHJsaGptZWp1OXlpeHA2Z2ZtbzdoZ2poOGE5MXgzcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/nxQA5nWEKzB5uz3Yr8/giphy.gif');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      filter: grayscale(100%) brightness(1.5);
+    }
+
+    .bow-icon.right {
+      transform: scaleX(-1);
+    }
+
+    .header h1 {
+      font-family: 'Fredoka', sans-serif;
+      font-size: clamp(2.5rem, 8vw, 3.5rem);
+      color: var(--text-white);
+      font-weight: 600;
+      letter-spacing: -1px;
+      line-height: 1;
+    }
+
+    .subtitle {
+      font-family: 'Fredoka', sans-serif;
+      font-size: 0.9rem;
+      color: var(--text-gray);
+      letter-spacing: 1.5px;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+
+    .divider {
+      width: 50%;
+      height: 2px;
+      background: var(--border-gray);
+      border-radius: 10px;
+      margin: 25px auto;
+      transition: all 0.4s ease;
+    }
+
+    .card:hover .divider {
+      background: var(--text-gray);
+      box-shadow: 0 0 10px var(--glow-color);
+    }
+
+    .prompt-section {
+      margin-top: 20px;
+    }
+
+    pre {
+      background: rgba(255, 255, 255, 0.05);
+      border: 2px solid var(--border-gray);
+      padding: 25px;
+      border-radius: 30px;
+      font-family: 'Comfortaa', cursive;
+      font-size: 0.95rem;
+      font-weight: 600;
+      line-height: 1.6;
+      color: var(--accent-white);
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      margin-bottom: 30px;
+      text-align: left;
+      transition: all 0.4s ease;
+    }
+
+    pre:hover {
+      border-color: var(--text-gray);
+      box-shadow: 0 0 15px var(--glow-color);
+    }
+
+    button {
+      width: 100%;
+      padding: 18px;
+      background: var(--text-white);
+      color: var(--bg-dark);
+      border: 3px solid transparent;
+      border-radius: 50px;
+      font-family: 'Fredoka', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      position: relative;
+    }
+
+    button:hover {
+      transform: translateY(-5px) scale(1.02);
+      background: var(--accent-white);
+      box-shadow: 0 15px 25px rgba(255, 255, 255, 0.2), 0 0 15px var(--glow-color);
+    }
+
+    button:active {
+      transform: scale(0.95);
+    }
+
+    @keyframes button-glow-pulse {
+      0% { border-color: transparent; box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1); }
+      50% { border-color: var(--text-white); box-shadow: 0 0 25px var(--glow-active); }
+      100% { border-color: transparent; box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1); }
+    }
+
+    button.copy-success {
+      animation: button-glow-pulse 0.8s ease-in-out infinite;
+      background: var(--text-white) !important;
+      color: var(--bg-dark) !important;
+    }
+
+    .info-section {
+      margin-top: 35px;
+    }
+
+    .info-mark {
+      font-family: 'Fredoka', sans-serif;
+      color: var(--text-white);
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+      letter-spacing: 1px;
+    }
+
+    .info-footer {
+      font-family: 'Quicksand', sans-serif;
+      color: var(--text-gray);
+      font-size: 0.8rem;
+      font-weight: 500;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border-gray);
+      font-family: 'Fredoka', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: var(--text-gray);
+      letter-spacing: 1px;
+    }
+
+    @media (max-width: 640px) {
+      .card { padding: 40px 25px; margin: 0 10px; border-radius: 35px; }
+      .bow-icon { width: 45px; height: 45px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card" id="mainCard">
+      <div class="content">
+        <div class="header">
+          <div class="title-wrapper">
+            <!-- USANDO DIV COM BACKGROUND CSS EM VEZ DE IMG -->
+            <div class="bow-icon left"></div>
+            <h1>Tezza</h1>
+            <div class="bow-icon right"></div>
+          </div>
+          <p class="subtitle">TEZZA PROMPTS OFICIAL</p>
+           <p class="subtitle">FLOW</p>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="prompt-section">
+          <pre id="promptText">
+
+Ultra-realistic cinematic avatar 3D family portrait, Blender Cycles render in CGI, inspired by Seedream 5.0 beauty realism and high-end IMVU/The Sims virtual aesthetics. Clearly a fictional digital avatar and not a real photograph. Hyper-detailed virtual influencer design with stylized CGI beauty proportions, luxury editorial aesthetics, advanced cinematic lighting, ultra-polished 3D rendering, and “TEZZA PROMPTS” text at the bottom center in elegant minimalist typography.
+
+CAMERA & COMPOSITION
+Vertical 4:5 aspect ratio intimate lifestyle portrait. Medium framing capturing a female, male, and female child together outdoors. Slightly elevated eye-level camera angle emphasizing all faces, upper bodies, and their affectionate connection. The male occupies the center of the composition while carrying the child comfortably on his shoulders. The female stands closely beside him, leaning naturally toward both the male and the child. The child remains positioned slightly above and behind the male’s head. Sharp focus on all faces with soft cinematic depth of field. Cozy luxury family lifestyle composition inspired by premium female hood editorials.
+
+POSE & BODY POSITIONING
+Family avatars standing closely together in a naturally relaxed posture while gently embracing. The male supports the female child securely on his shoulders, with his hands holding her legs in a protective and natural position. The female stands beside him with her body turned slightly inward, leaning affectionately toward the male and child. Their bodies remain closely connected, creating an intimate and protective family composition with realistic anatomy and natural interaction.
+
+HEAD POSITION & GAZE
+Adult avatars keep their heads naturally aligned while facing the camera with relaxed, gentle expressions. The female maintains a slight affectionate tilt toward the male and child while looking directly at the camera. The male faces forward with a calm protective gaze. The child sits comfortably above the male’s shoulders while looking toward the camera with an innocent, curious expression. All maintain relaxed neck positioning and effortless natural alignment.
+
+FEMALE AVATAR
+
+FACIAL EXPRESSION
+Warm and elegant facial expression with a soft natural smile. Calm luxury-editorial mood with affectionate family lifestyle aesthetics and polished social-media influencer energy.
+
+FACE & IDENTITY
+Adult female CGI avatar with delicate feminine facial structure, soft jawline, symmetrical facial proportions, smooth pale skin tone, large almond-shaped eyes, naturally shaped lips, slim nose bridge, and softly sculpted cheekbones. Skin rendering contains realistic texture, subtle pores, luminous highlights, and refined beauty realism while maintaining a stylized CGI avatar appearance instead of photoreal human rendering.
+
+HAIR
+Long, light blonde hair styled naturally with soft volume and loose strands framing the face. Hair features realistic strand definition, subtle tonal variation, natural movement, soft shine, and advanced Blender-style hair rendering.
+
+ACCESSORIES & DETAILS
+Minimal delicate jewelry with refined luxury aesthetics and realistic Blender material rendering. If visible, include a subtle gold chain necklace with a small understated pendant resting naturally on her chest.
+
+OUTFIT
+Soft pale-pink knitted sweater featuring realistic woven textile texture, natural folds, subtle stitching, smooth fabric draping, and elegant casual luxury styling.
+
+BODY & PHYSIQUE
+Slim youthful feminine physique with graceful shoulders, natural feminine anatomy, relaxed posture, elegant body positioning, balanced proportions, and premium Blender CGI contour shading.
+
+SKIN & REALISM
+Ultra-detailed Seedream 5.0 skin rendering with realistic pores, subtle glossy highlights, hydrated skin sheen, and physically accurate subsurface scattering. Soft natural daylight creates delicate highlights across the face, cheeks, neck, shoulders, and hands. Natural CGI skin texture without excessive smoothing, maintaining polished Blender-style material realism.
+
+MALE AVATAR
+
+FACIAL EXPRESSION
+Relaxed masculine facial expression with calm protective energy and subtle warmth. Expression conveys affection, emotional control, cinematic realism, and polished family-lifestyle aesthetics without exaggerated emotion. Modern editorial mood with intimate social-media energy and naturally masculine presence.
+
+FACE & IDENTITY
+Adult male CGI avatar with sharp masculine facial structure, defined jawline, sculpted cheekbones, expressive brown eyes, thick naturally groomed eyebrows, narrow nose bridge, naturally full lips, trimmed beard concentrated along the jawline and chin area, and balanced symmetrical facial proportions. Facial identity closely follows the reference image including jaw structure, beard density, eye spacing, lip proportions, hairstyle styling, skin tone, and masculine beauty aesthetics. Hyper-detailed Seedream 5.0 skin rendering combined with polished IMVU/Sims-inspired CGI realism while remaining clearly fictional and digitally generated instead of photoreal human appearance.
+
+HAIR
+Short dark hair with natural textured styling and realistic strand definition. Hair appears neatly trimmed with subtle volume concentrated around the top of the head and forehead area. Individual strands contain soft natural reflections, realistic depth, and advanced Blender-style hair simulation with realistic texture separation.
+
+ACCESSORIES & DETAILS
+Simple minimalist accessories with realistic metallic reflections. If visible, include a subtle silver wedding band on his finger. Minimalist family-lifestyle styling.
+
+OUTFIT
+Classic white fitted sweatshirt or zip-up pullover made of premium cotton fabric, featuring realistic textile texture, natural folds, clean stitching, and comfortable casual styling.
+
+BODY & PHYSIQUE
+Fit masculine physique with broad shoulders, toned arms, and balanced proportions, featuring premium Blender CGI contour shading. His body posture remains stable and protective while carrying the child on his shoulders.
+
+SKIN & REALISM
+Ultra-detailed Seedream 5.0 skin rendering with realistic pores, hydrated skin sheen, subtle glossy highlights, and physically accurate subsurface scattering. Soft natural daylight reflections appear across the forehead, nose bridge, cheeks, shoulders, hands, and arms, creating realistic cinematic outdoor portraiture. Natural CGI skin texture maintains polished Blender-style material realism without excessive smoothing while preserving luxury-avatar aesthetics.
+
+FEMALE BABY AVATAR
+
+FACIAL EXPRESSION
+The female child exhibits an innocent and curious expression, looking directly at the camera with wide expressive eyes. Her expression is calm and slightly serious while maintaining soft childhood wonder and natural tenderness. The facial emotion should remain subtle and realistic, matching the reference image.
+
+FACE & IDENTITY
+Female child CGI avatar with a rounded youthful face, soft chubby cheeks, a small delicate chin, large expressive eyes with fine dark eyelashes, soft eyebrows, a small nose, and naturally shaped lips. Her skin is exceptionally soft and fair with delicate warm undertones, natural rosy highlights on the cheeks, and subtle realistic complexion variation.
+
+HAIR
+Soft light blonde hair styled into two small symmetrical buns positioned on both sides of the top of the head. Loose strands organically frame the face, creating a realistic and slightly tousled look. The hair features subtle wave patterns, delicate baby hairs, natural density variation, and advanced Blender-style strand simulation. Small simple hair ties preserve the hairstyle’s exact silhouette and decorative style.
+
+ACCESSORIES & DETAILS
+Simple child-appropriate hair accessories with soft pastel details. Avoid excessive jewelry or mature styling. Maintain a delicate, innocent, and natural child-avatar appearance.
+
+OUTFIT
+Soft pink long-sleeve top featuring premium cotton or knitted fabric texture, natural folds, smooth fabric draping, and delicate casual styling. The clothing should match the coordinated pastel palette of the female avatar’s sweater.
+
+BODY & PHYSIQUE
+Realistic young-child physique with naturally rounded arms, soft limbs, balanced torso proportions, smooth contours of childhood fat, and age-appropriate anatomy. The child sits comfortably on the male avatar’s shoulders with natural leg positioning and believable body weight. The body structure maintains the refined realism of computer graphics and the natural features of a young female child. The proportions emphasize innocence, delicacy, and authenticity.
+
+SKIN & REALISM
+Ultra-detailed Seedream 5.0 skin rendering with realistic softness, subtle complexion variation, delicate infant skin texture, hydrated highlights, natural translucency, and physically accurate subsurface scattering. Skin appears smooth, healthy, and luminous while preserving realistic infant characteristics and premium CGI avatar aesthetics.
+
+
+LIGHTING
+Soft natural outdoor daylight enters from the front and side, creating delicate highlights across the skin, hair, clothing, and surrounding foliage while producing smooth realistic shadows. Gentle daylight enhances realistic facial rendering, textile materials, skin translucency, and cinematic editorial atmosphere.
+Warm natural highlights appear across the faces and hair without harsh contrast or artificial flash. The lighting should preserve the soft, affectionate mood of a premium outdoor family portrait.
+
+ENVIRONMENT
+Outdoor natural environment featuring softly blurred green trees, dense foliage, warm golden highlights, and a peaceful park-like background. Minimalist natural styling, realistic vegetation, subtle bokeh, and elegant luxury family lifestyle ambiance. The background remains softly blurred with cinematic depth of field, keeping the family as the central visual focus.
+
+MOOD & AESTHETIC
+Luxury family editorial blended with premium outdoor lifestyle photography, cozy natural atmosphere, emotional warmth, intimate connection, modern minimalist aesthetics, polished CGI realism, refined influencer lifestyle, sophisticated storytelling, and high-end virtual-avatar beauty rendering.
+
+STYLE & RENDER QUALITY
+Ultra-photorealistic Blender Cycles CGI render, cinematic realism, Seedream 5.0 beauty rendering, 8K UHD quality, physically accurate lighting and materials, realistic skin micro-detail, IMVU-inspired beauty repaint style, high-fidelity family avatar rendering, realistic depth of field, glossy beauty aesthetic, polished virtual influencer atmosphere, advanced ray tracing, realistic reflections, luxury editorial lighting, ultra-clean cinematic render quality, and clearly fictional CGI avatar aesthetics instead of a real photograph.
+            
+
+</pre>
+
+          <button onclick="copyPrompt()" id="copyBtn">
+            <span id="btnText">Copiar Prompt</span>
+          </button>
+
+          <div class="info-section">
+            <p class="info-mark">MARQUE @tezza.vu</p>
+            <p class="info-footer">TEZZA PROMPTS OFICIAL — Conteúdo protegido.</p>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        TEZZA PROMPTS OFICIAL
+      </footer>
+    </div>
+  </div>
+
+  <script>
+    function copyPrompt() {
+      const promptText = document.getElementById('promptText').innerText;
+      const copyBtn = document.getElementById('copyBtn');
+      const btnText = document.getElementById('btnText');
+
+      function triggerSuccess() {
+        const originalText = btnText.innerText;
+        btnText.innerText = 'Prompt copiado com sucesso!';
+        copyBtn.classList.add('copy-success');
+        setTimeout(() => {
+          btnText.innerText = originalText;
+          copyBtn.classList.remove('copy-success');
+        }, 3000);
+      }
+
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(promptText).then(triggerSuccess).catch(() => fallbackCopy(promptText));
+      } else {
+        fallbackCopy(promptText);
+      }
+
+      function fallbackCopy(text) {
+        try {
+          const textArea = document.createElement("textarea");
+          textArea.value = text;
+          textArea.style.position = "fixed";
+          textArea.style.left = "-9999px";
+          document.body.appendChild(textArea);
+          textArea.focus();
+          textArea.select();
+          const successful = document.execCommand('copy');
+          document.body.removeChild(textArea);
+          if (successful) triggerSuccess();
+        } catch (err) { console.error('Erro ao copiar:', err); }
+      }
+    }
+  </script>
+</body>
+</html>
