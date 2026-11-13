@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Título oficial que aparecerá no link -->
+  <title>TEZZA PROMPTS OFICIAL</title>
+  
+  <!-- Meta Tags para o link ficar compacto, curto e SEM preview de imagem -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="TEZZA PROMPTS OFICIAL">
+  <meta property="og:title" content="TEZZA PROMPTS OFICIAL">
+  <meta property="og:description" content="Prompts Oficiais da Tezza">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Quicksand:wght@300..700&family=Comfortaa:wght@300..700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg-dark: #000000;
+      --card-bg: rgba(20, 20, 20, 0.95);
+      --text-white: #ffffff;
+      --text-gray: #a0a0a0;
+      --border-gray: #333333;
+      --accent-white: #f5f5f5;
+      --glow-color: rgba(255, 255, 255, 0.4);
+      --glow-active: rgba(255, 255, 255, 0.9);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background-color: var(--bg-dark);
+      background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+      background-size: 30px 30px;
+      background-attachment: fixed;
+      color: var(--text-white);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
+      position: relative;
+    }
+
+    .container {
+      position: relative;
+      z-index: 10;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 500px;
+      background: var(--card-bg);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 2px solid var(--border-gray);
+      border-radius: 45px;
+      padding: 50px 35px;
+      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+      position: relative;
+      text-align: center;
+      transition: all 0.4s ease;
+    }
+
+    .card:hover {
+      border-color: var(--text-gray);
+      box-shadow: 0 0 20px var(--glow-color), 0 25px 50px rgba(0, 0, 0, 0.5);
+    }
+
+    .header {
+      margin-bottom: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .title-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      width: 100%;
+    }
+
+    /* LAÇOS COMO BACKGROUND CSS PARA NÃO APARECEREM NO LINK */
+    .bow-icon {
+      width: 60px;
+      height: 60px;
+      background-image: url('https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExdGJieHI0aXdjcHJsaGptZWp1OXlpeHA2Z2ZtbzdoZ2poOGE5MXgzcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/nxQA5nWEKzB5uz3Yr8/giphy.gif');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      filter: grayscale(100%) brightness(1.5);
+    }
+
+    .bow-icon.right {
+      transform: scaleX(-1);
+    }
+
+    .header h1 {
+      font-family: 'Fredoka', sans-serif;
+      font-size: clamp(2.5rem, 8vw, 3.5rem);
+      color: var(--text-white);
+      font-weight: 600;
+      letter-spacing: -1px;
+      line-height: 1;
+    }
+
+    .subtitle {
+      font-family: 'Fredoka', sans-serif;
+      font-size: 0.9rem;
+      color: var(--text-gray);
+      letter-spacing: 1.5px;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+
+    .divider {
+      width: 50%;
+      height: 2px;
+      background: var(--border-gray);
+      border-radius: 10px;
+      margin: 25px auto;
+      transition: all 0.4s ease;
+    }
+
+    .card:hover .divider {
+      background: var(--text-gray);
+      box-shadow: 0 0 10px var(--glow-color);
+    }
+
+    .prompt-section {
+      margin-top: 20px;
+    }
+
+    pre {
+      background: rgba(255, 255, 255, 0.05);
+      border: 2px solid var(--border-gray);
+      padding: 25px;
+      border-radius: 30px;
+      font-family: 'Comfortaa', cursive;
+      font-size: 0.95rem;
+      font-weight: 600;
+      line-height: 1.6;
+      color: var(--accent-white);
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      margin-bottom: 30px;
+      text-align: left;
+      transition: all 0.4s ease;
+    }
+
+    pre:hover {
+      border-color: var(--text-gray);
+      box-shadow: 0 0 15px var(--glow-color);
+    }
+
+    button {
+      width: 100%;
+      padding: 18px;
+      background: var(--text-white);
+      color: var(--bg-dark);
+      border: 3px solid transparent;
+      border-radius: 50px;
+      font-family: 'Fredoka', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      position: relative;
+    }
+
+    button:hover {
+      transform: translateY(-5px) scale(1.02);
+      background: var(--accent-white);
+      box-shadow: 0 15px 25px rgba(255, 255, 255, 0.2), 0 0 15px var(--glow-color);
+    }
+
+    button:active {
+      transform: scale(0.95);
+    }
+
+    @keyframes button-glow-pulse {
+      0% { border-color: transparent; box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1); }
+      50% { border-color: var(--text-white); box-shadow: 0 0 25px var(--glow-active); }
+      100% { border-color: transparent; box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1); }
+    }
+
+    button.copy-success {
+      animation: button-glow-pulse 0.8s ease-in-out infinite;
+      background: var(--text-white) !important;
+      color: var(--bg-dark) !important;
+    }
+
+    .info-section {
+      margin-top: 35px;
+    }
+
+    .info-mark {
+      font-family: 'Fredoka', sans-serif;
+      color: var(--text-white);
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+      letter-spacing: 1px;
+    }
+
+    .info-footer {
+      font-family: 'Quicksand', sans-serif;
+      color: var(--text-gray);
+      font-size: 0.8rem;
+      font-weight: 500;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border-gray);
+      font-family: 'Fredoka', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: var(--text-gray);
+      letter-spacing: 1px;
+    }
+
+    @media (max-width: 640px) {
+      .card { padding: 40px 25px; margin: 0 10px; border-radius: 35px; }
+      .bow-icon { width: 45px; height: 45px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card" id="mainCard">
+      <div class="content">
+        <div class="header">
+          <div class="title-wrapper">
+            <!-- USANDO DIV COM BACKGROUND CSS EM VEZ DE IMG -->
+            <div class="bow-icon left"></div>
+            <h1>Tezza</h1>
+            <div class="bow-icon right"></div>
+          </div>
+          <p class="subtitle">TEZZA PROMPTS OFICIAL</p>
+           <p class="subtitle">FLOW</p>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="prompt-section">
+          <pre id="promptText">
+
+Ultra-realistic cinematic avatar 3D male portrait, Blender Cycles render in CGI, inspired by Seedream 5.0 beauty realism and high-end IMVU/The Sims virtual aesthetics. Clearly a fictional digital avatar and not a real photograph. Hyper-detailed virtual influencer design with stylized CGI beauty proportions, luxury editorial aesthetics, advanced cinematic lighting, ultra-polished 3D rendering, and “TEZZA PROMPTS” text at the bottom center in elegant minimalist typography.
+
+CAMERA & COMPOSITION
+
+Vertical 9:16 aspect ratio dark indoor Halloween portrait captured with cinematic character-editorial framing. Medium shot from the waist upward, emphasizing the face makeup, cowboy hat, crossed arms, leather costume details, shoulders, and masculine physique. Straight-on camera perspective with the subject centered symmetrically in the frame. Sharp focus on the face, skull makeup, hat texture, arms, scarf, leather vest, and costume accessories while the dark brick background remains softly subdued with cinematic depth.
+
+POSE & BODY POSITIONING
+
+Subject standing directly facing the camera in a strong guarded pose with both arms crossed firmly across the chest. Shoulders remain broad and squared while the forearms overlap naturally in front of the torso. Elbows angle outward with relaxed but controlled hands positioned near the opposite upper arms. Upper body remains upright and steady, creating a confident, imposing, theatrical Halloween presence.
+
+HEAD POSITION & GAZE
+
+Head positioned straight toward the camera with a subtle downward inclination beneath the wide-brimmed hat. Chin remains slightly lowered, emphasizing the skull makeup and intense eye area. Eyes maintain direct attention toward the lens through the darkened makeup, creating a silent, mysterious, intimidating gaze.
+
+FACIAL EXPRESSION
+
+Controlled intimidating facial expression with neutral lips concealed by the skeletal makeup and narrowed eyes directed toward the camera. Expression conveys eerie calmness, dark confidence, theatrical mystery, and controlled masculine intensity without exaggerated emotion. The face remains still and composed, enhancing the supernatural Halloween character aesthetic.
+
+FACE & IDENTITY
+
+Adult male CGI avatar with sharp masculine facial structure, defined jawline, sculpted cheekbones, almond-shaped dark eyes, thick naturally groomed eyebrows, broad proportional nose, naturally full lips, a dense dark beard concentrated along the jawline and chin area, and a thick connected mustache with subtly upward-curved ends. Facial identity preserves the strong masculine facial proportions, medium-brown skin tone, distinctive beard shape, mustache styling, eye spacing, lip proportions, and balanced facial symmetry. White skull-inspired theatrical face makeup covers the central facial area with dark graphic shapes surrounding the eyes, a darkened nose shape, and skeletal lines across the mouth and cheeks while maintaining the underlying masculine facial structure. Small discreet metallic earrings enhance the character styling. Hyper-detailed Seedream 5.0 skin rendering combined with polished IMVU/Sims-inspired CGI realism while remaining clearly fictional and digitally generated instead of photoreal human appearance.
+
+HAIR
+
+Short black dense textured hair with a close faded cut along the sides and compact volume beneath the hat. Hair remains mostly concealed by the cowboy hat, with subtle black textured strands visible around the temples and lower sides. Individual strands maintain realistic density, soft matte definition, controlled movement, and polished Blender-style hair simulation with natural depth and texture separation.
+
+ACCESSORIES & DETAILS
+
+Wide-brimmed black cowboy hat with a tall structured crown and subtle textured material. Dark patterned scarf or neckerchief wrapped around the neck with layered folds and muted ornamental details. Small metallic earrings remain visible beside the skull makeup. Black leather costume elements show realistic grain, stitching, seams, subtle highlights, and natural material tension. Skull makeup includes high-contrast white and black graphic shapes with carefully defined edges, dark eye sockets, a dark nose cavity, and skeletal mouth markings. No tattoos visible or described.
+
+OUTFIT
+
+Dark gothic cowboy-inspired Halloween styling with a black leather vest or structured sleeveless jacket layered over a dark shirt. The outfit includes a textured neck scarf, reinforced leather panels, subtle metallic hardware, and rugged western-inspired details. Black costume materials create a dramatic monochromatic silhouette against the lighter skin and skull makeup. Styling conveys a mysterious outlaw character with premium theatrical fashion and cinematic Halloween presence.
+
+BODY & PHYSIQUE
+
+Athletic masculine physique with broad shoulders, strong upper arms, defined forearms, wide chest structure, powerful neck, balanced torso proportions, and natural muscular anatomy. Crossed arms create realistic compression across the biceps, forearms, chest, and leather clothing. Masculine silhouette remains imposing and polished with refined CGI contour shading, natural anatomical transitions, and controlled character-portrait realism.
+
+SKIN & REALISM
+
+Ultra-detailed Seedream 5.0 skin rendering with realistic pores, subtle natural texture, physically accurate subsurface scattering, and controlled matte highlights. Visible skin on the arms and neck retains natural medium-brown tonal variation beneath the dramatic costume styling. White skull makeup has a realistic layered cosmetic texture with slightly varied opacity, clean graphic edges, and dimensional interaction with the underlying facial structure. Beard strands remain visible around the jawline and beneath the makeup without excessive smoothing.
+
+LIGHTING
+
+Low-key cinematic lighting combined with soft frontal illumination focused on the face, crossed arms, hat, and leather costume. Subtle highlights define the white skull makeup, dark eye areas, beard texture, hat brim, scarf folds, leather grain, and muscular forearms. Deep shadows surround the subject while preserving clear facial identity and costume details. Physically accurate Blender-style ray-traced illumination generates dramatic contrast, realistic material reflections, and moody Halloween depth.
+
+ENVIRONMENT
+
+Dark indoor environment with a textured brick wall or shadowed rustic interior behind the subject. Background remains subdued and slightly defocused, creating a mysterious western-gothic atmosphere. Muted brown and charcoal tones provide subtle contrast against the white skull makeup while keeping the subject visually dominant. The enclosed setting enhances the feeling of a cinematic Halloween character portrait.
+
+MOOD & AESTHETIC
+
+Dark gothic western Halloween aesthetic mixed with mysterious outlaw styling, skull makeup, cinematic character portraiture, and premium virtual-avatar realism. Intimidating, controlled, theatrical, rugged, enigmatic, and masculine atmosphere inspired by supernatural western editorials and high-end CGI costume design.
+
+STYLE & RENDER QUALITY
+
+Ultra-photorealistic Blender Cycles CGI render, cinematic realism, Seedream 5.0 beauty rendering, 8K UHD quality, physically accurate lighting and materials, realistic skin micro-detail, IMVU-inspired beauty repaint style, high-fidelity  male avatar rendering, realistic depth of field, glossy beauty aesthetic, polished virtual influencer atmosphere, advanced ray tracing, realistic reflections, luxury editorial lighting, ultra-clean cinematic render quality, and clearly fictional CGI avatar aesthetics instead of a real photograph.
+
+            
+
+</pre>
+
+          <button onclick="copyPrompt()" id="copyBtn">
+            <span id="btnText">Copiar Prompt</span>
+          </button>
+
+          <div class="info-section">
+            <p class="info-mark">MARQUE @tezza.vu</p>
+            <p class="info-footer">TEZZA PROMPTS OFICIAL — Conteúdo protegido.</p>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        TEZZA PROMPTS OFICIAL
+      </footer>
+    </div>
+  </div>
+
+  <script>
+    function copyPrompt() {
+      const promptText = document.getElementById('promptText').innerText;
+      const copyBtn = document.getElementById('copyBtn');
+      const btnText = document.getElementById('btnText');
+
+      function triggerSuccess() {
+        const originalText = btnText.innerText;
+        btnText.innerText = 'Prompt copiado com sucesso!';
+        copyBtn.classList.add('copy-success');
+        setTimeout(() => {
+          btnText.innerText = originalText;
+          copyBtn.classList.remove('copy-success');
+        }, 3000);
+      }
+
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(promptText).then(triggerSuccess).catch(() => fallbackCopy(promptText));
+      } else {
+        fallbackCopy(promptText);
+      }
+
+      function fallbackCopy(text) {
+        try {
+          const textArea = document.createElement("textarea");
+          textArea.value = text;
+          textArea.style.position = "fixed";
+          textArea.style.left = "-9999px";
+          document.body.appendChild(textArea);
+          textArea.focus();
+          textArea.select();
+          const successful = document.execCommand('copy');
+          document.body.removeChild(textArea);
+          if (successful) triggerSuccess();
+        } catch (err) { console.error('Erro ao copiar:', err); }
+      }
+    }
+  </script>
+</body>
+</html>
