@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Título oficial que aparecerá no link -->
+  <title>TEZZA PROMPTS OFICIAL</title>
+  
+  <!-- Meta Tags para o link ficar compacto, curto e SEM preview de imagem -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="TEZZA PROMPTS OFICIAL">
+  <meta property="og:title" content="TEZZA PROMPTS OFICIAL">
+  <meta property="og:description" content="Prompts Oficiais da Tezza">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Quicksand:wght@300..700&family=Comfortaa:wght@300..700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg-dark: #000000;
+      --card-bg: rgba(20, 20, 20, 0.95);
+      --text-white: #ffffff;
+      --text-gray: #a0a0a0;
+      --border-gray: #333333;
+      --accent-white: #f5f5f5;
+      --glow-color: rgba(255, 255, 255, 0.4);
+      --glow-active: rgba(255, 255, 255, 0.9);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background-color: var(--bg-dark);
+      background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+      background-size: 30px 30px;
+      background-attachment: fixed;
+      color: var(--text-white);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
+      position: relative;
+    }
+
+    .container {
+      position: relative;
+      z-index: 10;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 500px;
+      background: var(--card-bg);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 2px solid var(--border-gray);
+      border-radius: 45px;
+      padding: 50px 35px;
+      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+      position: relative;
+      text-align: center;
+      transition: all 0.4s ease;
+    }
+
+    .card:hover {
+      border-color: var(--text-gray);
+      box-shadow: 0 0 20px var(--glow-color), 0 25px 50px rgba(0, 0, 0, 0.5);
+    }
+
+    .header {
+      margin-bottom: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .title-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      width: 100%;
+    }
+
+    /* LAÇOS COMO BACKGROUND CSS PARA NÃO APARECEREM NO LINK */
+    .bow-icon {
+      width: 60px;
+      height: 60px;
+      background-image: url('https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExdGJieHI0aXdjcHJsaGptZWp1OXlpeHA2Z2ZtbzdoZ2poOGE5MXgzcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/nxQA5nWEKzB5uz3Yr8/giphy.gif');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      filter: grayscale(100%) brightness(1.5);
+    }
+
+    .bow-icon.right {
+      transform: scaleX(-1);
+    }
+
+    .header h1 {
+      font-family: 'Fredoka', sans-serif;
+      font-size: clamp(2.5rem, 8vw, 3.5rem);
+      color: var(--text-white);
+      font-weight: 600;
+      letter-spacing: -1px;
+      line-height: 1;
+    }
+
+    .subtitle {
+      font-family: 'Fredoka', sans-serif;
+      font-size: 0.9rem;
+      color: var(--text-gray);
+      letter-spacing: 1.5px;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+
+    .divider {
+      width: 50%;
+      height: 2px;
+      background: var(--border-gray);
+      border-radius: 10px;
+      margin: 25px auto;
+      transition: all 0.4s ease;
+    }
+
+    .card:hover .divider {
+      background: var(--text-gray);
+      box-shadow: 0 0 10px var(--glow-color);
+    }
+
+    .prompt-section {
+      margin-top: 20px;
+    }
+
+    pre {
+      background: rgba(255, 255, 255, 0.05);
+      border: 2px solid var(--border-gray);
+      padding: 25px;
+      border-radius: 30px;
+      font-family: 'Comfortaa', cursive;
+      font-size: 0.95rem;
+      font-weight: 600;
+      line-height: 1.6;
+      color: var(--accent-white);
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      margin-bottom: 30px;
+      text-align: left;
+      transition: all 0.4s ease;
+    }
+
+    pre:hover {
+      border-color: var(--text-gray);
+      box-shadow: 0 0 15px var(--glow-color);
+    }
+
+    button {
+      width: 100%;
+      padding: 18px;
+      background: var(--text-white);
+      color: var(--bg-dark);
+      border: 3px solid transparent;
+      border-radius: 50px;
+      font-family: 'Fredoka', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      position: relative;
+    }
+
+    button:hover {
+      transform: translateY(-5px) scale(1.02);
+      background: var(--accent-white);
+      box-shadow: 0 15px 25px rgba(255, 255, 255, 0.2), 0 0 15px var(--glow-color);
+    }
+
+    button:active {
+      transform: scale(0.95);
+    }
+
+    @keyframes button-glow-pulse {
+      0% { border-color: transparent; box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1); }
+      50% { border-color: var(--text-white); box-shadow: 0 0 25px var(--glow-active); }
+      100% { border-color: transparent; box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1); }
+    }
+
+    button.copy-success {
+      animation: button-glow-pulse 0.8s ease-in-out infinite;
+      background: var(--text-white) !important;
+      color: var(--bg-dark) !important;
+    }
+
+    .info-section {
+      margin-top: 35px;
+    }
+
+    .info-mark {
+      font-family: 'Fredoka', sans-serif;
+      color: var(--text-white);
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+      letter-spacing: 1px;
+    }
+
+    .info-footer {
+      font-family: 'Quicksand', sans-serif;
+      color: var(--text-gray);
+      font-size: 0.8rem;
+      font-weight: 500;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border-gray);
+      font-family: 'Fredoka', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: var(--text-gray);
+      letter-spacing: 1px;
+    }
+
+    @media (max-width: 640px) {
+      .card { padding: 40px 25px; margin: 0 10px; border-radius: 35px; }
+      .bow-icon { width: 45px; height: 45px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card" id="mainCard">
+      <div class="content">
+        <div class="header">
+          <div class="title-wrapper">
+            <!-- USANDO DIV COM BACKGROUND CSS EM VEZ DE IMG -->
+            <div class="bow-icon left"></div>
+            <h1>Tezza</h1>
+            <div class="bow-icon right"></div>
+          </div>
+          <p class="subtitle">TEZZA PROMPTS OFICIAL</p>
+           <p class="subtitle">FLOW</p>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="prompt-section">
+          <pre id="promptText">
+
+Ultra-realistic cinematic avatar 3D male portrait, Blender Cycles render in CGI, inspired by Seedream 5.0 beauty realism and high-end IMVU/The Sims virtual aesthetics. Clearly a fictional digital avatar and not a real photograph. Hyper-detailed virtual influencer design with stylized CGI beauty proportions, luxury editorial aesthetics, advanced cinematic lighting, ultra-polished 3D rendering, and “TEZZA PROMPTS” text at the bottom center in elegant minimalist typography.
+
+CAMERA & COMPOSITION
+
+Vertical 9:16 aspect ratio dark nighttime Halloween portrait captured with intimate cinematic framing. Medium close-up composition from the upper chest upward, emphasizing the face, eyes, black wolf ears, tongue, fur collar, hand, and masculine facial structure. Slightly high-angle smartphone perspective with the subject positioned close to the camera. Dark surroundings create a dramatic enclosed atmosphere while the fur texture, facial details, and eyes remain sharply visible. Cinematic depth-of-field separation keeps the background nearly black and softly subdued.
+
+POSE & BODY POSITIONING
+
+Subject positioned close to the camera while wrapped in a thick fur garment. Upper body leans slightly forward with the shoulders partially concealed by the oversized fur collar. One hand rests naturally near the opposite shoulder and collar area, creating a relaxed but provocative pose. Elbows remain close to the body while the torso stays slightly angled. Posture feels intimate, playful, theatrical, and confidently animalistic.
+
+HEAD POSITION & GAZE
+
+Head tilted slightly downward and turned subtly toward the camera. Chin remains lowered while the eyes look upward through the brows with a mischievous and predatory expression. Eyes maintain direct attention toward the lens, creating an intimate, teasing, and controlled supernatural presence. Facial positioning feels candid, provocative, stylish, and naturally expressive.
+
+FACIAL EXPRESSION
+
+Playful predatory facial expression with the tongue extended slightly between relaxed lips. Eyes remain narrowed with a mischievous confident energy while the brows create subtle intensity. Expression conveys teasing humor, dark sensuality, animalistic confidence, and controlled Halloween character energy without exaggerated emotion.
+
+FACE & IDENTITY
+
+Adult male CGI avatar with sharp masculine facial structure, defined jawline, sculpted cheekbones, almond-shaped dark eyes, thick naturally groomed eyebrows, broad proportional nose, naturally full lips, a dense dark beard concentrated along the jawline and chin area, and a thick connected mustache with subtly upward-curved ends. Facial identity preserves the strong masculine facial proportions, medium-brown skin tone, distinctive beard shape, mustache styling, eye spacing, lip proportions, and balanced facial symmetry. Subtle werewolf-inspired makeup adds softly darkened contour lines around the nose, cheeks, and eyes while preserving the underlying masculine facial structure. Hyper-detailed Seedream 5.0 skin rendering combined with polished IMVU/Sims-inspired CGI realism while remaining clearly fictional and digitally generated instead of photoreal human appearance.
+
+HAIR
+
+Short black dense textured hair with voluminous tousled styling across the crown and forehead. Hair falls in irregular textured strands toward the brow with soft lifted movement around the sides. Individual strands show realistic density, subtle matte highlights, natural separation, and polished Blender-style hair simulation with controlled depth and texture.
+
+ACCESSORIES & DETAILS
+
+Large pointed black-and-brown wolf ears positioned naturally above the head with layered fur, realistic strand direction, and subtle asymmetry. Thick gray-brown faux fur surrounds the neck, shoulders, and upper chest with rich volume and visible individual fibers. Subtle dark animalistic makeup defines the nose, eyes, and cheek contours. Tongue and lips maintain realistic moisture, natural color variation, and detailed surface texture. A hand emerges from the fur near the shoulder with naturally curved fingers and realistic skin detail. No tattoos visible or described.
+
+OUTFIT
+
+Oversized werewolf-inspired fur coat or thick faux-fur garment covering the shoulders, neck, and upper torso. The garment has dense gray-brown fur with varied strand lengths, layered volume, soft directional movement, and realistic material response. Dark clothing remains subtly visible beneath the fur at the neckline. Styling conveys a mysterious supernatural character with intimate Halloween fashion and rugged masculine costume aesthetics.
+
+BODY & PHYSIQUE
+
+Athletic masculine physique with broad shoulders, strong neck structure, defined upper chest, balanced torso proportions, and natural masculine anatomy partially concealed beneath the thick fur garment. Hand, neck, shoulders, and upper chest maintain realistic anatomical transitions. Close framing emphasizes the masculine facial structure and upper-body presence while preserving polished CGI contour shading.
+
+SKIN & REALISM
+
+Ultra-detailed Seedream 5.0 skin rendering with realistic pores, subtle natural texture, controlled highlights, and physically accurate subsurface scattering. Medium-brown skin maintains natural tonal variation across the face, neck, shoulders, and hand. Lips and tongue show realistic moisture and soft glossy reflections. Werewolf makeup blends naturally with the skin through subtle pigmentation and controlled cosmetic texture. Beard strands, eyebrows, eyelashes, skin sheen, and fur fibers remain sharply defined without excessive smoothing.
+
+LIGHTING
+
+Low-key nighttime lighting combined with soft directional illumination focused on the face and upper body. Subtle warm highlights define the forehead, nose, cheekbones, lips, tongue, eyes, hand, black hair, wolf ears, and fur fibers while deep shadows surround the subject. A faint cool ambient glow separates the silhouette from the dark background. Physically accurate Blender-style ray-traced illumination generates realistic skin reflections, fur highlights, intimate contrast, and cinematic Halloween depth.
+
+ENVIRONMENT
+
+Dark nighttime environment with an almost black background and minimal visible surroundings. The enclosed shadowed setting creates a mysterious private atmosphere while keeping the subject close and visually dominant. Background remains completely subdued and softly defocused, allowing the wolf ears, face, tongue, fur collar, and hand to remain the primary visual elements.
+
+MOOD & AESTHETIC
+
+Playful supernatural Halloween aesthetic mixed with mischievous werewolf character design, intimate dark portraiture, provocative animalistic styling, and premium virtual-avatar realism. Teasing, mysterious, alluring, confident, theatrical, and emotionally controlled atmosphere inspired by cinematic costume editorials and high-end CGI creature-character aesthetics.
+
+STYLE & RENDER QUALITY
+
+Ultra-photorealistic Blender Cycles CGI render, cinematic realism, Seedream 5.0 beauty rendering, 8K UHD quality, physically accurate lighting and materials, realistic skin micro-detail, IMVU-inspired beauty repaint style, high-fidelity  male avatar rendering, realistic depth of field, glossy beauty aesthetic, polished virtual influencer atmosphere, advanced ray tracing, realistic reflections, luxury editorial lighting, ultra-clean cinematic render quality, and clearly fictional CGI avatar aesthetics instead of a real photograph.
+
+
+</pre>
+
+          <button onclick="copyPrompt()" id="copyBtn">
+            <span id="btnText">Copiar Prompt</span>
+          </button>
+
+          <div class="info-section">
+            <p class="info-mark">MARQUE @tezza.vu</p>
+            <p class="info-footer">TEZZA PROMPTS OFICIAL — Conteúdo protegido.</p>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        TEZZA PROMPTS OFICIAL
+      </footer>
+    </div>
+  </div>
+
+  <script>
+    function copyPrompt() {
+      const promptText = document.getElementById('promptText').innerText;
+      const copyBtn = document.getElementById('copyBtn');
+      const btnText = document.getElementById('btnText');
+
+      function triggerSuccess() {
+        const originalText = btnText.innerText;
+        btnText.innerText = 'Prompt copiado com sucesso!';
+        copyBtn.classList.add('copy-success');
+        setTimeout(() => {
+          btnText.innerText = originalText;
+          copyBtn.classList.remove('copy-success');
+        }, 3000);
+      }
+
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(promptText).then(triggerSuccess).catch(() => fallbackCopy(promptText));
+      } else {
+        fallbackCopy(promptText);
+      }
+
+      function fallbackCopy(text) {
+        try {
+          const textArea = document.createElement("textarea");
+          textArea.value = text;
+          textArea.style.position = "fixed";
+          textArea.style.left = "-9999px";
+          document.body.appendChild(textArea);
+          textArea.focus();
+          textArea.select();
+          const successful = document.execCommand('copy');
+          document.body.removeChild(textArea);
+          if (successful) triggerSuccess();
+        } catch (err) { console.error('Erro ao copiar:', err); }
+      }
+    }
+  </script>
+</body>
+</html>
